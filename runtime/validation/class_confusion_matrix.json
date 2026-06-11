@@ -1,0 +1,94 @@
+{
+  "suite_id": "redundancy_v2_adversarial_suite",
+  "expected_classes": [
+    "clean_progression",
+    "legitimate_recurrence",
+    "refrain_like",
+    "motif_recall",
+    "dialogue_callback",
+    "semantic_spin",
+    "collapse"
+  ],
+  "actual_classes": [
+    "clean_progression",
+    "legitimate_recurrence",
+    "refrain_like",
+    "motif_recall",
+    "dialogue_callback",
+    "semantic_spin",
+    "collapse",
+    "unclassified_by_current_runtime"
+  ],
+  "matrix": {
+    "clean_progression": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0,
+      "unclassified_by_current_runtime": 1
+    },
+    "legitimate_recurrence": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0,
+      "unclassified_by_current_runtime": 1
+    },
+    "refrain_like": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0,
+      "unclassified_by_current_runtime": 1
+    },
+    "motif_recall": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0,
+      "unclassified_by_current_runtime": 1
+    },
+    "dialogue_callback": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0,
+      "unclassified_by_current_runtime": 1
+    },
+    "semantic_spin": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0,
+      "unclassified_by_current_runtime": 1
+    },
+    "collapse": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0,
+      "unclassified_by_current_runtime": 1
+    }
+  }
+}

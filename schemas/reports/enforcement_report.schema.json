@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EnforcementReport",
+  "type": "object",
+  "description": "Placeholder schema for future enforcement reports.",
+  "properties": {
+    "report_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "violations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" }
+  },
+  "required": ["report_id", "run_id"]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "v4_adversarial_lantern_story",
+  "name": "V4 Adversarial Lantern Story",
+  "description": "A polished multi-scene narrative designed to stress v4 long-range narrative validators through subtle structural failures rather than obvious prose breakdown.",
+  "source_proposals": [
+    "V4-ADV-001"
+  ],
+  "related_rules": [
+    "RULE_CHARACTER_ARC_CONTINUITY_REQUIRED",
+    "RULE_THREAD_PERSISTENCE_MIN",
+    "RULE_SETUP_PAYOFF_LINK_REQUIRED",
+    "RULE_THEME_EVOLUTION_REQUIRED",
+    "RULE_SCENE_CONSEQUENCE_REQUIRED"
+  ],
+  "related_validators": [
+    "CharacterArcConsistencyValidator",
+    "ThreadPersistenceValidator",
+    "SetupPayoffIntegrityValidator",
+    "ThemeEvolutionValidator",
+    "PressureCurveValidator",
+    "SceneConsequenceValidator"
+  ],
+  "related_failure_modes": [
+    "character_arc_discontinuity_failure",
+    "thread_dropout_failure",
+    "unpaid_setup_failure",
+    "unsupported_payoff_failure",
+    "theme_stagnation_failure",
+    "scene_consequence_failure"
+  ],
+  "dependencies": [
+    "continuity_state_library",
+    "narrative_pressure_library",
+    "failure_mode_library",
+    "evaluation_library"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "fixture_type": "multi_scene_long_range_adversarial",
+  "scene_count": 6,
+  "scenes": [
+    {
+      "scene_id": "scene_01_station",
+      "title": "The Lantern At East Platform",
+      "summary": "Mara sees the stationmaster's blue lantern and hears that its cracked lens once marked trains carrying sealed ledgers. The porter also mentions a missing customs docket, establishing two threads that seem likely to converge.",
+      "text": "At East Platform the blue lantern hung from the stationmaster's hand like a bruise against the fog. Its lens had cracked in a single silver branch, and the porter said that was how the old customs trains used to be marked when sealed ledgers moved after midnight. Mara pretended not to care, though she memorized the detail at once. When the porter mentioned that a docket had vanished from the freight office that same week, the two facts pressed together with the force of a promise. She boarded believing the lantern and the missing docket would eventually explain each other."
+    },
+    {
+      "scene_id": "scene_02_dining_car",
+      "title": "Decision In The Dining Car",
+      "summary": "Mara chooses to spare a courier who might expose her. The scene frames the choice as morally decisive and potentially costly.",
+      "text": "In the dining car she discovered the courier's forged seal tucked inside the sugar bowl. For one clean second she could have planted it back in his coat and watched the inspectors take him instead of her. She chose otherwise. She slid the seal under her own plate, let the courier leave untouched, and accepted the inward tremor of a person making herself answerable to a stranger's future. The chapter slows to honor the decision. It promises consequences. The prose implies that mercy has just bent the shape of the story."
+    },
+    {
+      "scene_id": "scene_03_border_inn",
+      "title": "Lantern Again, But Only As Ornament",
+      "summary": "The lantern motif recurs in altered scenery, but nothing about its meaning evolves. The missing docket thread also disappears beneath atmospheric material.",
+      "text": "At the border inn a different lantern swung above the courtyard, blue in the same accidental way, glass nicked by weather instead of transit. Mara looked at it long enough for the narration to remind the reader of the station lantern, yet the reminder changed nothing. No ledger surfaced. No customs route clarified. Inside, the innkeeper spoke at length about roads, rain, and card tables while the missing docket went entirely unmentioned. The scene glowed beautifully and advanced almost nothing that had been structurally promised."
+    },
+    {
+      "scene_id": "scene_04_river_checkpoint",
+      "title": "An Apparent Payoff To The Wrong Setup",
+      "summary": "A hidden compartment opens and produces a ledger, but the resolution attaches itself to the wrong planted detail. The blue-lantern setup remains effectively unpaid.",
+      "text": "At the river checkpoint the inspector struck his cane against a panel beneath the baggage bench and the wood answered hollow. Inside lay a ledger wrapped in oilcloth. The scene treats the discovery like inevitability. Characters look backward as if the hidden compartment had been the true object of suspense all along, though earlier pages had weighted the cracked blue lantern instead. The ledger confirms a smuggling route, but not the vanished docket, not the old customs marking, and not the specific promise bound to that first platform image. It is a payoff in the abstract, unsupported in one direction and underpaying in another."
+    },
+    {
+      "scene_id": "scene_05_harbor_office",
+      "title": "Surface Motion, Flat Interior",
+      "summary": "Mara repeats essentially the same evasive posture from the opening despite supposedly becoming more decisive. The narrative claims growth without enacted arc movement.",
+      "text": "By the harbor office everyone spoke of Mara as if the journey had hardened her into a strategist. The narration did too. Yet when the clerk asked the question she most feared, she used the same evasive half-answer she had used on the first platform, then waited for another person to redirect the attention. Nothing in the exchange costs her for sparing the courier. Nothing in her conduct shows that mercy has matured into principle or tactic. The language of transformation continues, but the enacted self remains nearly where it began."
+    },
+    {
+      "scene_id": "scene_06_customs_yard",
+      "title": "Quiet Ending With Structural Debt",
+      "summary": "The story closes elegantly, but the missing docket is unresolved, the spared courier never matters, the lantern motif never transforms, and no real pressure-release or consequence chain arrives.",
+      "text": "In the customs yard dawn came pale and expensive. The blue of the sky briefly resembled lantern glass, enough for the motif to echo one last time. Mara watched workers carry crates toward the ferry and thought about departure with the careful calm of someone the novel wished us to admire. The missing docket never returned. The courier she spared did not help, betray, or even reappear. The ledger solved a smaller problem than promised, and the blue-lantern image ended where it began: elegant, recurrent, structurally inert. The final paragraph lands softly enough to feel complete on the surface, while multiple deep obligations remain unpaid beneath it."
+    }
+  ],
+  "text_under_test": "Scene 1: At East Platform the blue lantern hung from the stationmaster's hand like a bruise against the fog. Its lens had cracked in a single silver branch, and the porter said that was how the old customs trains used to be marked when sealed ledgers moved after midnight. Mara pretended not to care, though she memorized the detail at once. When the porter mentioned that a docket had vanished from the freight office that same week, the two facts pressed together with the force of a promise. She boarded believing the lantern and the missing docket would eventually explain each other.\n\nScene 2: In the dining car she discovered the courier's forged seal tucked inside the sugar bowl. For one clean second she could have planted it back in his coat and watched the inspectors take him instead of her. She chose otherwise. She slid the seal under her own plate, let the courier leave untouched, and accepted the inward tremor of a person making herself answerable to a stranger's future. The chapter slows to honor the decision. It promises consequences. The prose implies that mercy has just bent the shape of the story.\n\nScene 3: At the border inn a different lantern swung above the courtyard, blue in the same accidental way, glass nicked by weather instead of transit. Mara looked at it long enough for the narration to remind the reader of the station lantern, yet the reminder changed nothing. No ledger surfaced. No customs route clarified. Inside, the innkeeper spoke at length about roads, rain, and card tables while the missing docket went entirely unmentioned. The scene glowed beautifully and advanced almost nothing that had been structurally promised.\n\nScene 4: At the river checkpoint the inspector struck his cane against a panel beneath the baggage bench and the wood answered hollow. Inside lay a ledger wrapped in oilcloth. The scene treats the discovery like inevitability. Characters look backward as if the hidden compartment had been the true object of suspense all along, though earlier pages had weighted the cracked blue lantern instead. The ledger confirms a smuggling route, but not the vanished docket, not the old customs marking, and not the specific promise bound to that first platform image. It is a payoff in the abstract, unsupported in one direction and underpaying in another.\n\nScene 5: By the harbor office everyone spoke of Mara as if the journey had hardened her into a strategist. The narration did too. Yet when the clerk asked the question she most feared, she used the same evasive half-answer she had used on the first platform, then waited for another person to redirect the attention. Nothing in the exchange costs her for sparing the courier. Nothing in her conduct shows that mercy has matured into principle or tactic. The language of transformation continues, but the enacted self remains nearly where it began.\n\nScene 6: In the customs yard dawn came pale and expensive. The blue of the sky briefly resembled lantern glass, enough for the motif to echo one last time. Mara watched workers carry crates toward the ferry and thought about departure with the careful calm of someone the novel wished us to admire. The missing docket never returned. The courier she spared did not help, betray, or even reappear. The ledger solved a smaller problem than promised, and the blue-lantern image ended where it began: elegant, recurrent, structurally inert. The final paragraph lands softly enough to feel complete on the surface, while multiple deep obligations remain unpaid beneath it.",
+  "validator_targets": [
+    "CharacterArcConsistencyValidator",
+    "ThreadPersistenceValidator",
+    "SetupPayoffIntegrityValidator",
+    "ThemeEvolutionValidator",
+    "PressureCurveValidator",
+    "SceneConsequenceValidator"
+  ],
+  "expected_status_by_validator": {
+    "CharacterArcConsistencyValidator": "warn",
+    "ThreadPersistenceValidator": "fail",
+    "SetupPayoffIntegrityValidator": "fail",
+    "ThemeEvolutionValidator": "warn",
+    "PressureCurveValidator": "warn",
+    "SceneConsequenceValidator": "fail"
+  },
+  "expected_failure_modes": [
+    "character_arc_discontinuity_failure",
+    "thread_dropout_failure",
+    "unpaid_setup_failure",
+    "unsupported_payoff_failure",
+    "theme_stagnation_failure",
+    "scene_consequence_failure"
+  ],
+  "expected_gating_outcome": "rejected",
+  "targeted_structural_failures": {
+    "setup_payoff_misalignment": [
+      "blue_lantern_setup_underpaid",
+      "ledger_payoff_unsupported_by_actual_weighted_setup"
+    ],
+    "thread_dropout": [
+      "missing_docket_thread_unresolved",
+      "spared_courier_thread_abandoned"
+    ],
+    "false_motif_recurrence": [
+      "lantern_image_repeats_without_semantic_transformation"
+    ],
+    "arc_stagnation": [
+      "claimed_growth_without_behavioral_shift"
+    ],
+    "decision_without_consequence": [
+      "mercy_choice_never_changes_later scenes"
+    ]
+  },
+  "notes": "Designed to look elegant and controlled at the prose level while violating v4 document-level intelligence requirements through subtle structural debt."
+}

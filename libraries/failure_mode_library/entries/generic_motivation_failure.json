@@ -1,0 +1,34 @@
+{
+  "id": "generic_motivation_failure",
+  "name": "generic_motivation_failure",
+  "description": "Normalized failure mode for emotionally styled or motivational content that offers uplift signals without concrete insight or usable substance.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_INSIGHT_DENSITY_MIN"
+  ],
+  "related_validators": [
+    "InsightDensityValidator"
+  ],
+  "related_failure_modes": [
+    "generic_motivation_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.84,
+  "status": "approved",
+  "aliases": [
+    "motivational_hollowing",
+    "uplift_without_substance"
+  ],
+  "related_benchmarks": [
+    "v6_viral_suite"
+  ],
+  "related_enforcement_concepts": [
+    "insight_density_floor"
+  ]
+}

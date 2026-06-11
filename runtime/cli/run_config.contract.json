@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "local_cli_run_config_v1",
+  "title": "Local CLI Run Config",
+  "type": "object",
+  "required": [
+    "run_id",
+    "topic",
+    "mode",
+    "grit",
+    "platform",
+    "length",
+    "voice_profile",
+    "output_dir",
+    "dry_run",
+    "generator_profile"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["creative_writing", "acf_lite", "narrative", "authority", "utility", "hybrid"],
+      "default": "narrative"
+    },
+    "grit": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "extreme"],
+      "default": "medium"
+    },
+    "platform": {
+      "type": "string",
+      "enum": ["none", "linkedin", "twitter", "instagram", "facebook", "youtube", "reddit"],
+      "default": "none"
+    },
+    "length": {
+      "type": "string",
+      "enum": ["short", "medium", "long"],
+      "default": "long"
+    },
+    "voice_profile": {
+      "type": "string",
+      "enum": ["tanya_lawson_v1"],
+      "default": "tanya_lawson_v1"
+    },
+    "output_dir": {
+      "type": "string",
+      "default": "runs/local_cli_run"
+    },
+    "dry_run": {
+      "type": "boolean",
+      "default": false
+    },
+    "generator_profile": {
+      "type": "object",
+      "required": [
+        "mode",
+        "genre",
+        "audience",
+        "target_platform",
+        "topic",
+        "prompt_brief",
+        "desired_reader_impact",
+        "desired_viral_profile",
+        "requested_grit_level",
+        "voice_profile",
+        "length"
+      ]
+    }
+  }
+}

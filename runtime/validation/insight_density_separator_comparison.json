@@ -1,0 +1,57 @@
+{
+  "separator_validator": "insight_density_validator",
+  "high_integrity_case": {
+    "case_id": "high_integrity_viral_piece",
+    "final_status": "accepted_with_warnings",
+    "viral_score": 0.485,
+    "viral_integrity_score": 0.964,
+    "insight_density_score": 0.66,
+    "abstraction_ratio": 0.5,
+    "concrete_example_count": 5,
+    "generic_motivation_detected": false,
+    "empty_insight_detected": false,
+    "shallow_philosophy_detected": false,
+    "high_integrity_viral_cases": true,
+    "validator_statuses": {
+      "insight_density_validator": "warn",
+      "viral_integrity_validator": "pass",
+      "hook_strength_validator": "fail",
+      "shareability_validator": "fail",
+      "novelty_validator": "fail"
+    }
+  },
+  "generic_case": {
+    "case_id": "generic_viral_looking_piece",
+    "final_status": "rejected",
+    "viral_score": 0.301,
+    "viral_integrity_score": 0.908,
+    "insight_density_score": 0.0,
+    "abstraction_ratio": 1.0,
+    "concrete_example_count": 0,
+    "generic_motivation_detected": true,
+    "empty_insight_detected": true,
+    "shallow_philosophy_detected": true,
+    "high_integrity_viral_cases": false,
+    "validator_statuses": {
+      "insight_density_validator": "fail",
+      "viral_integrity_validator": "pass",
+      "hook_strength_validator": "fail",
+      "shareability_validator": "fail",
+      "novelty_validator": "fail"
+    }
+  },
+  "delta": {
+    "insight_density_score": 0.66,
+    "abstraction_ratio": -0.5,
+    "concrete_example_count": 5,
+    "viral_score": 0.184
+  },
+  "verdict": {
+    "insight_density_is_primary_separator": true,
+    "notes": [
+      "Both pieces are evaluated by the same v6 stack.",
+      "The high-integrity piece remains admissible because concrete support and idea density offset lower viral-growth subdimensions.",
+      "The generic piece collapses on insight density despite portable phrasing."
+    ]
+  }
+}

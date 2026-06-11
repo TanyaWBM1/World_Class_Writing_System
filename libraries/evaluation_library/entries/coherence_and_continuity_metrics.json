@@ -1,0 +1,41 @@
+{
+  "id": "coherence_and_continuity_metrics",
+  "name": "Coherence And Continuity Metrics",
+  "description": "Propose a curated evaluation_library addition set for coherence and continuity metrics.",
+  "source_proposals": [
+    "LP-COHERENCE-AND-CONTINUITY-METRICS"
+  ],
+  "related_rules": [
+    "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_CONTINUITY_CONTRADICTION_CAP"
+  ],
+  "related_validators": [
+    "ContinuityNLIValidator"
+  ],
+  "related_failure_modes": [
+    "continuity_memory_failure",
+    "long_form_coherence_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "For each failure mode, note whether solving it likely requires explicit state tracking, runtime enforcement, symbolic constraints, or purely statistical generation changes.",
+    "arc_coherence_metric",
+    "coherence_over_distance_metric",
+    "continuity_integrity_metric"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

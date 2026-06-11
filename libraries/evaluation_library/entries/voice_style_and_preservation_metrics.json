@@ -1,0 +1,45 @@
+{
+  "id": "voice_style_and_preservation_metrics",
+  "name": "Voice Style And Preservation Metrics",
+  "description": "Propose a validation concept stack for voice style and preservation metrics.",
+  "source_proposals": [
+    "VP-006"
+  ],
+  "related_rules": [
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_VOICE_DRIFT_CAP"
+  ],
+  "related_validators": [
+    "AuthorStyleFingerprintValidator",
+    "CorpusStyleDiversityValidator",
+    "EntityAttributeDriftValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "related_failure_modes": [
+    "narrative_drift_failure",
+    "structure_drift_failure",
+    "style_homogenization_failure",
+    "voice_erosion_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.91,
+  "status": "approved",
+  "aliases": [
+    "narrative_drift_failure"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

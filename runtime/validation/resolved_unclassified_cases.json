@@ -1,0 +1,578 @@
+{
+  "suite_id": "redundancy_v2_adversarial_suite",
+  "resolved_case_count": 7,
+  "resolved_cases": [
+    {
+      "fixture_id": "redundancy_v2_refrain_001",
+      "expected_redundancy_class": "refrain_like",
+      "v2_actual_class": "unclassified_by_current_runtime",
+      "v3_actual_class": "refrain_like",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "v2_actual_gating_outcome": "accepted_with_warnings",
+      "v3_actual_gating_outcome": "accepted_with_warnings",
+      "v2_score": 0.76,
+      "v3_score": 0.79,
+      "matches_expected_label": true,
+      "matches_expected_gating": true,
+      "evidence": {
+        "idea_nodes_created": 7,
+        "idea_edges_created": 10,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 3,
+        "extend_edges": 3,
+        "contrast_edges": 4,
+        "cause_edges": 0,
+        "motif_recall_edges": 0,
+        "dialogue_correction_edges": 0,
+        "progression_credit": 0.9,
+        "rhetorical_recurrence_credit": 0.18,
+        "collapse_penalty": 0.381,
+        "local_cluster_density": 1.0,
+        "redundancy_score": 0.79,
+        "redundancy_class": "refrain_like",
+        "memory_cluster_hits": 1,
+        "distance_weighted_recurrence_score": 0.42,
+        "motif_candidates_detected": 2,
+        "motif_registry_matches": 0,
+        "motif_transformation_score": 0.0,
+        "dialogue_callback_matches": 0,
+        "dialogue_callback_legitimacy_score": 0.04,
+        "cluster_overuse_score": 0.875,
+        "role_transition_score": 0.56,
+        "global_redundancy_risk": 0.605,
+        "local_redundancy_risk": 0.535,
+        "recurrence_mode": "local_refrain",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 4,
+            "relation_history": [
+              "restates",
+              "extends",
+              "contrasts"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.765,
+              0.818,
+              0.964
+            ],
+            "collapse_risk": 0.605
+          }
+        ],
+        "motif_registry": [
+          {
+            "motif_id": "motif-lantern",
+            "surface_forms": [
+              "lantern"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 1,
+            "distance_since_last": 3,
+            "transformation_score": 0.0,
+            "motif_status": "candidate"
+          },
+          {
+            "motif_id": "motif-rail",
+            "surface_forms": [
+              "rail"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 1,
+            "distance_since_last": 3,
+            "transformation_score": 0.0,
+            "motif_status": "candidate"
+          }
+        ],
+        "dialogue_callbacks": [],
+        "cadence_relief_factor": 0.0
+      }
+    },
+    {
+      "fixture_id": "redundancy_v2_motif_001",
+      "expected_redundancy_class": "motif_recall",
+      "v2_actual_class": "unclassified_by_current_runtime",
+      "v3_actual_class": "motif_recall",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "v2_actual_gating_outcome": "accepted",
+      "v3_actual_gating_outcome": "accepted_with_warnings",
+      "v2_score": 0.86,
+      "v3_score": 0.79,
+      "matches_expected_label": true,
+      "matches_expected_gating": true,
+      "evidence": {
+        "idea_nodes_created": 5,
+        "idea_edges_created": 6,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 1,
+        "extend_edges": 2,
+        "contrast_edges": 0,
+        "cause_edges": 1,
+        "motif_recall_edges": 2,
+        "dialogue_correction_edges": 0,
+        "progression_credit": 0.5,
+        "rhetorical_recurrence_credit": 0.42,
+        "collapse_penalty": 0.268,
+        "local_cluster_density": 0.667,
+        "redundancy_score": 0.79,
+        "redundancy_class": "motif_recall",
+        "memory_cluster_hits": 2,
+        "distance_weighted_recurrence_score": 0.247,
+        "motif_candidates_detected": 3,
+        "motif_registry_matches": 2,
+        "motif_transformation_score": 0.48,
+        "dialogue_callback_matches": 0,
+        "dialogue_callback_legitimacy_score": 0.04,
+        "cluster_overuse_score": 0.833,
+        "role_transition_score": 0.218,
+        "global_redundancy_risk": 0.47,
+        "local_redundancy_risk": 0.401,
+        "recurrence_mode": "global_motif_return",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 4,
+            "relation_history": [
+              "restates",
+              "extends",
+              "causes",
+              "recalls"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.917,
+              0.949
+            ],
+            "collapse_risk": 0.47
+          },
+          {
+            "idea_cluster_id": "cluster-2",
+            "first_seen_segment": 1,
+            "last_seen_segment": 2,
+            "recurrence_count": 4,
+            "relation_history": [
+              "restates",
+              "extends",
+              "causes",
+              "recalls"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.917,
+              0.949
+            ],
+            "collapse_risk": 0.47
+          }
+        ],
+        "motif_registry": [
+          {
+            "motif_id": "motif-glove",
+            "surface_forms": [
+              "glove"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 1,
+            "distance_since_last": 2,
+            "transformation_score": 0.48,
+            "motif_status": "candidate"
+          },
+          {
+            "motif_id": "motif-omen",
+            "surface_forms": [
+              "omen"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 2,
+            "distance_since_last": 2,
+            "transformation_score": 0.48,
+            "motif_status": "active"
+          }
+        ],
+        "dialogue_callbacks": [],
+        "cadence_relief_factor": 0.0
+      }
+    },
+    {
+      "fixture_id": "redundancy_v2_dialogue_001",
+      "expected_redundancy_class": "dialogue_callback",
+      "v2_actual_class": "unclassified_by_current_runtime",
+      "v3_actual_class": "dialogue_callback",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "v2_actual_gating_outcome": "accepted",
+      "v3_actual_gating_outcome": "accepted_with_warnings",
+      "v2_score": 0.91,
+      "v3_score": 0.79,
+      "matches_expected_label": true,
+      "matches_expected_gating": true,
+      "evidence": {
+        "idea_nodes_created": 8,
+        "idea_edges_created": 7,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 0,
+        "extend_edges": 6,
+        "contrast_edges": 0,
+        "cause_edges": 0,
+        "motif_recall_edges": 0,
+        "dialogue_correction_edges": 1,
+        "progression_credit": 0.86,
+        "rhetorical_recurrence_credit": 0.36,
+        "collapse_penalty": 0.04,
+        "local_cluster_density": 0.143,
+        "redundancy_score": 0.79,
+        "redundancy_class": "dialogue_callback",
+        "memory_cluster_hits": 1,
+        "distance_weighted_recurrence_score": 0.06,
+        "motif_candidates_detected": 0,
+        "motif_registry_matches": 0,
+        "motif_transformation_score": 0.0,
+        "dialogue_callback_matches": 1,
+        "dialogue_callback_legitimacy_score": 0.6,
+        "cluster_overuse_score": 0.222,
+        "role_transition_score": 0.18,
+        "global_redundancy_risk": 0.282,
+        "local_redundancy_risk": 0.099,
+        "recurrence_mode": "dialogue_callback",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 2,
+            "relation_history": [
+              "extends",
+              "resolves"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.9,
+              1.0,
+              1.0,
+              1.0,
+              0.857,
+              1.0
+            ],
+            "collapse_risk": 0.282
+          }
+        ],
+        "motif_registry": [],
+        "dialogue_callbacks": [
+          {
+            "callback_id": "callback-1",
+            "speaker_a": "porter",
+            "speaker_b": "mara",
+            "callback_type": "correction",
+            "source_turn": 1,
+            "callback_turn": 3,
+            "semantic_distance": 0.4,
+            "pragmatic_shift": 0.6
+          }
+        ],
+        "cadence_relief_factor": 0.0
+      }
+    },
+    {
+      "fixture_id": "redundancy_v2_argument_001",
+      "expected_redundancy_class": "clean_progression",
+      "v2_actual_class": "unclassified_by_current_runtime",
+      "v3_actual_class": "clean_progression",
+      "expected_gating_outcome": "accepted",
+      "v2_actual_gating_outcome": "accepted_with_warnings",
+      "v3_actual_gating_outcome": "accepted",
+      "v2_score": 0.7,
+      "v3_score": 1.0,
+      "matches_expected_label": true,
+      "matches_expected_gating": true,
+      "evidence": {
+        "idea_nodes_created": 5,
+        "idea_edges_created": 12,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 3,
+        "extend_edges": 3,
+        "contrast_edges": 1,
+        "cause_edges": 5,
+        "motif_recall_edges": 0,
+        "dialogue_correction_edges": 0,
+        "progression_credit": 1.0,
+        "rhetorical_recurrence_credit": 0.1,
+        "collapse_penalty": 0.406,
+        "local_cluster_density": 1.0,
+        "redundancy_score": 0.998,
+        "redundancy_class": "clean_progression",
+        "memory_cluster_hits": 1,
+        "distance_weighted_recurrence_score": 0.42,
+        "motif_candidates_detected": 1,
+        "motif_registry_matches": 0,
+        "motif_transformation_score": 0.12,
+        "dialogue_callback_matches": 0,
+        "dialogue_callback_legitimacy_score": 0.0,
+        "cluster_overuse_score": 1.0,
+        "role_transition_score": 0.954,
+        "global_redundancy_risk": 0.618,
+        "local_redundancy_risk": 0.564,
+        "recurrence_mode": "local_progression",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 4,
+            "relation_history": [
+              "restates",
+              "extends",
+              "contrasts",
+              "causes"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.733,
+              0.762,
+              0.962
+            ],
+            "collapse_risk": 0.618
+          }
+        ],
+        "motif_registry": [
+          {
+            "motif_id": "motif-ticket",
+            "surface_forms": [
+              "ticket"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 1,
+            "distance_since_last": 3,
+            "transformation_score": 0.12,
+            "motif_status": "candidate"
+          }
+        ],
+        "dialogue_callbacks": [],
+        "cadence_relief_factor": 0.0
+      }
+    },
+    {
+      "fixture_id": "redundancy_v2_spin_001",
+      "expected_redundancy_class": "semantic_spin",
+      "v2_actual_class": "unclassified_by_current_runtime",
+      "v3_actual_class": "refrain_like",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "v2_actual_gating_outcome": "accepted_with_warnings",
+      "v3_actual_gating_outcome": "accepted_with_warnings",
+      "v2_score": 0.78,
+      "v3_score": 0.78,
+      "matches_expected_label": false,
+      "matches_expected_gating": true,
+      "evidence": {
+        "idea_nodes_created": 5,
+        "idea_edges_created": 7,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 2,
+        "extend_edges": 3,
+        "contrast_edges": 1,
+        "cause_edges": 1,
+        "motif_recall_edges": 0,
+        "dialogue_correction_edges": 0,
+        "progression_credit": 0.72,
+        "rhetorical_recurrence_credit": 0.18,
+        "collapse_penalty": 0.354,
+        "local_cluster_density": 0.75,
+        "redundancy_score": 0.779,
+        "redundancy_class": "refrain_like",
+        "memory_cluster_hits": 1,
+        "distance_weighted_recurrence_score": 0.28,
+        "motif_candidates_detected": 0,
+        "motif_registry_matches": 0,
+        "motif_transformation_score": 0.0,
+        "dialogue_callback_matches": 0,
+        "dialogue_callback_legitimacy_score": 0.0,
+        "cluster_overuse_score": 0.833,
+        "role_transition_score": 0.3,
+        "global_redundancy_risk": 0.562,
+        "local_redundancy_risk": 0.448,
+        "recurrence_mode": "local_refrain",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 3,
+            "relation_history": [
+              "restates",
+              "extends",
+              "contrasts",
+              "causes"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.643,
+              0.81,
+              0.957
+            ],
+            "collapse_risk": 0.562
+          }
+        ],
+        "motif_registry": [],
+        "dialogue_callbacks": [],
+        "cadence_relief_factor": 0.0
+      }
+    },
+    {
+      "fixture_id": "redundancy_v2_collapse_001",
+      "expected_redundancy_class": "collapse",
+      "v2_actual_class": "unclassified_by_current_runtime",
+      "v3_actual_class": "clean_progression",
+      "expected_gating_outcome": "rejected",
+      "v2_actual_gating_outcome": "accepted_with_warnings",
+      "v3_actual_gating_outcome": "accepted",
+      "v2_score": 0.75,
+      "v3_score": 1.0,
+      "matches_expected_label": false,
+      "matches_expected_gating": false,
+      "evidence": {
+        "idea_nodes_created": 6,
+        "idea_edges_created": 11,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 1,
+        "extend_edges": 5,
+        "contrast_edges": 1,
+        "cause_edges": 4,
+        "motif_recall_edges": 0,
+        "dialogue_correction_edges": 0,
+        "progression_credit": 1.0,
+        "rhetorical_recurrence_credit": 0.1,
+        "collapse_penalty": 0.119,
+        "local_cluster_density": 0.4,
+        "redundancy_score": 1.0,
+        "redundancy_class": "clean_progression",
+        "memory_cluster_hits": 1,
+        "distance_weighted_recurrence_score": 0.1,
+        "motif_candidates_detected": 1,
+        "motif_registry_matches": 0,
+        "motif_transformation_score": 0.12,
+        "dialogue_callback_matches": 0,
+        "dialogue_callback_legitimacy_score": 0.18,
+        "cluster_overuse_score": 0.286,
+        "role_transition_score": 0.794,
+        "global_redundancy_risk": 0.346,
+        "local_redundancy_risk": 0.202,
+        "recurrence_mode": "local_progression",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 1,
+            "relation_history": [
+              "restates",
+              "extends",
+              "contrasts",
+              "causes"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.917,
+              0.875,
+              1.0,
+              0.96
+            ],
+            "collapse_risk": 0.346
+          }
+        ],
+        "motif_registry": [
+          {
+            "motif_id": "motif-ticket",
+            "surface_forms": [
+              "ticket"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 1,
+            "distance_since_last": 4,
+            "transformation_score": 0.12,
+            "motif_status": "candidate"
+          }
+        ],
+        "dialogue_callbacks": [],
+        "cadence_relief_factor": 0.0
+      }
+    },
+    {
+      "fixture_id": "redundancy_v2_emotion_001",
+      "expected_redundancy_class": "legitimate_recurrence",
+      "v2_actual_class": "unclassified_by_current_runtime",
+      "v3_actual_class": "refrain_like",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "v2_actual_gating_outcome": "accepted",
+      "v3_actual_gating_outcome": "accepted_with_warnings",
+      "v2_score": 0.91,
+      "v3_score": 0.79,
+      "matches_expected_label": false,
+      "matches_expected_gating": true,
+      "evidence": {
+        "idea_nodes_created": 7,
+        "idea_edges_created": 6,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 0,
+        "extend_edges": 3,
+        "contrast_edges": 1,
+        "cause_edges": 2,
+        "motif_recall_edges": 0,
+        "dialogue_correction_edges": 0,
+        "progression_credit": 0.84,
+        "rhetorical_recurrence_credit": 0.34,
+        "collapse_penalty": 0.083,
+        "local_cluster_density": 0.25,
+        "redundancy_score": 0.79,
+        "redundancy_class": "refrain_like",
+        "memory_cluster_hits": 1,
+        "distance_weighted_recurrence_score": 0.0,
+        "motif_candidates_detected": 1,
+        "motif_registry_matches": 0,
+        "motif_transformation_score": 0.12,
+        "dialogue_callback_matches": 0,
+        "dialogue_callback_legitimacy_score": 0.0,
+        "cluster_overuse_score": 0.125,
+        "role_transition_score": 0.474,
+        "global_redundancy_risk": 0.308,
+        "local_redundancy_risk": 0.116,
+        "recurrence_mode": "local_refrain",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 1,
+            "relation_history": [
+              "extends",
+              "contrasts",
+              "causes"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.923,
+              0.967,
+              0.968
+            ],
+            "collapse_risk": 0.308
+          }
+        ],
+        "motif_registry": [
+          {
+            "motif_id": "motif-whistle",
+            "surface_forms": [
+              "whistle"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 1,
+            "distance_since_last": 3,
+            "transformation_score": 0.12,
+            "motif_status": "candidate"
+          }
+        ],
+        "dialogue_callbacks": [],
+        "cadence_relief_factor": 0.0
+      }
+    }
+  ]
+}

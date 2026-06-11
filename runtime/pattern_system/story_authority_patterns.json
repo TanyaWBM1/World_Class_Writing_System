@@ -1,0 +1,101 @@
+{
+  "registry_id": "story_authority_patterns_v7_4",
+  "purpose": "Abstract opening-pattern definitions for story-authority hybrid writing. Patterns shape the opening move without storing reusable sentences.",
+  "pattern_cooldown": {
+    "same_draft_penalty": 0.75,
+    "previous_draft_penalty": 0.45,
+    "max_repeat_before_penalty": 1
+  },
+  "patterns": [
+    {
+      "pattern_id": "personal_to_insight",
+      "supported_modes": ["narrative", "hybrid"],
+      "supported_intents": ["resonance", "reflection", "memory"],
+      "structure": [
+        "grounded_personal_realization",
+        "human_truth_turn",
+        "portable_insight_bridge"
+      ],
+      "voice_requirements": [
+        "reflective",
+        "plain_english",
+        "teacher_not_marketer"
+      ],
+      "grit_compatible": ["low", "medium", "high"],
+      "risk_flags": ["sentimental_flattening", "generic_testimony"],
+      "opening_function": "earn authority through lived witness before expanding to meaning"
+    },
+    {
+      "pattern_id": "observation_to_authority",
+      "supported_modes": ["authority", "hybrid", "utility"],
+      "supported_intents": ["credibility", "explanation", "clarity"],
+      "structure": [
+        "observable_problem_or_truth",
+        "reality_check",
+        "evidence_shaped_authority_turn"
+      ],
+      "voice_requirements": [
+        "calm_certainty",
+        "lived_authority",
+        "non_institutional"
+      ],
+      "grit_compatible": ["medium", "high"],
+      "risk_flags": ["institutional_posture", "cold_abstraction"],
+      "opening_function": "establish a visible truth before naming why it matters"
+    },
+    {
+      "pattern_id": "narrative_hook_to_credibility",
+      "supported_modes": ["narrative", "authority", "hybrid"],
+      "supported_intents": ["story", "stakes", "trust"],
+      "structure": [
+        "scene_or_memory_hook",
+        "stakes_signal",
+        "credibility_turn"
+      ],
+      "voice_requirements": [
+        "scene_grounding",
+        "emotional_restraint",
+        "earned_authority"
+      ],
+      "grit_compatible": ["low", "medium", "high"],
+      "risk_flags": ["surface_drama", "unearned_gravity"],
+      "opening_function": "start with vividness, then earn the right to interpret"
+    },
+    {
+      "pattern_id": "correction_based_opening",
+      "supported_modes": ["authority", "hybrid", "utility"],
+      "supported_intents": ["correction", "truth_callout", "reframe"],
+      "structure": [
+        "false_frame_identification",
+        "clean_correction",
+        "reality_anchor"
+      ],
+      "voice_requirements": [
+        "direct_but_thoughtful",
+        "calm_certainty",
+        "non_preachy"
+      ],
+      "grit_compatible": ["medium", "high", "extreme"],
+      "risk_flags": ["harshness", "template_correction_frame"],
+      "opening_function": "break a false frame quickly without sounding mechanized"
+    },
+    {
+      "pattern_id": "lived_experience_to_framework",
+      "supported_modes": ["authority", "hybrid", "narrative"],
+      "supported_intents": ["teaching", "pattern_recognition", "meaning"],
+      "structure": [
+        "lived_specificity",
+        "lesson_distillation",
+        "framework_without_jargon"
+      ],
+      "voice_requirements": [
+        "teacher_not_marketer",
+        "plainspoken_depth",
+        "contextual_clarity"
+      ],
+      "grit_compatible": ["low", "medium", "high"],
+      "risk_flags": ["jargon_spill", "flattened_takeaway"],
+      "opening_function": "move from witness to teachable structure without sounding branded"
+    }
+  ]
+}

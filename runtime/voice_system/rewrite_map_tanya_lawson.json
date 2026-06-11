@@ -1,0 +1,46 @@
+{
+  "rewrite_map_id": "tanya_lawson_rewrite_map_v1",
+  "voice_id": "tanya_lawson_v1",
+  "rewrites": [
+    {
+      "from": "friction",
+      "to": [
+        "resistance",
+        "drag",
+        "strain"
+      ],
+      "preference_notes": "Prefer words that sound physical or lived rather than abstractly strategic.",
+      "context_notes": "Use when describing emotional, relational, or practical resistance."
+    },
+    {
+      "from": "lands",
+      "to": [
+        "hits",
+        "comes through",
+        "settles"
+      ],
+      "preference_notes": "Choose the bluntest plain-English option that keeps the sentence human.",
+      "context_notes": "Use for emotional or interpretive reception, not literal physical movement."
+    },
+    {
+      "from": "leverage",
+      "to": [
+        "use",
+        "lean on",
+        "work with"
+      ],
+      "preference_notes": "Replace institutional strategy language with ordinary action verbs.",
+      "context_notes": "Default rewrite for Tanya voice unless the context explicitly allows technical usage."
+    },
+    {
+      "from": "pressure",
+      "to": [
+        "weight",
+        "strain",
+        "heat"
+      ],
+      "preference_notes": "Only rewrite when the sentence is vague. Preserve explicit structural or narrative pressure uses.",
+      "context_notes": "Keep original when pressure is specific and earned by context."
+    }
+  ]
+}

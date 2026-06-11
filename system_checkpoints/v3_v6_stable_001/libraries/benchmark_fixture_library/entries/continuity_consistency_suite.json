@@ -1,0 +1,99 @@
+{
+  "id": "continuity_consistency_suite",
+  "name": "Continuity Consistency Suite",
+  "description": "Deterministic fixtures for state and meaning continuity against explicit run context.",
+  "source_proposals": [
+    "BP-004"
+  ],
+  "related_rules": [
+    "RULE_CONTINUITY_CONTRADICTION_CAP",
+    "RULE_ENTITY_INVARIANT_ENFORCED",
+    "RULE_CANON_NO_IMPLICIT_OVERRIDE"
+  ],
+  "related_validators": [
+    "continuity_consistency_checker"
+  ],
+  "related_failure_modes": [
+    "continuity_memory_failure",
+    "long_form_coherence_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "continuity_state_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "continuity_pass_001",
+      "title": "Aligned Platform Scene",
+      "task_type": "continuity_consistency",
+      "text_under_test": "Mara stayed on the winter platform while the porter watched the train doors. The ticket remained hidden in her glove. Midnight felt close enough to hear in the rails.",
+      "validator_targets": [
+        "continuity_consistency_checker"
+      ],
+      "expected_status_by_validator": {
+        "continuity_consistency_checker": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "Matches the established location, character set, and object state."
+    },
+    {
+      "fixture_id": "continuity_warn_001",
+      "title": "Partial Alignment With Soft Drift",
+      "task_type": "continuity_consistency",
+      "text_under_test": "Mara stood near the station gate while the porter moved somewhere farther down the platform. The ticket was still in her hand, though the scene now felt closer to dawn than she expected.",
+      "validator_targets": [
+        "continuity_consistency_checker"
+      ],
+      "expected_status_by_validator": {
+        "continuity_consistency_checker": "warn"
+      },
+      "expected_failure_modes": [
+        "continuity_memory_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Soft temporal and positional drift without a direct hard contradiction."
+    },
+    {
+      "fixture_id": "continuity_fail_001",
+      "title": "Hard State Contradiction",
+      "task_type": "continuity_consistency",
+      "text_under_test": "Mara was already seated inside the warm dining car while the porter waited miles away at the harbor. The missing ticket no longer mattered because it had become a passport hours earlier.",
+      "validator_targets": [
+        "continuity_consistency_checker"
+      ],
+      "expected_status_by_validator": {
+        "continuity_consistency_checker": "fail"
+      },
+      "expected_failure_modes": [
+        "continuity_memory_failure",
+        "long_form_coherence_failure"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "Direct contradiction of location, object state, and scene frame."
+    },
+    {
+      "fixture_id": "continuity_adversarial_001",
+      "title": "Near-Consistent But Meaning-Shifted",
+      "task_type": "continuity_consistency",
+      "text_under_test": "Mara remained by the platform edge, yet she was somehow both waiting to board and already safely aboard in her own mind. The porter still watched her glove, though his attention was described as if it had already ended.",
+      "validator_targets": [
+        "continuity_consistency_checker",
+        "human_likeness_discriminator"
+      ],
+      "expected_status_by_validator": {
+        "continuity_consistency_checker": "warn",
+        "human_likeness_discriminator": "pass"
+      },
+      "expected_failure_modes": [
+        "long_form_coherence_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "No hard noun mismatch, but the scene meaning is unstable."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "acceptance_id": "acceptance_broken_structure",
+  "purpose": "Confirm structurally broken narratives remain blocked regardless of local prose or viral potential.",
+  "category": "structural_blocker",
+  "text_pattern": "multi-scene narrative with unpaid setups, unresolved high-importance threads, and pressure without consequence",
+  "target_dimensions": [
+    "narrative_intelligence",
+    "reader_impact",
+    "viral_intelligence"
+  ],
+  "required_expectations": {
+    "final_status": "rejected",
+    "structural_violation_score": ">= narrative fail threshold",
+    "obligation_failure_count": "> 0"
+  },
+  "must_not_be_overridden_by": [
+    "viral_score",
+    "platform scores",
+    "hook strength"
+  ]
+}

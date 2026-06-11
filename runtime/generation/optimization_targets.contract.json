@@ -1,0 +1,83 @@
+{
+  "contract_id": "optimization_targets_contract_v1",
+  "purpose": "Define bounded optimization targets and stop conditions for controlled multi-pass generation.",
+  "target_bands": {
+    "v3_meaning_quality": {
+      "semantic_redundancy_detector": {
+        "minimum_score": 0.72,
+        "preferred_score": 0.82
+      },
+      "cadence_variance_checker": {
+        "minimum_score": 0.62,
+        "preferred_score": 0.74
+      },
+      "abstraction_ratio_checker": {
+        "minimum_score": 0.6,
+        "preferred_score": 0.8
+      }
+    },
+    "v4_structure_and_obligation_fulfillment": {
+      "structural_violation_score": {
+        "maximum_score": 0.39,
+        "preferred_score": 0.0
+      },
+      "obligation_failure_count": {
+        "maximum_count": 0
+      }
+    },
+    "v5_reader_impact": {
+      "emotional_resonance_validator": {
+        "minimum_score": 0.58,
+        "preferred_score": 0.78
+      },
+      "payoff_satisfaction_validator": {
+        "minimum_score": 0.58,
+        "preferred_score": 0.8
+      },
+      "memorability_validator": {
+        "minimum_score": 0.52,
+        "preferred_score": 0.74
+      }
+    },
+    "v6_viral_potential": {
+      "hook_strength_validator": {
+        "minimum_score": 0.58,
+        "preferred_score": 0.78
+      },
+      "identity_resonance_validator": {
+        "minimum_score": 0.54,
+        "preferred_score": 0.74
+      },
+      "viral_integrity_validator": {
+        "minimum_score": 0.76,
+        "preferred_score": 0.86
+      }
+    },
+    "v6_1_insight_density": {
+      "insight_density_validator": {
+        "minimum_score": 0.52,
+        "preferred_score": 0.72
+      }
+    }
+  },
+  "revision_policy": {
+    "max_passes": 3,
+    "allowed_revision_targets": [
+      "lowest-scoring non-blocked dimensions",
+      "declared disallowed failure modes",
+      "profile-specific structure constraints"
+    ],
+    "blocked_revision_targets": [
+      "live validator thresholds",
+      "runtime rules",
+      "library ownership",
+      "benchmark expectations"
+    ]
+  },
+  "promotion_rules": [
+    "reject immediately if any v4 high-importance obligation is violated",
+    "do not promote drafts with viral integrity failure",
+    "do not promote drafts with insight-density failure",
+    "contextual platform scores are advisory only"
+  ]
+}

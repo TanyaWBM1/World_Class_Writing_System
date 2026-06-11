@@ -1,0 +1,43 @@
+{
+  "id": "promotion_gate_policy",
+  "name": "Promotion Gate Policy",
+  "description": "Propose a governance rule set for promotion gate policy.",
+  "source_proposals": [
+    "GP-002"
+  ],
+  "related_rules": [
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+    "System changes must pass sandbox evaluation before shadow evaluation."
+  ],
+  "related_validators": [
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+  ],
+  "related_failure_modes": [
+    "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+    "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+    "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals."
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library",
+    "schema:governance_artifacts"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "governance_scope": [
+    "human approval",
+    "promotion gates",
+    "regression protection"
+  ]
+}

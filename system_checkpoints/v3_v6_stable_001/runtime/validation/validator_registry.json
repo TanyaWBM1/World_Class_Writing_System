@@ -1,0 +1,1155 @@
+{
+  "registry_id": "validator_registry_v6",
+  "purpose": "Define deterministic evaluation validators across local prose quality, long-range narrative intelligence, v5 reader-impact scaffolding, and the scaffolded v6 viral-intelligence layer.",
+  "validators": [
+    {
+      "validator_id": "human_likeness_discriminator",
+      "validator_family": "human_likeness_discriminator_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v1",
+      "input_requirements": [
+        "draft_text",
+        "sentence_segments",
+        "generic_phrase_hits",
+        "dialogue_line_count"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_weighted_score",
+        "formula": "1.0 - generic_phrase_penalty - repetition_penalty + dialogue_presence_bonus + concreteness_bonus",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric",
+      "dimension": "human_likeness",
+      "linked_rules": [
+        "RULE_GENERIC_TEMPLATE_CAP",
+        "RULE_PROSE_CONCRETENESS_MIN"
+      ],
+      "linked_failure_modes": [
+        "prose_naturalness_collapse",
+        "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa"
+      ],
+      "threshold_key": "human_likeness_discriminator"
+    },
+    {
+      "validator_id": "cadence_variance_checker",
+      "validator_family": "cadence_and_syntax_validator_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "cadence_library",
+        "failure_mode_library"
+      ],
+      "pass": "cadence_pass",
+      "status": "active_rule_based_v1",
+      "input_requirements": [
+        "draft_text",
+        "sentence_segments",
+        "sentence_lengths"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_structural_metric",
+        "formula": "normalize(sentence_length_variance) with penalty for monotone runs",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric",
+      "dimension": "cadence",
+      "linked_rules": [
+        "RULE_SENTENCE_LENGTH_VAR_MIN",
+        "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+      ],
+      "linked_failure_modes": [
+        "cadence_flattening_failure"
+      ],
+      "threshold_key": "cadence_variance_checker"
+    },
+    {
+      "validator_id": "abstraction_ratio_checker",
+      "validator_family": "voice_style_and_preservation_metrics",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library"
+      ],
+      "pass": "human_texture_pass",
+      "status": "active_rule_based_v1",
+      "input_requirements": [
+        "draft_text",
+        "tokenized_words",
+        "abstract_term_hits",
+        "concrete_detail_hits"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_ratio_metric",
+        "formula": "1.0 - clamp(abstract_hits / max(concrete_hits,1)) with reward for scene-grounded detail",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric",
+      "dimension": "human_texture",
+      "linked_rules": [
+        "RULE_ABSTRACTION_RATIO_MAX",
+        "RULE_PROSE_CONCRETENESS_MIN"
+      ],
+      "linked_failure_modes": [
+        "over_abstraction_failure",
+        "prose_naturalness_collapse"
+      ],
+      "threshold_key": "abstraction_ratio_checker"
+    },
+    {
+      "validator_id": "semantic_redundancy_detector",
+      "validator_family": "voice_style_and_preservation_metrics",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library"
+      ],
+      "pass": "human_texture_pass",
+      "status": "designed_rule_based_v3",
+      "input_requirements": [
+        "draft_text",
+        "sentence_segments",
+        "proposition_candidates",
+        "entity_mentions",
+        "dialogue_lines",
+        "motif_tokens",
+        "local_transition_windows",
+        "idea_cluster_memory",
+        "motif_registry_state",
+        "dialogue_turn_map",
+        "continuity_state_snapshots"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_context_aware_memory_graph_metric",
+        "formula": "base_progression_score + progression_credit + motif_return_credit + dialogue_callback_credit + theme_reinforcement_credit - local_collapse_penalty - global_redundancy_penalty - cluster_overuse_penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ],
+        "decision_basis": [
+          "pass if recurrence is supported by motif return, dialogue callback, role progression, or healthy theme reinforcement",
+          "warn if recurrence is legitimate but overused or weakly transformed",
+          "fail if overlap is high, graph growth is flat, cluster overuse is high, and role transition is weak"
+        ]
+      },
+      "output_type": "numeric_and_categorical",
+      "dimension": "human_texture",
+      "linked_rules": [
+        "RULE_SEMANTIC_REDUNDANCY_CAP",
+        "RULE_SECTION_NOVELTY_MIN"
+      ],
+      "linked_failure_modes": [
+        "semantic_redundancy_failure",
+        "prose_naturalness_collapse"
+      ],
+      "threshold_key": "semantic_redundancy_detector",
+      "design_version": "semantic_redundancy_v3",
+      "idea_graph": {
+        "node_types": [
+          "proposition",
+          "entity_state",
+          "emotion_state",
+          "cause_effect",
+          "contrast",
+          "decision",
+          "motif",
+          "dialogue_act",
+          "narrative_pressure_shift"
+        ],
+        "edge_types": [
+          "restates",
+          "extends",
+          "contrasts",
+          "explains",
+          "causes",
+          "intensifies",
+          "recalls",
+          "mirrors",
+          "resolves"
+        ]
+      },
+      "scoring_fields": [
+        "idea_nodes_created",
+        "idea_edges_created",
+        "graph_growth_rate",
+        "restate_edges",
+        "extend_edges",
+        "contrast_edges",
+        "cause_edges",
+        "motif_recall_edges",
+        "dialogue_correction_edges",
+        "progression_credit",
+        "rhetorical_recurrence_credit",
+        "collapse_penalty",
+        "local_cluster_density",
+        "redundancy_score",
+        "redundancy_class",
+        "memory_cluster_hits",
+        "distance_weighted_recurrence_score",
+        "motif_candidates_detected",
+        "motif_registry_matches",
+        "motif_transformation_score",
+        "dialogue_callback_matches",
+        "dialogue_callback_legitimacy_score",
+        "cluster_overuse_score",
+        "role_transition_score",
+        "global_redundancy_risk",
+        "local_redundancy_risk",
+        "recurrence_mode"
+      ],
+      "redundancy_classes": [
+        "clean_progression",
+        "legitimate_recurrence",
+        "refrain_like",
+        "motif_recall",
+        "dialogue_callback",
+        "semantic_spin",
+        "collapse"
+      ],
+      "interpretation_rules": {
+        "local_progression": "local reuse is supported by new propositions, fresh causal or contrastive relations, and healthy novelty deltas",
+        "local_refrain": "repeated local phrasing is accepted when emotional or pressure-state transitions show meaningful transformation",
+        "global_motif_return": "motif registry matches recur at distance with non-trivial transformation and low collapse risk",
+        "dialogue_callback": "callback links connect earlier and later turns with corrective, ironic, or escalating pragmatic shift",
+        "theme_reinforcement": "same thematic cluster returns with role progression, causal expansion, or state change rather than restatement alone",
+        "semantic_spin": "cluster reuse is high, graph growth is weak, and transformation is marginal but not fully absent",
+        "collapse": "cluster overuse is high, local and global redundancy risk converge, and role transition plus novelty deltas remain weak"
+      },
+      "memory_tracking": {
+        "idea_cluster_fields": [
+          "idea_cluster_id",
+          "first_seen_segment",
+          "last_seen_segment",
+          "recurrence_count",
+          "relation_history",
+          "novelty_deltas",
+          "collapse_risk"
+        ],
+        "motif_registry_fields": [
+          "motif_id",
+          "surface_forms",
+          "semantic_field",
+          "recurrence_count",
+          "distance_since_last",
+          "transformation_score",
+          "motif_status"
+        ],
+        "dialogue_callback_fields": [
+          "callback_id",
+          "speaker_a",
+          "speaker_b",
+          "callback_type",
+          "source_turn",
+          "callback_turn",
+          "semantic_distance",
+          "pragmatic_shift"
+        ]
+      },
+      "recurrence_modes": [
+        "local_progression",
+        "local_refrain",
+        "global_motif_return",
+        "dialogue_callback",
+        "theme_reinforcement",
+        "semantic_spin",
+        "collapse"
+      ]
+    },
+    {
+      "validator_id": "continuity_consistency_checker",
+      "validator_family": "continuity_state_and_contradiction_validator_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "continuity_state_library",
+        "failure_mode_library"
+      ],
+      "pass": "continuity_pass",
+      "status": "active_rule_based_v1",
+      "input_requirements": [
+        "draft_text",
+        "input_bundle.scene_context",
+        "resolved_libraries",
+        "named_entity_mentions"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_state_check",
+        "formula": "state_alignment_score with critical deductions for contradictions against scene_context",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_categorical",
+      "dimension": "continuity",
+      "linked_rules": [
+        "RULE_CONTINUITY_CONTRADICTION_CAP",
+        "RULE_ENTITY_INVARIANT_ENFORCED",
+        "RULE_CANON_NO_IMPLICIT_OVERRIDE"
+      ],
+      "linked_failure_modes": [
+        "continuity_memory_failure",
+        "long_form_coherence_failure"
+      ],
+      "threshold_key": "continuity_consistency_checker"
+    },
+    {
+      "validator_id": "dialogue_realism_checker",
+      "validator_family": "dialogue_realism_validator_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "dialogue_behavior_library",
+        "voice_library"
+      ],
+      "pass": "dialogue_integrity_pass",
+      "status": "active_rule_based_v1",
+      "input_requirements": [
+        "draft_text",
+        "dialogue_lines",
+        "speaker_count",
+        "overlap_markers",
+        "dialogue_length_distribution"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_dialogue_metric",
+        "formula": "base dialogue presence + speaker variation + subtext/irregularity bonus - exposition penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric",
+      "dimension": "dialogue_integrity",
+      "linked_rules": [
+        "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+        "RULE_DIALOGUE_ACT_DIVERSITY_MIN"
+      ],
+      "linked_failure_modes": [
+        "dialogue_realism_collapse",
+        "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses"
+      ],
+      "threshold_key": "dialogue_realism_checker"
+    },
+    {
+      "validator_id": "human_style_preference_validator",
+      "validator_family": "human_likeness_discriminator_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "voice_library",
+        "abstraction_control_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v1",
+      "input_requirements": [
+        "draft_text",
+        "paragraph_count",
+        "bullet_ratio",
+        "context_depth_signals",
+        "emotional_energy_signals"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_style_preference_metric",
+        "formula": "paragraph flow bonus + context depth bonus + emotional energy bonus - bullet ratio penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric",
+      "dimension": "human_likeness",
+      "linked_rules": [
+        "RULE_PROSE_CONCRETENESS_MIN",
+        "RULE_STYLE_DISTANCE_MAX"
+      ],
+      "linked_failure_modes": [
+        "prose_naturalness_collapse",
+        "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions"
+      ],
+      "threshold_key": "human_style_preference_validator"
+    },
+    {
+      "validator_id": "character_arc_consistency_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v4",
+      "input_requirements": [
+        "draft_text",
+        "scene_blocks",
+        "turning_point_candidates",
+        "behavior_shift_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_obligation_metric",
+        "formula": "base arc integrity - turning point stagnation penalties - high importance arc obligation penalties",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "narrative_intelligence",
+      "linked_rules": [
+        "RULE_CHARACTER_ARC_CONTINUITY_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "character_arc_discontinuity_failure"
+      ],
+      "threshold_key": "character_arc_consistency_validator"
+    },
+    {
+      "validator_id": "thread_persistence_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v4",
+      "input_requirements": [
+        "draft_text",
+        "scene_blocks",
+        "thread_registry",
+        "resolution_state_candidates"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_obligation_metric",
+        "formula": "base persistence - unresolved high importance thread penalties - dropout penalties",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "narrative_intelligence",
+      "linked_rules": [
+        "RULE_THREAD_PERSISTENCE_MIN"
+      ],
+      "linked_failure_modes": [
+        "thread_dropout_failure"
+      ],
+      "threshold_key": "thread_persistence_validator"
+    },
+    {
+      "validator_id": "setup_payoff_integrity_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v4",
+      "input_requirements": [
+        "draft_text",
+        "scene_blocks",
+        "setup_registry",
+        "payoff_candidates"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_obligation_metric",
+        "formula": "base payoff integrity - unmet setup penalties - unsupported payoff penalties weighted by obligation strength",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "narrative_intelligence",
+      "linked_rules": [
+        "RULE_SETUP_PAYOFF_LINK_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "unpaid_setup_failure",
+        "unsupported_payoff_failure"
+      ],
+      "threshold_key": "setup_payoff_integrity_validator"
+    },
+    {
+      "validator_id": "theme_evolution_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v4",
+      "input_requirements": [
+        "draft_text",
+        "scene_blocks",
+        "motif_registry",
+        "theme_shift_candidates"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_obligation_metric",
+        "formula": "base theme evolution - motif without transformation penalties - unsupported thematic recurrence penalties",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "narrative_intelligence",
+      "linked_rules": [
+        "RULE_THEME_EVOLUTION_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "theme_stagnation_failure"
+      ],
+      "threshold_key": "theme_evolution_validator"
+    },
+    {
+      "validator_id": "pressure_curve_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "primary_library": "narrative_pressure_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v4",
+      "input_requirements": [
+        "draft_text",
+        "scene_blocks",
+        "pressure_shift_markers",
+        "release_or_consequence_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_obligation_metric",
+        "formula": "base pressure curve - pressure flatline penalties - missing consequence penalties",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "narrative_intelligence",
+      "linked_rules": [
+        "RULE_PRESSURE_CURVE_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "pressure_curve_failure"
+      ],
+      "threshold_key": "pressure_curve_validator"
+    },
+    {
+      "validator_id": "scene_consequence_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v4",
+      "input_requirements": [
+        "draft_text",
+        "scene_blocks",
+        "key_event_registry",
+        "state_change_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_obligation_metric",
+        "formula": "base consequence integrity - consequence gap penalties after key events",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "narrative_intelligence",
+      "linked_rules": [
+        "RULE_SCENE_CONSEQUENCE_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "scene_consequence_failure"
+      ],
+      "threshold_key": "scene_consequence_validator"
+    },
+    {
+      "validator_id": "emotional_resonance_validator",
+      "validator_family": "reader_impact_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "voice_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v5",
+      "input_requirements": [
+        "draft_text",
+        "reader_state.emotional_state",
+        "emotional_shift_markers",
+        "scene_consequence_trace"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_reader_state_metric",
+        "formula": "emotional shift coherence + consequence-backed feeling intensity - sentiment flattening penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "reader_impact",
+      "linked_rules": [
+        "RULE_READER_EMOTIONAL_DELTA_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "reader_emotional_flatline_failure"
+      ],
+      "threshold_key": "emotional_resonance_validator"
+    },
+    {
+      "validator_id": "payoff_satisfaction_validator",
+      "validator_family": "reader_impact_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "continuity_state_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v5",
+      "input_requirements": [
+        "draft_text",
+        "reader_state.expectation_state",
+        "setup_payoff_trace",
+        "resolution_type_trace"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_reader_state_metric",
+        "formula": "earned payoff fulfillment + transformed payoff legitimacy - hollow resolution penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "reader_impact",
+      "linked_rules": [
+        "RULE_PAYOFF_SATISFACTION_MIN"
+      ],
+      "linked_failure_modes": [
+        "reader_payoff_hollowness_failure"
+      ],
+      "threshold_key": "payoff_satisfaction_validator"
+    },
+    {
+      "validator_id": "surprise_calibration_validator",
+      "validator_family": "reader_impact_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v5",
+      "input_requirements": [
+        "draft_text",
+        "reader_state.expectation_state",
+        "twist_markers",
+        "foreshadowing_trace"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_reader_state_metric",
+        "formula": "surprise novelty with retrospective fit - predictability penalty - arbitrariness penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "reader_impact",
+      "linked_rules": [
+        "RULE_SURPRISE_CALIBRATION_RANGE"
+      ],
+      "linked_failure_modes": [
+        "surprise_miscalibration_failure"
+      ],
+      "threshold_key": "surprise_calibration_validator"
+    },
+    {
+      "validator_id": "tension_absorption_validator",
+      "validator_family": "reader_impact_intelligence_stack",
+      "primary_library": "narrative_pressure_library",
+      "secondary_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v5",
+      "input_requirements": [
+        "draft_text",
+        "reader_state.tension_state",
+        "pressure_curve_trace",
+        "release_trace"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_reader_state_metric",
+        "formula": "sustained tension uptake + coherent release integration - fatigue penalty - numbness penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "reader_impact",
+      "linked_rules": [
+        "RULE_TENSION_ABSORPTION_MIN"
+      ],
+      "linked_failure_modes": [
+        "reader_tension_leakage_failure"
+      ],
+      "threshold_key": "tension_absorption_validator"
+    },
+    {
+      "validator_id": "memorability_validator",
+      "validator_family": "reader_impact_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "voice_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v5",
+      "input_requirements": [
+        "draft_text",
+        "reader_state.curiosity_state",
+        "motif_trace",
+        "image_recall_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_reader_state_metric",
+        "formula": "distinctive image retention + motif stickiness + callback salience - generic residue penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "reader_impact",
+      "linked_rules": [
+        "RULE_MEMORABILITY_MIN"
+      ],
+      "linked_failure_modes": [
+        "reader_memory_evaporation_failure"
+      ],
+      "threshold_key": "memorability_validator"
+    },
+    {
+      "validator_id": "cognitive_load_validator",
+      "validator_family": "reader_impact_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "abstraction_control_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v5",
+      "input_requirements": [
+        "draft_text",
+        "reader_state.understanding_state",
+        "referent_density_trace",
+        "concept_stack_trace"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_reader_state_metric",
+        "formula": "comprehension stability + manageable concept layering - overload penalty - disorientation penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "reader_impact",
+      "linked_rules": [
+        "RULE_COGNITIVE_LOAD_RANGE"
+      ],
+      "linked_failure_modes": [
+        "reader_cognitive_overload_failure"
+      ],
+      "threshold_key": "cognitive_load_validator"
+    },
+    {
+      "validator_id": "high_arousal_emotion_validator",
+      "validator_family": "viral_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "voice_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v6",
+      "depends_on_dimensions": [
+        "reader_impact"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "reader_state.emotional_state",
+        "emotional_resonance_score",
+        "arousal_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_viral_metric",
+        "formula": "high-arousal emotional charge with retained clarity minus flattening and numbness penalties",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "viral_intelligence",
+      "linked_rules": [
+        "RULE_HIGH_AROUSAL_MIN"
+      ],
+      "linked_failure_modes": [
+        "viral_arousal_flatness_failure"
+      ],
+      "threshold_key": "high_arousal_emotion_validator"
+    },
+    {
+      "validator_id": "hook_strength_validator",
+      "validator_family": "viral_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "benchmark_fixture_library",
+        "voice_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v6",
+      "depends_on_dimensions": [
+        "reader_impact"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "opening_segments",
+        "curiosity_state",
+        "tension_absorption_score"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_viral_metric",
+        "formula": "opening curiosity capture + immediate pressure signal + retention pull - generic opener penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "viral_intelligence",
+      "linked_rules": [
+        "RULE_HOOK_STRENGTH_MIN"
+      ],
+      "linked_failure_modes": [
+        "viral_hook_decay_failure"
+      ],
+      "threshold_key": "hook_strength_validator"
+    },
+    {
+      "validator_id": "identity_resonance_validator",
+      "validator_family": "viral_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "voice_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v6",
+      "depends_on_dimensions": [
+        "reader_impact"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "reader_state.emotional_state",
+        "self_relevance_markers",
+        "social_positioning_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_viral_metric",
+        "formula": "self-recognition and status-signaling potential minus vagueness penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "viral_intelligence",
+      "linked_rules": [
+        "RULE_IDENTITY_RESONANCE_MIN"
+      ],
+      "linked_failure_modes": [
+        "viral_identity_miss_failure"
+      ],
+      "threshold_key": "identity_resonance_validator"
+    },
+    {
+      "validator_id": "shareability_validator",
+      "validator_family": "viral_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "benchmark_fixture_library",
+        "voice_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v6",
+      "depends_on_dimensions": [
+        "reader_impact"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "memorability_score",
+        "identity_resonance_score",
+        "compression_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_viral_metric",
+        "formula": "portable emotional payload + quotable compression + identity relay potential",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "viral_intelligence",
+      "linked_rules": [
+        "RULE_SHAREABILITY_MIN"
+      ],
+      "linked_failure_modes": [
+        "viral_share_dropoff_failure"
+      ],
+      "threshold_key": "shareability_validator"
+    },
+    {
+      "validator_id": "novelty_validator",
+      "validator_family": "viral_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "abstraction_control_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "scaffolded_rule_based_v6",
+      "depends_on_dimensions": [
+        "reader_impact"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "memorability_score",
+        "surprise_score",
+        "cliche_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_viral_metric",
+        "formula": "freshness of framing + non-generic angle + surprise retention minus cliché penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "viral_intelligence",
+      "linked_rules": [
+        "RULE_NOVELTY_MIN"
+      ],
+      "linked_failure_modes": [
+        "viral_novelty_collapse_failure"
+      ],
+      "threshold_key": "novelty_validator"
+    },
+    {
+      "validator_id": "insight_density_validator",
+      "validator_family": "viral_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "abstraction_control_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v6",
+      "depends_on_dimensions": [
+        "reader_impact"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "proposition_density",
+        "abstract_term_hits",
+        "concrete_example_count",
+        "generic_motivation_markers",
+        "articulated_takeaway_count",
+        "claim_density",
+        "experiential_specificity_score",
+        "human_stakes_score",
+        "interpretive_density_score",
+        "memorable_meaning_score"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_viral_value_metric",
+        "formula": "max(explicit_insight_path, implicit_experiential_path) with strict penalties for generic motivation, vague abstraction, and empty virality",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "viral_intelligence",
+      "linked_rules": [
+        "RULE_INSIGHT_DENSITY_MIN"
+      ],
+      "linked_failure_modes": [
+        "generic_motivation_failure",
+        "empty_insight_failure",
+        "shallow_philosophy_failure"
+      ],
+      "threshold_key": "insight_density_validator"
+    },
+    {
+      "validator_id": "viral_integrity_validator",
+      "validator_family": "viral_intelligence_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "pass": "evaluation_gate",
+      "status": "active_rule_based_v6",
+      "depends_on_dimensions": [
+        "reader_impact",
+        "viral_intelligence"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "hook_strength_score",
+        "payoff_satisfaction_score",
+        "identity_resonance_score",
+        "manipulation_markers",
+        "clickbait_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_viral_integrity_metric",
+        "formula": "viral potential grounded in payoff and substance - hook mismatch penalty - emotional manipulation penalty - clickbait penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "viral_intelligence",
+      "linked_rules": [
+        "RULE_VIRAL_INTEGRITY_MIN"
+      ],
+      "linked_failure_modes": [
+        "hook_content_mismatch_failure",
+        "emotional_manipulation_without_payoff_failure",
+        "identity_bait_without_substance_failure",
+        "clickbait_pattern_failure"
+      ],
+      "threshold_key": "viral_integrity_validator"
+    },
+    {
+      "validator_id": "platform_fit_validator",
+      "validator_family": "platform_distribution_context_stack",
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "benchmark_fixture_library",
+        "voice_library"
+      ],
+      "pass": "contextual_output",
+      "contextual_only": true,
+      "status": "active_rule_based_v6_3",
+      "depends_on_dimensions": [
+        "reader_impact",
+        "viral_intelligence"
+      ],
+      "input_requirements": [
+        "draft_text",
+        "existing_validator_outputs",
+        "platform_score_bundle",
+        "tone_markers",
+        "structure_markers",
+        "audience_markers"
+      ],
+      "scoring_logic": {
+        "type": "deterministic_platform_fit_metric",
+        "formula": "platform fit coherence - tone mismatch penalty - structure mismatch penalty - audience mismatch penalty",
+        "score_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "output_type": "numeric_and_structured",
+      "dimension": "platform_context",
+      "linked_rules": [
+        "RULE_PLATFORM_CONTEXT_ONLY"
+      ],
+      "linked_failure_modes": [
+        "platform_tone_mismatch_context_signal",
+        "platform_structure_mismatch_context_signal",
+        "platform_audience_mismatch_context_signal"
+      ],
+      "threshold_key": "platform_fit_validator"
+    }
+  ],
+  "dimension_to_validators": {
+    "continuity": [
+      "continuity_consistency_checker"
+    ],
+    "cadence": [
+      "cadence_variance_checker"
+    ],
+    "human_texture": [
+      "abstraction_ratio_checker",
+      "semantic_redundancy_detector"
+    ],
+    "dialogue_integrity": [
+      "dialogue_realism_checker"
+    ],
+    "human_likeness": [
+      "human_likeness_discriminator",
+      "human_style_preference_validator"
+    ],
+    "narrative_intelligence": [
+      "character_arc_consistency_validator",
+      "thread_persistence_validator",
+      "setup_payoff_integrity_validator",
+      "theme_evolution_validator",
+      "pressure_curve_validator",
+      "scene_consequence_validator"
+    ],
+    "reader_impact": [
+      "emotional_resonance_validator",
+      "payoff_satisfaction_validator",
+      "surprise_calibration_validator",
+      "tension_absorption_validator",
+      "memorability_validator",
+      "cognitive_load_validator"
+    ],
+    "viral_intelligence": [
+        "high_arousal_emotion_validator",
+        "hook_strength_validator",
+        "identity_resonance_validator",
+        "shareability_validator",
+        "novelty_validator",
+        "insight_density_validator",
+        "viral_integrity_validator"
+      ],
+    "platform_context": [
+        "platform_fit_validator"
+      ]
+    }
+}

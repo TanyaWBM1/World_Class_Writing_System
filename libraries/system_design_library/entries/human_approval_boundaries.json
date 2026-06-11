@@ -1,0 +1,35 @@
+{
+  "id": "human_approval_boundaries",
+  "name": "Human Approval Boundaries",
+  "description": "Propose a governance rule set for human approval boundaries.",
+  "source_proposals": [
+    "GP-001"
+  ],
+  "related_rules": [
+    "AI-generated reflections or rule proposals may never directly modify production rules.",
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions."
+  ],
+  "related_validators": [
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+  ],
+  "related_failure_modes": [
+    "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly."
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library",
+    "schema:governance_artifacts"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "governance_scope": [
+    "human approval",
+    "promotion gates",
+    "regression protection"
+  ]
+}

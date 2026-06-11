@@ -1,0 +1,27 @@
+{
+  "manifest_id": "final_acceptance_manifest_v3_v6_stable_001",
+  "checkpoint_id": "v3_v6_stable_001",
+  "purpose": "Freeze acceptance expectations for the stable v3-v6.3 engine state prior to 7 Pillars integration.",
+  "acceptance_suite_path": "system_checkpoints/v3_v6_stable_001/acceptance_suite",
+  "acceptance_cases": [
+    "acceptance_broken_structure.json",
+    "acceptance_valid_subversion.json",
+    "acceptance_flat_but_correct.json",
+    "acceptance_high_integrity_viral.json",
+    "acceptance_generic_viral_looking.json",
+    "acceptance_cross_platform.json"
+  ],
+  "snapshotted_artifacts": {
+    "validator_registry": "system_checkpoints/v3_v6_stable_001/runtime/validation/validator_registry.json",
+    "evaluation_thresholds": "system_checkpoints/v3_v6_stable_001/runtime/validation/evaluation_thresholds.json",
+    "evaluation_reports": "system_checkpoints/v3_v6_stable_001/evaluation/reports",
+    "benchmark_fixture_library": "system_checkpoints/v3_v6_stable_001/libraries/benchmark_fixture_library",
+    "generation_layer": "system_checkpoints/v3_v6_stable_001/runtime/generation",
+    "platform_layer_snapshot": "system_checkpoints/v3_v6_stable_001/runtime/validation/platform_layer_snapshot.md"
+  },
+  "stability_constraints": [
+    "runtime logic is frozen at checkpoint time",
+    "no new validators are introduced by this acceptance pack",
+    "7 Pillars integration must treat this checkpoint as pre-pillar stable baseline"
+  ]
+}

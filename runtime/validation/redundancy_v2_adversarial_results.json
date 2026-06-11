@@ -1,0 +1,161 @@
+{
+  "suite_id": "redundancy_v2_adversarial_suite",
+  "validator_id": "semantic_redundancy_detector",
+  "fixtures_run": 7,
+  "results": [
+    {
+      "fixture_id": "redundancy_v2_refrain_001",
+      "title": "Refrain Under Escalating Stakes",
+      "expected_redundancy_class": "refrain_like",
+      "actual_redundancy_class": "unclassified_by_current_runtime",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_gating_outcome": "accepted_with_warnings",
+      "validator_score": 0.76,
+      "validator_status": "warn",
+      "evidence": {
+        "duplicate_sentence_count": 0,
+        "repeated_phrase_indicator_count": 1,
+        "semantic_overlap_pairs": 0,
+        "repeated_ideas": 3,
+        "semantic_frame_repetition": 0,
+        "modal_repetition": 0,
+        "collapse_penalty": 0.0,
+        "refrain_relief": 0.0,
+        "cadence_relief_factor": 0.0
+      },
+      "notes": "Repeated phrase appears four times, but each recurrence intensifies emotional pressure and changes local narrative function."
+    },
+    {
+      "fixture_id": "redundancy_v2_motif_001",
+      "title": "Motif Return Across Distance",
+      "expected_redundancy_class": "motif_recall",
+      "actual_redundancy_class": "unclassified_by_current_runtime",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_gating_outcome": "accepted",
+      "validator_score": 0.86,
+      "validator_status": "pass",
+      "evidence": {
+        "duplicate_sentence_count": 0,
+        "repeated_phrase_indicator_count": 1,
+        "semantic_overlap_pairs": 0,
+        "repeated_ideas": 1,
+        "semantic_frame_repetition": 0,
+        "modal_repetition": 0,
+        "collapse_penalty": 0.0,
+        "refrain_relief": 0.0,
+        "cadence_relief_factor": 0.0
+      },
+      "notes": "The recurring object is intentional thematic recall rather than proposition collapse; the graph should create a motif node, not a restatement loop."
+    },
+    {
+      "fixture_id": "redundancy_v2_dialogue_001",
+      "title": "Dialogue Callback With Correction",
+      "expected_redundancy_class": "dialogue_callback",
+      "actual_redundancy_class": "unclassified_by_current_runtime",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_gating_outcome": "accepted",
+      "validator_score": 0.91,
+      "validator_status": "pass",
+      "evidence": {
+        "duplicate_sentence_count": 0,
+        "repeated_phrase_indicator_count": 1,
+        "semantic_overlap_pairs": 0,
+        "repeated_ideas": 0,
+        "semantic_frame_repetition": 0,
+        "modal_repetition": 0,
+        "collapse_penalty": 0.0,
+        "refrain_relief": 0.0,
+        "cadence_relief_factor": 0.0
+      },
+      "notes": "A callback repeats the original proposition only long enough to negate and replace it."
+    },
+    {
+      "fixture_id": "redundancy_v2_argument_001",
+      "title": "Argument Deepening Through Consequence",
+      "expected_redundancy_class": "clean_progression",
+      "actual_redundancy_class": "unclassified_by_current_runtime",
+      "expected_gating_outcome": "accepted",
+      "actual_gating_outcome": "accepted_with_warnings",
+      "validator_score": 0.7,
+      "validator_status": "warn",
+      "evidence": {
+        "duplicate_sentence_count": 0,
+        "repeated_phrase_indicator_count": 1,
+        "semantic_overlap_pairs": 0,
+        "repeated_ideas": 3,
+        "semantic_frame_repetition": 0,
+        "modal_repetition": 2,
+        "collapse_penalty": 0.0,
+        "refrain_relief": 0.0,
+        "cadence_relief_factor": 0.0
+      },
+      "notes": "Surface continuity is high, but the causal graph should grow at each step."
+    },
+    {
+      "fixture_id": "redundancy_v2_spin_001",
+      "title": "Semantic Spin Without Advancement",
+      "expected_redundancy_class": "semantic_spin",
+      "actual_redundancy_class": "unclassified_by_current_runtime",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_gating_outcome": "accepted_with_warnings",
+      "validator_score": 0.78,
+      "validator_status": "warn",
+      "evidence": {
+        "duplicate_sentence_count": 0,
+        "repeated_phrase_indicator_count": 1,
+        "semantic_overlap_pairs": 0,
+        "repeated_ideas": 2,
+        "semantic_frame_repetition": 0,
+        "modal_repetition": 1,
+        "collapse_penalty": 0.0,
+        "refrain_relief": 0.0,
+        "cadence_relief_factor": 0.0
+      },
+      "notes": "The language mutates slightly while the idea graph should remain almost flat."
+    },
+    {
+      "fixture_id": "redundancy_v2_collapse_001",
+      "title": "Lexically Diverse Collapse",
+      "expected_redundancy_class": "collapse",
+      "actual_redundancy_class": "unclassified_by_current_runtime",
+      "expected_gating_outcome": "rejected",
+      "actual_gating_outcome": "accepted_with_warnings",
+      "validator_score": 0.75,
+      "validator_status": "warn",
+      "evidence": {
+        "duplicate_sentence_count": 0,
+        "repeated_phrase_indicator_count": 1,
+        "semantic_overlap_pairs": 0,
+        "repeated_ideas": 0,
+        "semantic_frame_repetition": 1,
+        "modal_repetition": 3,
+        "collapse_penalty": 0.0,
+        "refrain_relief": 0.0,
+        "cadence_relief_factor": 0.0
+      },
+      "notes": "Phrase overlap is low, so overlap counting alone may under-detect the collapse."
+    },
+    {
+      "fixture_id": "redundancy_v2_emotion_001",
+      "title": "Emotional Circling at the Border",
+      "expected_redundancy_class": "legitimate_recurrence",
+      "actual_redundancy_class": "unclassified_by_current_runtime",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_gating_outcome": "accepted",
+      "validator_score": 0.91,
+      "validator_status": "pass",
+      "evidence": {
+        "duplicate_sentence_count": 0,
+        "repeated_phrase_indicator_count": 1,
+        "semantic_overlap_pairs": 0,
+        "repeated_ideas": 0,
+        "semantic_frame_repetition": 0,
+        "modal_repetition": 0,
+        "collapse_penalty": 0.0,
+        "refrain_relief": 0.0,
+        "cadence_relief_factor": 0.0
+      },
+      "notes": "Borderline case between emotional deepening and redundant circling; intended to stress class boundaries rather than raw score only."
+    }
+  ]
+}

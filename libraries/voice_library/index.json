@@ -1,0 +1,56 @@
+{
+  "library_id": "voice_library",
+  "generated_at": "2026-03-21T19:18:34.318628+00:00",
+  "entry_count": 3,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "idiosyncrasy_and_register_assets",
+      "name": "Idiosyncrasy And Register Assets",
+      "status": "proposed",
+      "priority": "medium",
+      "confidence": 0.75,
+      "source_proposals": [
+        "LP-IDIOSYNCRASY-AND-REGISTER-ASSETS"
+      ]
+    },
+    {
+      "id": "style_fingerprint_and_anchor_assets",
+      "name": "Style Fingerprint And Anchor Assets",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.92,
+      "source_proposals": [
+        "LP-STYLE-FINGERPRINT-AND-ANCHOR-ASSETS"
+      ]
+    },
+    {
+      "id": "voice_preservation_assets",
+      "name": "Voice Preservation Assets",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.87,
+      "source_proposals": [
+        "LP-VOICE-PRESERVATION-ASSETS"
+      ]
+    }
+  ],
+  "schema_expectations": {},
+  "unresolved_conflicts": [
+    "FM-HT-7",
+    "OP-21",
+    "OP-22",
+    "OP-4",
+    "OP-HT-12",
+    "OP-HT-7",
+    "RU-core_failure_modes_01-003",
+    "RU-core_failure_modes_01-019",
+    "RU-core_failure_modes_01-020",
+    "RU-core_failure_modes_01-021",
+    "RU-core_failure_modes_01-022",
+    "RULE-6",
+    "RULE-HT-13",
+    "RULE-HT-7"
+  ]
+}

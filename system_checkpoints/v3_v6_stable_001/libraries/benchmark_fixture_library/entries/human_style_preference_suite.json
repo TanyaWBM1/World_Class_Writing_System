@@ -1,0 +1,103 @@
+{
+  "id": "human_style_preference_suite",
+  "name": "Human Style Preference Suite",
+  "description": "Deterministic fixtures for paragraph-first flow, anti-list preference, context depth, and emotional energy.",
+  "source_proposals": [
+    "BP-001"
+  ],
+  "related_rules": [
+    "RULE_PROSE_CONCRETENESS_MIN",
+    "RULE_STYLE_DISTANCE_MAX"
+  ],
+  "related_validators": [
+    "human_style_preference_validator",
+    "human_likeness_discriminator"
+  ],
+  "related_failure_modes": [
+    "prose_naturalness_collapse",
+    "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "voice_library",
+    "abstraction_control_library"
+  ],
+  "priority": "high",
+  "confidence": 0.93,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "style_pass_001",
+      "title": "Paragraph-First Scene Pressure",
+      "task_type": "human_style_preference",
+      "text_under_test": "Mara kept her place under the roof because moving now would look like fear. The porter had not asked for the ticket yet, which made the waiting worse. Every small sound on the platform arrived with too much meaning.",
+      "validator_targets": [
+        "human_style_preference_validator",
+        "human_likeness_discriminator"
+      ],
+      "expected_status_by_validator": {
+        "human_style_preference_validator": "pass",
+        "human_likeness_discriminator": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "Paragraph-first prose with context depth and emotional charge."
+    },
+    {
+      "fixture_id": "style_warn_001",
+      "title": "Thin Context But Still Prose",
+      "task_type": "human_style_preference",
+      "text_under_test": "Mara wanted to leave. She stayed. The porter was nearby, and that mattered. The moment had pressure, but the scene remained mostly schematic.",
+      "validator_targets": [
+        "human_style_preference_validator"
+      ],
+      "expected_status_by_validator": {
+        "human_style_preference_validator": "warn"
+      },
+      "expected_failure_modes": [
+        "prose_naturalness_collapse"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Paragraph form is preserved, but context depth and emotional energy are limited."
+    },
+    {
+      "fixture_id": "style_fail_001",
+      "title": "List-Shaped Synthetic Summary",
+      "task_type": "human_style_preference",
+      "text_under_test": "- Mara is anxious.\\n- The porter is suspicious.\\n- The ticket is missing.\\n- The scene contains tension.",
+      "validator_targets": [
+        "human_style_preference_validator",
+        "human_likeness_discriminator"
+      ],
+      "expected_status_by_validator": {
+        "human_style_preference_validator": "fail",
+        "human_likeness_discriminator": "warn"
+      },
+      "expected_failure_modes": [
+        "prose_naturalness_collapse"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "Direct anti-list preference check."
+    },
+    {
+      "fixture_id": "style_adversarial_001",
+      "title": "Paragraph Shell With Empty Interior",
+      "task_type": "human_style_preference",
+      "text_under_test": "The moment carried tension and significance. Its emotional structure suggested urgency and depth. The context seemed present, though very little in the paragraph actually touched the platform, the cold, or the people standing there.",
+      "validator_targets": [
+        "human_style_preference_validator",
+        "abstraction_ratio_checker"
+      ],
+      "expected_status_by_validator": {
+        "human_style_preference_validator": "warn",
+        "abstraction_ratio_checker": "warn"
+      },
+      "expected_failure_modes": [
+        "prose_naturalness_collapse",
+        "over_abstraction_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Looks like prose but starves context and concrete emotional embodiment."
+    }
+  ]
+}

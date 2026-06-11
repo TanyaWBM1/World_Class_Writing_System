@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "content_engine_output_bundle_v1",
+  "title": "Approved Output Bundle",
+  "type": "object",
+  "required": [
+    "bundle_id",
+    "batch_id",
+    "approved_item_count",
+    "items",
+    "export_dir",
+    "exported_at"
+  ],
+  "properties": {
+    "bundle_id": { "type": "string", "minLength": 1 },
+    "batch_id": { "type": "string", "minLength": 1 },
+    "approved_item_count": { "type": "integer", "minimum": 0 },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item_id", "topic", "platform", "approval_state", "weighted_score"]
+      }
+    },
+    "export_dir": { "type": "string", "minLength": 1 },
+    "exported_at": { "type": "string", "minLength": 1 }
+  }
+}

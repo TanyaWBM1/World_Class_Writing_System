@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvaluationReport",
+  "type": "object",
+  "description": "Placeholder schema for future evaluation reports.",
+  "properties": {
+    "report_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "scores": { "type": "object" },
+    "findings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["report_id", "run_id"]
+}

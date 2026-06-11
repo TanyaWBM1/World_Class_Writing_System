@@ -1,0 +1,54 @@
+{
+  "contract_id": "reader_state_contract_v5",
+  "purpose": "Define the simulated reader-state container consumed by the scaffolded v5 reader-impact validators.",
+  "reader_state": {
+    "emotional_state": {
+      "baseline": "neutral",
+      "peak": "string",
+      "trajectory": [
+        {
+          "scene_id": "string",
+          "state": "string",
+          "intensity": 0.0
+        }
+      ]
+    },
+    "expectation_state": {
+      "active_expectations": [
+        {
+          "expectation_id": "string",
+          "source_scene": "string",
+          "strength": 0.0,
+          "expected_resolution_type": "direct|transformed|open"
+        }
+      ],
+      "confirmed_expectations": [],
+      "subverted_expectations": []
+    },
+    "tension_state": {
+      "entry_level": 0.0,
+      "peak_level": 0.0,
+      "release_quality": "clean|partial|withheld|misaligned",
+      "turning_points": []
+    },
+    "curiosity_state": {
+      "open_questions": [],
+      "retained_questions": [],
+      "resolved_questions": []
+    },
+    "understanding_state": {
+      "clarity_level": 0.0,
+      "confusion_spikes": [],
+      "recovery_points": [],
+      "concept_density": 0.0
+    }
+  },
+  "derived_scores": [
+    "emotional_resonance_score",
+    "payoff_satisfaction_score",
+    "surprise_score",
+    "tension_absorption_score",
+    "memorability_score",
+    "cognitive_load_score"
+  ]
+}

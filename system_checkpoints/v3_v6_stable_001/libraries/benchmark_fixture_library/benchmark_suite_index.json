@@ -1,0 +1,92 @@
+{
+  "index_id": "benchmark_suite_index_v1",
+  "generated_for": "initial_validator_stress_layer",
+  "suite_count": 7,
+  "total_fixture_count": 28,
+  "suites": [
+    {
+      "suite_id": "cadence_stress_suite",
+      "fixture_count": 4,
+      "validator_targets": [
+        "cadence_variance_checker",
+        "semantic_redundancy_detector"
+      ],
+      "dimensions": [
+        "cadence"
+      ]
+    },
+    {
+      "suite_id": "semantic_redundancy_suite",
+      "fixture_count": 4,
+      "validator_targets": [
+        "semantic_redundancy_detector",
+        "human_likeness_discriminator"
+      ],
+      "dimensions": [
+        "human_texture",
+        "human_likeness"
+      ]
+    },
+    {
+      "suite_id": "abstraction_density_suite",
+      "fixture_count": 4,
+      "validator_targets": [
+        "abstraction_ratio_checker",
+        "human_likeness_discriminator"
+      ],
+      "dimensions": [
+        "human_texture",
+        "human_likeness"
+      ]
+    },
+    {
+      "suite_id": "continuity_consistency_suite",
+      "fixture_count": 4,
+      "validator_targets": [
+        "continuity_consistency_checker",
+        "human_likeness_discriminator"
+      ],
+      "dimensions": [
+        "continuity"
+      ]
+    },
+    {
+      "suite_id": "dialogue_realism_suite",
+      "fixture_count": 4,
+      "validator_targets": [
+        "dialogue_realism_checker",
+        "human_likeness_discriminator"
+      ],
+      "dimensions": [
+        "dialogue_integrity",
+        "human_likeness"
+      ]
+    },
+    {
+      "suite_id": "human_style_preference_suite",
+      "fixture_count": 4,
+      "validator_targets": [
+        "human_style_preference_validator",
+        "human_likeness_discriminator",
+        "abstraction_ratio_checker"
+      ],
+      "dimensions": [
+        "human_likeness",
+        "human_texture"
+      ]
+    },
+    {
+      "suite_id": "v6_3_platform_suite",
+      "fixture_count": 4,
+      "validator_targets": [
+        "platform_fit_validator",
+        "insight_density_validator",
+        "viral_integrity_validator"
+      ],
+      "dimensions": [
+        "platform_context",
+        "viral_intelligence"
+      ]
+    }
+  ]
+}

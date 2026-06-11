@@ -1,0 +1,80 @@
+{
+  "library_id": "continuity_state_library",
+  "generated_at": "2026-03-21T19:18:34.241193+00:00",
+  "entry_count": 3,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "document_and_structure_state",
+      "name": "Document And Structure State",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.93,
+      "source_proposals": [
+        "LP-DOCUMENT-AND-STRUCTURE-STATE"
+      ]
+    },
+    {
+      "id": "entity_and_canon_state",
+      "name": "Entity And Canon State",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-ENTITY-AND-CANON-STATE"
+      ]
+    },
+    {
+      "id": "narrative_goal_and_thread_state",
+      "name": "Narrative Goal And Thread State",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-NARRATIVE-GOAL-AND-THREAD-STATE"
+      ]
+    }
+  ],
+  "schema_expectations": {
+    "evaluation_outputs": [
+      "metric family",
+      "scoring config version",
+      "judge config",
+      "evidence spans",
+      "calibration refs",
+      "stability metadata"
+    ],
+    "enforcement_reports": [
+      "rule id",
+      "threshold snapshot",
+      "violation spans",
+      "affected dimensions",
+      "recommended action"
+    ],
+    "narrative_state_tracking": [
+      "entity registry",
+      "thread registry",
+      "canon invariants",
+      "promise registry",
+      "state diffs",
+      "scene goals",
+      "pressure state"
+    ]
+  },
+  "unresolved_conflicts": [
+    "FM-14",
+    "OP-10",
+    "OP-17",
+    "OP-27",
+    "OP-8",
+    "RU-core_failure_modes_01-007",
+    "RU-core_failure_modes_01-008",
+    "RU-core_failure_modes_01-009",
+    "RU-core_failure_modes_01-017",
+    "RULE-7",
+    "TC-10",
+    "TC-5",
+    "TC-6"
+  ]
+}

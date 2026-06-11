@@ -1,0 +1,44 @@
+{
+  "id": "dialogue_realism_validator_stack",
+  "name": "Dialogue Realism Validator Stack",
+  "description": "Propose a validation concept stack for dialogue realism validator stack.",
+  "source_proposals": [
+    "VP-002"
+  ],
+  "related_rules": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN"
+  ],
+  "related_validators": [
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PragmaticsCoverageValidator",
+    "SpeakerDivergenceValidator"
+  ],
+  "related_failure_modes": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "dialogue_realism_collapse"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.9,
+  "status": "approved",
+  "aliases": [
+    "dialogue_act_tracker",
+    "dialogue_realism_collapse",
+    "dialogue_realism_disc",
+    "human_dialogue_realism_rubric_v1",
+    "speaker_state_embedding"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

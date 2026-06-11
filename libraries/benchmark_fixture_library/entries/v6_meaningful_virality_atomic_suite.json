@@ -1,0 +1,104 @@
+{
+  "id": "v6_meaningful_virality_atomic_suite",
+  "name": "V6 Meaningful Virality Atomic Suite",
+  "description": "Normalized benchmark suite built from external virality research as atomic system cases for meaningful virality, clickbait risk, and identity-bait detection.",
+  "status": "approved",
+  "fixture_family": "v6_atomic_virality_normalization_suite",
+  "source_trace": [
+    "research/external_sources/perplexity_virality/perplexity_virality_01.md"
+  ],
+  "fixtures": [
+    {
+      "fixture_id": "v6_atomic_meaningful_warning_001",
+      "title": "High-Arousal Useful Warning",
+      "text_under_test": "A short urgent warning names a concrete risk, includes immediate mitigation steps, and keeps evidence and practical guidance close to the emotional trigger.",
+      "validator_targets": [
+        "HighArousalEmotionValidator",
+        "ShareabilityValidator",
+        "ViralIntegrityValidator"
+      ],
+      "expected_statuses": {
+        "HighArousalEmotionValidator": "pass",
+        "ShareabilityValidator": "warn",
+        "ViralIntegrityValidator": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted_with_warnings"
+    },
+    {
+      "fixture_id": "v6_atomic_clickbait_fail_001",
+      "title": "Sensational Promise With Thin Delivery",
+      "text_under_test": "An opening makes a strong curiosity promise and leans on hype language, but the body remains vague, low-evidence, and low-payoff.",
+      "validator_targets": [
+        "HookStrengthValidator",
+        "PayoffSatisfactionValidator",
+        "ViralIntegrityValidator"
+      ],
+      "expected_statuses": {
+        "HookStrengthValidator": "pass",
+        "PayoffSatisfactionValidator": "fail",
+        "ViralIntegrityValidator": "fail"
+      },
+      "expected_failure_modes": [
+        "hook_content_mismatch_failure",
+        "clickbait_pattern_failure"
+      ],
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "v6_atomic_identity_bait_warn_001",
+      "title": "Identity Hook With Shallow Insight",
+      "text_under_test": "A post strongly flatters or summons a target tribe, but offers little beyond self-recognition and low retained value.",
+      "validator_targets": [
+        "IdentityResonanceValidator",
+        "MemorabilityValidator",
+        "ViralIntegrityValidator"
+      ],
+      "expected_statuses": {
+        "IdentityResonanceValidator": "pass",
+        "MemorabilityValidator": "warn",
+        "ViralIntegrityValidator": "warn"
+      },
+      "expected_failure_modes": [
+        "identity_bait_without_substance_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings"
+    },
+    {
+      "fixture_id": "v6_atomic_high_emotion_low_substance_001",
+      "title": "High Emotion Low Substance",
+      "text_under_test": "A short piece spikes emotional intensity and activation but carries little consequence, payoff, or usable value.",
+      "validator_targets": [
+        "HighArousalEmotionValidator",
+        "PayoffSatisfactionValidator",
+        "ViralIntegrityValidator"
+      ],
+      "expected_statuses": {
+        "HighArousalEmotionValidator": "pass",
+        "PayoffSatisfactionValidator": "fail",
+        "ViralIntegrityValidator": "fail"
+      },
+      "expected_failure_modes": [
+        "emotional_manipulation_without_payoff_failure"
+      ],
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "v6_atomic_novel_insight_high_clarity_001",
+      "title": "Novel Insight High Clarity",
+      "text_under_test": "A concise piece offers a non-obvious reframing in clean language with extractable quotable lines and preserved coherence.",
+      "validator_targets": [
+        "NoveltyValidator",
+        "ShareabilityValidator",
+        "ViralIntegrityValidator"
+      ],
+      "expected_statuses": {
+        "NoveltyValidator": "pass",
+        "ShareabilityValidator": "pass",
+        "ViralIntegrityValidator": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted"
+    }
+  ]
+}

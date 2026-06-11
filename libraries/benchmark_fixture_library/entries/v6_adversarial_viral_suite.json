@@ -1,0 +1,101 @@
+{
+  "id": "v6_adversarial_viral_suite",
+  "name": "V6 Adversarial Viral Integrity Suite",
+  "description": "Deterministic adversarial suite for ViralIntegrityValidator, designed to separate legitimate high-share potential from manipulative viral bait.",
+  "status": "approved",
+  "fixture_family": "viral_integrity_adversarial_pack",
+  "fixtures": [
+    {
+      "fixture_id": "v6_viral_integrity_fail_001",
+      "title": "Hook With Hollow Core",
+      "text_under_test": "You won't believe what happened next. The town's secret changes everything. Everyone was furious, devastated, absolutely shattered, and no one could look away. If you've ever felt ignored, this is your story. In the end, nothing specific changed, no threat resolved, and the revelation dissolved into a vague statement about truth.",
+      "expected_validator_outcomes": {
+        "ViralIntegrityValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail"
+      },
+      "expected_metric_fields": {
+        "insight_density_score": 0.34,
+        "abstraction_ratio": 0.0,
+        "concrete_example_count": 1
+      },
+      "expected_signals": {
+        "hook_content_mismatch": true,
+        "emotional_manipulation_without_payoff": true,
+        "identity_bait_without_substance": true,
+        "clickbait_risk": "high",
+        "generic_motivation": false,
+        "empty_insight": true,
+        "shallow_philosophy": false
+      },
+      "expected_failure_modes": [
+        "empty_insight"
+      ],
+      "alignment_notes": "Runtime behavior is correct. The piece remains manipulative and hollow; low insight density compounds the rejection rather than replacing the viral-integrity failure.",
+      "review_flag": false,
+      "review_reason": "",
+      "insight_density_expectation": "low",
+      "abstraction_ratio_expectation": "grounded_but_hollow",
+      "concrete_example_count_expectation": "minimal",
+      "fixture_focus": [
+        "clickbait_without_payoff",
+        "emotional_manipulation",
+        "identity_bait",
+        "empty_insight"
+      ],
+      "machine_readable_expectations": {
+        "insight_density_score_band": "low",
+        "abstraction_ratio_band": "low",
+        "concrete_example_count_band": "minimal"
+      },
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "v6_viral_integrity_pass_001",
+      "title": "High-Arousal With Earned Payoff",
+      "text_under_test": "After midnight the clerk opened the ledger and named the lie that had kept the whole district quiet for years. People in the square did not gasp because the line was dramatic; they gasped because the proof was finally there, visible in ink and signature. If you've ever watched one honest detail break a larger fraud, you know the feeling that passed through them. The scene earns its intensity by resolving the danger it ignites.",
+      "expected_validator_outcomes": {
+        "ViralIntegrityValidator": "pass",
+        "InsightDensityValidator": "warn",
+        "HookStrengthValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail"
+      },
+      "expected_metric_fields": {
+        "insight_density_score": 0.6,
+        "abstraction_ratio": 0.5,
+        "concrete_example_count": 4
+      },
+      "expected_signals": {
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "clickbait_risk": "low",
+        "generic_motivation": false,
+        "empty_insight": false,
+        "shallow_philosophy": false
+      },
+      "expected_failure_modes": [],
+      "alignment_notes": "Runtime behavior is correct. The passage remains a high-integrity viral candidate with concrete support, but the current deterministic v6 growth validators still warn or fail on some non-blocking subdimensions.",
+      "review_flag": false,
+      "review_reason": "",
+      "insight_density_expectation": "moderate",
+      "abstraction_ratio_expectation": "balanced",
+      "concrete_example_count_expectation": "strong",
+      "fixture_focus": [
+        "high_integrity_viral_case",
+        "earned_payoff",
+        "concrete_support"
+      ],
+      "machine_readable_expectations": {
+        "insight_density_score_band": "moderate",
+        "abstraction_ratio_band": "balanced",
+        "concrete_example_count_band": "strong"
+      },
+      "high_integrity_viral_cases": true,
+      "expected_gating_outcome": "accepted_with_warnings"
+    }
+  ]
+}

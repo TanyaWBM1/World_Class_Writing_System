@@ -1,0 +1,22 @@
+{
+  "manifest_id": "content_engine_publish_manifest_v1",
+  "exports": [
+    {
+      "bundle_id": "approved_bundle_20260321_214608",
+      "batch_id": "content_engine_batch_20260321_214608",
+      "approved_item_count": 1,
+      "items": [
+        {
+          "item_id": "why_discipline_is_not_the_problem_base_01",
+          "topic": "Why discipline is not the problem",
+          "platform": "none",
+          "approval_state": "approved",
+          "weighted_score": 0.608
+        }
+      ],
+      "export_dir": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\exports\\approved_bundle_20260321_214608",
+      "exported_at": "2026-03-21T21:46:08.932832"
+    }
+  ],
+  "last_updated": "2026-03-21T21:46:08.937010"
+}

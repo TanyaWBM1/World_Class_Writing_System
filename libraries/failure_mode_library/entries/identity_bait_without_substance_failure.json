@@ -1,0 +1,38 @@
+{
+  "id": "identity_bait_without_substance_failure",
+  "name": "identity_bait_without_substance_failure",
+  "description": "Normalized failure mode for content that targets group identity or self-recognition cues without enough insight, utility, or retained meaning.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_IDENTITY_RESONANCE_MIN",
+    "RULE_MEMORABILITY_MIN",
+    "RULE_VIRAL_INTEGRITY_MIN"
+  ],
+  "related_validators": [
+    "IdentityResonanceValidator",
+    "MemorabilityValidator",
+    "ViralIntegrityValidator"
+  ],
+  "related_failure_modes": [
+    "identity_bait_without_substance_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.8,
+  "status": "approved",
+  "aliases": [
+    "empty_identity_signal",
+    "tribal_bait_without_depth"
+  ],
+  "related_benchmarks": [
+    "v6_meaningful_virality_atomic_suite"
+  ],
+  "related_enforcement_concepts": [
+    "viral_integrity_gate"
+  ]
+}

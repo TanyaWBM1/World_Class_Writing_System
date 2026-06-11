@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunArtifact",
+  "type": "object",
+  "description": "Placeholder schema for generated run artifacts.",
+  "properties": {
+    "run_id": { "type": "string" },
+    "input_ref": { "type": "string" },
+    "draft_text": { "type": "string" },
+    "library_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "created_at": { "type": "string" }
+  },
+  "required": ["run_id"]
+}

@@ -1,0 +1,48 @@
+{
+  "library_id": "genre_library",
+  "generated_at": "2026-03-21T19:18:34.331049+00:00",
+  "entry_count": 3,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "genre_conformity_and_structure_suite",
+      "name": "Genre Conformity And Structure Suite",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.96,
+      "source_proposals": [
+        "BP-005"
+      ]
+    },
+    {
+      "id": "genre_schema_and_beat_assets",
+      "name": "Genre Schema And Beat Assets",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-GENRE-SCHEMA-AND-BEAT-ASSETS"
+      ]
+    },
+    {
+      "id": "genre_structure_and_signature_coverage",
+      "name": "Genre Structure And Signature Coverage",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.96,
+      "source_proposals": [
+        "EP-007"
+      ]
+    }
+  ],
+  "schema_expectations": {},
+  "unresolved_conflicts": [
+    "FM-12",
+    "OP-23",
+    "OP-24",
+    "RU-core_failure_modes_01-023",
+    "RU-core_failure_modes_01-024",
+    "RU-core_failure_modes_01-027"
+  ]
+}

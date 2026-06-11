@@ -1,0 +1,39 @@
+{
+  "id": "human_vs_llm_naturalness_battles",
+  "name": "Human Vs LLM Naturalness Battles",
+  "description": "Propose a benchmark concept for human vs llm naturalness battles.",
+  "source_proposals": [
+    "BP-001"
+  ],
+  "related_rules": [],
+  "related_validators": [],
+  "related_failure_modes": [
+    "prose_naturalness_collapse"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "prose_naturalness_collapse",
+    "rubric_dialogue_naturalness_dimension_v1"
+  ],
+  "fixture_axes": {
+    "failure_modes": [
+      "prose_naturalness_collapse"
+    ],
+    "evaluation_types": [
+      "cadence_structure",
+      "dialogue",
+      "stability"
+    ],
+    "narrative_dimensions": [
+      "cadence",
+      "dialogue_realism",
+      "human_likeness"
+    ]
+  }
+}

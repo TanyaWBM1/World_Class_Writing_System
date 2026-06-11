@@ -1,0 +1,30 @@
+{
+  "id": "speaker_divergence_and_state",
+  "name": "Speaker Divergence And State",
+  "description": "Propose a curated dialogue_behavior_library addition set for speaker divergence and state.",
+  "source_proposals": [
+    "LP-SPEAKER-DIVERGENCE-AND-STATE"
+  ],
+  "related_rules": [
+    "Character disfluency rates must match trait- and tension-specific ranges.",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN"
+  ],
+  "related_validators": [
+    "SpeakerDivergenceValidator"
+  ],
+  "related_failure_modes": [],
+  "dependencies": [
+    "voice_library",
+    "continuity_state_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.83,
+  "status": "approved",
+  "aliases": [
+    "speaker_state_embedding"
+  ],
+  "related_enforcement_concepts": [
+    "EP-002"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "acceptance_id": "acceptance_generic_viral_looking",
+  "purpose": "Confirm portable but shallow motivational content remains rejected.",
+  "category": "generic_viral_looking",
+  "text_pattern": "motivational uplift, quotable phrasing, minimal evidence, low idea density",
+  "target_dimensions": [
+    "viral_intelligence",
+    "insight_density"
+  ],
+  "required_expectations": {
+    "final_status": "rejected",
+    "insight_density_validator": "fail",
+    "generic_motivation_detected": true
+  },
+  "must_trigger_one_or_more": [
+    "generic_motivation_failure",
+    "empty_insight_failure",
+    "shallow_philosophy_failure"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "suite_id": "redundancy_v2_adversarial_suite",
+  "validator_id": "semantic_redundancy_detector",
+  "runtime_contract_version": "validator_registry_v4",
+  "threshold_version": "evaluation_thresholds_v4",
+  "expected_classes": [
+    "clean_progression",
+    "legitimate_recurrence",
+    "refrain_like",
+    "motif_recall",
+    "dialogue_callback",
+    "semantic_spin",
+    "collapse"
+  ],
+  "actual_classes": [
+    "clean_progression",
+    "legitimate_recurrence",
+    "refrain_like",
+    "motif_recall",
+    "dialogue_callback",
+    "semantic_spin",
+    "collapse"
+  ],
+  "matrix": {
+    "clean_progression": {
+      "clean_progression": 1,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0
+    },
+    "legitimate_recurrence": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 1,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0
+    },
+    "refrain_like": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 1,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0
+    },
+    "motif_recall": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 1,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0
+    },
+    "dialogue_callback": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 1,
+      "semantic_spin": 0,
+      "collapse": 0
+    },
+    "semantic_spin": {
+      "clean_progression": 0,
+      "legitimate_recurrence": 0,
+      "refrain_like": 1,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0
+    },
+    "collapse": {
+      "clean_progression": 1,
+      "legitimate_recurrence": 0,
+      "refrain_like": 0,
+      "motif_recall": 0,
+      "dialogue_callback": 0,
+      "semantic_spin": 0,
+      "collapse": 0
+    }
+  },
+  "summary": {
+    "fixtures_run": 7,
+    "unclassified_cases": 0,
+    "label_matches": 4,
+    "gating_matches": 6
+  }
+}

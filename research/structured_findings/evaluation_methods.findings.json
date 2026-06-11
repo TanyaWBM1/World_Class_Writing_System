@@ -1,0 +1,1938 @@
+{
+  "generated_at": "2026-03-21T19:05:21.955429+00:00",
+  "source_file": "evaluation_methods_01.md",
+  "record_count": 101,
+  "records": [
+    {
+      "id": "RULE-1",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+      "normalized_name": "all_core_evaluation_paths_must_be_deterministic_for_fixed_inputs_and_configuration_in_the_deterministic_writing_architecture",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-2",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+      "normalized_name": "human_like_quality_must_be_operationalized_via_multi_dimensional_rubrics_including_coherence_continuity_dialogue_realism_style_consistency_and_human_likeness_discrimination",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-3",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Every validator MUST have documented thresholds and associated failure modes in failure_mode_library.",
+      "normalized_name": "every_validator_must_have_documented_thresholds_and_associated_failure_modes_in_failure_mode_library",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-4",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+      "normalized_name": "prompt_sensitivity_and_cross_run_stability_must_be_measured_explicitly_for_all_judge_and_scoring_subsystems",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-5",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes.",
+      "normalized_name": "template_echo_detection_must_run_on_any_output_produced_under_few_shot_or_example_based_prompting_regimes",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-6",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step.",
+      "normalized_name": "voice_preservation_and_style_drift_metrics_must_be_applied_before_and_after_any_automated_editing_or_post_processing_step",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-7",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+      "normalized_name": "benchmarks_must_include_long_form_narrative_and_multi_turn_dialogue_fixtures_with_seeded_continuity_and_memory_challenges",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-8",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+      "normalized_name": "all_evaluation_components_must_map_to_entries_in_evaluation_library_benchmark_fixture_library_failure_mode_library_voice_library_and_cadence_library",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-1",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+      "normalized_name": "configure_evaluators_llm_judges_discriminators_metrics_to_run_with_greedy_decoding_and_fixed_seeds_to_ensure_deterministic_behavior",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-2",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+      "normalized_name": "for_any_change_to_prompts_rubrics_or_fixtures_record_a_new_version_identifier_and_run_prompt_sensitivity_and_stability_checks",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-3",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+      "normalized_name": "periodically_re_calibrate_automated_evaluators_against_human_rubric_benchmarks_for_both_narrative_and_dialogue",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-4",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+      "normalized_name": "monitor_style_consistency_dashboards_to_detect_unexpected_voice_drift_across_releases",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-5",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+      "normalized_name": "apply_template_echo_detector_to_sample_batches_for_each_major_prompt_or_fine_tune_version_adjusting_thresholds_using_benchmark_fixtures",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-6",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+      "normalized_name": "for_editing_pipelines_measure_voice_preservation_and_semantic_fidelity_before_enabling_new_editors_in_production",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-7",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Maintain and periodically expand benchmark_fixture_library with newly observed real-world failure examples.",
+      "normalized_name": "maintain_and_periodically_expand_benchmark_fixture_library_with_newly_observed_real_world_failure_examples",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-8",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+      "normalized_name": "use_regression_tests_to_block_deployments_where_stability_improves_but_agreement_with_human_or_reference_metrics_degrades",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-1",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+      "normalized_name": "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-2",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+      "normalized_name": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-3",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+      "normalized_name": "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-4",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+      "normalized_name": "state_tracking_continuity_checker_cascades_extraction_errors_and_reports_false_contradictions",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-5",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+      "normalized_name": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-6",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+      "normalized_name": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "voice_library",
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-7",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Template echo detector misclassifies genre-typical structures as template copies.",
+      "normalized_name": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-8",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+      "normalized_name": "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-9",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+      "normalized_name": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-10",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+      "normalized_name": "editing_pipelines_slowly_erode_voice_through_cumulative_small_changes_that_evade_single_step_checks",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-1",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Human vs AI discrimination \u2013 evaluate mixed corpus using discriminator_human_like_v1 and llm_judge_human_like_pairwise_v2; assert AUC and Elo within target ranges.",
+      "normalized_name": "human_vs_ai_discrimination_evaluate_mixed_corpus_using_discriminator_human_like_v1_and_llm_judge_human_like_pairwise_v2_assert_auc_and_elo_within_target_ranges",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-2",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Narrative coherence \u2013 run multi_constraint_story_benchmark_v1 with story_state_consistency_checker_v1; verify constraint satisfaction and low contradiction rate.",
+      "normalized_name": "narrative_coherence_run_multi_constraint_story_benchmark_v1_with_story_state_consistency_checker_v1_verify_constraint_satisfaction_and_low_contradiction_rate",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-3",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Dialogue realism \u2013 evaluate multi_turn_reference_dialogue_set_v1 with dialogue_automatic_metric_suite_v2 and human_dialogue_realism_rubric_v1 alignment checks.",
+      "normalized_name": "dialogue_realism_evaluate_multi_turn_reference_dialogue_set_v1_with_dialogue_automatic_metric_suite_v2_and_human_dialogue_realism_rubric_v1_alignment_checks",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-4",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Style consistency \u2013 compute style_consistency_metric_v2 over voice_locked_story_suite_v1 across chapters; assert drift within predefined thresholds.",
+      "normalized_name": "style_consistency_compute_style_consistency_metric_v2_over_voice_locked_story_suite_v1_across_chapters_assert_drift_within_predefined_thresholds",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-5",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Voice preservation after editing \u2013 measure voice_preservation_after_edit_v1 and semantic fidelity on edited_pairs_voice_labelled_v1; compare to human labels.",
+      "normalized_name": "voice_preservation_after_editing_measure_voice_preservation_after_edit_v1_and_semantic_fidelity_on_edited_pairs_voice_labelled_v1_compare_to_human_labels",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "benchmark_fixture_library",
+        "evaluation_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-6",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Template echo \u2013 run template_echo_detector_v1 on template_echo_challenge_set_v1; expect high recall of seeded template echoes with controlled false-positive rate.",
+      "normalized_name": "template_echo_run_template_echo_detector_v1_on_template_echo_challenge_set_v1_expect_high_recall_of_seeded_template_echoes_with_controlled_false_positive_rate",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-7",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Prompt sensitivity \u2013 apply prompt_sensitivity_metric_v2 to prompt_variant_family_suite_v1 for all evaluators; ensure sensitivity scores below ceiling per task.",
+      "normalized_name": "prompt_sensitivity_apply_prompt_sensitivity_metric_v2_to_prompt_variant_family_suite_v1_for_all_evaluators_ensure_sensitivity_scores_below_ceiling_per_task",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-8",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Cross-run stability \u2013 compute cross_run_stability_metric_v1 on stability_reference_corpus_v1 under repeated runs; check both stability and correctness vs references.",
+      "normalized_name": "cross_run_stability_compute_cross_run_stability_metric_v1_on_stability_reference_corpus_v1_under_repeated_runs_check_both_stability_and_correctness_vs_references",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-9",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Memory \u2013 evaluate long_range_memory_benchmark_metric_v1 on multi_distance_memory_suite_v1; derive retention curves and detect interference-related collapses.",
+      "normalized_name": "memory_evaluate_long_range_memory_benchmark_metric_v1_on_multi_distance_memory_suite_v1_derive_retention_curves_and_detect_interference_related_collapses",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-10",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Integrated pipeline \u2013 run full narrative generation, editing, and evaluation chain on mixed benchmark fixtures; ensure no critical validators fail and all scores meet release criteria.",
+      "normalized_name": "integrated_pipeline_run_full_narrative_generation_editing_and_evaluation_chain_on_mixed_benchmark_fixtures_ensure_no_critical_validators_fail_and_all_scores_meet_release_criteria",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-001",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "discriminator_human_like_v1",
+      "normalized_name": "discriminator_human_like_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-002",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "llm_judge_human_like_pairwise_v2",
+      "normalized_name": "llm_judge_human_like_pairwise_v2",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-003",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "human_rubric_longform_v1",
+      "normalized_name": "human_rubric_longform_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-004",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "llm_rubric_scorer_v2",
+      "normalized_name": "llm_rubric_scorer_v2",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-005",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "narrative_coherence_metric_v2",
+      "normalized_name": "narrative_coherence_metric_v2",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-006",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "story_state_consistency_checker_v1",
+      "normalized_name": "story_state_consistency_checker_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-007",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "human_dialogue_realism_rubric_v1",
+      "normalized_name": "human_dialogue_realism_rubric_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-008",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "dialogue_automatic_metric_suite_v2",
+      "normalized_name": "dialogue_automatic_metric_suite_v2",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-009",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_consistency_metric_v2",
+      "normalized_name": "style_consistency_metric_v2",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-010",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "voice_preservation_after_edit_v1",
+      "normalized_name": "voice_preservation_after_edit_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-011",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "template_echo_detector_v1",
+      "normalized_name": "template_echo_detector_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-012",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "prompt_sensitivity_metric_v2",
+      "normalized_name": "prompt_sensitivity_metric_v2",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [
+        "LIB-core_failure_modes_01-failure_mode_library-013"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-013",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "cross_run_stability_metric_v1",
+      "normalized_name": "cross_run_stability_metric_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-evaluation_library-014",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "long_range_memory_benchmark_metric_v1",
+      "normalized_name": "long_range_memory_benchmark_metric_v1",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-001",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "mixed_human_ai_corpus_v1",
+      "normalized_name": "mixed_human_ai_corpus_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-002",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "pairwise_human_reference_pool_v1",
+      "normalized_name": "pairwise_human_reference_pool_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-003",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "human_rated_story_dialogue_set_v1",
+      "normalized_name": "human_rated_story_dialogue_set_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-004",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "rubric_story_dialogue_suite_v1",
+      "normalized_name": "rubric_story_dialogue_suite_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-005",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "multi_constraint_story_benchmark_v1",
+      "normalized_name": "multi_constraint_story_benchmark_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-006",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "seeded_continuity_error_corpus_v1",
+      "normalized_name": "seeded_continuity_error_corpus_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-007",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "live_conversation_sessions_v1",
+      "normalized_name": "live_conversation_sessions_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-008",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "multi_turn_reference_dialogue_set_v1",
+      "normalized_name": "multi_turn_reference_dialogue_set_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-009",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "voice_locked_story_suite_v1",
+      "normalized_name": "voice_locked_story_suite_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-010",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "edited_pairs_voice_labelled_v1",
+      "normalized_name": "edited_pairs_voice_labelled_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-011",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "template_echo_challenge_set_v1",
+      "normalized_name": "template_echo_challenge_set_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-012",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "prompt_variant_family_suite_v1",
+      "normalized_name": "prompt_variant_family_suite_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-013",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "stability_reference_corpus_v1",
+      "normalized_name": "stability_reference_corpus_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-benchmark_fixture_library-014",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "multi_distance_memory_suite_v1",
+      "normalized_name": "multi_distance_memory_suite_v1",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-001",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "detector_overfit_artifact_v1",
+      "normalized_name": "detector_overfit_artifact_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-002",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "llm_judge_prompt_sensitivity_v1",
+      "normalized_name": "llm_judge_prompt_sensitivity_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-003",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "human_label_instability_v1",
+      "normalized_name": "human_label_instability_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-004",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "rubric_prompt_drift_v1",
+      "normalized_name": "rubric_prompt_drift_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-005",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "checklist_story_gaming_v1",
+      "normalized_name": "checklist_story_gaming_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-006",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "extraction_cascade_failure_v1",
+      "normalized_name": "extraction_cascade_failure_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-007",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "semantic_similarity_overweight_v1",
+      "normalized_name": "semantic_similarity_overweight_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-008",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "false_positive_style_shift_v1",
+      "normalized_name": "false_positive_style_shift_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-009",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "genre_trope_false_positive_v1",
+      "normalized_name": "genre_trope_false_positive_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-010",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "stable_but_wrong_pattern_v1",
+      "normalized_name": "stable_but_wrong_pattern_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [
+        "LIB-system_design_patterns_01-failure_mode_library-011"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-011",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "memory_interference_collapse_v1",
+      "normalized_name": "memory_interference_collapse_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-failure_mode_library-012",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "cumulative_voice_erosion_v1",
+      "normalized_name": "cumulative_voice_erosion_v1",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-001",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_signature_features_v1",
+      "normalized_name": "style_signature_features_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-002",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "human_like_style_descriptors_v1",
+      "normalized_name": "human_like_style_descriptors_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-003",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "rubric_voice_fidelity_dimension_v1",
+      "normalized_name": "rubric_voice_fidelity_dimension_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-004",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "character_voice_persistence_features_v1",
+      "normalized_name": "character_voice_persistence_features_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-005",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "persona_adherence_dimension_v1",
+      "normalized_name": "persona_adherence_dimension_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-006",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "dialogue_style_signature_v1",
+      "normalized_name": "dialogue_style_signature_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-007",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "author_style_embedding_space_v1",
+      "normalized_name": "author_style_embedding_space_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-008",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "pre_post_edit_style_encoder_v1",
+      "normalized_name": "pre_post_edit_style_encoder_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-009",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "template_signature_voice_space_v1",
+      "normalized_name": "template_signature_voice_space_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-010",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "prompt_style_invariance_features_v1",
+      "normalized_name": "prompt_style_invariance_features_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-011",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "longitudinal_voice_persistence_v1",
+      "normalized_name": "longitudinal_voice_persistence_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-voice_library-012",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "run_invariant_voice_features_v1",
+      "normalized_name": "run_invariant_voice_features_v1",
+      "description": "Library entry candidate extracted from voice_library.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-001",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "sentence_rhythm_profile_v1",
+      "normalized_name": "sentence_rhythm_profile_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-002",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "dialogue_turn_flow_metrics_v1",
+      "normalized_name": "dialogue_turn_flow_metrics_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-003",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "rubric_dialogue_naturalness_dimension_v1",
+      "normalized_name": "rubric_dialogue_naturalness_dimension_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-004",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "episode_transition_cadence_v1",
+      "normalized_name": "episode_transition_cadence_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-005",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "event_progression_cadence_v1",
+      "normalized_name": "event_progression_cadence_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-006",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "turn_level_context_maintenance_v1",
+      "normalized_name": "turn_level_context_maintenance_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-007",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "turn_repetition_profile_v1",
+      "normalized_name": "turn_repetition_profile_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-008",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "prosodic_cadence_features_v1",
+      "normalized_name": "prosodic_cadence_features_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-009",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "edit_preserved_cadence_delta_v1",
+      "normalized_name": "edit_preserved_cadence_delta_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-010",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "template_rhythm_signature_v1",
+      "normalized_name": "template_rhythm_signature_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-011",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "prompt_phrasing_cadence_invariance_v1",
+      "normalized_name": "prompt_phrasing_cadence_invariance_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-012",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "long_range_cadence_consistency_v1",
+      "normalized_name": "long_range_cadence_consistency_v1",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-evaluation_methods_01-cadence_library-013",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "Which dimension do you want specified first for concrete schema design: validators, benchmarks, or style/voice encoders?",
+      "normalized_name": "which_dimension_do_you_want_specified_first_for_concrete_schema_design_validators_benchmarks_or_style_voice_encoders",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    }
+  ],
+  "library_extract_groups": {
+    "evaluation_library": [
+      "discriminator_human_like_v1",
+      "llm_judge_human_like_pairwise_v2",
+      "human_rubric_longform_v1",
+      "llm_rubric_scorer_v2",
+      "narrative_coherence_metric_v2",
+      "story_state_consistency_checker_v1",
+      "human_dialogue_realism_rubric_v1",
+      "dialogue_automatic_metric_suite_v2",
+      "style_consistency_metric_v2",
+      "voice_preservation_after_edit_v1",
+      "template_echo_detector_v1",
+      "prompt_sensitivity_metric_v2",
+      "cross_run_stability_metric_v1",
+      "long_range_memory_benchmark_metric_v1"
+    ],
+    "benchmark_fixture_library": [
+      "mixed_human_ai_corpus_v1",
+      "pairwise_human_reference_pool_v1",
+      "human_rated_story_dialogue_set_v1",
+      "rubric_story_dialogue_suite_v1",
+      "multi_constraint_story_benchmark_v1",
+      "seeded_continuity_error_corpus_v1",
+      "live_conversation_sessions_v1",
+      "multi_turn_reference_dialogue_set_v1",
+      "voice_locked_story_suite_v1",
+      "edited_pairs_voice_labelled_v1",
+      "template_echo_challenge_set_v1",
+      "prompt_variant_family_suite_v1",
+      "stability_reference_corpus_v1",
+      "multi_distance_memory_suite_v1"
+    ],
+    "failure_mode_library": [
+      "detector_overfit_artifact_v1",
+      "llm_judge_prompt_sensitivity_v1",
+      "human_label_instability_v1",
+      "rubric_prompt_drift_v1",
+      "checklist_story_gaming_v1",
+      "extraction_cascade_failure_v1",
+      "semantic_similarity_overweight_v1",
+      "false_positive_style_shift_v1",
+      "genre_trope_false_positive_v1",
+      "stable_but_wrong_pattern_v1",
+      "memory_interference_collapse_v1",
+      "cumulative_voice_erosion_v1"
+    ],
+    "voice_library": [
+      "style_signature_features_v1",
+      "human_like_style_descriptors_v1",
+      "rubric_voice_fidelity_dimension_v1",
+      "character_voice_persistence_features_v1",
+      "persona_adherence_dimension_v1",
+      "dialogue_style_signature_v1",
+      "author_style_embedding_space_v1",
+      "pre_post_edit_style_encoder_v1",
+      "template_signature_voice_space_v1",
+      "prompt_style_invariance_features_v1",
+      "longitudinal_voice_persistence_v1",
+      "run_invariant_voice_features_v1"
+    ],
+    "cadence_library": [
+      "sentence_rhythm_profile_v1",
+      "dialogue_turn_flow_metrics_v1",
+      "rubric_dialogue_naturalness_dimension_v1",
+      "episode_transition_cadence_v1",
+      "event_progression_cadence_v1",
+      "turn_level_context_maintenance_v1",
+      "turn_repetition_profile_v1",
+      "prosodic_cadence_features_v1",
+      "edit_preserved_cadence_delta_v1",
+      "template_rhythm_signature_v1",
+      "prompt_phrasing_cadence_invariance_v1",
+      "long_range_cadence_consistency_v1",
+      "Which dimension do you want specified first for concrete schema design: validators, benchmarks, or style/voice encoders?"
+    ]
+  },
+  "duplicate_candidates": [
+    {
+      "canonical_name": "prompt sensitivity",
+      "record_ids": [
+        "FM-13",
+        "LIB-core_failure_modes_01-failure_mode_library-013",
+        "LIB-evaluation_methods_01-evaluation_library-012"
+      ],
+      "source_files": [
+        "core_failure_modes_01.md",
+        "evaluation_methods_01.md"
+      ],
+      "labels": [
+        "prompt_sensitivity_failure",
+        "prompt_sensitivity_metric_v2"
+      ]
+    },
+    {
+      "canonical_name": "stable but wrong pattern",
+      "record_ids": [
+        "LIB-evaluation_methods_01-failure_mode_library-010",
+        "LIB-system_design_patterns_01-failure_mode_library-011"
+      ],
+      "source_files": [
+        "evaluation_methods_01.md",
+        "system_design_patterns_01.md"
+      ],
+      "labels": [
+        "stable_but_wrong_pattern",
+        "stable_but_wrong_pattern_v1"
+      ]
+    }
+  ],
+  "overlap_candidates": [
+    {
+      "record_ids": [
+        "RULE-1",
+        "RULE-SD-1"
+      ],
+      "item_type": "ruleset",
+      "names": [
+        "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+        "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration."
+      ],
+      "source_files": [
+        "evaluation_methods_01.md",
+        "system_design_patterns_01.md"
+      ],
+      "similarity": 0.61,
+      "merge_candidate": false
+    }
+  ]
+}

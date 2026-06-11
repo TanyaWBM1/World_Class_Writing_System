@@ -1,0 +1,31 @@
+{
+  "contract_id": "runtime_execution_contract_v1",
+  "phase": "phase_5_runtime_architecture",
+  "purpose": "Define the first runnable evaluation-first execution layer for controlled writing runs.",
+  "inputs": {
+    "run_request": "structured runtime request payload",
+    "library_crosswalk": "libraries/updated_library_crosswalk.json",
+    "library_indexes": "libraries/*_library/index.json",
+    "thresholds": [
+      "runtime/orchestration/evaluation_thresholds.json",
+      "runtime/enforcement/enforcement_thresholds.json"
+    ]
+  },
+  "execution_order_ref": "runtime/orchestration/pass_order_manifest.json",
+  "required_outputs": [
+    "input_bundle.json",
+    "resolved_libraries.json",
+    "draft_output.txt",
+    "evaluation_report.json",
+    "enforcement_report.json",
+    "failure_map.json",
+    "run_summary.json"
+  ],
+  "gating_policy": "evaluation_first_authoritative_enforcement",
+  "non_goals": [
+    "deep prose generation intelligence",
+    "self-improvement loops",
+    "stress harness implementation",
+    "live rule mutation"
+  ]
+}

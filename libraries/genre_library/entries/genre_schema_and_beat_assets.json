@@ -1,0 +1,27 @@
+{
+  "id": "genre_schema_and_beat_assets",
+  "name": "Genre Schema And Beat Assets",
+  "description": "Propose a curated genre_library addition set for genre schema and beat assets.",
+  "source_proposals": [
+    "LP-GENRE-SCHEMA-AND-BEAT-ASSETS"
+  ],
+  "related_rules": [
+    "RULE_GENRE_BEAT_COVERAGE_MIN",
+    "RULE_GENRE_SIGNATURE_FEATURES_MIN"
+  ],
+  "related_validators": [
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator"
+  ],
+  "related_failure_modes": [
+    "genre_flattening_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": []
+}

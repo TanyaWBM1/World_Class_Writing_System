@@ -1,0 +1,40 @@
+{
+  "id": "structure_schema_and_argument_quality_metrics",
+  "name": "Structure Schema And Argument Quality Metrics",
+  "description": "Propose a validation concept stack for structure schema and argument quality metrics.",
+  "source_proposals": [
+    "VP-008"
+  ],
+  "related_rules": [
+    "RULE_CLAIM_SUPPORT_REQUIRED",
+    "RULE_WARRANT_SCORE_MIN"
+  ],
+  "related_validators": [
+    "ClaimEvidenceLinkValidator",
+    "MarkdownFormatValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "related_failure_modes": [
+    "weak_claim_architecture_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "medium",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "argument_graph_store",
+    "argument_quality_metric",
+    "warrant_score_metric",
+    "weak_claim_architecture_failure"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "stability_and_robustness_metrics",
+  "name": "Stability And Robustness Metrics",
+  "description": "Propose a curated evaluation_library addition set for stability and robustness metrics.",
+  "source_proposals": [
+    "LP-STABILITY-AND-ROBUSTNESS-METRICS"
+  ],
+  "related_rules": [
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+    "RULE_TERM_DEFINITION_STABILITY",
+    "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes."
+  ],
+  "related_validators": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "PromptRobustnessValidator",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "related_failure_modes": [
+    "prompt_sensitivity_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [
+    "robustness_metric"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

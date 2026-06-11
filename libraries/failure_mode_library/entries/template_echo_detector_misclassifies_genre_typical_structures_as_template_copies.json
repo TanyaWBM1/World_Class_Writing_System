@@ -1,0 +1,34 @@
+{
+  "id": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+  "name": "Template echo detector misclassifies genre-typical structures as template copies.",
+  "description": "Normalized failure mode asset for Template Echo Detector Misclassifies Genre Typical Structures As Template Copies. derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-CADENCE-AND-STRUCTURE-FAILURES"
+  ],
+  "related_rules": [
+    "RULE_GENERIC_TEMPLATE_CAP",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+  ],
+  "related_validators": [
+    "CadenceDistributionValidator",
+    "SyntaxTemplateRepetitionValidator"
+  ],
+  "related_failure_modes": [
+    "Template echo detector misclassifies genre-typical structures as template copies."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "cadence_flattening_failure"
+  ],
+  "related_benchmarks": [],
+  "related_enforcement_concepts": [
+    "EP-007"
+  ]
+}

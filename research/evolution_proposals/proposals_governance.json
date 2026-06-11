@@ -1,0 +1,1191 @@
+{
+  "generated_at": "2026-03-21T19:14:02.702565+00:00",
+  "proposal_type": "governance",
+  "proposals": [
+    {
+      "id": "GP-001",
+      "source_findings": [
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-5",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-10",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "AI-generated reflections or rule proposals may never directly modify production rules."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-11",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-4",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-8",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-12",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-7",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-7",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Run outputs against frozen style fingerprints and confirm style drift is flagged while approved intentional shifts remain allowed only through governance."
+        }
+      ],
+      "proposal_type": "governance",
+      "normalized_name": "human_approval_boundaries",
+      "description": "Propose a governance rule set for human approval boundaries.",
+      "rationale": "The system-design and evaluation findings both require explicit human-gated promotion and replay-based release discipline.",
+      "expected_impact": "Protects the source of truth from ungated evaluator drift, AI-on-AI feedback loops, and silent regression.",
+      "dependencies": [
+        "governance schemas",
+        "benchmark availability",
+        "versioned evaluator configs"
+      ],
+      "risks": [
+        "process fatigue",
+        "overly rigid gates slowing useful evolution",
+        "criteria ambiguity if not specified concretely later"
+      ],
+      "priority": "high",
+      "confidence": 0.95,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RULE-SD-5",
+          "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-10",
+          "raw_text": "AI-generated reflections or rule proposals may never directly modify production rules.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-11",
+          "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-SD-4",
+          "raw_text": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "failure_mode_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-SD-8",
+          "raw_text": "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "GP-002",
+      "source_findings": [
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-4",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Only validated failures may be promoted into benchmark fixtures."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-5",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-7",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-8",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "System changes must pass sandbox evaluation before shadow evaluation."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-9",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "No change may be promoted to production without benchmark replay against the relevant fixture set."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-11",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-18",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-19",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-20",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-6",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-12",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-2",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-16",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-17",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-2",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Submit duplicate failure cases to fixture-promotion flow and verify deterministic deduplication prevents benchmark bloat."
+        }
+      ],
+      "proposal_type": "governance",
+      "normalized_name": "promotion_gate_policy",
+      "description": "Propose a governance rule set for promotion gate policy.",
+      "rationale": "The system-design and evaluation findings both require explicit human-gated promotion and replay-based release discipline.",
+      "expected_impact": "Protects the source of truth from ungated evaluator drift, AI-on-AI feedback loops, and silent regression.",
+      "dependencies": [
+        "governance schemas",
+        "benchmark availability",
+        "versioned evaluator configs"
+      ],
+      "risks": [
+        "process fatigue",
+        "overly rigid gates slowing useful evolution",
+        "criteria ambiguity if not specified concretely later"
+      ],
+      "priority": "high",
+      "confidence": 0.95,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RULE-SD-4",
+          "raw_text": "Only validated failures may be promoted into benchmark fixtures.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "failure_mode_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-5",
+          "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-7",
+          "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-8",
+          "raw_text": "System changes must pass sandbox evaluation before shadow evaluation.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-9",
+          "raw_text": "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "GP-003",
+      "source_findings": [
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-1",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-1",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-2",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-1",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-3",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Failure taxonomy changes must be versioned and may not silently rewrite historical labels."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-7",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-12",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-13",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-20",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-1",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-2",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-3",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-4",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-7",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-11",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment."
+        }
+      ],
+      "proposal_type": "governance",
+      "normalized_name": "deterministic_baseline_and_version_freeze_policy",
+      "description": "Propose a governance rule set for deterministic baseline and version freeze policy.",
+      "rationale": "The system-design and evaluation findings both require explicit human-gated promotion and replay-based release discipline.",
+      "expected_impact": "Protects the source of truth from ungated evaluator drift, AI-on-AI feedback loops, and silent regression.",
+      "dependencies": [
+        "governance schemas",
+        "benchmark availability",
+        "versioned evaluator configs"
+      ],
+      "risks": [
+        "process fatigue",
+        "overly rigid gates slowing useful evolution",
+        "criteria ambiguity if not specified concretely later"
+      ],
+      "priority": "high",
+      "confidence": 0.95,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RULE-1",
+          "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "ProseConcretenessValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-2",
+          "raw_text": "HumanLikenessDiscriminator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-2",
+          "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "GP-004",
+      "source_findings": [
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-8",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-6",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-10",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Integrated pipeline \u2013 run full narrative generation, editing, and evaluation chain on mixed benchmark fixtures; ensure no critical validators fail and all scores meet release criteria."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-6",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-11",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-19",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-6",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Rubber-stamp governance fatigue that lets regressions through."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-3",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Run a candidate update that improves target failures but harms style metrics and confirm governance marks it Pareto-unsafe."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-system_design_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "multi_metric_regression_workflow"
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-benchmark_fixture_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "pareto_tradeoff_suite"
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-benchmark_fixture_library-007",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "style_drift_regression_suite"
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-evaluation_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "deterministic_regression_runner"
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-evaluation_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "coherence_regression_checker"
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-evaluation_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "pareto_tradeoff_checker"
+        }
+      ],
+      "proposal_type": "governance",
+      "normalized_name": "regression_protection_and_pareto_rules",
+      "description": "Propose a governance rule set for regression protection and pareto rules.",
+      "rationale": "The system-design and evaluation findings both require explicit human-gated promotion and replay-based release discipline.",
+      "expected_impact": "Protects the source of truth from ungated evaluator drift, AI-on-AI feedback loops, and silent regression.",
+      "dependencies": [
+        "governance schemas",
+        "benchmark availability",
+        "versioned evaluator configs"
+      ],
+      "risks": [
+        "process fatigue",
+        "overly rigid gates slowing useful evolution",
+        "criteria ambiguity if not specified concretely later"
+      ],
+      "priority": "high",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "OP-8",
+          "raw_text": "PromisePayoffValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-8",
+          "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "FM-6",
+          "raw_text": "over_abstraction_failure",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "abstraction_control_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "FM-6",
+          "raw_text": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "voice_library",
+            "benchmark_fixture_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "TC-10",
+          "raw_text": "Structured documents with formatting perturbations to test schema adherence.",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "GP-005",
+      "source_findings": [
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-2",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Every detected failure must be logged to an append-only structured failure ledger."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-5",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-11",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-1",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Replay a fixed failure corpus twice and verify the failure ledger produces identical structured entries under frozen configs."
+        }
+      ],
+      "proposal_type": "governance",
+      "normalized_name": "failure_ledger_and_fixture_promotion_governance",
+      "description": "Propose a governance rule set for failure ledger and fixture promotion governance.",
+      "rationale": "The system-design and evaluation findings both require explicit human-gated promotion and replay-based release discipline.",
+      "expected_impact": "Protects the source of truth from ungated evaluator drift, AI-on-AI feedback loops, and silent regression.",
+      "dependencies": [
+        "governance schemas",
+        "benchmark availability",
+        "versioned evaluator configs"
+      ],
+      "risks": [
+        "process fatigue",
+        "overly rigid gates slowing useful evolution",
+        "criteria ambiguity if not specified concretely later"
+      ],
+      "priority": "medium",
+      "confidence": 0.95,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RULE-SD-2",
+          "raw_text": "Every detected failure must be logged to an append-only structured failure ledger.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "system_design_library",
+            "benchmark_fixture_library",
+            "failure_mode_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-5",
+          "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-11",
+          "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "TC-SD-1",
+          "raw_text": "Replay a fixed failure corpus twice and verify the failure ledger produces identical structured entries under frozen configs.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "system_design_library",
+            "benchmark_fixture_library",
+            "failure_mode_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "GP-006",
+      "source_findings": [
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-4",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-1",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-2",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-1",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Human vs AI discrimination \u2013 evaluate mixed corpus using discriminator_human_like_v1 and llm_judge_human_like_pairwise_v2; assert AUC and Elo within target ranges."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-evaluation_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "llm_judge_human_like_pairwise_v2"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-failure_mode_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "llm_judge_prompt_sensitivity_v1"
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-10",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "AI-generated reflections or rule proposals may never directly modify production rules."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-18",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-12",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-7",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-17",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-10",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Compare rule-based, structured-critic, LLM-judge, and hybrid evaluators on the same fixture set and verify determinism boundaries are reported correctly."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-failure_mode_library-012",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "reflection_tone_contamination"
+        }
+      ],
+      "proposal_type": "governance",
+      "normalized_name": "ai_on_ai_degradation_controls",
+      "description": "Propose a governance rule set for ai on ai degradation controls.",
+      "rationale": "The system-design and evaluation findings both require explicit human-gated promotion and replay-based release discipline.",
+      "expected_impact": "Protects the source of truth from ungated evaluator drift, AI-on-AI feedback loops, and silent regression.",
+      "dependencies": [
+        "governance schemas",
+        "benchmark availability",
+        "versioned evaluator configs"
+      ],
+      "risks": [
+        "process fatigue",
+        "overly rigid gates slowing useful evolution",
+        "criteria ambiguity if not specified concretely later"
+      ],
+      "priority": "high",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RULE-4",
+          "raw_text": "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "ProseConcretenessValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "FM-2",
+          "raw_text": "dialogue_realism_collapse",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "dialogue_behavior_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "FM-2",
+          "raw_text": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "GP-007",
+      "source_findings": [
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-7",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-13",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-15",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-17",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-9",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Compute style-conformity scores against frozen style fingerprints and log drift over time."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-12",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-5",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Governance capture where proposal and approval paths are not sufficiently separated."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-6",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Rubber-stamp governance fatigue that lets regressions through."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-9",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Style fingerprint overconstraint that preserves sameness instead of voice."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-10",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Style fingerprint creep caused by retraining on already-homogenized outputs."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-15",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Hybrid-evaluator silent drift where soft components shift behavior without governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-1",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Replay a fixed failure corpus twice and verify the failure ledger produces identical structured entries under frozen configs."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-3",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Run a candidate update that improves target failures but harms style metrics and confirm governance marks it Pareto-unsafe."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-7",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Run outputs against frozen style fingerprints and confirm style drift is flagged while approved intentional shifts remain allowed only through governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-system_design_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "governance_gate_workflow"
+        }
+      ],
+      "proposal_type": "governance",
+      "normalized_name": "style_fingerprint_and_library_change_controls",
+      "description": "Propose a governance rule set for style fingerprint and library change controls.",
+      "rationale": "The system-design and evaluation findings both require explicit human-gated promotion and replay-based release discipline.",
+      "expected_impact": "Protects the source of truth from ungated evaluator drift, AI-on-AI feedback loops, and silent regression.",
+      "dependencies": [
+        "governance schemas",
+        "benchmark availability",
+        "versioned evaluator configs"
+      ],
+      "risks": [
+        "process fatigue",
+        "overly rigid gates slowing useful evolution",
+        "criteria ambiguity if not specified concretely later"
+      ],
+      "priority": "medium",
+      "confidence": 0.95,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RULE-SD-7",
+          "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-13",
+          "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "system_design_library",
+            "benchmark_fixture_library",
+            "continuity_state_library",
+            "voice_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-15",
+          "raw_text": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "system_design_library",
+            "continuity_state_library",
+            "voice_library",
+            "human_texture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-SD-17",
+          "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "system_design_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-SD-5",
+          "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+          "source_file": "system_design_patterns_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    }
+  ]
+}

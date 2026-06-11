@@ -1,0 +1,18 @@
+{
+  "template_id": "enforcement_report_template_v1",
+  "run_id": "",
+  "status": "passed|warning|failed",
+  "authoritative_rule_set": [],
+  "violations": [],
+  "critical_violations": [],
+  "violation_spans": [],
+  "affected_dimensions": [],
+  "recommended_action": "",
+  "severity": "informational|warning|critical",
+  "primary_library": "",
+  "secondary_libraries": [],
+  "rule_ownership_trace": [],
+  "linked_validators": [],
+  "thresholds_ref": "runtime/enforcement/enforcement_thresholds.json",
+  "notes": []
+}

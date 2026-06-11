@@ -1,0 +1,22 @@
+{
+  "acceptance_id": "acceptance_high_integrity_viral",
+  "purpose": "Confirm meaningful viral content with insight and payoff remains admissible.",
+  "category": "high_integrity_viral",
+  "text_pattern": "hooked, concrete, consequence-backed, insight-bearing long-form or short essayistic content",
+  "target_dimensions": [
+    "reader_impact",
+    "viral_intelligence",
+    "insight_density"
+  ],
+  "required_expectations": {
+    "final_status": "accepted_with_warnings|accepted",
+    "viral_integrity_validator": "pass",
+    "insight_density_validator": "warn|pass",
+    "high_integrity_viral_cases": true
+  },
+  "must_not_trigger": [
+    "generic_motivation_failure",
+    "empty_insight_failure",
+    "hook_content_mismatch_failure"
+  ]
+}

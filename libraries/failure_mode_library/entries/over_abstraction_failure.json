@@ -1,0 +1,35 @@
+{
+  "id": "over_abstraction_failure",
+  "name": "over_abstraction_failure",
+  "description": "Normalized failure mode asset for Over Abstraction Failure derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-PROSE-NATURALNESS-AND-ABSTRACTION"
+  ],
+  "related_rules": [
+    "RULE_ABSTRACTION_RATIO_MAX",
+    "RULE_GENERIC_EMOTION_CAP",
+    "RULE_GENERIC_TEMPLATE_CAP"
+  ],
+  "related_validators": [
+    "AbstractionDensityValidator",
+    "GenericEmotionPhraseValidator"
+  ],
+  "related_failure_modes": [
+    "over_abstraction_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "over_abstraction_failure",
+    "prose_naturalness_collapse"
+  ],
+  "related_benchmarks": [],
+  "related_enforcement_concepts": [
+    "EP-001"
+  ]
+}

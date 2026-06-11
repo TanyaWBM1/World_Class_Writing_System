@@ -1,0 +1,115 @@
+{
+  "change_set_id": "evaluation_threshold_calibration_round_1",
+  "changes": [
+    {
+      "validator_id": "human_likeness_discriminator",
+      "changed_fields": {
+        "warn_min": {
+          "before": 0.68,
+          "after": 0.45
+        },
+        "fail_below": {
+          "before": 0.68,
+          "after": 0.45
+        }
+      }
+    },
+    {
+      "validator_id": "cadence_variance_checker",
+      "changed_fields": {
+        "warn_min": {
+          "before": 0.66,
+          "after": 0.34
+        },
+        "fail_below": {
+          "before": 0.66,
+          "after": 0.34
+        }
+      }
+    },
+    {
+      "validator_id": "abstraction_ratio_checker",
+      "changed_fields": {
+        "pass_min": {
+          "before": 0.72,
+          "after": 0.8
+        },
+        "warn_min": {
+          "before": 0.64,
+          "after": 0.55
+        },
+        "fail_below": {
+          "before": 0.64,
+          "after": 0.55
+        }
+      }
+    },
+    {
+      "validator_id": "semantic_redundancy_detector",
+      "changed_fields": {
+        "warn_min": {
+          "before": 0.7,
+          "after": 0.34
+        },
+        "fail_below": {
+          "before": 0.7,
+          "after": 0.34
+        }
+      }
+    },
+    {
+      "validator_id": "continuity_consistency_checker",
+      "changed_fields": {
+        "warn_min": {
+          "before": 0.75,
+          "after": 0.58
+        },
+        "fail_below": {
+          "before": 0.75,
+          "after": 0.58
+        }
+      }
+    },
+    {
+      "validator_id": "dialogue_realism_checker",
+      "changed_fields": {
+        "pass_min": {
+          "before": 0.74,
+          "after": 0.72
+        },
+        "warn_min": {
+          "before": 0.66,
+          "after": 0.5
+        },
+        "fail_below": {
+          "before": 0.66,
+          "after": 0.5
+        }
+      }
+    },
+    {
+      "validator_id": "human_style_preference_validator",
+      "changed_fields": {
+        "pass_min": {
+          "before": 0.74,
+          "after": 0.62
+        },
+        "warn_min": {
+          "before": 0.67,
+          "after": 0.45
+        },
+        "fail_below": {
+          "before": 0.67,
+          "after": 0.45
+        }
+      }
+    }
+  ],
+  "scoring_adjustments": [
+    "dialogue parsing now extracts quoted utterances instead of relying on line breaks",
+    "dialogue realism now rewards true narrative bridge beats and penalizes expository dialogue",
+    "continuity consistency now uses token-level location overlap and contradiction markers",
+    "human style preference now rewards paragraph-form prose without requiring multi-paragraph length",
+    "semantic redundancy now distinguishes refrain-like repetition from silent semantic collapse"
+  ]
+}

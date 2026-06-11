@@ -1,0 +1,27 @@
+{
+  "id": "style_and_voice_anchor_controls",
+  "name": "Style And Voice Anchor Controls",
+  "description": "Propose a curated abstraction_control_library addition set for style and voice anchor controls.",
+  "source_proposals": [
+    "LP-STYLE-AND-VOICE-ANCHOR-CONTROLS"
+  ],
+  "related_rules": [],
+  "related_validators": [],
+  "related_failure_modes": [],
+  "dependencies": [
+    "failure_mode_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.98,
+  "status": "approved",
+  "aliases": [
+    "author_style_profile_store",
+    "voice_anchor_store"
+  ],
+  "related_enforcement_concepts": [
+    "EP-001",
+    "EP-004",
+    "EP-006"
+  ]
+}

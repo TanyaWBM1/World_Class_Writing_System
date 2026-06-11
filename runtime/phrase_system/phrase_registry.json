@@ -1,0 +1,74 @@
+{
+  "registry_id": "phrase_registry_v7_3",
+  "purpose": "Track signature phrases, rhetorical correction frames, metaphor families, and grit phrases so recurrence can be controlled without flattening intentional refrain.",
+  "signature_phrases": [
+    "that is why",
+    "what matters",
+    "people rarely change their minds",
+    "you are going in circles",
+    "that is not confusion"
+  ],
+  "rhetorical_frames": [
+    "thats not x thats y",
+    "what matters is",
+    "that is why",
+    "people change when",
+    "you might be avoiding"
+  ],
+  "grit_phrases": {
+    "low": [
+      "you might be avoiding something here",
+      "it may be easier to see once the facts stop moving"
+    ],
+    "medium": [
+      "you are going in circles",
+      "some part of you already knows why"
+    ],
+    "high": [
+      "that is not confusion",
+      "avoidance dressed up as uncertainty"
+    ],
+    "extreme": [
+      "that is fear pretending to be truth"
+    ]
+  },
+  "metaphor_domains": {
+    "nature": [
+      "weather",
+      "river",
+      "garden",
+      "seed",
+      "shore"
+    ],
+    "home": [
+      "door",
+      "table",
+      "window",
+      "hearth"
+    ],
+    "body": [
+      "breath",
+      "bone",
+      "hand",
+      "spine"
+    ],
+    "faith": [
+      "grace",
+      "prayer",
+      "altar",
+      "mercy"
+    ],
+    "memory": [
+      "lantern",
+      "echo",
+      "trace",
+      "shadow"
+    ],
+    "community": [
+      "choir",
+      "porch",
+      "street",
+      "neighbor"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "profiles_id": "pillar_weighting_profiles_v7",
+  "purpose": "Intent-based weighting profiles for the seven pillars, normalized for runtime use without mutating canonical pillar definitions.",
+  "pillar_definitions": {
+    "SEO": "search_engine_optimization",
+    "GEO": "generative_engine_optimization",
+    "AIO": "ai_overview_optimization",
+    "SDO": "semantic_depth_optimization",
+    "EEO": "experience_and_expertise_optimization",
+    "NLO": "narrative_and_linguistic_optimization",
+    "HEO": "human_ethics_optimization"
+  },
+  "profiles": {
+    "utility": {
+      "weights": {
+        "SEO": 0.18,
+        "GEO": 0.24,
+        "AIO": 0.22,
+        "SDO": 0.14,
+        "EEO": 0.06,
+        "NLO": 0.04,
+        "HEO": 0.12
+      },
+      "rationale": "Machine extractability and answer-first clarity dominate while ethics remains non-optional."
+    },
+    "narrative": {
+      "weights": {
+        "SEO": 0.05,
+        "GEO": 0.06,
+        "AIO": 0.06,
+        "SDO": 0.14,
+        "EEO": 0.16,
+        "NLO": 0.31,
+        "HEO": 0.22
+      },
+      "rationale": "Human resonance, lived expertise, and ethical delivery dominate while machine layers remain present but lighter."
+    },
+    "authority": {
+      "weights": {
+        "SEO": 0.08,
+        "GEO": 0.13,
+        "AIO": 0.12,
+        "SDO": 0.22,
+        "EEO": 0.18,
+        "NLO": 0.1,
+        "HEO": 0.17
+      },
+      "rationale": "Precision, evidence, credibility, and human ethics dominate high-stakes explanatory work."
+    },
+    "hybrid": {
+      "weights": {
+        "SEO": 0.08,
+        "GEO": 0.12,
+        "AIO": 0.11,
+        "SDO": 0.19,
+        "EEO": 0.14,
+        "NLO": 0.18,
+        "HEO": 0.18
+      },
+      "rationale": "Balanced cross-surface profile for outputs that must satisfy both machine and human lanes."
+    }
+  },
+  "dual_lane_profiles": {
+    "machine_lane": [
+      "SEO",
+      "GEO",
+      "AIO",
+      "SDO"
+    ],
+    "human_lane": [
+      "SDO",
+      "EEO",
+      "NLO",
+      "HEO"
+    ]
+  },
+  "override_rules": [
+    "HEO weight never falls below 0.12",
+    "authority mode may not minimize SDO or EEO",
+    "hybrid mode must preserve both machine and human lanes"
+  ]
+}

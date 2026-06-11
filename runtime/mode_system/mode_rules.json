@@ -1,0 +1,26 @@
+{
+  "mode_rules": {
+    "creative_writing": {
+      "acf_enabled": false,
+      "imagination_allowed": true,
+      "symbolic_reasoning_allowed": true,
+      "truth_validation_required": false,
+      "human_texture_allowed": true,
+      "strict_claims_required": false,
+      "enforcement_level": "soft"
+    },
+    "acf_lite": {
+      "acf_enabled": true,
+      "imagination_allowed": false,
+      "symbolic_reasoning_allowed": false,
+      "truth_validation_required": true,
+      "human_texture_allowed": true,
+      "strict_claims_required": true,
+      "enforcement_level": "strict"
+    }
+  },
+  "global_rules": {
+    "mutual_exclusion": true,
+    "allow_mode_blending": false
+  }
+}

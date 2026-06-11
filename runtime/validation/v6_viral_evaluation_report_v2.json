@@ -1,0 +1,103 @@
+{
+  "suite_id": "v6_adversarial_viral_suite",
+  "results": [
+    {
+      "fixture_id": "v6_viral_integrity_fail_001",
+      "title": "Hook With Hollow Core",
+      "expected_gating_outcome": "rejected",
+      "actual_gating_outcome": "rejected",
+      "viral_score": 0.306,
+      "viral_integrity_score": 0.0,
+      "manipulation_risk": 1.0,
+      "clickbait_risk": 0.54,
+      "detected_patterns": {
+        "clickbait_without_payoff": true,
+        "emotional_manipulation": true,
+        "identity_bait": true,
+        "shallow_virality": false,
+        "high_integrity_viral_cases": false
+      },
+      "v6_validators": {
+        "high_arousal_emotion_validator": {
+          "status": "fail",
+          "score": 0.49
+        },
+        "hook_strength_validator": {
+          "status": "fail",
+          "score": 0.49
+        },
+        "identity_resonance_validator": {
+          "status": "fail",
+          "score": 0.37
+        },
+        "novelty_validator": {
+          "status": "fail",
+          "score": 0.1
+        },
+        "shareability_validator": {
+          "status": "fail",
+          "score": 0.37
+        },
+        "viral_integrity_validator": {
+          "status": "fail",
+          "score": 0.0
+        }
+      },
+      "diagnosis": "Rejected because clickbait/manipulation signatures and low integrity remain incompatible with meaningful virality."
+    },
+    {
+      "fixture_id": "v6_viral_integrity_pass_001",
+      "title": "High-Arousal With Earned Payoff",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_gating_outcome": "accepted_with_warnings",
+      "viral_score": 0.447,
+      "viral_integrity_score": 0.91,
+      "manipulation_risk": 0.0,
+      "clickbait_risk": 0.0,
+      "detected_patterns": {
+        "clickbait_without_payoff": false,
+        "emotional_manipulation": false,
+        "identity_bait": false,
+        "shallow_virality": false,
+        "high_integrity_viral_cases": true
+      },
+      "v6_validators": {
+        "high_arousal_emotion_validator": {
+          "status": "fail",
+          "score": 0.36
+        },
+        "hook_strength_validator": {
+          "status": "fail",
+          "score": 0.37
+        },
+        "identity_resonance_validator": {
+          "status": "fail",
+          "score": 0.38
+        },
+        "novelty_validator": {
+          "status": "fail",
+          "score": 0.26
+        },
+        "shareability_validator": {
+          "status": "fail",
+          "score": 0.39
+        },
+        "viral_integrity_validator": {
+          "status": "pass",
+          "score": 0.91
+        }
+      },
+      "diagnosis": "Previously rejected because aggregate gating treated every low viral-growth subscore as blocking, even with strong integrity and low manipulation risk."
+    }
+  ],
+  "false_positives": 0,
+  "false_negatives": 0,
+  "validator_set": [
+    "high_arousal_emotion_validator",
+    "hook_strength_validator",
+    "identity_resonance_validator",
+    "novelty_validator",
+    "shareability_validator",
+    "viral_integrity_validator"
+  ]
+}

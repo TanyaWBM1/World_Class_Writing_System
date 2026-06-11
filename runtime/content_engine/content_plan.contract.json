@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "content_engine_plan_v1",
+  "title": "Content Engine Batch Plan",
+  "type": "object",
+  "required": [
+    "plan_id",
+    "topics",
+    "selected_mode",
+    "selected_grit",
+    "selected_voice_profile",
+    "selected_platforms",
+    "desired_output_count_per_topic",
+    "llm_settings"
+  ],
+  "properties": {
+    "plan_id": { "type": "string", "minLength": 1 },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "selected_mode": {
+      "type": "string",
+      "enum": ["creative_writing", "acf_lite", "narrative", "authority", "utility", "hybrid"]
+    },
+    "selected_grit": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "extreme"]
+    },
+    "selected_voice_profile": {
+      "type": "string",
+      "enum": ["tanya_lawson_v1"]
+    },
+    "selected_platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["linkedin", "twitter", "instagram", "facebook", "youtube", "reddit"]
+      }
+    },
+    "desired_output_count_per_topic": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "llm_settings": {
+      "type": "object",
+      "required": ["model", "temperature", "max_tokens"]
+    }
+  }
+}

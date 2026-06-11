@@ -1,0 +1,53 @@
+{
+  "library_id": "dialogue_behavior_library",
+  "generated_at": "2026-03-21T19:18:34.226396+00:00",
+  "entry_count": 3,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "disfluency_and_subtext",
+      "name": "Disfluency And Subtext",
+      "status": "proposed",
+      "priority": "medium",
+      "confidence": 0.78,
+      "source_proposals": [
+        "LP-DISFLUENCY-AND-SUBTEXT"
+      ]
+    },
+    {
+      "id": "speaker_divergence_and_state",
+      "name": "Speaker Divergence And State",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.83,
+      "source_proposals": [
+        "LP-SPEAKER-DIVERGENCE-AND-STATE"
+      ]
+    },
+    {
+      "id": "turn_taking_and_overlap",
+      "name": "Turn Taking And Overlap",
+      "status": "proposed",
+      "priority": "medium",
+      "confidence": 0.79,
+      "source_proposals": [
+        "LP-TURN-TAKING-AND-OVERLAP"
+      ]
+    }
+  ],
+  "schema_expectations": {},
+  "unresolved_conflicts": [
+    "OP-3",
+    "OP-4",
+    "OP-HT-10",
+    "OP-HT-11",
+    "RU-core_failure_modes_01-003",
+    "RULE-7",
+    "RULE-HT-11",
+    "RULE-HT-12",
+    "TC-2",
+    "TC-3",
+    "TC-HT-11"
+  ]
+}

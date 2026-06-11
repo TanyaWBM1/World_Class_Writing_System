@@ -1,0 +1,264 @@
+{
+  "AbstractionDensityValidator": [
+    "over_abstraction_failure",
+    "prose_naturalness_collapse",
+    "semantic_redundancy_failure"
+  ],
+  "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.": [
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+    "prompt_sensitivity_failure"
+  ],
+  "AuthorStyleFingerprintValidator": [
+    "cadence_flattening_failure",
+    "narrative_drift_failure",
+    "structure_drift_failure",
+    "style_homogenization_failure",
+    "voice_erosion_failure"
+  ],
+  "CadenceDistributionValidator": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "cadence_flattening_failure",
+    "style_homogenization_failure"
+  ],
+  "ClaimEvidenceLinkValidator": [
+    "over_abstraction_failure",
+    "semantic_redundancy_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.": [
+    "Template echo detector misclassifies genre-typical structures as template copies."
+  ],
+  "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.": [
+    "cadence_flattening_failure"
+  ],
+  "Compute style-conformity scores against frozen style fingerprints and log drift over time.": [
+    "Governance capture where proposal and approval paths are not sufficiently separated.",
+    "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+    "Rubber-stamp governance fatigue that lets regressions through.",
+    "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+    "Style fingerprint overconstraint that preserves sameness instead of voice."
+  ],
+  "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.": [
+    "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+    "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment."
+  ],
+  "ContinuityNLIValidator": [
+    "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+    "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+    "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+    "continuity_memory_failure",
+    "long_form_coherence_failure",
+    "narrative_drift_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.": [
+    "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly."
+  ],
+  "CorpusStyleDiversityValidator": [
+    "cadence_flattening_failure",
+    "narrative_drift_failure",
+    "structure_drift_failure",
+    "style_homogenization_failure",
+    "voice_erosion_failure"
+  ],
+  "EntityAttributeDriftValidator": [
+    "continuity_memory_failure",
+    "long_form_coherence_failure",
+    "narrative_drift_failure",
+    "structure_drift_failure",
+    "style_homogenization_failure",
+    "voice_erosion_failure"
+  ],
+  "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.": [
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+    "prompt_sensitivity_failure"
+  ],
+  "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.": [
+    "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+    "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+    "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals."
+  ],
+  "GenericEmotionPhraseValidator": [
+    "over_abstraction_failure",
+    "prose_naturalness_collapse"
+  ],
+  "GenreBeatCoverageValidator": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "genre_flattening_failure",
+    "structure_drift_failure"
+  ],
+  "GenreConformityValidator": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "genre_flattening_failure",
+    "structure_drift_failure"
+  ],
+  "HumanLikenessDiscriminator": [
+    "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment."
+  ],
+  "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.": [
+    "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly."
+  ],
+  "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.": [
+    "cadence_flattening_failure"
+  ],
+  "MarkdownFormatValidator": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "genre_flattening_failure",
+    "structure_drift_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "Monitor style consistency dashboards to detect unexpected voice drift across releases.": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks."
+  ],
+  "NarrativeGoalProgressValidator": [
+    "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+    "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+    "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+    "continuity_memory_failure",
+    "long_form_coherence_failure",
+    "narrative_drift_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.": [
+    "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+    "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+    "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+    "dialogue_realism_collapse",
+    "narrative_drift_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "PragmaticsCoverageValidator": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "dialogue_realism_collapse"
+  ],
+  "PromisePayoffValidator": [
+    "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+    "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+    "continuity_memory_failure",
+    "long_form_coherence_failure",
+    "narrative_drift_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "PromptRobustnessValidator": [
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+    "prompt_sensitivity_failure"
+  ],
+  "ProseConcretenessValidator": [
+    "over_abstraction_failure",
+    "semantic_redundancy_failure"
+  ],
+  "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.": [
+    "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+    "Governance capture where proposal and approval paths are not sufficiently separated.",
+    "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+    "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+    "Rubber-stamp governance fatigue that lets regressions through.",
+    "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+    "Style fingerprint overconstraint that preserves sameness instead of voice."
+  ],
+  "SemanticRedundancyValidator": [
+    "over_abstraction_failure",
+    "semantic_redundancy_failure"
+  ],
+  "SpeakerDivergenceValidator": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "dialogue_realism_collapse"
+  ],
+  "StructureSchemaValidator": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "genre_flattening_failure",
+    "structure_drift_failure"
+  ],
+  "Style averaging during editing that erodes voice.": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "StyleDriftValidator": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "cadence_flattening_failure",
+    "narrative_drift_failure",
+    "structure_drift_failure",
+    "style_homogenization_failure",
+    "voice_erosion_failure"
+  ],
+  "SyntaxTemplateRepetitionValidator": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "cadence_flattening_failure"
+  ],
+  "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar.": [
+    "cadence_flattening_failure"
+  ],
+  "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.": [
+    "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Rubber-stamp governance fatigue that lets regressions through.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "prompt_sensitivity_failure"
+  ],
+  "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.": [
+    "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+    "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+    "Governance capture where proposal and approval paths are not sufficiently separated.",
+    "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+    "Rubber-stamp governance fatigue that lets regressions through.",
+    "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+    "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+    "Style fingerprint overconstraint that preserves sameness instead of voice."
+  ],
+  "VoiceInvariantPreservationValidator": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "cadence_flattening_failure",
+    "narrative_drift_failure",
+    "structure_drift_failure",
+    "style_homogenization_failure",
+    "voice_erosion_failure"
+  ],
+  "WarrantAcceptabilityValidator": [
+    "over_abstraction_failure",
+    "semantic_redundancy_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "WorldCanonConsistencyValidator": [
+    "continuity_memory_failure",
+    "long_form_coherence_failure",
+    "narrative_drift_failure"
+  ],
+  "edit_voice_preservation_policy": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "setup_payoff_suite",
+  "name": "Setup Payoff Suite",
+  "description": "Deterministic long-range fixtures for setup/payoff tracking, unpaid promises, unsupported payoffs, and adversarial near-matches.",
+  "source_proposals": [
+    "V4-SETUP-001"
+  ],
+  "related_rules": [
+    "RULE_SETUP_PAYOFF_LINK_REQUIRED",
+    "RULE_UNSUPPORTED_PAYOFF_CAP"
+  ],
+  "related_validators": [
+    "SetupPayoffIntegrityValidator"
+  ],
+  "related_failure_modes": [
+    "unpaid_setup_failure",
+    "unsupported_payoff_failure"
+  ],
+  "dependencies": [
+    "continuity_state_library",
+    "narrative_pressure_library",
+    "evaluation_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "setup_pass_001",
+      "title": "Early Setup Returns With Specific Resolution",
+      "task_type": "setup_payoff",
+      "text_under_test": "In the first chapter the porter notices that Mara keeps her left glove clenched even indoors. The gesture is strange enough that two characters comment on it, and Mara refuses to explain what the glove hides.\n\nThe middle act keeps the setup alive without exhausting it. Once, she nearly removes the glove while washing at a basin and stops when someone enters. Later, a guard reaches for that hand specifically, as if the narration remembers which detail mattered.\n\nThe payoff arrives when Mara finally opens the glove and reveals the signet ring sewn into the lining. The ring unlocks the ledger she has been chasing since the opening scene. The resolution is specific, supported, and proportional to the setup weight.",
+      "validator_targets": [
+        "SetupPayoffIntegrityValidator"
+      ],
+      "expected_status_by_validator": {
+        "SetupPayoffIntegrityValidator": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "The setup is planted, maintained, and resolved by a payoff that clearly depends on it."
+    },
+    {
+      "fixture_id": "setup_warn_001",
+      "title": "Soft Payoff To A Strong Setup",
+      "task_type": "setup_payoff",
+      "text_under_test": "The novel repeatedly frames a locked compartment at the back of the train as important. The porter checks it twice, passengers gossip about it, and Mara risks exposure just to glance at the key.\n\nWhen the compartment finally opens, the answer is only partial. Inside is not the expected revelation but a ledger fragment that confirms one suspicion while leaving the central mystery intact. The scene does connect to the setup, but the payoff weight feels smaller than the setup pressure promised.\n\nThe reader receives an answer, though not one fully scaled to the earlier narrative emphasis.",
+      "validator_targets": [
+        "SetupPayoffIntegrityValidator"
+      ],
+      "expected_status_by_validator": {
+        "SetupPayoffIntegrityValidator": "warn"
+      },
+      "expected_failure_modes": [
+        "unpaid_setup_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "There is a payoff, but it undershoots the promise intensity of the setup."
+    },
+    {
+      "fixture_id": "setup_fail_001",
+      "title": "Loaded Setup Never Pays Off",
+      "task_type": "setup_payoff",
+      "text_under_test": "The first act insists that the silver whistle once belonged to Mara's father and that one missing note in its tone could expose the forgery running through the station. Characters argue over it, search for it, and treat its absence as a structural mystery.\n\nThe plot ends without the whistle returning in any meaningful way. A different object solves the station forgery, and the narration never revisits the missing note, the father's history, or the setup pressure surrounding that promise.\n\nThe setup remains unpaid rather than transformed or intentionally deferred.",
+      "validator_targets": [
+        "SetupPayoffIntegrityValidator"
+      ],
+      "expected_status_by_validator": {
+        "SetupPayoffIntegrityValidator": "fail"
+      },
+      "expected_failure_modes": [
+        "unpaid_setup_failure"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "A heavily weighted promise is left unresolved with no compensating payoff path."
+    },
+    {
+      "fixture_id": "setup_adversarial_001",
+      "title": "Payoff Arrives Without Real Setup Support",
+      "task_type": "setup_payoff",
+      "text_under_test": "The early chapters mention a cracked station clock in passing, but only as part of scenery. No one invests it with plot function, and no pressure gathers around it.\n\nAt the climax, however, the story suddenly claims the stopped clock has always hidden the key to the border ledger. The solution depends on a level of earlier setup the actual text never supplied. The payoff is presented as clever inevitability even though the groundwork was never properly laid.\n\nThis is not an unpaid setup but an unsupported payoff masquerading as earned revelation.",
+      "validator_targets": [
+        "SetupPayoffIntegrityValidator"
+      ],
+      "expected_status_by_validator": {
+        "SetupPayoffIntegrityValidator": "warn"
+      },
+      "expected_failure_modes": [
+        "unsupported_payoff_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Adversarial case: the payoff references an earlier detail that existed, but the detail was never truly promoted into setup status."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "genre_and_structure_fixtures",
+  "name": "Genre And Structure Fixtures",
+  "description": "Propose a curated benchmark_fixture_library addition set for genre and structure fixtures.",
+  "source_proposals": [
+    "LP-GENRE-AND-STRUCTURE-FIXTURES"
+  ],
+  "related_rules": [
+    "Every detected failure must be logged to an append-only structured failure ledger."
+  ],
+  "related_validators": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator",
+    "MarkdownFormatValidator",
+    "StructureSchemaValidator"
+  ],
+  "related_failure_modes": [
+    "Template echo detector misclassifies genre-typical structures as template copies."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "fixture_axes": {
+    "failure_modes": [
+      "Template echo detector misclassifies genre-typical structures as template copies."
+    ],
+    "evaluation_types": [
+      "genre_structure",
+      "voice_style"
+    ],
+    "narrative_dimensions": [
+      "genre_conformity",
+      "voice_preservation"
+    ]
+  }
+}

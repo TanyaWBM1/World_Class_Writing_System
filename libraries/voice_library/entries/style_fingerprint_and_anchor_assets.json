@@ -1,0 +1,36 @@
+{
+  "id": "style_fingerprint_and_anchor_assets",
+  "name": "Style Fingerprint And Anchor Assets",
+  "description": "Propose a curated voice_library addition set for style fingerprint and anchor assets.",
+  "source_proposals": [
+    "LP-STYLE-FINGERPRINT-AND-ANCHOR-ASSETS"
+  ],
+  "related_rules": [
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_VOICE_DRIFT_CAP"
+  ],
+  "related_validators": [
+    "AuthorStyleFingerprintValidator",
+    "CorpusStyleDiversityValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "related_failure_modes": [
+    "style_homogenization_failure",
+    "voice_erosion_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "continuity_state_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.92,
+  "status": "approved",
+  "aliases": [],
+  "related_enforcement_concepts": [
+    "EP-006"
+  ]
+}

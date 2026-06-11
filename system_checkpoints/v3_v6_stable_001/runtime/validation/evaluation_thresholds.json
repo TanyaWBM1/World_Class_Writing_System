@@ -1,0 +1,320 @@
+{
+  "threshold_set_id": "evaluation_thresholds_v6",
+  "purpose": "Define calibrated pass, warn, and fail bands for the active deterministic evaluation layer, including v4 narrative obligations, v5 reader-impact scaffolding, and the scaffolded v6 viral-intelligence layer.",
+  "validator_thresholds": {
+    "human_likeness_discriminator": {
+      "pass_min": 0.75,
+      "warn_min": 0.45,
+      "fail_below": 0.45
+    },
+    "cadence_variance_checker": {
+      "pass_min": 0.74,
+      "warn_min": 0.34,
+      "fail_below": 0.34
+    },
+    "abstraction_ratio_checker": {
+      "pass_min": 0.8,
+      "warn_min": 0.55,
+      "fail_below": 0.55
+    },
+    "semantic_redundancy_detector": {
+      "pass_min": 0.82,
+      "warn_min": 0.44,
+      "fail_below": 0.44,
+      "graph_growth_rate_min_for_pass": 0.58,
+      "graph_growth_rate_warn_floor": 0.3,
+      "distance_weighted_recurrence_warn": 0.46,
+      "distance_weighted_recurrence_fail": 0.72,
+      "motif_transformation_score_min_for_pass": 0.3,
+      "dialogue_callback_legitimacy_min_for_pass": 0.4,
+      "cluster_overuse_warn": 0.52,
+      "cluster_overuse_fail": 0.68,
+      "role_transition_score_warn_floor": 0.24,
+      "role_transition_score_fail_floor": 0.18,
+      "global_redundancy_risk_warn": 0.5,
+      "global_redundancy_risk_fail": 0.7,
+      "local_redundancy_risk_warn": 0.46,
+      "local_redundancy_risk_fail": 0.68,
+      "allowed_warn_classes": [
+        "legitimate_recurrence",
+        "refrain_like",
+        "motif_recall",
+        "dialogue_callback",
+        "semantic_spin"
+      ],
+      "allowed_recurrence_modes_for_pass": [
+        "local_progression",
+        "global_motif_return",
+        "dialogue_callback",
+        "theme_reinforcement"
+      ],
+      "warn_recurrence_modes": [
+        "local_refrain",
+        "semantic_spin"
+      ],
+      "fail_recurrence_modes": [
+        "collapse"
+      ]
+    },
+    "continuity_consistency_checker": {
+      "pass_min": 0.86,
+      "warn_min": 0.58,
+      "fail_below": 0.58,
+      "critical_failure_cap": 0
+    },
+    "dialogue_realism_checker": {
+      "pass_min": 0.72,
+      "warn_min": 0.5,
+      "fail_below": 0.5
+    },
+    "human_style_preference_validator": {
+      "pass_min": 0.62,
+      "warn_min": 0.45,
+      "fail_below": 0.45
+    },
+    "character_arc_consistency_validator": {
+      "pass_min": 0.8,
+      "warn_min": 0.58,
+      "fail_below": 0.58
+    },
+    "thread_persistence_validator": {
+      "pass_min": 0.82,
+      "warn_min": 0.56,
+      "fail_below": 0.56
+    },
+    "setup_payoff_integrity_validator": {
+      "pass_min": 0.82,
+      "warn_min": 0.58,
+      "fail_below": 0.58
+    },
+    "theme_evolution_validator": {
+      "pass_min": 0.78,
+      "warn_min": 0.56,
+      "fail_below": 0.56
+    },
+    "pressure_curve_validator": {
+      "pass_min": 0.76,
+      "warn_min": 0.54,
+      "fail_below": 0.54
+    },
+    "scene_consequence_validator": {
+      "pass_min": 0.8,
+      "warn_min": 0.56,
+      "fail_below": 0.56
+    },
+    "emotional_resonance_validator": {
+      "pass_min": 0.78,
+      "warn_min": 0.56,
+      "fail_below": 0.56
+    },
+    "payoff_satisfaction_validator": {
+      "pass_min": 0.8,
+      "warn_min": 0.58,
+      "fail_below": 0.58
+    },
+    "surprise_calibration_validator": {
+      "pass_min": 0.74,
+      "warn_min": 0.54,
+      "fail_below": 0.54
+    },
+    "tension_absorption_validator": {
+      "pass_min": 0.76,
+      "warn_min": 0.56,
+      "fail_below": 0.56
+    },
+    "memorability_validator": {
+      "pass_min": 0.74,
+      "warn_min": 0.52,
+      "fail_below": 0.52
+    },
+    "cognitive_load_validator": {
+      "pass_min": 0.76,
+      "warn_min": 0.58,
+      "fail_below": 0.58
+    },
+    "high_arousal_emotion_validator": {
+      "pass_min": 0.76,
+      "warn_min": 0.56,
+      "fail_below": 0.56
+    },
+    "hook_strength_validator": {
+      "pass_min": 0.78,
+      "warn_min": 0.58,
+      "fail_below": 0.58
+    },
+    "identity_resonance_validator": {
+      "pass_min": 0.74,
+      "warn_min": 0.54,
+      "fail_below": 0.54
+    },
+    "shareability_validator": {
+      "pass_min": 0.78,
+      "warn_min": 0.58,
+      "fail_below": 0.58
+    },
+    "novelty_validator": {
+      "pass_min": 0.74,
+      "warn_min": 0.54,
+      "fail_below": 0.54
+    },
+    "insight_density_validator": {
+      "pass_min": 0.72,
+      "warn_min": 0.52,
+      "fail_below": 0.52,
+      "explicit_path_pass_min": 0.64,
+      "implicit_path_pass_min": 0.64,
+      "combined_path_warn_min": 0.48,
+      "generic_motivation_fail_cap": 0.34
+    },
+    "viral_integrity_validator": {
+      "pass_min": 0.76,
+      "warn_min": 0.58,
+      "fail_below": 0.58,
+      "manipulation_risk_warn": 0.42,
+      "manipulation_risk_fail": 0.68,
+      "clickbait_risk_warn": 0.38,
+      "clickbait_risk_fail": 0.62
+    },
+    "platform_fit_validator": {
+      "pass_min": 0.72,
+      "warn_min": 0.48,
+      "fail_below": 0.48
+    }
+  },
+  "dimensions": {
+    "continuity": {
+      "minimum_score": 0.86,
+      "warning_floor": 0.75,
+      "critical_failure_cap": 0,
+      "driving_validators": [
+        "continuity_consistency_checker"
+      ]
+    },
+    "cadence": {
+      "minimum_score": 0.74,
+      "warning_floor": 0.66,
+      "driving_validators": [
+        "cadence_variance_checker"
+      ]
+    },
+    "human_texture": {
+      "minimum_score": 0.73,
+      "warning_floor": 0.66,
+      "driving_validators": [
+        "abstraction_ratio_checker",
+        "semantic_redundancy_detector"
+      ],
+      "aggregation": "mean"
+    },
+    "dialogue_integrity": {
+      "minimum_score": 0.74,
+      "warning_floor": 0.66,
+      "driving_validators": [
+        "dialogue_realism_checker"
+      ]
+    },
+    "human_likeness": {
+      "minimum_score": 0.75,
+      "warning_floor": 0.68,
+      "driving_validators": [
+        "human_likeness_discriminator",
+        "human_style_preference_validator"
+      ],
+      "aggregation": "mean"
+    },
+    "narrative_intelligence": {
+      "minimum_score": 0.78,
+      "warning_floor": 0.58,
+      "driving_validators": [
+        "character_arc_consistency_validator",
+        "thread_persistence_validator",
+        "setup_payoff_integrity_validator",
+        "theme_evolution_validator",
+        "pressure_curve_validator",
+        "scene_consequence_validator"
+      ],
+      "aggregation": "mean"
+    },
+    "reader_impact": {
+      "minimum_score": 0.76,
+      "warning_floor": 0.58,
+      "driving_validators": [
+        "emotional_resonance_validator",
+        "payoff_satisfaction_validator",
+        "surprise_calibration_validator",
+        "tension_absorption_validator",
+        "memorability_validator",
+        "cognitive_load_validator"
+      ],
+      "aggregation": "mean"
+    },
+    "viral_intelligence": {
+      "minimum_score": 0.76,
+      "warning_floor": 0.58,
+      "driving_validators": [
+        "high_arousal_emotion_validator",
+        "hook_strength_validator",
+        "identity_resonance_validator",
+        "shareability_validator",
+        "novelty_validator",
+        "insight_density_validator",
+        "viral_integrity_validator"
+      ],
+      "aggregation": "mean",
+      "dependency": "reader_impact"
+    },
+    "platform_context": {
+      "minimum_score": 0.0,
+      "warning_floor": 0.0,
+      "driving_validators": [
+        "platform_fit_validator"
+      ],
+      "aggregation": "mean",
+      "contextual_only": true
+    }
+  },
+  "narrative_obligation_gate": {
+    "warn_above": 0.4,
+    "fail_at_or_above": 0.7,
+    "fail_on_any_high_importance_obligation": true
+  },
+  "gating_states": {
+    "accepted": {
+      "requires": [
+        "no critical enforcement failures",
+        "every dimension score >= minimum_score",
+        "no validator score below fail_below",
+        "no high-importance narrative obligation violated",
+        "structural_violation_score below narrative obligation fail threshold",
+        "reader_impact dimension >= minimum_score",
+        "viral_intelligence dimension cannot override any v4 narrative failure",
+        "viral_integrity_validator >= pass_min"
+      ]
+    },
+    "accepted_with_warnings": {
+      "requires": [
+        "no critical enforcement failures",
+        "one or more dimension scores below minimum_score but >= warning_floor",
+        "no validator score below fail_below",
+        "no high-importance narrative obligation violated",
+        "structural_violation_score below narrative obligation fail threshold",
+        "reader_impact dimension >= warning_floor",
+        "viral_intelligence dimension cannot override any v4 narrative failure",
+        "viral_integrity_validator >= warn_min"
+      ]
+    },
+    "rejected": {
+      "requires": [
+        "any critical enforcement failure",
+        "or any dimension score < warning_floor",
+        "or any validator score < fail_below",
+        "or structural_violation_score >= narrative obligation fail threshold",
+        "or any high-importance narrative obligation is violated",
+        "viral_intelligence scores never rescue a v4 structural rejection",
+        "or viral_integrity_validator < fail_below",
+        "or manipulation_risk >= manipulation_risk_fail",
+        "or clickbait_risk >= clickbait_risk_fail"
+      ]
+    }
+  }
+}

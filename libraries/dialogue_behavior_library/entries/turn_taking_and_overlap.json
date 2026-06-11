@@ -1,0 +1,26 @@
+{
+  "id": "turn_taking_and_overlap",
+  "name": "Turn Taking And Overlap",
+  "description": "Propose a curated dialogue_behavior_library addition set for turn taking and overlap.",
+  "source_proposals": [
+    "LP-TURN-TAKING-AND-OVERLAP"
+  ],
+  "related_rules": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Dialogue must exhibit non-uniform turn lengths and controlled overlap or interruption patterns."
+  ],
+  "related_validators": [],
+  "related_failure_modes": [],
+  "dependencies": [
+    "voice_library",
+    "continuity_state_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.79,
+  "status": "proposed",
+  "aliases": [],
+  "related_enforcement_concepts": [
+    "EP-002"
+  ]
+}

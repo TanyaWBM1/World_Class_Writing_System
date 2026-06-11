@@ -1,0 +1,54 @@
+{
+  "id": "multi_speaker_dialogue_homogenization_suite",
+  "name": "Multi Speaker Dialogue Homogenization Suite",
+  "description": "Propose a benchmark concept for multi speaker dialogue homogenization suite.",
+  "source_proposals": [
+    "BP-002"
+  ],
+  "related_rules": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN"
+  ],
+  "related_validators": [
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "SpeakerDivergenceValidator"
+  ],
+  "related_failure_modes": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "dialogue_realism_collapse"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.97,
+  "status": "approved",
+  "aliases": [
+    "dialogue_act_tracker",
+    "dialogue_automatic_metric_suite_v2",
+    "dialogue_realism_collapse",
+    "dialogue_realism_disc",
+    "human_dialogue_realism_rubric_v1",
+    "speaker_state_embedding"
+  ],
+  "fixture_axes": {
+    "failure_modes": [
+      "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+      "dialogue_realism_collapse"
+    ],
+    "evaluation_types": [
+      "continuity_narrative",
+      "dialogue",
+      "voice_style"
+    ],
+    "narrative_dimensions": [
+      "continuity_memory",
+      "dialogue_realism",
+      "human_likeness",
+      "voice_preservation"
+    ]
+  }
+}

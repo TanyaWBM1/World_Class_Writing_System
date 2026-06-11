@@ -1,0 +1,115 @@
+{
+  "id": "viral_intelligence_atomic_components",
+  "name": "Viral Intelligence Atomic Components",
+  "description": "Normalized evaluation-library asset containing atomic virality signals, validator candidates, and measurable mechanisms extracted from external virality research without preserving raw source wording.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_HIGH_AROUSAL_MIN",
+    "RULE_HOOK_STRENGTH_MIN",
+    "RULE_IDENTITY_RESONANCE_MIN",
+    "RULE_SHAREABILITY_MIN",
+    "RULE_NOVELTY_MIN",
+    "RULE_VIRAL_INTEGRITY_MIN"
+  ],
+  "related_validators": [
+    "HighArousalEmotionValidator",
+    "HookStrengthValidator",
+    "IdentityResonanceValidator",
+    "ShareabilityValidator",
+    "NoveltyValidator",
+    "ViralIntegrityValidator"
+  ],
+  "related_failure_modes": [
+    "hook_content_mismatch_failure",
+    "emotional_manipulation_without_payoff_failure",
+    "identity_bait_without_substance_failure",
+    "clickbait_pattern_failure",
+    "cliche_repetition_failure",
+    "low_shareability_density_failure"
+  ],
+  "dependencies": [
+    "failure_mode_library",
+    "benchmark_fixture_library",
+    "schema:evaluation_report",
+    "research/external_sources/perplexity_virality/perplexity_virality_01.md"
+  ],
+  "priority": "high",
+  "confidence": 0.82,
+  "status": "approved",
+  "aliases": [
+    "meaningful_virality_signals",
+    "v6_viral_atomic_components"
+  ],
+  "measurable_signals": [
+    "emotion_intensity_score",
+    "emotional_variance",
+    "peak_emotion_delta",
+    "activation_classification",
+    "hook_clarity_score",
+    "curiosity_gap_score",
+    "promise_strength",
+    "ambiguity_penalty",
+    "identity_alignment_score",
+    "relatability_density",
+    "value_signal_strength",
+    "quotability_score",
+    "compression_ratio",
+    "clarity_score",
+    "novelty_score",
+    "expectation_deviation",
+    "insight_density"
+  ],
+  "operator_candidates": [
+    "detect_emotional_intensity",
+    "evaluate_hook_strength",
+    "measure_identity_alignment",
+    "extract_quotable_units",
+    "compute_novelty_score"
+  ],
+  "atomic_rules": [
+    "viral_content_requires_high_arousal_emotion_or_identity_resonance",
+    "hook_must_align_with_payoff",
+    "novelty_must_remain_coherent",
+    "shareability_depends_on_clarity_and_compression"
+  ],
+  "validator_mappings": [
+    {
+      "mechanism": "high_arousal_emotion",
+      "validator": "HighArousalEmotionValidator"
+    },
+    {
+      "mechanism": "hook_strength",
+      "validator": "HookStrengthValidator"
+    },
+    {
+      "mechanism": "identity_resonance",
+      "validator": "IdentityResonanceValidator"
+    },
+    {
+      "mechanism": "shareability",
+      "validator": "ShareabilityValidator"
+    },
+    {
+      "mechanism": "novelty",
+      "validator": "NoveltyValidator"
+    }
+  ],
+  "normalization_notes": [
+    "Extracted only atomic system components suitable for validators, metrics, and benchmark design.",
+    "Raw external phrasing was excluded from library content.",
+    "Components were collapsed into existing v6 runtime concepts where naming overlap already existed."
+  ],
+  "evaluation_output_expectations": [
+    "high_arousal_score",
+    "hook_strength_score",
+    "identity_resonance_score",
+    "shareability_score",
+    "novelty_score",
+    "viral_integrity_score",
+    "manipulation_risk",
+    "clickbait_risk",
+    "viral_score"
+  ]
+}

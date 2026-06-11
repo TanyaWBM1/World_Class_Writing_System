@@ -1,0 +1,625 @@
+{
+  "generated_at": "2026-03-21T19:18:34.175116+00:00",
+  "libraries": {
+    "failure_mode_library": {
+      "entry_count": 16,
+      "entries": [
+        "prose_naturalness_collapse",
+        "over_abstraction_failure",
+        "dialogue_realism_collapse",
+        "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+        "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+        "cadence_flattening_failure",
+        "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+        "narrative_drift_failure",
+        "long_form_coherence_failure",
+        "continuity_memory_failure",
+        "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+        "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+        "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+        "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+        "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+        "genre_flattening_failure"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ]
+    },
+    "abstraction_control_library": {
+      "entry_count": 3,
+      "entries": [
+        "concreteness_and_density_controls",
+        "style_and_voice_anchor_controls",
+        "narrative_pressure_controls"
+      ],
+      "dependencies": [
+        "evaluation_library",
+        "failure_mode_library"
+      ]
+    },
+    "dialogue_behavior_library": {
+      "entry_count": 3,
+      "entries": [
+        "speaker_divergence_and_state",
+        "turn_taking_and_overlap",
+        "disfluency_and_subtext"
+      ],
+      "dependencies": [
+        "continuity_state_library",
+        "evaluation_library",
+        "voice_library"
+      ]
+    },
+    "cadence_library": {
+      "entry_count": 3,
+      "entries": [
+        "sentence_length_and_burstiness",
+        "syntax_template_and_clause_depth",
+        "register_and_transition_cadence"
+      ],
+      "dependencies": [
+        "evaluation_library"
+      ]
+    },
+    "continuity_state_library": {
+      "entry_count": 3,
+      "entries": [
+        "entity_and_canon_state",
+        "narrative_goal_and_thread_state",
+        "document_and_structure_state"
+      ],
+      "dependencies": [
+        "evaluation_library"
+      ]
+    },
+    "evaluation_library": {
+      "entry_count": 13,
+      "entries": [
+        "human_likeness_and_discriminators",
+        "coherence_and_continuity_metrics",
+        "style_voice_and_cadence_metrics",
+        "stability_and_robustness_metrics",
+        "argument_and_structure_metrics",
+        "human_likeness_discriminator_stack",
+        "dialogue_realism_validator_stack",
+        "cadence_and_syntax_validator_stack",
+        "continuity_state_and_contradiction_validator_stack",
+        "narrative_arc_and_goal_progress_metrics",
+        "voice_style_and_preservation_metrics",
+        "prompt_stability_and_cross_run_metrics",
+        "structure_schema_and_argument_quality_metrics"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library"
+      ]
+    },
+    "benchmark_fixture_library": {
+      "entry_count": 12,
+      "entries": [
+        "narrative_and_continuity_fixtures",
+        "dialogue_and_voice_fixtures",
+        "prompt_and_stability_fixtures",
+        "genre_and_structure_fixtures",
+        "human_vs_llm_naturalness_battles",
+        "multi_speaker_dialogue_homogenization_suite",
+        "cadence_and_burstiness_regression_suite",
+        "long_form_continuity_and_memory_suite",
+        "genre_conformity_and_structure_suite",
+        "voice_preservation_and_editing_suite",
+        "prompt_sensitivity_and_cross_run_suite",
+        "governance_promotion_and_failure_replay_suite"
+      ],
+      "dependencies": [
+        "evaluation_library",
+        "failure_mode_library"
+      ]
+    },
+    "voice_library": {
+      "entry_count": 3,
+      "entries": [
+        "style_fingerprint_and_anchor_assets",
+        "idiosyncrasy_and_register_assets",
+        "voice_preservation_assets"
+      ],
+      "dependencies": [
+        "continuity_state_library",
+        "evaluation_library"
+      ]
+    },
+    "genre_library": {
+      "entry_count": 3,
+      "entries": [
+        "genre_schema_and_beat_assets",
+        "genre_structure_and_signature_coverage",
+        "genre_conformity_and_structure_suite"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ]
+    },
+    "system_design_library": {
+      "entry_count": 7,
+      "entries": [
+        "human_approval_boundaries",
+        "promotion_gate_policy",
+        "deterministic_baseline_and_version_freeze_policy",
+        "regression_protection_and_pareto_rules",
+        "failure_ledger_and_fixture_promotion_governance",
+        "ai_on_ai_degradation_controls",
+        "style_fingerprint_and_library_change_controls"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ]
+    }
+  },
+  "cross_library_relationships": [
+    {
+      "entry_id": "prose_naturalness_collapse",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "prose_naturalness_collapse",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "over_abstraction_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "over_abstraction_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "dialogue_realism_collapse",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "dialogue_realism_collapse",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "cadence_flattening_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "cadence_flattening_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_drift_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_drift_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "long_form_coherence_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "long_form_coherence_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "continuity_memory_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "continuity_memory_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_flattening_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_flattening_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "concreteness_and_density_controls",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "concreteness_and_density_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_and_voice_anchor_controls",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "style_and_voice_anchor_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_pressure_controls",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "narrative_pressure_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "speaker_divergence_and_state",
+      "depends_on_library": "voice_library"
+    },
+    {
+      "entry_id": "speaker_divergence_and_state",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "speaker_divergence_and_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "turn_taking_and_overlap",
+      "depends_on_library": "voice_library"
+    },
+    {
+      "entry_id": "turn_taking_and_overlap",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "turn_taking_and_overlap",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "disfluency_and_subtext",
+      "depends_on_library": "voice_library"
+    },
+    {
+      "entry_id": "disfluency_and_subtext",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "disfluency_and_subtext",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "sentence_length_and_burstiness",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "syntax_template_and_clause_depth",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "register_and_transition_cadence",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "entity_and_canon_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_goal_and_thread_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "document_and_structure_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "human_likeness_and_discriminators",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "coherence_and_continuity_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "style_voice_and_cadence_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "stability_and_robustness_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "argument_and_structure_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "human_likeness_discriminator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "dialogue_realism_validator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "cadence_and_syntax_validator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "continuity_state_and_contradiction_validator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_arc_and_goal_progress_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "voice_style_and_preservation_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "prompt_stability_and_cross_run_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "structure_schema_and_argument_quality_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_and_continuity_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_and_continuity_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "dialogue_and_voice_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "dialogue_and_voice_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "prompt_and_stability_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "prompt_and_stability_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "genre_and_structure_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_and_structure_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "human_vs_llm_naturalness_battles",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "human_vs_llm_naturalness_battles",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "multi_speaker_dialogue_homogenization_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "multi_speaker_dialogue_homogenization_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "cadence_and_burstiness_regression_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "cadence_and_burstiness_regression_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "long_form_continuity_and_memory_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "long_form_continuity_and_memory_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "voice_preservation_and_editing_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "voice_preservation_and_editing_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "prompt_sensitivity_and_cross_run_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "prompt_sensitivity_and_cross_run_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "governance_promotion_and_failure_replay_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "governance_promotion_and_failure_replay_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_anchor_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_anchor_assets",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "idiosyncrasy_and_register_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "idiosyncrasy_and_register_assets",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "voice_preservation_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "voice_preservation_assets",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "genre_schema_and_beat_assets",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_schema_and_beat_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_structure_and_signature_coverage",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_structure_and_signature_coverage",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "human_approval_boundaries",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "human_approval_boundaries",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "promotion_gate_policy",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "promotion_gate_policy",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "deterministic_baseline_and_version_freeze_policy",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "deterministic_baseline_and_version_freeze_policy",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "regression_protection_and_pareto_rules",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "regression_protection_and_pareto_rules",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "failure_ledger_and_fixture_promotion_governance",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "failure_ledger_and_fixture_promotion_governance",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "ai_on_ai_degradation_controls",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "ai_on_ai_degradation_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_library_change_controls",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_library_change_controls",
+      "depends_on_library": "evaluation_library"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "prompt_and_stability_fixtures",
+  "name": "Prompt And Stability Fixtures",
+  "description": "Propose a curated benchmark_fixture_library addition set for prompt and stability fixtures.",
+  "source_proposals": [
+    "LP-PROMPT-AND-STABILITY-FIXTURES"
+  ],
+  "related_rules": [
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+    "RULE_TERM_DEFINITION_STABILITY",
+    "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes."
+  ],
+  "related_validators": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "PromptRobustnessValidator",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "related_failure_modes": [
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "prompt_sensitivity_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "fixture_axes": {
+    "failure_modes": [
+      "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+      "prompt_sensitivity_failure"
+    ],
+    "evaluation_types": [
+      "stability"
+    ],
+    "narrative_dimensions": [
+      "human_likeness"
+    ]
+  }
+}

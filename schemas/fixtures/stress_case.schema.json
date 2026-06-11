@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StressCase",
+  "type": "object",
+  "description": "Placeholder schema for adversarial stress-test cases.",
+  "properties": {
+    "case_id": { "type": "string" },
+    "target_layer": { "type": "string" },
+    "attack_vector": { "type": "string" },
+    "expected_failure_signal": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "required": ["case_id", "target_layer", "attack_vector"]
+}

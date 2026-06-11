@@ -1,0 +1,50 @@
+{
+  "profile_id": "sample_high_integrity_viral_long_form_profile_v1",
+  "mode": "controlled_generation",
+  "genre": "essayistic_long_form_post",
+  "voice": "clear_witness_with_interpretive_force",
+  "audience": "general intelligent internet readers interested in truth, consequences, and lived stakes",
+  "target_platform": "linkedin",
+  "secondary_platforms": [
+    "reddit",
+    "facebook"
+  ],
+  "desired_reader_impact": {
+    "emotional_resonance": "medium_high",
+    "payoff_satisfaction": "high",
+    "memorability": "medium_high",
+    "cognitive_load": "moderate_controlled"
+  },
+  "desired_viral_profile": {
+    "hook_strength": "high",
+    "identity_resonance": "medium",
+    "shareability": "medium_high",
+    "novelty": "medium_high",
+    "viral_integrity": "high"
+  },
+  "insight_density_target": {
+    "minimum_score": 0.52,
+    "preferred_score": 0.72,
+    "preferred_path": "explicit_or_implicit_meaningful_insight"
+  },
+  "structure_constraints": {
+    "must_introduce_traceable_setup": true,
+    "must_deliver_meaningful_payoff": true,
+    "must_show_consequence_after_key_turn": true,
+    "must_avoid_unresolved_high_importance_threads": true
+  },
+  "disallowed_failure_modes": [
+    "generic_motivation_failure",
+    "empty_insight_failure",
+    "shallow_philosophy_failure",
+    "hook_content_mismatch_failure",
+    "emotional_manipulation_without_payoff_failure",
+    "unpaid_setup_failure",
+    "thread_dropout_failure"
+  ],
+  "length_target": {
+    "min_words": 450,
+    "max_words": 900
+  },
+  "revision_budget": 3
+}

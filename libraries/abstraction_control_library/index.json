@@ -1,0 +1,49 @@
+{
+  "library_id": "abstraction_control_library",
+  "generated_at": "2026-03-21T19:18:34.218464+00:00",
+  "entry_count": 3,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "concreteness_and_density_controls",
+      "name": "Concreteness And Density Controls",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-CONCRETENESS-AND-DENSITY-CONTROLS"
+      ]
+    },
+    {
+      "id": "narrative_pressure_controls",
+      "name": "Narrative Pressure Controls",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-NARRATIVE-PRESSURE-CONTROLS"
+      ]
+    },
+    {
+      "id": "style_and_voice_anchor_controls",
+      "name": "Style And Voice Anchor Controls",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.98,
+      "source_proposals": [
+        "LP-STYLE-AND-VOICE-ANCHOR-CONTROLS"
+      ]
+    }
+  ],
+  "schema_expectations": {},
+  "unresolved_conflicts": [
+    "OP-14",
+    "RU-core_failure_modes_01-001",
+    "RU-core_failure_modes_01-011",
+    "RU-core_failure_modes_01-013",
+    "RU-core_failure_modes_01-014",
+    "RU-core_failure_modes_01-028",
+    "RU-core_failure_modes_01-029"
+  ]
+}

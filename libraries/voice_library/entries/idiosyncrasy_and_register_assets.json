@@ -1,0 +1,25 @@
+{
+  "id": "idiosyncrasy_and_register_assets",
+  "name": "Idiosyncrasy And Register Assets",
+  "description": "Propose a curated voice_library addition set for idiosyncrasy and register assets.",
+  "source_proposals": [
+    "LP-IDIOSYNCRASY-AND-REGISTER-ASSETS"
+  ],
+  "related_rules": [
+    "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+    "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice."
+  ],
+  "related_validators": [],
+  "related_failure_modes": [],
+  "dependencies": [
+    "evaluation_library",
+    "continuity_state_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.75,
+  "status": "proposed",
+  "aliases": [],
+  "related_enforcement_concepts": [
+    "EP-006"
+  ]
+}

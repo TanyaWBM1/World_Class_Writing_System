@@ -1,0 +1,33 @@
+{
+  "id": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+  "name": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+  "description": "Normalized failure mode asset for Style Drift Detector Flags Intentional Stylistic Shifts (e.g., Pov Changes) As Regressions. derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-DIALOGUE-AND-VOICE-FAILURES"
+  ],
+  "related_rules": [
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "related_validators": [
+    "SpeakerDivergenceValidator"
+  ],
+  "related_failure_modes": [
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "dialogue_realism_collapse"
+  ],
+  "related_benchmarks": [],
+  "related_enforcement_concepts": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+  "name": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+  "description": "Normalized failure mode asset for LLM As Judge Exhibits Prompt Sensitivity, Self Preference, And Rubric Drift, Masking True Quality. derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-EVALUATION-AND-GOVERNANCE-FAILURES"
+  ],
+  "related_rules": [
+    "Only validated failures may be promoted into benchmark fixtures."
+  ],
+  "related_validators": [],
+  "related_failure_modes": [
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+    "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "detector_overfit_artifact_v1",
+    "llm_judge_prompt_sensitivity_v1"
+  ],
+  "related_benchmarks": [
+    "BP-003",
+    "BP-004",
+    "BP-005",
+    "BP-006",
+    "BP-007"
+  ],
+  "related_enforcement_concepts": [
+    "EP-001",
+    "EP-002",
+    "EP-003"
+  ]
+}

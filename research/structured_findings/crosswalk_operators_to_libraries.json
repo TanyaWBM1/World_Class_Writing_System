@@ -1,0 +1,4453 @@
+{
+  "generated_at": "2026-03-21T19:05:21.995767+00:00",
+  "item_type": "operator",
+  "mapping_count": 121,
+  "mappings": [
+    {
+      "id": "OP-1",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "ProseConcretenessValidator",
+      "normalized_name": "proseconcretenessvalidator",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-2",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "HumanLikenessDiscriminator",
+      "normalized_name": "humanlikenessdiscriminator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-3",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "SpeakerDivergenceValidator",
+      "normalized_name": "speakerdivergencevalidator",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-4",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "PragmaticsCoverageValidator",
+      "normalized_name": "pragmaticscoveragevalidator",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-5",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "CadenceDistributionValidator",
+      "normalized_name": "cadencedistributionvalidator",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-6",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "SyntaxTemplateRepetitionValidator",
+      "normalized_name": "syntaxtemplaterepetitionvalidator",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-7",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "NarrativeGoalProgressValidator",
+      "normalized_name": "narrativegoalprogressvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-8",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "PromisePayoffValidator",
+      "normalized_name": "promisepayoffvalidator",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-9",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "ContinuityNLIValidator",
+      "normalized_name": "continuitynlivalidator",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-10",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "EntityAttributeDriftValidator",
+      "normalized_name": "entityattributedriftvalidator",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-11",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "AbstractionDensityValidator",
+      "normalized_name": "abstractiondensityvalidator",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-12",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "MetaExplanationPatternValidator",
+      "normalized_name": "metaexplanationpatternvalidator",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-13",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "SemanticRedundancyValidator",
+      "normalized_name": "semanticredundancyvalidator",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-14",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "DiscourseNoveltyValidator",
+      "normalized_name": "discoursenoveltyvalidator",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-15",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "AffectVarianceValidator",
+      "normalized_name": "affectvariancevalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-16",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "GenericEmotionPhraseValidator",
+      "normalized_name": "genericemotionphrasevalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-17",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "WorldCanonConsistencyValidator",
+      "normalized_name": "worldcanonconsistencyvalidator",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-18",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "TermUsageConsistencyValidator",
+      "normalized_name": "termusageconsistencyvalidator",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-19",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "AuthorStyleFingerprintValidator",
+      "normalized_name": "authorstylefingerprintvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-20",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "CorpusStyleDiversityValidator",
+      "normalized_name": "corpusstylediversityvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-21",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "StyleDriftValidator",
+      "normalized_name": "styledriftvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-22",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "VoiceInvariantPreservationValidator",
+      "normalized_name": "voiceinvariantpreservationvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-23",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "GenreConformityValidator",
+      "normalized_name": "genreconformityvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "genre_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-24",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "GenreBeatCoverageValidator",
+      "normalized_name": "genrebeatcoveragevalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "genre_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-25",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "PromptRobustnessValidator",
+      "normalized_name": "promptrobustnessvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-26",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "OutputVarianceValidator",
+      "normalized_name": "outputvariancevalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-27",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "StructureSchemaValidator",
+      "normalized_name": "structureschemavalidator",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-28",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "MarkdownFormatValidator",
+      "normalized_name": "markdownformatvalidator",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-29",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "ClaimEvidenceLinkValidator",
+      "normalized_name": "claimevidencelinkvalidator",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-30",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "WarrantAcceptabilityValidator",
+      "normalized_name": "warrantacceptabilityvalidator",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-1",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+      "normalized_name": "configure_evaluators_llm_judges_discriminators_metrics_to_run_with_greedy_decoding_and_fixed_seeds_to_ensure_deterministic_behavior",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-2",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+      "normalized_name": "for_any_change_to_prompts_rubrics_or_fixtures_record_a_new_version_identifier_and_run_prompt_sensitivity_and_stability_checks",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-3",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+      "normalized_name": "periodically_re_calibrate_automated_evaluators_against_human_rubric_benchmarks_for_both_narrative_and_dialogue",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-4",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+      "normalized_name": "monitor_style_consistency_dashboards_to_detect_unexpected_voice_drift_across_releases",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-5",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+      "normalized_name": "apply_template_echo_detector_to_sample_batches_for_each_major_prompt_or_fine_tune_version_adjusting_thresholds_using_benchmark_fixtures",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-6",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+      "normalized_name": "for_editing_pipelines_measure_voice_preservation_and_semantic_fidelity_before_enabling_new_editors_in_production",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-7",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Maintain and periodically expand benchmark_fixture_library with newly observed real-world failure examples.",
+      "normalized_name": "maintain_and_periodically_expand_benchmark_fixture_library_with_newly_observed_real_world_failure_examples",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-8",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+      "normalized_name": "use_regression_tests_to_block_deployments_where_stability_improves_but_agreement_with_human_or_reference_metrics_degrades",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+      "normalized_name": "maintain_a_rolling_paragraph_buffer_for_sentence_lengths_and_trigger_burst_modulation_when_medium_length_clustering_persists",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+      "normalized_name": "compute_per_sentence_lexical_entropy_and_bias_generation_toward_context_appropriate_synonymy_when_entropy_is_too_low",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Parse clause depth per sentence and inject compensating low-depth or high-depth sentences when run limits are exceeded.",
+      "normalized_name": "parse_clause_depth_per_sentence_and_inject_compensating_low_depth_or_high_depth_sentences_when_run_limits_are_exceeded",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Tag each paragraph with an information-density band and route generation constraints through that band profile.",
+      "normalized_name": "tag_each_paragraph_with_an_information_density_band_and_route_generation_constraints_through_that_band_profile",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar.",
+      "normalized_name": "update_a_narrative_pressure_scalar_through_each_scene_and_bind_cadence_decisions_to_that_scalar",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "narrative_pressure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Score each sentence on a register axis and block abrupt register jumps beyond configured drift thresholds.",
+      "normalized_name": "score_each_sentence_on_a_register_axis_and_block_abrupt_register_jumps_beyond_configured_drift_thresholds",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Load per-character idiosyncrasy profiles and enforce bounded reuse of signature discourse markers or phrase fossils.",
+      "normalized_name": "load_per_character_idiosyncrasy_profiles_and_enforce_bounded_reuse_of_signature_discourse_markers_or_phrase_fossils",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Apply FID blend coefficients in POV-deep scenes and keep coefficient changes smooth across adjacent sentences.",
+      "normalized_name": "apply_fid_blend_coefficients_in_pov_deep_scenes_and_keep_coefficient_changes_smooth_across_adjacent_sentences",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "cadence_library",
+        "sentence_structure_library",
+        "narrative_pressure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compute a residue vector at scene end and bias the next scene with decayed lexical, affective, and conceptual carryover.",
+      "normalized_name": "compute_a_residue_vector_at_scene_end_and_bias_the_next_scene_with_decayed_lexical_affective_and_conceptual_carryover",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Sample dialogue turn lengths from character-specific asymmetric distributions and inject bounded overlap markers under tension.",
+      "normalized_name": "sample_dialogue_turn_lengths_from_character_specific_asymmetric_distributions_and_inject_bounded_overlap_markers_under_tension",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Apply disfluency policies by character archetype and tension level.",
+      "normalized_name": "apply_disfluency_policies_by_character_archetype_and_tension_level",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+      "normalized_name": "after_each_edit_pass_compare_entropy_and_idiosyncrasy_against_the_pre_edit_reference_and_restore_voice_markers_when_needed",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-013",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "FAILURE_MODE_EXTRACT",
+      "normalized_name": "failure_mode_extract",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Cadence flattening through low sentence-length variance and medium-length clustering.",
+      "normalized_name": "cadence_flattening_through_low_sentence_length_variance_and_medium_length_clustering",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Artificial over-bursting that alternates only ultra-short and ultra-long sentences.",
+      "normalized_name": "artificial_over_bursting_that_alternates_only_ultra_short_and_ultra_long_sentences",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Low lexical entropy causing safe, generic diction.",
+      "normalized_name": "low_lexical_entropy_causing_safe_generic_diction",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Clause-depth monotony or unreadable over-stacking.",
+      "normalized_name": "clause_depth_monotony_or_unreadable_over_stacking",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Information-band collapse into all-high-density info-dumps or all-low-density filler.",
+      "normalized_name": "information_band_collapse_into_all_high_density_info_dumps_or_all_low_density_filler",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Narrative-pressure flatlining or whiplash spikes.",
+      "normalized_name": "narrative_pressure_flatlining_or_whiplash_spikes",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Register monotony or abrupt register flips that confuse voice.",
+      "normalized_name": "register_monotony_or_abrupt_register_flips_that_confuse_voice",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Idiosyncrasy absence leading to generic voice.",
+      "normalized_name": "idiosyncrasy_absence_leading_to_generic_voice",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Idiosyncrasy overuse leading to caricature.",
+      "normalized_name": "idiosyncrasy_overuse_leading_to_caricature",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "FID under-blending that erases character perspective.",
+      "normalized_name": "fid_under_blending_that_erases_character_perspective",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "FID over-blending that obscures perspective ownership.",
+      "normalized_name": "fid_over_blending_that_obscures_perspective_ownership",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Scene-reset behavior with no residue carryover.",
+      "normalized_name": "scene_reset_behavior_with_no_residue_carryover",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-13",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Dialogue theater-script stiffness with no overlap or interruption.",
+      "normalized_name": "dialogue_theater_script_stiffness_with_no_overlap_or_interruption",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-14",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Dialogue over-noise or under-noise relative to character profile.",
+      "normalized_name": "dialogue_over_noise_or_under_noise_relative_to_character_profile",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-15",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Style averaging during editing that erodes voice.",
+      "normalized_name": "style_averaging_during_editing_that_erodes_voice",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-029",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "TEST_CASE_EXTRACT",
+      "normalized_name": "test_case_extract",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+      "normalized_name": "feed_paragraphs_with_uniform_sentence_lengths_into_the_cadence_validator_and_verify_burstiness_violations_are_raised",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compare low-entropy and corpus-matched sentences and confirm lexical-entropy thresholds separate them.",
+      "normalized_name": "compare_low_entropy_and_corpus_matched_sentences_and_confirm_lexical_entropy_thresholds_separate_them",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Construct paragraphs with excessive clause stacking and ensure clause-depth run caps trigger.",
+      "normalized_name": "construct_paragraphs_with_excessive_clause_stacking_and_ensure_clause_depth_run_caps_trigger",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Generate high-density, medium-density, and low-density paragraphs and verify density-band assignment and enforcement.",
+      "normalized_name": "generate_high_density_medium_density_and_low_density_paragraphs_and_verify_density_band_assignment_and_enforcement",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Replay scenes with flat, rising, and whiplash pressure curves and verify pressure-slope validation behavior.",
+      "normalized_name": "replay_scenes_with_flat_rising_and_whiplash_pressure_curves_and_verify_pressure_slope_validation_behavior",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Create paragraphs with abrupt formal/informal register jumps and test register-drift detection.",
+      "normalized_name": "create_paragraphs_with_abrupt_formal_informal_register_jumps_and_test_register_drift_detection",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "failure_mode_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Produce dialogue for multiple characters with and without signature markers and verify idiosyncrasy-range checks.",
+      "normalized_name": "produce_dialogue_for_multiple_characters_with_and_without_signature_markers_and_verify_idiosyncrasy_range_checks",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compare narrator-only, balanced-FID, and over-blended FID passages and validate blend-policy scoring.",
+      "normalized_name": "compare_narrator_only_balanced_fid_and_over_blended_fid_passages_and_validate_blend_policy_scoring",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Run adjacent scenes with no residue, bounded residue, and excessive residue carryover and validate similarity-band enforcement.",
+      "normalized_name": "run_adjacent_scenes_with_no_residue_bounded_residue_and_excessive_residue_carryover_and_validate_similarity_band_enforcement",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Generate clean alternating dialogue versus interrupted dialogue and ensure overlap-policy checks distinguish them.",
+      "normalized_name": "generate_clean_alternating_dialogue_versus_interrupted_dialogue_and_ensure_overlap_policy_checks_distinguish_them",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Evaluate anxious versus confident character dialogue against disfluency-rate bands.",
+      "normalized_name": "evaluate_anxious_versus_confident_character_dialogue_against_disfluency_rate_bands",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+      "normalized_name": "run_edit_passes_that_normalize_voice_and_verify_post_edit_entropy_idiosyncrasy_preservation_checks_catch_degradation",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-042",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "LIBRARY_EXTRACT",
+      "normalized_name": "library_extract",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-043",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "cadence_library",
+      "normalized_name": "cadence_library",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-044",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "sentence_length_burstiness_profile",
+      "normalized_name": "sentence_length_burstiness_profile",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-045",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "paragraph_burst_window_policy",
+      "normalized_name": "paragraph_burst_window_policy",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-046",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "information_density_band_profiles",
+      "normalized_name": "information_density_band_profiles",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-047",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "narrative_pressure_curve_policy",
+      "normalized_name": "narrative_pressure_curve_policy",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-048",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "dialogue_turn_length_profile",
+      "normalized_name": "dialogue_turn_length_profile",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-049",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "overlap_policy",
+      "normalized_name": "overlap_policy",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-050",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "sentence_structure_library",
+      "normalized_name": "sentence_structure_library",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "continuity_state_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-051",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "lexical_entropy_policy",
+      "normalized_name": "lexical_entropy_policy",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-052",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "clause_depth_policy",
+      "normalized_name": "clause_depth_policy",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-053",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "sentence_length_profile",
+      "normalized_name": "sentence_length_profile",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-054",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "narrative_pressure_library",
+      "normalized_name": "narrative_pressure_library",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-055",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "information_band_state",
+      "normalized_name": "information_band_state",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-056",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "pressure_gradient_model",
+      "normalized_name": "pressure_gradient_model",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-057",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "scene_residue_policy",
+      "normalized_name": "scene_residue_policy",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-058",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "fid_scene_depth_policy",
+      "normalized_name": "fid_scene_depth_policy",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-059",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "human_texture_library",
+      "normalized_name": "human_texture_library",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-060",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "lexical_entropy_guard",
+      "normalized_name": "lexical_entropy_guard",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-061",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "register_drift_policy",
+      "normalized_name": "register_drift_policy",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "failure_mode_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-062",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "disfluency_policy",
+      "normalized_name": "disfluency_policy",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [
+        "OP-hidden_techniques_01-070"
+      ],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-063",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "style_averaging_prevention_policy",
+      "normalized_name": "style_averaging_prevention_policy",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-064",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "idiosyncrasy_library",
+      "normalized_name": "idiosyncrasy_library",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-065",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "character_idiosyncrasy_profile",
+      "normalized_name": "character_idiosyncrasy_profile",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-066",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "author_idiosyncrasy_profile",
+      "normalized_name": "author_idiosyncrasy_profile",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-067",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "edit_voice_preservation_policy",
+      "normalized_name": "edit_voice_preservation_policy",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-068",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "dialogue_behavior_library",
+      "normalized_name": "dialogue_behavior_library",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-069",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "dialogue_turn_policy",
+      "normalized_name": "dialogue_turn_policy",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-070",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "disfluency_profile",
+      "normalized_name": "disfluency_profile",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [
+        "OP-hidden_techniques_01-062"
+      ],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-071",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "interruption_profile",
+      "normalized_name": "interruption_profile",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-1",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state.",
+      "normalized_name": "write_every_failure_event_to_failure_log_jsonl_with_fixture_id_pipeline_stage_version_metadata_evaluator_outputs_and_resolution_state",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-2",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+      "normalized_name": "maintain_failure_taxonomy_json_as_a_controlled_vocabulary_with_explicit_versioning",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-3",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+      "normalized_name": "cluster_failure_ledger_entries_periodically_to_identify_systemic_spikes_by_fixture_genre_style_failure_type_and_model_version",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-4",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+      "normalized_name": "convert_approved_representative_failures_into_versioned_benchmark_fixtures_and_record_failure_to_fixture_lineage",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-5",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+      "normalized_name": "run_multi_metric_regression_suites_on_frozen_fixtures_before_any_architecture_prompt_rule_or_model_change_is_promoted",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-6",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+      "normalized_name": "generate_system_change_proposal_artifacts_for_every_candidate_update_and_route_them_through_sandbox_then_shadow_evaluation",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-7",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+      "normalized_name": "freeze_evaluator_prompts_thresholds_and_configs_per_release_so_score_comparisons_remain_historically_meaningful",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-8",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+      "normalized_name": "keep_ai_generated_rule_or_prompt_proposals_in_proposal_logs_only_until_human_approval_occurs",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-9",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+      "normalized_name": "compute_style_conformity_scores_against_frozen_style_fingerprints_and_log_drift_over_time",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-10",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Cap refinement passes and preserve stage-separated artifacts for generation, refinement, and enforcement outputs.",
+      "normalized_name": "cap_refinement_passes_and_preserve_stage_separated_artifacts_for_generation_refinement_and_enforcement_outputs",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-11",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+      "normalized_name": "load_continuity_state_snapshots_before_generation_or_refinement_and_emit_deterministic_state_diff_artifacts_after_each_segment",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-12",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+      "normalized_name": "use_rule_based_checks_in_production_runtime_confine_llm_as_judge_and_reflexion_style_loops_to_sandbox_analysis_unless_explicitly_frozen_and_approved",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    }
+  ],
+  "overlaps": [],
+  "conflicts": [
+    {
+      "record_id": "OP-1",
+      "raw_text": "ProseConcretenessValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-2",
+      "raw_text": "HumanLikenessDiscriminator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-3",
+      "raw_text": "SpeakerDivergenceValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-4",
+      "raw_text": "PragmaticsCoverageValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-5",
+      "raw_text": "CadenceDistributionValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "sentence_structure_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-6",
+      "raw_text": "SyntaxTemplateRepetitionValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "sentence_structure_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-7",
+      "raw_text": "NarrativeGoalProgressValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-8",
+      "raw_text": "PromisePayoffValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-9",
+      "raw_text": "ContinuityNLIValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-10",
+      "raw_text": "EntityAttributeDriftValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-11",
+      "raw_text": "AbstractionDensityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-12",
+      "raw_text": "MetaExplanationPatternValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-13",
+      "raw_text": "SemanticRedundancyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-14",
+      "raw_text": "DiscourseNoveltyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-15",
+      "raw_text": "AffectVarianceValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-16",
+      "raw_text": "GenericEmotionPhraseValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-17",
+      "raw_text": "WorldCanonConsistencyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-18",
+      "raw_text": "TermUsageConsistencyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-19",
+      "raw_text": "AuthorStyleFingerprintValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-20",
+      "raw_text": "CorpusStyleDiversityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-21",
+      "raw_text": "StyleDriftValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-22",
+      "raw_text": "VoiceInvariantPreservationValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-23",
+      "raw_text": "GenreConformityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "genre_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-24",
+      "raw_text": "GenreBeatCoverageValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "genre_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-25",
+      "raw_text": "PromptRobustnessValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-26",
+      "raw_text": "OutputVarianceValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-27",
+      "raw_text": "StructureSchemaValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-28",
+      "raw_text": "MarkdownFormatValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-29",
+      "raw_text": "ClaimEvidenceLinkValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-30",
+      "raw_text": "WarrantAcceptabilityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-1",
+      "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-2",
+      "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-3",
+      "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-4",
+      "raw_text": "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-5",
+      "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-6",
+      "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-7",
+      "raw_text": "Maintain and periodically expand benchmark_fixture_library with newly observed real-world failure examples.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-8",
+      "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-1",
+      "raw_text": "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-2",
+      "raw_text": "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-3",
+      "raw_text": "Parse clause depth per sentence and inject compensating low-depth or high-depth sentences when run limits are exceeded.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-4",
+      "raw_text": "Tag each paragraph with an information-density band and route generation constraints through that band profile.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-5",
+      "raw_text": "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "narrative_pressure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-6",
+      "raw_text": "Score each sentence on a register axis and block abrupt register jumps beyond configured drift thresholds.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-7",
+      "raw_text": "Load per-character idiosyncrasy profiles and enforce bounded reuse of signature discourse markers or phrase fossils.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-8",
+      "raw_text": "Apply FID blend coefficients in POV-deep scenes and keep coefficient changes smooth across adjacent sentences.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "cadence_library",
+        "sentence_structure_library",
+        "narrative_pressure_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-9",
+      "raw_text": "Compute a residue vector at scene end and bias the next scene with decayed lexical, affective, and conceptual carryover.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-10",
+      "raw_text": "Sample dialogue turn lengths from character-specific asymmetric distributions and inject bounded overlap markers under tension.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-11",
+      "raw_text": "Apply disfluency policies by character archetype and tension level.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-HT-12",
+      "raw_text": "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-013",
+      "raw_text": "FAILURE_MODE_EXTRACT",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-1",
+      "raw_text": "Cadence flattening through low sentence-length variance and medium-length clustering.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-2",
+      "raw_text": "Artificial over-bursting that alternates only ultra-short and ultra-long sentences.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-3",
+      "raw_text": "Low lexical entropy causing safe, generic diction.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-4",
+      "raw_text": "Clause-depth monotony or unreadable over-stacking.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-5",
+      "raw_text": "Information-band collapse into all-high-density info-dumps or all-low-density filler.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-6",
+      "raw_text": "Narrative-pressure flatlining or whiplash spikes.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-7",
+      "raw_text": "Register monotony or abrupt register flips that confuse voice.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-8",
+      "raw_text": "Idiosyncrasy absence leading to generic voice.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-9",
+      "raw_text": "Idiosyncrasy overuse leading to caricature.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-10",
+      "raw_text": "FID under-blending that erases character perspective.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-11",
+      "raw_text": "FID over-blending that obscures perspective ownership.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-12",
+      "raw_text": "Scene-reset behavior with no residue carryover.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-13",
+      "raw_text": "Dialogue theater-script stiffness with no overlap or interruption.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-14",
+      "raw_text": "Dialogue over-noise or under-noise relative to character profile.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-HT-15",
+      "raw_text": "Style averaging during editing that erodes voice.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-029",
+      "raw_text": "TEST_CASE_EXTRACT",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-1",
+      "raw_text": "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-2",
+      "raw_text": "Compare low-entropy and corpus-matched sentences and confirm lexical-entropy thresholds separate them.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-3",
+      "raw_text": "Construct paragraphs with excessive clause stacking and ensure clause-depth run caps trigger.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-4",
+      "raw_text": "Generate high-density, medium-density, and low-density paragraphs and verify density-band assignment and enforcement.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-5",
+      "raw_text": "Replay scenes with flat, rising, and whiplash pressure curves and verify pressure-slope validation behavior.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-6",
+      "raw_text": "Create paragraphs with abrupt formal/informal register jumps and test register-drift detection.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "failure_mode_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-7",
+      "raw_text": "Produce dialogue for multiple characters with and without signature markers and verify idiosyncrasy-range checks.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-8",
+      "raw_text": "Compare narrator-only, balanced-FID, and over-blended FID passages and validate blend-policy scoring.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-9",
+      "raw_text": "Run adjacent scenes with no residue, bounded residue, and excessive residue carryover and validate similarity-band enforcement.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-10",
+      "raw_text": "Generate clean alternating dialogue versus interrupted dialogue and ensure overlap-policy checks distinguish them.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-11",
+      "raw_text": "Evaluate anxious versus confident character dialogue against disfluency-rate bands.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "TC-HT-12",
+      "raw_text": "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-042",
+      "raw_text": "LIBRARY_EXTRACT",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-043",
+      "raw_text": "cadence_library",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-044",
+      "raw_text": "sentence_length_burstiness_profile",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-045",
+      "raw_text": "paragraph_burst_window_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-046",
+      "raw_text": "information_density_band_profiles",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-047",
+      "raw_text": "narrative_pressure_curve_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-048",
+      "raw_text": "dialogue_turn_length_profile",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-049",
+      "raw_text": "overlap_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-050",
+      "raw_text": "sentence_structure_library",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "continuity_state_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-051",
+      "raw_text": "lexical_entropy_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-052",
+      "raw_text": "clause_depth_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-053",
+      "raw_text": "sentence_length_profile",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-054",
+      "raw_text": "narrative_pressure_library",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-055",
+      "raw_text": "information_band_state",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-056",
+      "raw_text": "pressure_gradient_model",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-057",
+      "raw_text": "scene_residue_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-058",
+      "raw_text": "fid_scene_depth_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-059",
+      "raw_text": "human_texture_library",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-060",
+      "raw_text": "lexical_entropy_guard",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-061",
+      "raw_text": "register_drift_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "failure_mode_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-062",
+      "raw_text": "disfluency_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-063",
+      "raw_text": "style_averaging_prevention_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-064",
+      "raw_text": "idiosyncrasy_library",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-065",
+      "raw_text": "character_idiosyncrasy_profile",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-066",
+      "raw_text": "author_idiosyncrasy_profile",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-067",
+      "raw_text": "edit_voice_preservation_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-068",
+      "raw_text": "dialogue_behavior_library",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-069",
+      "raw_text": "dialogue_turn_policy",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-070",
+      "raw_text": "disfluency_profile",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-071",
+      "raw_text": "interruption_profile",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-1",
+      "raw_text": "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-2",
+      "raw_text": "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-3",
+      "raw_text": "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-4",
+      "raw_text": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "failure_mode_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-5",
+      "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-6",
+      "raw_text": "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-7",
+      "raw_text": "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-8",
+      "raw_text": "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-9",
+      "raw_text": "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-10",
+      "raw_text": "Cap refinement passes and preserve stage-separated artifacts for generation, refinement, and enforcement outputs.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-11",
+      "raw_text": "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "OP-SD-12",
+      "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    }
+  ],
+  "missing_library_targets": [],
+  "escalate_to_research_evolution_architect": [
+    {
+      "record_id": "OP-1",
+      "raw_text": "ProseConcretenessValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-2",
+      "raw_text": "HumanLikenessDiscriminator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-3",
+      "raw_text": "SpeakerDivergenceValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-4",
+      "raw_text": "PragmaticsCoverageValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-5",
+      "raw_text": "CadenceDistributionValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-6",
+      "raw_text": "SyntaxTemplateRepetitionValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-7",
+      "raw_text": "NarrativeGoalProgressValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-8",
+      "raw_text": "PromisePayoffValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-9",
+      "raw_text": "ContinuityNLIValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-10",
+      "raw_text": "EntityAttributeDriftValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-11",
+      "raw_text": "AbstractionDensityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-12",
+      "raw_text": "MetaExplanationPatternValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-13",
+      "raw_text": "SemanticRedundancyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-14",
+      "raw_text": "DiscourseNoveltyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-15",
+      "raw_text": "AffectVarianceValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-16",
+      "raw_text": "GenericEmotionPhraseValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-17",
+      "raw_text": "WorldCanonConsistencyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-18",
+      "raw_text": "TermUsageConsistencyValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-19",
+      "raw_text": "AuthorStyleFingerprintValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-20",
+      "raw_text": "CorpusStyleDiversityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-21",
+      "raw_text": "StyleDriftValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-22",
+      "raw_text": "VoiceInvariantPreservationValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-23",
+      "raw_text": "GenreConformityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-24",
+      "raw_text": "GenreBeatCoverageValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-25",
+      "raw_text": "PromptRobustnessValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-26",
+      "raw_text": "OutputVarianceValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-27",
+      "raw_text": "StructureSchemaValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-28",
+      "raw_text": "MarkdownFormatValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-29",
+      "raw_text": "ClaimEvidenceLinkValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-30",
+      "raw_text": "WarrantAcceptabilityValidator",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-1",
+      "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-2",
+      "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-3",
+      "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-4",
+      "raw_text": "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-5",
+      "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-6",
+      "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-7",
+      "raw_text": "Maintain and periodically expand benchmark_fixture_library with newly observed real-world failure examples.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-8",
+      "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-1",
+      "raw_text": "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-2",
+      "raw_text": "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-3",
+      "raw_text": "Parse clause depth per sentence and inject compensating low-depth or high-depth sentences when run limits are exceeded.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-4",
+      "raw_text": "Tag each paragraph with an information-density band and route generation constraints through that band profile.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-5",
+      "raw_text": "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-6",
+      "raw_text": "Score each sentence on a register axis and block abrupt register jumps beyond configured drift thresholds.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-7",
+      "raw_text": "Load per-character idiosyncrasy profiles and enforce bounded reuse of signature discourse markers or phrase fossils.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-8",
+      "raw_text": "Apply FID blend coefficients in POV-deep scenes and keep coefficient changes smooth across adjacent sentences.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-9",
+      "raw_text": "Compute a residue vector at scene end and bias the next scene with decayed lexical, affective, and conceptual carryover.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-10",
+      "raw_text": "Sample dialogue turn lengths from character-specific asymmetric distributions and inject bounded overlap markers under tension.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-11",
+      "raw_text": "Apply disfluency policies by character archetype and tension level.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-HT-12",
+      "raw_text": "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-013",
+      "raw_text": "FAILURE_MODE_EXTRACT",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-1",
+      "raw_text": "Cadence flattening through low sentence-length variance and medium-length clustering.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-2",
+      "raw_text": "Artificial over-bursting that alternates only ultra-short and ultra-long sentences.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-3",
+      "raw_text": "Low lexical entropy causing safe, generic diction.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-4",
+      "raw_text": "Clause-depth monotony or unreadable over-stacking.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-5",
+      "raw_text": "Information-band collapse into all-high-density info-dumps or all-low-density filler.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-6",
+      "raw_text": "Narrative-pressure flatlining or whiplash spikes.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-7",
+      "raw_text": "Register monotony or abrupt register flips that confuse voice.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-8",
+      "raw_text": "Idiosyncrasy absence leading to generic voice.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-9",
+      "raw_text": "Idiosyncrasy overuse leading to caricature.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-10",
+      "raw_text": "FID under-blending that erases character perspective.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-11",
+      "raw_text": "FID over-blending that obscures perspective ownership.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-12",
+      "raw_text": "Scene-reset behavior with no residue carryover.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-13",
+      "raw_text": "Dialogue theater-script stiffness with no overlap or interruption.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-14",
+      "raw_text": "Dialogue over-noise or under-noise relative to character profile.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-HT-15",
+      "raw_text": "Style averaging during editing that erodes voice.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-029",
+      "raw_text": "TEST_CASE_EXTRACT",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-1",
+      "raw_text": "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-2",
+      "raw_text": "Compare low-entropy and corpus-matched sentences and confirm lexical-entropy thresholds separate them.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-3",
+      "raw_text": "Construct paragraphs with excessive clause stacking and ensure clause-depth run caps trigger.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-4",
+      "raw_text": "Generate high-density, medium-density, and low-density paragraphs and verify density-band assignment and enforcement.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-5",
+      "raw_text": "Replay scenes with flat, rising, and whiplash pressure curves and verify pressure-slope validation behavior.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-6",
+      "raw_text": "Create paragraphs with abrupt formal/informal register jumps and test register-drift detection.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-7",
+      "raw_text": "Produce dialogue for multiple characters with and without signature markers and verify idiosyncrasy-range checks.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-8",
+      "raw_text": "Compare narrator-only, balanced-FID, and over-blended FID passages and validate blend-policy scoring.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-9",
+      "raw_text": "Run adjacent scenes with no residue, bounded residue, and excessive residue carryover and validate similarity-band enforcement.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-10",
+      "raw_text": "Generate clean alternating dialogue versus interrupted dialogue and ensure overlap-policy checks distinguish them.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-11",
+      "raw_text": "Evaluate anxious versus confident character dialogue against disfluency-rate bands.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "TC-HT-12",
+      "raw_text": "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-042",
+      "raw_text": "LIBRARY_EXTRACT",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-043",
+      "raw_text": "cadence_library",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-044",
+      "raw_text": "sentence_length_burstiness_profile",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-045",
+      "raw_text": "paragraph_burst_window_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-046",
+      "raw_text": "information_density_band_profiles",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-047",
+      "raw_text": "narrative_pressure_curve_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-048",
+      "raw_text": "dialogue_turn_length_profile",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-049",
+      "raw_text": "overlap_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-050",
+      "raw_text": "sentence_structure_library",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-051",
+      "raw_text": "lexical_entropy_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-052",
+      "raw_text": "clause_depth_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-053",
+      "raw_text": "sentence_length_profile",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-054",
+      "raw_text": "narrative_pressure_library",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-055",
+      "raw_text": "information_band_state",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-056",
+      "raw_text": "pressure_gradient_model",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-057",
+      "raw_text": "scene_residue_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-058",
+      "raw_text": "fid_scene_depth_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-059",
+      "raw_text": "human_texture_library",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-060",
+      "raw_text": "lexical_entropy_guard",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-061",
+      "raw_text": "register_drift_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-062",
+      "raw_text": "disfluency_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-063",
+      "raw_text": "style_averaging_prevention_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-064",
+      "raw_text": "idiosyncrasy_library",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-065",
+      "raw_text": "character_idiosyncrasy_profile",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-066",
+      "raw_text": "author_idiosyncrasy_profile",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-067",
+      "raw_text": "edit_voice_preservation_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-068",
+      "raw_text": "dialogue_behavior_library",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-069",
+      "raw_text": "dialogue_turn_policy",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-070",
+      "raw_text": "disfluency_profile",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-hidden_techniques_01-071",
+      "raw_text": "interruption_profile",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-1",
+      "raw_text": "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-2",
+      "raw_text": "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-3",
+      "raw_text": "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-4",
+      "raw_text": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-5",
+      "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-6",
+      "raw_text": "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-7",
+      "raw_text": "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-8",
+      "raw_text": "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-9",
+      "raw_text": "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "OP-SD-12",
+      "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    }
+  ]
+}

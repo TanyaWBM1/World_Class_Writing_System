@@ -1,0 +1,2993 @@
+{
+  "benchmark_run_id": "validator_calibration_round_1",
+  "suite_count": 6,
+  "fixture_count": 24,
+  "matched_fixture_count": 24,
+  "targeted_accuracy": 1.0,
+  "evaluation_scope": "targeted_validator_comparison_with_full_output_capture",
+  "suite_results": [
+    {
+      "suite_id": "cadence_stress_suite",
+      "fixture_count": 4,
+      "matched_fixture_count": 4,
+      "fixtures": [
+        {
+          "fixture_id": "cadence_pass_001",
+          "title": "Layered Rhythm With Clean Variation",
+          "task_type": "cadence",
+          "expected_status_by_validator": {
+            "cadence_variance_checker": "pass"
+          },
+          "actual_status_by_validator": {
+            "cadence_variance_checker": "pass"
+          },
+          "expected_gating_outcome": "accepted",
+          "actual_gating_outcome": "accepted",
+          "validator_matches": {
+            "cadence_variance_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.94,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.881,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 6
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.85,
+              "status": "pass",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 32.25,
+                "sentence_lengths": [
+                  7,
+                  16,
+                  3,
+                  16
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.5,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 6,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "roof",
+                  "station"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.55,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 3,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.5,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "cadence_warn_001",
+          "title": "Mostly Smooth With Limited Structural Contrast",
+          "task_type": "cadence",
+          "expected_status_by_validator": {
+            "cadence_variance_checker": "warn"
+          },
+          "actual_status_by_validator": {
+            "cadence_variance_checker": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "cadence_variance_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "cadence_flattening_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.84,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.667,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 6
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.36,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 1.688,
+                "sentence_lengths": [
+                  11,
+                  8,
+                  11,
+                  9
+                ],
+                "sentence_opening_diversity": 0.5,
+                "clause_pattern_entropy": 0.25,
+                "punctuation_rhythm": 0.25
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 6,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.47,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 3,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 6,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform",
+                  "porter",
+                  "roof",
+                  "train"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.62,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 5,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.83,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "cadence_fail_001",
+          "title": "Template Rhythm Collapse",
+          "task_type": "cadence",
+          "expected_status_by_validator": {
+            "cadence_variance_checker": "fail"
+          },
+          "actual_status_by_validator": {
+            "cadence_variance_checker": "fail"
+          },
+          "expected_gating_outcome": "rejected",
+          "actual_gating_outcome": "rejected",
+          "validator_matches": {
+            "cadence_variance_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "cadence_flattening_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.76,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.542,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 5
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.27,
+              "status": "fail",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 0.333,
+                "sentence_lengths": [
+                  5,
+                  4,
+                  4,
+                  4,
+                  4,
+                  3
+                ],
+                "sentence_opening_diversity": 0.167,
+                "clause_pattern_entropy": 0.167,
+                "punctuation_rhythm": 0.167
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 5,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.26,
+              "status": "fail",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 3,
+                "semantic_overlap_pairs": 3,
+                "repeated_ideas": 3,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform",
+                  "porter",
+                  "ticket",
+                  "train"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.58,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 4,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.67,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "cadence_adversarial_001",
+          "title": "False Variety With Hidden Repetition",
+          "task_type": "cadence",
+          "expected_status_by_validator": {
+            "cadence_variance_checker": "warn",
+            "semantic_redundancy_detector": "warn"
+          },
+          "actual_status_by_validator": {
+            "cadence_variance_checker": "warn",
+            "semantic_redundancy_detector": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "cadence_variance_checker": true,
+            "semantic_redundancy_detector": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "cadence_flattening_failure",
+            "semantic_redundancy_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.77,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.469,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 8
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.44,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 0.0,
+                "sentence_lengths": [
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.25,
+                "punctuation_rhythm": 0.25
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 8,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.36,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 3,
+                "semantic_overlap_pairs": 6,
+                "repeated_ideas": 6,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.34
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform",
+                  "porter",
+                  "roof",
+                  "train"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.64,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 8,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 1.0,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "suite_id": "semantic_redundancy_suite",
+      "fixture_count": 4,
+      "matched_fixture_count": 4,
+      "fixtures": [
+        {
+          "fixture_id": "semantic_pass_001",
+          "title": "Distinct Thought Progression",
+          "task_type": "semantic_redundancy",
+          "expected_status_by_validator": {
+            "semantic_redundancy_detector": "pass"
+          },
+          "actual_status_by_validator": {
+            "semantic_redundancy_detector": "pass"
+          },
+          "expected_gating_outcome": "accepted",
+          "actual_gating_outcome": "accepted",
+          "validator_matches": {
+            "semantic_redundancy_detector": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.82,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.806,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 2
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.81,
+              "status": "pass",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 24.889,
+                "sentence_lengths": [
+                  17,
+                  5,
+                  9
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.667,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.92,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 1,
+                "concrete_detail_hits": 2,
+                "abstraction_ratio": 0.5
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "porter",
+                  "train"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.51,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 2,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.33,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "semantic_warn_001",
+          "title": "Near-Duplicate Tension Restatement",
+          "task_type": "semantic_redundancy",
+          "expected_status_by_validator": {
+            "semantic_redundancy_detector": "warn"
+          },
+          "actual_status_by_validator": {
+            "semantic_redundancy_detector": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "semantic_redundancy_detector": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "semantic_redundancy_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.75,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.645,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 2
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.34,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 0.222,
+                "sentence_lengths": [
+                  10,
+                  10,
+                  11
+                ],
+                "sentence_opening_diversity": 0.333,
+                "clause_pattern_entropy": 0.333,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.98,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 2,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.62,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 0,
+                "semantic_overlap_pairs": 1,
+                "repeated_ideas": 2,
+                "semantic_frame_repetition": 2,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "porter",
+                  "ticket"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.23,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 1,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.55,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 3,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.5,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "semantic_fail_001",
+          "title": "Repeated Idea Loop",
+          "task_type": "semantic_redundancy",
+          "expected_status_by_validator": {
+            "semantic_redundancy_detector": "fail"
+          },
+          "actual_status_by_validator": {
+            "semantic_redundancy_detector": "fail"
+          },
+          "expected_gating_outcome": "rejected",
+          "actual_gating_outcome": "rejected",
+          "validator_matches": {
+            "semantic_redundancy_detector": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "semantic_redundancy_failure",
+            "prose_naturalness_collapse"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.65,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.429,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 2
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.4,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 1.5,
+                "sentence_lengths": [
+                  6,
+                  7,
+                  9,
+                  6
+                ],
+                "sentence_opening_diversity": 0.75,
+                "clause_pattern_entropy": 0.25,
+                "punctuation_rhythm": 0.25
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.98,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 2,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.26,
+              "status": "fail",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 0,
+                "semantic_overlap_pairs": 2,
+                "repeated_ideas": 6,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.18,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "porter"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.63,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 2,
+                "emotional_energy_signals": 3,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.33,
+                "emotional_energy_score": 0.5
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "semantic_adversarial_001",
+          "title": "Lexically Varied Same Meaning",
+          "task_type": "semantic_redundancy",
+          "expected_status_by_validator": {
+            "semantic_redundancy_detector": "warn",
+            "human_likeness_discriminator": "pass"
+          },
+          "actual_status_by_validator": {
+            "semantic_redundancy_detector": "warn",
+            "human_likeness_discriminator": "pass"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "semantic_redundancy_detector": true,
+            "human_likeness_discriminator": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "semantic_redundancy_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.85,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.816,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 3
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.54,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 4.25,
+                "sentence_lengths": [
+                  7,
+                  8,
+                  11,
+                  12
+                ],
+                "sentence_opening_diversity": 0.75,
+                "clause_pattern_entropy": 0.25,
+                "punctuation_rhythm": 0.25
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 3,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.61,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 3,
+                "modal_repetition": 3,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "porter",
+                  "ticket",
+                  "train"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.58,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 4,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.67,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "suite_id": "abstraction_density_suite",
+      "fixture_count": 4,
+      "matched_fixture_count": 4,
+      "fixtures": [
+        {
+          "fixture_id": "abstraction_pass_001",
+          "title": "Concrete Scene Anchoring",
+          "task_type": "abstraction_density",
+          "expected_status_by_validator": {
+            "abstraction_ratio_checker": "pass"
+          },
+          "actual_status_by_validator": {
+            "abstraction_ratio_checker": "pass"
+          },
+          "expected_gating_outcome": "accepted",
+          "actual_gating_outcome": "accepted",
+          "validator_matches": {
+            "abstraction_ratio_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.97,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.906,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 8
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.95,
+              "status": "pass",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 44.222,
+                "sentence_lengths": [
+                  7,
+                  5,
+                  20
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.667,
+                "punctuation_rhythm": 0.5
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 8,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "platform",
+                  "porter",
+                  "ticket"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.62,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 5,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.83,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "abstraction_warn_001",
+          "title": "Mixed Concrete And Summary",
+          "task_type": "abstraction_density",
+          "expected_status_by_validator": {
+            "abstraction_ratio_checker": "warn"
+          },
+          "actual_status_by_validator": {
+            "abstraction_ratio_checker": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "abstraction_ratio_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "over_abstraction_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.81,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.781,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 2
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.84,
+              "status": "pass",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 25.0,
+                "sentence_lengths": [
+                  11,
+                  21
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 1.0,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.73,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 4,
+                "concrete_detail_hits": 2,
+                "abstraction_ratio": 2.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.55,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 2,
+                "emotional_energy_signals": 1,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.33,
+                "emotional_energy_score": 0.17
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "abstraction_fail_001",
+          "title": "Disembodied Summary Drift",
+          "task_type": "abstraction_density",
+          "expected_status_by_validator": {
+            "abstraction_ratio_checker": "fail",
+            "human_likeness_discriminator": "warn"
+          },
+          "actual_status_by_validator": {
+            "abstraction_ratio_checker": "fail",
+            "human_likeness_discriminator": "warn"
+          },
+          "expected_gating_outcome": "rejected",
+          "actual_gating_outcome": "rejected",
+          "validator_matches": {
+            "abstraction_ratio_checker": true,
+            "human_likeness_discriminator": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "over_abstraction_failure",
+            "prose_naturalness_collapse"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.74,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 1,
+                "unique_ratio": 0.923,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 0
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.78,
+              "status": "pass",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 16.889,
+                "sentence_lengths": [
+                  4,
+                  8,
+                  14
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 1.0,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.29,
+              "status": "fail",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 8,
+                "concrete_detail_hits": 0,
+                "abstraction_ratio": 8.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.58,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.52,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 0,
+                "emotional_energy_signals": 2,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.0,
+                "emotional_energy_score": 0.33
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "abstraction_adversarial_001",
+          "title": "Token Detail Wrapped In Summary",
+          "task_type": "abstraction_density",
+          "expected_status_by_validator": {
+            "abstraction_ratio_checker": "warn"
+          },
+          "actual_status_by_validator": {
+            "abstraction_ratio_checker": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "abstraction_ratio_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "over_abstraction_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.85,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.875,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 2
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.55,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 4.0,
+                "sentence_lengths": [
+                  18,
+                  14
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 1.0,
+                "punctuation_rhythm": 0.286
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.61,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 6,
+                "concrete_detail_hits": 2,
+                "abstraction_ratio": 3.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.58,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.51,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 2,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.33,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "suite_id": "continuity_consistency_suite",
+      "fixture_count": 4,
+      "matched_fixture_count": 4,
+      "fixtures": [
+        {
+          "fixture_id": "continuity_pass_001",
+          "title": "Aligned Platform Scene",
+          "task_type": "continuity_consistency",
+          "expected_status_by_validator": {
+            "continuity_consistency_checker": "pass"
+          },
+          "actual_status_by_validator": {
+            "continuity_consistency_checker": "pass"
+          },
+          "expected_gating_outcome": "accepted",
+          "actual_gating_outcome": "accepted",
+          "validator_matches": {
+            "continuity_consistency_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.828,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 6
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.66,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 6.222,
+                "sentence_lengths": [
+                  13,
+                  7,
+                  9
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.667,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 6,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform",
+                  "porter",
+                  "ticket",
+                  "train"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.62,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 5,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.83,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "continuity_warn_001",
+          "title": "Partial Alignment With Soft Drift",
+          "task_type": "continuity_consistency",
+          "expected_status_by_validator": {
+            "continuity_consistency_checker": "warn"
+          },
+          "actual_status_by_validator": {
+            "continuity_consistency_checker": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "continuity_consistency_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "continuity_memory_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.92,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.879,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 5
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.58,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 2.25,
+                "sentence_lengths": [
+                  15,
+                  18
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 1.0,
+                "punctuation_rhythm": 0.667
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 5,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.82,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform",
+                  "porter",
+                  "station",
+                  "ticket"
+                ],
+                "contradiction_markers": 1
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.55,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 3,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.5,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "continuity_fail_001",
+          "title": "Hard State Contradiction",
+          "task_type": "continuity_consistency",
+          "expected_status_by_validator": {
+            "continuity_consistency_checker": "fail"
+          },
+          "actual_status_by_validator": {
+            "continuity_consistency_checker": "fail"
+          },
+          "expected_gating_outcome": "rejected",
+          "actual_gating_outcome": "rejected",
+          "validator_matches": {
+            "continuity_consistency_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "continuity_memory_failure",
+            "long_form_coherence_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.906,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 4
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.52,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 4.0,
+                "sentence_lengths": [
+                  18,
+                  14
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.5,
+                "punctuation_rhythm": 0.5
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 4,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.36,
+              "status": "fail",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "porter",
+                  "ticket"
+                ],
+                "contradiction_markers": 4
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.55,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 2,
+                "emotional_energy_signals": 1,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.33,
+                "emotional_energy_score": 0.17
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "continuity_adversarial_001",
+          "title": "Near-Consistent But Meaning-Shifted",
+          "task_type": "continuity_consistency",
+          "expected_status_by_validator": {
+            "continuity_consistency_checker": "warn",
+            "human_likeness_discriminator": "pass"
+          },
+          "actual_status_by_validator": {
+            "continuity_consistency_checker": "warn",
+            "human_likeness_discriminator": "pass"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "continuity_consistency_checker": true,
+            "human_likeness_discriminator": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "long_form_coherence_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.88,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.897,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 3
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.71,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 6.25,
+                "sentence_lengths": [
+                  22,
+                  17
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 1.0,
+                "punctuation_rhythm": 0.5
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 1.0,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 3,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.93,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 0,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 1,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.58,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform",
+                  "porter"
+                ],
+                "contradiction_markers": 4
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.23,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 1,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.55,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 3,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.5,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "suite_id": "dialogue_realism_suite",
+      "fixture_count": 4,
+      "matched_fixture_count": 4,
+      "fixtures": [
+        {
+          "fixture_id": "dialogue_pass_001",
+          "title": "Asymmetric Exchange With Subtext",
+          "task_type": "dialogue_realism",
+          "expected_status_by_validator": {
+            "dialogue_realism_checker": "pass"
+          },
+          "actual_status_by_validator": {
+            "dialogue_realism_checker": "pass"
+          },
+          "expected_gating_outcome": "accepted",
+          "actual_gating_outcome": "accepted",
+          "validator_matches": {
+            "dialogue_realism_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.97,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 1.0,
+                "dialogue_line_count": 4,
+                "concrete_detail_hits": 1
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.61,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 4.0,
+                "sentence_lengths": [
+                  5,
+                  5,
+                  7,
+                  7,
+                  5,
+                  1
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.333,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.95,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 1,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.98,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 0,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "porter"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.76,
+              "status": "pass",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 4,
+                "dialogue_length_variation": 2.25,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 1,
+                "dialogue_bridge_present": true,
+                "mirrored_openings": 0,
+                "utterance_lengths": [
+                  2,
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.52,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 1,
+                "emotional_energy_signals": 1,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.17,
+                "emotional_energy_score": 0.17
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "dialogue_warn_001",
+          "title": "Polite But Thin",
+          "task_type": "dialogue_realism",
+          "expected_status_by_validator": {
+            "dialogue_realism_checker": "warn"
+          },
+          "actual_status_by_validator": {
+            "dialogue_realism_checker": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "dialogue_realism_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "dialogue_realism_collapse"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.89,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.812,
+                "dialogue_line_count": 4,
+                "concrete_detail_hits": 1
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.44,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 2.24,
+                "sentence_lengths": [
+                  5,
+                  4,
+                  3,
+                  5,
+                  1
+                ],
+                "sentence_opening_diversity": 0.75,
+                "clause_pattern_entropy": 0.4,
+                "punctuation_rhythm": 0.429
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.95,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 0,
+                "concrete_detail_hits": 1,
+                "abstraction_ratio": 0.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.98,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 0,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "porter"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.61,
+              "status": "warn",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 4,
+                "dialogue_length_variation": 0.688,
+                "overlap_markers": 1,
+                "interruption_markers": 1,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 1,
+                "utterance_lengths": [
+                  2,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.52,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 1,
+                "emotional_energy_signals": 1,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.17,
+                "emotional_energy_score": 0.17
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "dialogue_fail_001",
+          "title": "Fake-Natural Exposition Dump",
+          "task_type": "dialogue_realism",
+          "expected_status_by_validator": {
+            "dialogue_realism_checker": "fail",
+            "human_likeness_discriminator": "warn"
+          },
+          "actual_status_by_validator": {
+            "dialogue_realism_checker": "fail",
+            "human_likeness_discriminator": "warn"
+          },
+          "expected_gating_outcome": "rejected",
+          "actual_gating_outcome": "rejected",
+          "validator_matches": {
+            "dialogue_realism_checker": true,
+            "human_likeness_discriminator": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "dialogue_realism_collapse",
+            "prose_naturalness_collapse"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.69,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 1,
+                "unique_ratio": 0.784,
+                "dialogue_line_count": 2,
+                "concrete_detail_hits": 3
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.72,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 9.0,
+                "sentence_lengths": [
+                  22,
+                  16
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 1.0,
+                "punctuation_rhythm": 0.4
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.96,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 1,
+                "concrete_detail_hits": 3,
+                "abstraction_ratio": 0.333
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "porter",
+                  "ticket"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.34,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 2,
+                "dialogue_length_variation": 25.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": [
+                  22,
+                  12
+                ]
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.59,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 3,
+                "emotional_energy_signals": 1,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.5,
+                "emotional_energy_score": 0.17
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "dialogue_adversarial_001",
+          "title": "Near-Human With Hidden Flatness",
+          "task_type": "dialogue_realism",
+          "expected_status_by_validator": {
+            "dialogue_realism_checker": "warn"
+          },
+          "actual_status_by_validator": {
+            "dialogue_realism_checker": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "dialogue_realism_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "dialogue_realism_collapse"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.95,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.95,
+                "dialogue_line_count": 5,
+                "concrete_detail_hits": 1
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.61,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 4.0,
+                "sentence_lengths": [
+                  5,
+                  2,
+                  4,
+                  5,
+                  7,
+                  1
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.333,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.85,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 1,
+                "concrete_detail_hits": 1,
+                "abstraction_ratio": 1.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.98,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 0,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.63,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "porter"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.62,
+              "status": "warn",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 5,
+                "dialogue_length_variation": 2.24,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 1,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": [
+                  2,
+                  2,
+                  3,
+                  4,
+                  6
+                ]
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.48,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 1,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.17,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "suite_id": "human_style_preference_suite",
+      "fixture_count": 4,
+      "matched_fixture_count": 4,
+      "fixtures": [
+        {
+          "fixture_id": "style_pass_001",
+          "title": "Paragraph-First Scene Pressure",
+          "task_type": "human_style_preference",
+          "expected_status_by_validator": {
+            "human_style_preference_validator": "pass",
+            "human_likeness_discriminator": "pass"
+          },
+          "actual_status_by_validator": {
+            "human_style_preference_validator": "pass",
+            "human_likeness_discriminator": "pass"
+          },
+          "expected_gating_outcome": "accepted",
+          "actual_gating_outcome": "accepted",
+          "validator_matches": {
+            "human_style_preference_validator": true,
+            "human_likeness_discriminator": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.897,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 4
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.52,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 2.0,
+                "sentence_lengths": [
+                  14,
+                  14,
+                  11
+                ],
+                "sentence_opening_diversity": 1.0,
+                "clause_pattern_entropy": 0.667,
+                "punctuation_rhythm": 0.5
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.98,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 1,
+                "concrete_detail_hits": 4,
+                "abstraction_ratio": 0.25
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.9,
+              "status": "pass",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "platform",
+                  "porter",
+                  "roof",
+                  "ticket"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.66,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 4,
+                "emotional_energy_signals": 2,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.67,
+                "emotional_energy_score": 0.33
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "style_warn_001",
+          "title": "Thin Context But Still Prose",
+          "task_type": "human_style_preference",
+          "expected_status_by_validator": {
+            "human_style_preference_validator": "warn"
+          },
+          "actual_status_by_validator": {
+            "human_style_preference_validator": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "human_style_preference_validator": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "prose_naturalness_collapse"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.85,
+              "status": "pass",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 0,
+                "unique_ratio": 0.913,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 1
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.62,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 9.188,
+                "sentence_lengths": [
+                  4,
+                  2,
+                  7,
+                  10
+                ],
+                "sentence_opening_diversity": 0.75,
+                "clause_pattern_entropy": 0.5,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.64,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 3,
+                "concrete_detail_hits": 1,
+                "abstraction_ratio": 3.0
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.91,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "porter"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.52,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 1,
+                "emotional_energy_signals": 1,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.17,
+                "emotional_energy_score": 0.17
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "style_fail_001",
+          "title": "List-Shaped Synthetic Summary",
+          "task_type": "human_style_preference",
+          "expected_status_by_validator": {
+            "human_style_preference_validator": "fail",
+            "human_likeness_discriminator": "warn"
+          },
+          "actual_status_by_validator": {
+            "human_style_preference_validator": "fail",
+            "human_likeness_discriminator": "warn"
+          },
+          "expected_gating_outcome": "rejected",
+          "actual_gating_outcome": "rejected",
+          "validator_matches": {
+            "human_style_preference_validator": true,
+            "human_likeness_discriminator": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "prose_naturalness_collapse"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.49,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 1,
+                "unique_ratio": 0.733,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 2
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.35,
+              "status": "warn",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 0.188,
+                "sentence_lengths": [
+                  4,
+                  5,
+                  5,
+                  5
+                ],
+                "sentence_opening_diversity": 0.5,
+                "clause_pattern_entropy": 0.25,
+                "punctuation_rhythm": 0.25
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.86,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 1,
+                "concrete_detail_hits": 2,
+                "abstraction_ratio": 0.5
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.74,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 1,
+                "semantic_overlap_pairs": 1,
+                "repeated_ideas": 1,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.68,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": false,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "mara",
+                  "porter",
+                  "ticket"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.0,
+              "status": "fail",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 1.0,
+                "context_depth_signals": 2,
+                "emotional_energy_signals": 2,
+                "paragraph_flow_score": 0.2,
+                "context_sufficiency_score": 0.33,
+                "emotional_energy_score": 0.33
+              }
+            }
+          }
+        },
+        {
+          "fixture_id": "style_adversarial_001",
+          "title": "Paragraph Shell With Empty Interior",
+          "task_type": "human_style_preference",
+          "expected_status_by_validator": {
+            "human_style_preference_validator": "warn",
+            "abstraction_ratio_checker": "warn"
+          },
+          "actual_status_by_validator": {
+            "human_style_preference_validator": "warn",
+            "abstraction_ratio_checker": "warn"
+          },
+          "expected_gating_outcome": "accepted_with_warnings",
+          "actual_gating_outcome": "accepted_with_warnings",
+          "validator_matches": {
+            "human_style_preference_validator": true,
+            "abstraction_ratio_checker": true
+          },
+          "fixture_match": true,
+          "expected_failure_modes": [
+            "prose_naturalness_collapse",
+            "over_abstraction_failure"
+          ],
+          "all_validator_outputs": {
+            "human_likeness_discriminator": {
+              "score": 0.73,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "generic_phrase_hits": 1,
+                "unique_ratio": 0.824,
+                "dialogue_line_count": 0,
+                "concrete_detail_hits": 2
+              }
+            },
+            "cadence_variance_checker": {
+              "score": 0.87,
+              "status": "pass",
+              "dimension": "cadence",
+              "evidence": {
+                "sentence_length_variance": 46.889,
+                "sentence_lengths": [
+                  6,
+                  7,
+                  21
+                ],
+                "sentence_opening_diversity": 0.667,
+                "clause_pattern_entropy": 0.667,
+                "punctuation_rhythm": 0.333
+              }
+            },
+            "abstraction_ratio_checker": {
+              "score": 0.59,
+              "status": "warn",
+              "dimension": "human_texture",
+              "evidence": {
+                "abstract_term_hits": 7,
+                "concrete_detail_hits": 2,
+                "abstraction_ratio": 3.5
+              }
+            },
+            "semantic_redundancy_detector": {
+              "score": 0.84,
+              "status": "pass",
+              "dimension": "human_texture",
+              "evidence": {
+                "duplicate_sentence_count": 0,
+                "repeated_phrase_indicator_count": 2,
+                "semantic_overlap_pairs": 0,
+                "repeated_ideas": 0,
+                "semantic_frame_repetition": 0,
+                "modal_repetition": 0,
+                "collapse_penalty": 0.0,
+                "refrain_relief": 0.0
+              }
+            },
+            "continuity_consistency_checker": {
+              "score": 0.85,
+              "status": "warn",
+              "dimension": "continuity",
+              "evidence": {
+                "location_alignment": true,
+                "character_alignment": true,
+                "named_entity_mentions": [
+                  "platform"
+                ],
+                "contradiction_markers": 0
+              }
+            },
+            "dialogue_realism_checker": {
+              "score": 0.18,
+              "status": "fail",
+              "dimension": "dialogue_integrity",
+              "evidence": {
+                "dialogue_line_count": 0,
+                "dialogue_length_variation": 0.0,
+                "overlap_markers": 0,
+                "interruption_markers": 0,
+                "pragmatics_markers": 0,
+                "dialogue_bridge_present": false,
+                "mirrored_openings": 0,
+                "utterance_lengths": []
+              }
+            },
+            "human_style_preference_validator": {
+              "score": 0.51,
+              "status": "warn",
+              "dimension": "human_likeness",
+              "evidence": {
+                "paragraph_count": 1,
+                "bullet_ratio": 0.0,
+                "context_depth_signals": 2,
+                "emotional_energy_signals": 0,
+                "paragraph_flow_score": 1.0,
+                "context_sufficiency_score": 0.33,
+                "emotional_energy_score": 0.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "validator_summary": {
+    "cadence_variance_checker": {
+      "fixtures_seen": 4,
+      "matches": 4,
+      "false_positives": [],
+      "false_negatives": [],
+      "warn_band_hits": 2,
+      "fail_band_hits": 1,
+      "accuracy": 1.0
+    },
+    "semantic_redundancy_detector": {
+      "fixtures_seen": 5,
+      "matches": 5,
+      "false_positives": [],
+      "false_negatives": [],
+      "warn_band_hits": 3,
+      "fail_band_hits": 1,
+      "accuracy": 1.0
+    },
+    "human_likeness_discriminator": {
+      "fixtures_seen": 6,
+      "matches": 6,
+      "false_positives": [],
+      "false_negatives": [],
+      "warn_band_hits": 3,
+      "fail_band_hits": 0,
+      "accuracy": 1.0
+    },
+    "abstraction_ratio_checker": {
+      "fixtures_seen": 5,
+      "matches": 5,
+      "false_positives": [],
+      "false_negatives": [],
+      "warn_band_hits": 3,
+      "fail_band_hits": 1,
+      "accuracy": 1.0
+    },
+    "continuity_consistency_checker": {
+      "fixtures_seen": 4,
+      "matches": 4,
+      "false_positives": [],
+      "false_negatives": [],
+      "warn_band_hits": 2,
+      "fail_band_hits": 1,
+      "accuracy": 1.0
+    },
+    "dialogue_realism_checker": {
+      "fixtures_seen": 4,
+      "matches": 4,
+      "false_positives": [],
+      "false_negatives": [],
+      "warn_band_hits": 2,
+      "fail_band_hits": 1,
+      "accuracy": 1.0
+    },
+    "human_style_preference_validator": {
+      "fixtures_seen": 4,
+      "matches": 4,
+      "false_positives": [],
+      "false_negatives": [],
+      "warn_band_hits": 2,
+      "fail_band_hits": 1,
+      "accuracy": 1.0
+    }
+  },
+  "weak_validators": [],
+  "over_sensitive_validators": []
+}

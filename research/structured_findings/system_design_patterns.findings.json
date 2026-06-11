@@ -1,0 +1,2072 @@
+{
+  "generated_at": "2026-03-21T19:05:21.966194+00:00",
+  "source_file": "system_design_patterns_01.md",
+  "record_count": 106,
+  "records": [
+    {
+      "id": "RULE-SD-1",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration.",
+      "normalized_name": "all_production_evaluation_paths_must_be_deterministic_for_fixed_inputs_versions_and_configuration",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-2",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Every detected failure must be logged to an append-only structured failure ledger.",
+      "normalized_name": "every_detected_failure_must_be_logged_to_an_append_only_structured_failure_ledger",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-3",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Failure taxonomy changes must be versioned and may not silently rewrite historical labels.",
+      "normalized_name": "failure_taxonomy_changes_must_be_versioned_and_may_not_silently_rewrite_historical_labels",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-4",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Only validated failures may be promoted into benchmark fixtures.",
+      "normalized_name": "only_validated_failures_may_be_promoted_into_benchmark_fixtures",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-5",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+      "normalized_name": "benchmark_promotion_requires_human_approval_before_a_fixture_becomes_part_of_replayable_suites",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-6",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.",
+      "normalized_name": "regression_suites_must_score_outputs_across_multiple_dimensions_rather_than_a_single_aggregate_score_alone",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-7",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+      "normalized_name": "evaluator_prompts_thresholds_and_model_versions_must_be_frozen_for_any_baseline_used_in_promotion_decisions",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-8",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "System changes must pass sandbox evaluation before shadow evaluation.",
+      "normalized_name": "system_changes_must_pass_sandbox_evaluation_before_shadow_evaluation",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-9",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+      "normalized_name": "no_change_may_be_promoted_to_production_without_benchmark_replay_against_the_relevant_fixture_set",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-10",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "AI-generated reflections or rule proposals may never directly modify production rules.",
+      "normalized_name": "ai_generated_reflections_or_rule_proposals_may_never_directly_modify_production_rules",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-11",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+      "normalized_name": "human_approval_is_mandatory_for_rule_acceptance_benchmark_promotion_and_override_of_critical_regressions",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-12",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows.",
+      "normalized_name": "systemic_versus_one_off_failure_classification_must_use_deterministic_clustering_or_deterministic_feature_analytics_in_primary_workflows",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-13",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance.",
+      "normalized_name": "style_fingerprints_must_be_versioned_and_frozen_between_releases_unless_changed_through_governance",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-14",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Multi-pass pipelines must preserve strict schema contracts between generation, refinement, and enforcement stages.",
+      "normalized_name": "multi_pass_pipelines_must_preserve_strict_schema_contracts_between_generation_refinement_and_enforcement_stages",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-15",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+      "normalized_name": "production_runtime_style_enforcement_must_be_rule_based_or_use_frozen_numeric_thresholds_from_hybrid_evaluators",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-16",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone.",
+      "normalized_name": "long_form_coherence_must_be_backed_by_structured_continuity_state_rather_than_raw_context_recall_alone",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-17",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+      "normalized_name": "state_transitions_must_be_logged_as_explicit_diffs_and_may_not_retroactively_rewrite_canonical_state_without_governance",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-18",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+      "normalized_name": "reflexion_style_self_reflection_may_run_only_in_sandboxed_improvement_loops_never_as_a_live_production_writer_or_updater",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-19",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+      "normalized_name": "promotion_decisions_must_reject_pareto_unsafe_changes_that_improve_one_dimension_while_dropping_another_below_minimum_thresholds",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-20",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+      "normalized_name": "external_dependency_changes_including_evaluator_or_model_version_changes_require_fresh_benchmark_replay_before_promotion",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-1",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state.",
+      "normalized_name": "write_every_failure_event_to_failure_log_jsonl_with_fixture_id_pipeline_stage_version_metadata_evaluator_outputs_and_resolution_state",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-2",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+      "normalized_name": "maintain_failure_taxonomy_json_as_a_controlled_vocabulary_with_explicit_versioning",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-3",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+      "normalized_name": "cluster_failure_ledger_entries_periodically_to_identify_systemic_spikes_by_fixture_genre_style_failure_type_and_model_version",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-4",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+      "normalized_name": "convert_approved_representative_failures_into_versioned_benchmark_fixtures_and_record_failure_to_fixture_lineage",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-5",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+      "normalized_name": "run_multi_metric_regression_suites_on_frozen_fixtures_before_any_architecture_prompt_rule_or_model_change_is_promoted",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-6",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+      "normalized_name": "generate_system_change_proposal_artifacts_for_every_candidate_update_and_route_them_through_sandbox_then_shadow_evaluation",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-7",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+      "normalized_name": "freeze_evaluator_prompts_thresholds_and_configs_per_release_so_score_comparisons_remain_historically_meaningful",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-8",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+      "normalized_name": "keep_ai_generated_rule_or_prompt_proposals_in_proposal_logs_only_until_human_approval_occurs",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-9",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+      "normalized_name": "compute_style_conformity_scores_against_frozen_style_fingerprints_and_log_drift_over_time",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-10",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Cap refinement passes and preserve stage-separated artifacts for generation, refinement, and enforcement outputs.",
+      "normalized_name": "cap_refinement_passes_and_preserve_stage_separated_artifacts_for_generation_refinement_and_enforcement_outputs",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-11",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+      "normalized_name": "load_continuity_state_snapshots_before_generation_or_refinement_and_emit_deterministic_state_diff_artifacts_after_each_segment",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-SD-12",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+      "normalized_name": "use_rule_based_checks_in_production_runtime_confine_llm_as_judge_and_reflexion_style_loops_to_sandbox_analysis_unless_explicitly_frozen_and_approved",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-1",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Failure-ledger noise collapse caused by over-broad taxonomy or noisy evaluators.",
+      "normalized_name": "failure_ledger_noise_collapse_caused_by_over_broad_taxonomy_or_noisy_evaluators",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-2",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+      "normalized_name": "failure_to_fixture_bloat_caused_by_uncontrolled_promotion_and_duplicate_fixtures",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-3",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Benchmark overfitting where the system optimizes to historical fixtures but drifts elsewhere.",
+      "normalized_name": "benchmark_overfitting_where_the_system_optimizes_to_historical_fixtures_but_drifts_elsewhere",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-4",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Evaluator drift that invalidates baseline comparisons across releases.",
+      "normalized_name": "evaluator_drift_that_invalidates_baseline_comparisons_across_releases",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-5",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Governance capture where proposal and approval paths are not sufficiently separated.",
+      "normalized_name": "governance_capture_where_proposal_and_approval_paths_are_not_sufficiently_separated",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-6",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Rubber-stamp governance fatigue that lets regressions through.",
+      "normalized_name": "rubber_stamp_governance_fatigue_that_lets_regressions_through",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-7",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+      "normalized_name": "ai_on_ai_degradation_where_evaluator_or_reflection_bias_shapes_production_rules_indirectly",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-8",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Systemic-failure false positives caused by unstable clustering features or thresholds.",
+      "normalized_name": "systemic_failure_false_positives_caused_by_unstable_clustering_features_or_thresholds",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-9",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Style fingerprint overconstraint that preserves sameness instead of voice.",
+      "normalized_name": "style_fingerprint_overconstraint_that_preserves_sameness_instead_of_voice",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-10",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+      "normalized_name": "style_fingerprint_creep_caused_by_retraining_on_already_homogenized_outputs",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-11",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Multi-pass oscillation where refinement loops endlessly or degrades original intent.",
+      "normalized_name": "multi_pass_oscillation_where_refinement_loops_endlessly_or_degrades_original_intent",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-12",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Production style-flattening caused by overpowered enforcement stages.",
+      "normalized_name": "production_style_flattening_caused_by_overpowered_enforcement_stages",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-13",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Continuity lock-in where incorrect state is preserved and enforced downstream.",
+      "normalized_name": "continuity_lock_in_where_incorrect_state_is_preserved_and_enforced_downstream",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-14",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "State explosion that makes long-form continuity unmanageable or too costly.",
+      "normalized_name": "state_explosion_that_makes_long_form_continuity_unmanageable_or_too_costly",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-15",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+      "normalized_name": "hybrid_evaluator_silent_drift_where_soft_components_shift_behavior_without_governance",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-16",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+      "normalized_name": "stable_but_wrong_promotion_where_deterministic_outputs_still_fail_core_quality_or_correctness_goals",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-17",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+      "normalized_name": "reflection_style_tone_contamination_where_sandbox_reflections_bias_prose_toward_explanatory_blandness",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-1",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Replay a fixed failure corpus twice and verify the failure ledger produces identical structured entries under frozen configs.",
+      "normalized_name": "replay_a_fixed_failure_corpus_twice_and_verify_the_failure_ledger_produces_identical_structured_entries_under_frozen_configs",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-2",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Submit duplicate failure cases to fixture-promotion flow and verify deterministic deduplication prevents benchmark bloat.",
+      "normalized_name": "submit_duplicate_failure_cases_to_fixture_promotion_flow_and_verify_deterministic_deduplication_prevents_benchmark_bloat",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-3",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Run a candidate update that improves target failures but harms style metrics and confirm governance marks it Pareto-unsafe.",
+      "normalized_name": "run_a_candidate_update_that_improves_target_failures_but_harms_style_metrics_and_confirm_governance_marks_it_pareto_unsafe",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-4",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Change evaluator prompts without version bump and verify baseline-comparison checks fail the promotion pipeline.",
+      "normalized_name": "change_evaluator_prompts_without_version_bump_and_verify_baseline_comparison_checks_fail_the_promotion_pipeline",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-5",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Inject an AI-generated rule proposal into production-rule paths and verify one-way influence boundaries block it.",
+      "normalized_name": "inject_an_ai_generated_rule_proposal_into_production_rule_paths_and_verify_one_way_influence_boundaries_block_it",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-6",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Feed clustered one-off failures and true systemic spikes into analytics and verify deterministic clustering distinguishes them.",
+      "normalized_name": "feed_clustered_one_off_failures_and_true_systemic_spikes_into_analytics_and_verify_deterministic_clustering_distinguishes_them",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-7",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Run outputs against frozen style fingerprints and confirm style drift is flagged while approved intentional shifts remain allowed only through governance.",
+      "normalized_name": "run_outputs_against_frozen_style_fingerprints_and_confirm_style_drift_is_flagged_while_approved_intentional_shifts_remain_allowed_only_through_governance",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-8",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Force repeated refinement passes and verify pass caps plus stage-contract checks prevent oscillation loops.",
+      "normalized_name": "force_repeated_refinement_passes_and_verify_pass_caps_plus_stage_contract_checks_prevent_oscillation_loops",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-9",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Seed contradictory entity updates into continuity state and verify state-diff and coherence checks block illegal transitions.",
+      "normalized_name": "seed_contradictory_entity_updates_into_continuity_state_and_verify_state_diff_and_coherence_checks_block_illegal_transitions",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-10",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Compare rule-based, structured-critic, LLM-judge, and hybrid evaluators on the same fixture set and verify determinism boundaries are reported correctly.",
+      "normalized_name": "compare_rule_based_structured_critic_llm_judge_and_hybrid_evaluators_on_the_same_fixture_set_and_verify_determinism_boundaries_are_reported_correctly",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-11",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Run Reflexion-style sandbox loops and verify their proposals are logged as data only and cannot update live runtime.",
+      "normalized_name": "run_reflexion_style_sandbox_loops_and_verify_their_proposals_are_logged_as_data_only_and_cannot_update_live_runtime",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-SD-12",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Execute sandbox, shadow, and promotion stages for a system change and verify artifact lineage is complete and promotion criteria are enforced.",
+      "normalized_name": "execute_sandbox_shadow_and_promotion_stages_for_a_system_change_and_verify_artifact_lineage_is_complete_and_promotion_criteria_are_enforced",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-001",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "failure_ledger_schema",
+      "normalized_name": "failure_ledger_schema",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-002",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "fixture_promotion_workflow",
+      "normalized_name": "fixture_promotion_workflow",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-003",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "multi_metric_regression_workflow",
+      "normalized_name": "multi_metric_regression_workflow",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-004",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "governance_gate_workflow",
+      "normalized_name": "governance_gate_workflow",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-005",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "one_way_influence_boundary",
+      "normalized_name": "one_way_influence_boundary",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-006",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "systemic_failure_clustering_policy",
+      "normalized_name": "systemic_failure_clustering_policy",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-007",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "multi_pass_pipeline_contract",
+      "normalized_name": "multi_pass_pipeline_contract",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-008",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "hybrid_evaluator_policy",
+      "normalized_name": "hybrid_evaluator_policy",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-system_design_library-009",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "promotion_decision_policy",
+      "normalized_name": "promotion_decision_policy",
+      "description": "Library entry candidate extracted from system_design_library.",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-001",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "failure_ledger_noise_collapse",
+      "normalized_name": "failure_ledger_noise_collapse",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-002",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "benchmark_bloat_failure",
+      "normalized_name": "benchmark_bloat_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-003",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "benchmark_overfit_failure",
+      "normalized_name": "benchmark_overfit_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-004",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "evaluator_drift_failure",
+      "normalized_name": "evaluator_drift_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [
+        "LIB-system_design_patterns_01-evaluation_library-005"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-005",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "governance_capture_failure",
+      "normalized_name": "governance_capture_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-006",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "ai_on_ai_degradation_failure",
+      "normalized_name": "ai_on_ai_degradation_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-007",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "clustering_false_positive_failure",
+      "normalized_name": "clustering_false_positive_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-008",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_fingerprint_creep",
+      "normalized_name": "style_fingerprint_creep",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-009",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "refinement_oscillation_failure",
+      "normalized_name": "refinement_oscillation_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-010",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "continuity_lock_in_failure",
+      "normalized_name": "continuity_lock_in_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-011",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "stable_but_wrong_pattern",
+      "normalized_name": "stable_but_wrong_pattern",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [
+        "LIB-evaluation_methods_01-failure_mode_library-010"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-failure_mode_library-012",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "reflection_tone_contamination",
+      "normalized_name": "reflection_tone_contamination",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-001",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "failure_replay_suite",
+      "normalized_name": "failure_replay_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-002",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "fixture_dedup_suite",
+      "normalized_name": "fixture_dedup_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-003",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "pareto_tradeoff_suite",
+      "normalized_name": "pareto_tradeoff_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [
+        "LIB-system_design_patterns_01-evaluation_library-004"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-004",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "evaluator_versioning_suite",
+      "normalized_name": "evaluator_versioning_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-005",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "one_way_boundary_suite",
+      "normalized_name": "one_way_boundary_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-006",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "systemic_failure_cluster_suite",
+      "normalized_name": "systemic_failure_cluster_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-007",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_drift_regression_suite",
+      "normalized_name": "style_drift_regression_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-008",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "refinement_loop_suite",
+      "normalized_name": "refinement_loop_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-009",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "continuity_state_conflict_suite",
+      "normalized_name": "continuity_state_conflict_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-benchmark_fixture_library-010",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "governance_promotion_suite",
+      "normalized_name": "governance_promotion_suite",
+      "description": "Library entry candidate extracted from benchmark_fixture_library.",
+      "candidate_library": "benchmark_fixture_library",
+      "candidate_libraries": [
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-001",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "deterministic_regression_runner",
+      "normalized_name": "deterministic_regression_runner",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-002",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_conformity_scorer",
+      "normalized_name": "style_conformity_scorer",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-003",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "coherence_regression_checker",
+      "normalized_name": "coherence_regression_checker",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-004",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "pareto_tradeoff_checker",
+      "normalized_name": "pareto_tradeoff_checker",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [
+        "LIB-system_design_patterns_01-benchmark_fixture_library-003"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-005",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "evaluator_drift_checker",
+      "normalized_name": "evaluator_drift_checker",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [
+        "LIB-system_design_patterns_01-failure_mode_library-004"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-006",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "clustering_analytics_runner",
+      "normalized_name": "clustering_analytics_runner",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-007",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "continuity_state_checker",
+      "normalized_name": "continuity_state_checker",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-evaluation_library-008",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "hybrid_evaluator_wrapper",
+      "normalized_name": "hybrid_evaluator_wrapper",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-continuity_state_library-001",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "entity_thread_memory_state",
+      "normalized_name": "entity_thread_memory_state",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-continuity_state_library-002",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "continuity_state_snapshot",
+      "normalized_name": "continuity_state_snapshot",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-continuity_state_library-003",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "continuity_state_diff_schema",
+      "normalized_name": "continuity_state_diff_schema",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-continuity_state_library-004",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_fingerprint_state",
+      "normalized_name": "style_fingerprint_state",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-continuity_state_library-005",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "thread_status_registry",
+      "normalized_name": "thread_status_registry",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-system_design_patterns_01-continuity_state_library-006",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "scene_transition_state",
+      "normalized_name": "scene_transition_state",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    }
+  ],
+  "library_extract_groups": {
+    "system_design_library": [
+      "failure_ledger_schema",
+      "fixture_promotion_workflow",
+      "multi_metric_regression_workflow",
+      "governance_gate_workflow",
+      "one_way_influence_boundary",
+      "systemic_failure_clustering_policy",
+      "multi_pass_pipeline_contract",
+      "hybrid_evaluator_policy",
+      "promotion_decision_policy"
+    ],
+    "failure_mode_library": [
+      "failure_ledger_noise_collapse",
+      "benchmark_bloat_failure",
+      "benchmark_overfit_failure",
+      "evaluator_drift_failure",
+      "governance_capture_failure",
+      "ai_on_ai_degradation_failure",
+      "clustering_false_positive_failure",
+      "style_fingerprint_creep",
+      "refinement_oscillation_failure",
+      "continuity_lock_in_failure",
+      "stable_but_wrong_pattern",
+      "reflection_tone_contamination"
+    ],
+    "benchmark_fixture_library": [
+      "failure_replay_suite",
+      "fixture_dedup_suite",
+      "pareto_tradeoff_suite",
+      "evaluator_versioning_suite",
+      "one_way_boundary_suite",
+      "systemic_failure_cluster_suite",
+      "style_drift_regression_suite",
+      "refinement_loop_suite",
+      "continuity_state_conflict_suite",
+      "governance_promotion_suite"
+    ],
+    "evaluation_library": [
+      "deterministic_regression_runner",
+      "style_conformity_scorer",
+      "coherence_regression_checker",
+      "pareto_tradeoff_checker",
+      "evaluator_drift_checker",
+      "clustering_analytics_runner",
+      "continuity_state_checker",
+      "hybrid_evaluator_wrapper"
+    ],
+    "continuity_state_library": [
+      "entity_thread_memory_state",
+      "continuity_state_snapshot",
+      "continuity_state_diff_schema",
+      "style_fingerprint_state",
+      "thread_status_registry",
+      "scene_transition_state"
+    ]
+  },
+  "duplicate_candidates": [
+    {
+      "canonical_name": "stable but wrong pattern",
+      "record_ids": [
+        "LIB-evaluation_methods_01-failure_mode_library-010",
+        "LIB-system_design_patterns_01-failure_mode_library-011"
+      ],
+      "source_files": [
+        "evaluation_methods_01.md",
+        "system_design_patterns_01.md"
+      ],
+      "labels": [
+        "stable_but_wrong_pattern",
+        "stable_but_wrong_pattern_v1"
+      ]
+    }
+  ],
+  "overlap_candidates": [
+    {
+      "record_ids": [
+        "RULE-1",
+        "RULE-SD-1"
+      ],
+      "item_type": "ruleset",
+      "names": [
+        "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+        "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration."
+      ],
+      "source_files": [
+        "evaluation_methods_01.md",
+        "system_design_patterns_01.md"
+      ],
+      "similarity": 0.61,
+      "merge_candidate": false
+    }
+  ]
+}

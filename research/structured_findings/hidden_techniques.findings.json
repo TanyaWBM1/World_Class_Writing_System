@@ -1,0 +1,1647 @@
+{
+  "generated_at": "2026-03-21T19:05:21.961841+00:00",
+  "source_file": "hidden_techniques_01.md",
+  "record_count": 85,
+  "records": [
+    {
+      "id": "RULE-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+      "normalized_name": "each_paragraph_must_include_controlled_sentence_length_burstiness_rather_than_a_flat_medium_length_distribution",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Sentence-length variance must stay above the configured lower bound for the active cadence profile.",
+      "normalized_name": "sentence_length_variance_must_stay_above_the_configured_lower_bound_for_the_active_cadence_profile",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.",
+      "normalized_name": "lexical_entropy_per_sentence_must_remain_within_corpus_relative_min_max_thresholds",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.",
+      "normalized_name": "clause_depth_runs_must_be_bounded_the_system_may_not_emit_too_many_consecutive_high_depth_or_low_depth_sentences",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.",
+      "normalized_name": "every_paragraph_must_be_assigned_an_information_density_band_and_must_conform_to_that_band_s_density_constraints",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Narrative pressure must evolve within configured slope bounds and may not flatten unintentionally inside pressure-building scenes.",
+      "normalized_name": "narrative_pressure_must_evolve_within_configured_slope_bounds_and_may_not_flatten_unintentionally_inside_pressure_building_scenes",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+      "normalized_name": "register_drift_per_sentence_and_per_paragraph_must_remain_inside_the_allowed_drift_window_for_the_active_voice",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Character or author idiosyncrasies must be present often enough to preserve voice, but not so often that they become caricature.",
+      "normalized_name": "character_or_author_idiosyncrasies_must_be_present_often_enough_to_preserve_voice_but_not_so_often_that_they_become_caricature",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "In POV-deep scenes, free indirect discourse blend must remain within configured narrator/character mixing bounds.",
+      "normalized_name": "in_pov_deep_scenes_free_indirect_discourse_blend_must_remain_within_configured_narrator_character_mixing_bounds",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Scene-to-scene residue must carry forward with controlled decay and bounded similarity.",
+      "normalized_name": "scene_to_scene_residue_must_carry_forward_with_controlled_decay_and_bounded_similarity",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Dialogue must exhibit non-uniform turn lengths and controlled overlap or interruption patterns.",
+      "normalized_name": "dialogue_must_exhibit_non_uniform_turn_lengths_and_controlled_overlap_or_interruption_patterns",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Character disfluency rates must match trait- and tension-specific ranges.",
+      "normalized_name": "character_disfluency_rates_must_match_trait_and_tension_specific_ranges",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-13",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+      "normalized_name": "editing_passes_may_not_reduce_entropy_and_idiosyncrasy_below_the_configured_preservation_floor",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-14",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+      "normalized_name": "style_preservation_edits_must_restore_voice_markers_when_cleanup_operations_over_normalize_prose",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+      "normalized_name": "maintain_a_rolling_paragraph_buffer_for_sentence_lengths_and_trigger_burst_modulation_when_medium_length_clustering_persists",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+      "normalized_name": "compute_per_sentence_lexical_entropy_and_bias_generation_toward_context_appropriate_synonymy_when_entropy_is_too_low",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Parse clause depth per sentence and inject compensating low-depth or high-depth sentences when run limits are exceeded.",
+      "normalized_name": "parse_clause_depth_per_sentence_and_inject_compensating_low_depth_or_high_depth_sentences_when_run_limits_are_exceeded",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Tag each paragraph with an information-density band and route generation constraints through that band profile.",
+      "normalized_name": "tag_each_paragraph_with_an_information_density_band_and_route_generation_constraints_through_that_band_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar.",
+      "normalized_name": "update_a_narrative_pressure_scalar_through_each_scene_and_bind_cadence_decisions_to_that_scalar",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "narrative_pressure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Score each sentence on a register axis and block abrupt register jumps beyond configured drift thresholds.",
+      "normalized_name": "score_each_sentence_on_a_register_axis_and_block_abrupt_register_jumps_beyond_configured_drift_thresholds",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Load per-character idiosyncrasy profiles and enforce bounded reuse of signature discourse markers or phrase fossils.",
+      "normalized_name": "load_per_character_idiosyncrasy_profiles_and_enforce_bounded_reuse_of_signature_discourse_markers_or_phrase_fossils",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Apply FID blend coefficients in POV-deep scenes and keep coefficient changes smooth across adjacent sentences.",
+      "normalized_name": "apply_fid_blend_coefficients_in_pov_deep_scenes_and_keep_coefficient_changes_smooth_across_adjacent_sentences",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "cadence_library",
+        "sentence_structure_library",
+        "narrative_pressure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compute a residue vector at scene end and bias the next scene with decayed lexical, affective, and conceptual carryover.",
+      "normalized_name": "compute_a_residue_vector_at_scene_end_and_bias_the_next_scene_with_decayed_lexical_affective_and_conceptual_carryover",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Sample dialogue turn lengths from character-specific asymmetric distributions and inject bounded overlap markers under tension.",
+      "normalized_name": "sample_dialogue_turn_lengths_from_character_specific_asymmetric_distributions_and_inject_bounded_overlap_markers_under_tension",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Apply disfluency policies by character archetype and tension level.",
+      "normalized_name": "apply_disfluency_policies_by_character_archetype_and_tension_level",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+      "normalized_name": "after_each_edit_pass_compare_entropy_and_idiosyncrasy_against_the_pre_edit_reference_and_restore_voice_markers_when_needed",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-013",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "FAILURE_MODE_EXTRACT",
+      "normalized_name": "failure_mode_extract",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Cadence flattening through low sentence-length variance and medium-length clustering.",
+      "normalized_name": "cadence_flattening_through_low_sentence_length_variance_and_medium_length_clustering",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Artificial over-bursting that alternates only ultra-short and ultra-long sentences.",
+      "normalized_name": "artificial_over_bursting_that_alternates_only_ultra_short_and_ultra_long_sentences",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Low lexical entropy causing safe, generic diction.",
+      "normalized_name": "low_lexical_entropy_causing_safe_generic_diction",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Clause-depth monotony or unreadable over-stacking.",
+      "normalized_name": "clause_depth_monotony_or_unreadable_over_stacking",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Information-band collapse into all-high-density info-dumps or all-low-density filler.",
+      "normalized_name": "information_band_collapse_into_all_high_density_info_dumps_or_all_low_density_filler",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Narrative-pressure flatlining or whiplash spikes.",
+      "normalized_name": "narrative_pressure_flatlining_or_whiplash_spikes",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Register monotony or abrupt register flips that confuse voice.",
+      "normalized_name": "register_monotony_or_abrupt_register_flips_that_confuse_voice",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Idiosyncrasy absence leading to generic voice.",
+      "normalized_name": "idiosyncrasy_absence_leading_to_generic_voice",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Idiosyncrasy overuse leading to caricature.",
+      "normalized_name": "idiosyncrasy_overuse_leading_to_caricature",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "FID under-blending that erases character perspective.",
+      "normalized_name": "fid_under_blending_that_erases_character_perspective",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "FID over-blending that obscures perspective ownership.",
+      "normalized_name": "fid_over_blending_that_obscures_perspective_ownership",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Scene-reset behavior with no residue carryover.",
+      "normalized_name": "scene_reset_behavior_with_no_residue_carryover",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-13",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Dialogue theater-script stiffness with no overlap or interruption.",
+      "normalized_name": "dialogue_theater_script_stiffness_with_no_overlap_or_interruption",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-14",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Dialogue over-noise or under-noise relative to character profile.",
+      "normalized_name": "dialogue_over_noise_or_under_noise_relative_to_character_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-HT-15",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Style averaging during editing that erodes voice.",
+      "normalized_name": "style_averaging_during_editing_that_erodes_voice",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-029",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "TEST_CASE_EXTRACT",
+      "normalized_name": "test_case_extract",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+      "normalized_name": "feed_paragraphs_with_uniform_sentence_lengths_into_the_cadence_validator_and_verify_burstiness_violations_are_raised",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compare low-entropy and corpus-matched sentences and confirm lexical-entropy thresholds separate them.",
+      "normalized_name": "compare_low_entropy_and_corpus_matched_sentences_and_confirm_lexical_entropy_thresholds_separate_them",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Construct paragraphs with excessive clause stacking and ensure clause-depth run caps trigger.",
+      "normalized_name": "construct_paragraphs_with_excessive_clause_stacking_and_ensure_clause_depth_run_caps_trigger",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Generate high-density, medium-density, and low-density paragraphs and verify density-band assignment and enforcement.",
+      "normalized_name": "generate_high_density_medium_density_and_low_density_paragraphs_and_verify_density_band_assignment_and_enforcement",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Replay scenes with flat, rising, and whiplash pressure curves and verify pressure-slope validation behavior.",
+      "normalized_name": "replay_scenes_with_flat_rising_and_whiplash_pressure_curves_and_verify_pressure_slope_validation_behavior",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Create paragraphs with abrupt formal/informal register jumps and test register-drift detection.",
+      "normalized_name": "create_paragraphs_with_abrupt_formal_informal_register_jumps_and_test_register_drift_detection",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "failure_mode_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Produce dialogue for multiple characters with and without signature markers and verify idiosyncrasy-range checks.",
+      "normalized_name": "produce_dialogue_for_multiple_characters_with_and_without_signature_markers_and_verify_idiosyncrasy_range_checks",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Compare narrator-only, balanced-FID, and over-blended FID passages and validate blend-policy scoring.",
+      "normalized_name": "compare_narrator_only_balanced_fid_and_over_blended_fid_passages_and_validate_blend_policy_scoring",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Run adjacent scenes with no residue, bounded residue, and excessive residue carryover and validate similarity-band enforcement.",
+      "normalized_name": "run_adjacent_scenes_with_no_residue_bounded_residue_and_excessive_residue_carryover_and_validate_similarity_band_enforcement",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Generate clean alternating dialogue versus interrupted dialogue and ensure overlap-policy checks distinguish them.",
+      "normalized_name": "generate_clean_alternating_dialogue_versus_interrupted_dialogue_and_ensure_overlap_policy_checks_distinguish_them",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Evaluate anxious versus confident character dialogue against disfluency-rate bands.",
+      "normalized_name": "evaluate_anxious_versus_confident_character_dialogue_against_disfluency_rate_bands",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+      "normalized_name": "run_edit_passes_that_normalize_voice_and_verify_post_edit_entropy_idiosyncrasy_preservation_checks_catch_degradation",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-042",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "LIBRARY_EXTRACT",
+      "normalized_name": "library_extract",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-043",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "cadence_library",
+      "normalized_name": "cadence_library",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-044",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "sentence_length_burstiness_profile",
+      "normalized_name": "sentence_length_burstiness_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-045",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "paragraph_burst_window_policy",
+      "normalized_name": "paragraph_burst_window_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-046",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "information_density_band_profiles",
+      "normalized_name": "information_density_band_profiles",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-047",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "narrative_pressure_curve_policy",
+      "normalized_name": "narrative_pressure_curve_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-048",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "dialogue_turn_length_profile",
+      "normalized_name": "dialogue_turn_length_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-049",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "overlap_policy",
+      "normalized_name": "overlap_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-050",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "sentence_structure_library",
+      "normalized_name": "sentence_structure_library",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "continuity_state_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-051",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "lexical_entropy_policy",
+      "normalized_name": "lexical_entropy_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-052",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "clause_depth_policy",
+      "normalized_name": "clause_depth_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-053",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "sentence_length_profile",
+      "normalized_name": "sentence_length_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-054",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "narrative_pressure_library",
+      "normalized_name": "narrative_pressure_library",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-055",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "information_band_state",
+      "normalized_name": "information_band_state",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-056",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "pressure_gradient_model",
+      "normalized_name": "pressure_gradient_model",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-057",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "scene_residue_policy",
+      "normalized_name": "scene_residue_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-058",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "fid_scene_depth_policy",
+      "normalized_name": "fid_scene_depth_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-059",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "human_texture_library",
+      "normalized_name": "human_texture_library",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-060",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "lexical_entropy_guard",
+      "normalized_name": "lexical_entropy_guard",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-061",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "register_drift_policy",
+      "normalized_name": "register_drift_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "failure_mode_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-062",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "disfluency_policy",
+      "normalized_name": "disfluency_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [
+        "OP-hidden_techniques_01-070"
+      ],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-063",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "style_averaging_prevention_policy",
+      "normalized_name": "style_averaging_prevention_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-064",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "idiosyncrasy_library",
+      "normalized_name": "idiosyncrasy_library",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-065",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "character_idiosyncrasy_profile",
+      "normalized_name": "character_idiosyncrasy_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-066",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "author_idiosyncrasy_profile",
+      "normalized_name": "author_idiosyncrasy_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-067",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "edit_voice_preservation_policy",
+      "normalized_name": "edit_voice_preservation_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-068",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "dialogue_behavior_library",
+      "normalized_name": "dialogue_behavior_library",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-069",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "dialogue_turn_policy",
+      "normalized_name": "dialogue_turn_policy",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-070",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "disfluency_profile",
+      "normalized_name": "disfluency_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [
+        "OP-hidden_techniques_01-062"
+      ],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-hidden_techniques_01-071",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "interruption_profile",
+      "normalized_name": "interruption_profile",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "human_texture_library",
+      "candidate_libraries": [
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    }
+  ],
+  "library_extract_groups": {},
+  "duplicate_candidates": [],
+  "overlap_candidates": []
+}

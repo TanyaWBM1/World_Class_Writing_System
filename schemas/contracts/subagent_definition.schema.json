@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SubagentDefinition",
+  "type": "object",
+  "description": "Placeholder schema for source-of-truth subagent definitions.",
+  "properties": {
+    "agent_id": { "type": "string" },
+    "role": { "type": "string" },
+    "responsibilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "inputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "status": { "type": "string" }
+  },
+  "required": ["agent_id", "role"]
+}

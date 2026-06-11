@@ -1,0 +1,15 @@
+{
+  "cooldowns_id": "phrase_cooldowns_v7_3",
+  "signature_phrase_max_per_draft": 1,
+  "rhetorical_frame_max_per_draft": 1,
+  "repeated_sentence_opening_max": 1,
+  "metaphor_domain_max_per_draft": 2,
+  "grit_phrase_max_per_draft": 1,
+  "near_duplicate_similarity_floor": 0.72,
+  "intentional_refrain_whitelist": [
+    "for witness",
+    "in prayer-like prose",
+    "in motif recall",
+    "in clearly marked refrain structure"
+  ]
+}

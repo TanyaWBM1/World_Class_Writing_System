@@ -1,0 +1,1453 @@
+{
+  "generated_at": "2026-03-21T19:14:02.702559+00:00",
+  "proposal_type": "enforcement",
+  "proposals": [
+    {
+      "id": "EP-001",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-001",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_PROSE_CONCRETENESS_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-011",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_ABSTRACTION_RATIO_MAX"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-014",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_SECTION_NOVELTY_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-1",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "ProseConcretenessValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-11",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "AbstractionDensityValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-14",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "DiscourseNoveltyValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-6",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "over_abstraction_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-1",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Human vs LLM prose naturalness ranking tasks using parallel prompts with concreteness and texture discriminators."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-006",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "over_abstraction_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-abstraction_control_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "concreteness_ratio_monitor"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-abstraction_control_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "abstraction_level_tracker"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-007",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "abstraction_balance_metric"
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "concreteness_and_abstraction_bounds",
+      "description": "Propose an enforcement concept for concreteness and abstraction bounds.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "high",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-001",
+          "raw_text": "RULE_PROSE_CONCRETENESS_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-011",
+          "raw_text": "RULE_ABSTRACTION_RATIO_MAX",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-014",
+          "raw_text": "RULE_SECTION_NOVELTY_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "ProseConcretenessValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "EP-002",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-003",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-004",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-3",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "SpeakerDivergenceValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-4",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "PragmaticsCoverageValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-2",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "dialogue_realism_collapse"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-2",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Multi-speaker scenes with permuted speaker identities to detect dialogue homogenization."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "dialogue_realism_collapse"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-dialogue_behavior_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "speaker_state_embedding"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-dialogue_behavior_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "dialogue_act_tracker"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "dialogue_realism_disc"
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-11",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Dialogue must exhibit non-uniform turn lengths and controlled overlap or interruption patterns."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-12",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Character disfluency rates must match trait- and tension-specific ranges."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-10",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Sample dialogue turn lengths from character-specific asymmetric distributions and inject bounded overlap markers under tension."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-11",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Apply disfluency policies by character archetype and tension level."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "FM-HT-13",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Dialogue theater-script stiffness with no overlap or interruption."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "FM-HT-14",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Dialogue over-noise or under-noise relative to character profile."
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "dialogue_divergence_and_subtext_enforcement",
+      "description": "Propose an enforcement concept for dialogue divergence and subtext enforcement.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "high",
+      "confidence": 0.83,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-003",
+          "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "voice_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-004",
+          "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-3",
+          "raw_text": "SpeakerDivergenceValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-3",
+          "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "dialogue_behavior_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-4",
+          "raw_text": "PragmaticsCoverageValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "EP-003",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-006",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "CadenceDistributionValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-6",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "SyntaxTemplateRepetitionValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-3",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "cadence_flattening_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-3",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Cadence-only classification tasks distinguishing human vs LLM paragraphs using structural features."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "cadence_flattening_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-cadence_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "syntax_template_tracker"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-cadence_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "author_cadence_profile"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "cadence_realism_disc"
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-1",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-2",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Sentence-length variance must stay above the configured lower bound for the active cadence profile."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-4",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-7",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-1",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-3",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Parse clause depth per sentence and inject compensating low-depth or high-depth sentences when run limits are exceeded."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar."
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "cadence_burstiness_and_clause_depth_enforcement",
+      "description": "Propose an enforcement concept for cadence burstiness and clause depth enforcement.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "high",
+      "confidence": 0.82,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-006",
+          "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-5",
+          "raw_text": "CadenceDistributionValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-5",
+          "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-6",
+          "raw_text": "SyntaxTemplateRepetitionValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-6",
+          "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "voice_library",
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "dialogue_behavior_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "EP-004",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-008",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_PROMISE_RESOLUTION_RATE"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-7",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "NarrativeGoalProgressValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-8",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "PromisePayoffValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-4",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "narrative_drift_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-4",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Long narratives with removed climaxes to test narrative progression and payoff detection."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "narrative_drift_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-abstraction_control_library-008",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "tension_curve_model"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "narrative_goal_state"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "promise_registry"
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-6",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Narrative pressure must evolve within configured slope bounds and may not flatten unintentionally inside pressure-building scenes."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-12",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Character disfluency rates must match trait- and tension-specific ranges."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-10",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Sample dialogue turn lengths from character-specific asymmetric distributions and inject bounded overlap markers under tension."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-11",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Apply disfluency policies by character archetype and tension level."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "FM-HT-6",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Narrative-pressure flatlining or whiplash spikes."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "TC-HT-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Replay scenes with flat, rising, and whiplash pressure curves and verify pressure-slope validation behavior."
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "narrative_goal_and_promise_enforcement",
+      "description": "Propose an enforcement concept for narrative goal and promise enforcement.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "high",
+      "confidence": 0.85,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-008",
+          "raw_text": "RULE_PROMISE_RESOLUTION_RATE",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-7",
+          "raw_text": "NarrativeGoalProgressValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-7",
+          "raw_text": "Maintain and periodically expand benchmark_fixture_library with newly observed real-world failure examples.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "failure_mode_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-8",
+          "raw_text": "PromisePayoffValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-8",
+          "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "EP-005",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-009",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-017",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-10",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "EntityAttributeDriftValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-17",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "WorldCanonConsistencyValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-5",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Documents with injected contradictions to test continuity and canon enforcement."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "entity_registry"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-006",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "world_canon_store"
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-17",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "TC-SD-9",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Seed contradictory entity updates into continuity state and verify state-diff and coherence checks block illegal transitions."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "LIB-system_design_patterns_01-continuity_state_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "entity_thread_memory_state"
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "continuity_and_canon_guardrails",
+      "description": "Propose an enforcement concept for continuity and canon guardrails.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "high",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-009",
+          "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-017",
+          "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-10",
+          "raw_text": "EntityAttributeDriftValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-17",
+          "raw_text": "WorldCanonConsistencyValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "TC-5",
+          "raw_text": "Documents with injected contradictions to test continuity and canon enforcement.",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "EP-006",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-22",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "VoiceInvariantPreservationValidator"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-6",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-4",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Monitor style consistency dashboards to detect unexpected voice drift across releases."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-6",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-5",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Voice preservation after editing \u2013 measure voice_preservation_after_edit_v1 and semantic fidelity on edited_pairs_voice_labelled_v1; compare to human labels."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-evaluation_library-010",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "voice_preservation_after_edit_v1"
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-13",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "RULE-HT-14",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-7",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Load per-character idiosyncrasy profiles and enforce bounded reuse of signature discourse markers or phrase fossils."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-HT-12",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "FM-HT-8",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Idiosyncrasy absence leading to generic voice."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "FM-HT-9",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Idiosyncrasy overuse leading to caricature."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "TC-HT-7",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Produce dialogue for multiple characters with and without signature markers and verify idiosyncrasy-range checks."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "TC-HT-12",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation."
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-hidden_techniques_01-064",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "idiosyncrasy_library"
+        },
+        {
+          "source_file": "hidden_techniques_01.md",
+          "item_id": "OP-hidden_techniques_01-065",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "character_idiosyncrasy_profile"
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "voice_preservation_and_edit_scope_locks",
+      "description": "Propose an enforcement concept for voice preservation and edit scope locks.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "medium",
+      "confidence": 0.82,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "OP-22",
+          "raw_text": "VoiceInvariantPreservationValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "voice_library",
+            "human_texture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RULE-6",
+          "raw_text": "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "voice_library",
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "failure_mode_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-4",
+          "raw_text": "PragmaticsCoverageValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-4",
+          "raw_text": "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "voice_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-6",
+          "raw_text": "SyntaxTemplateRepetitionValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "EP-007",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-023",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_GENRE_BEAT_COVERAGE_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-024",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_GENRE_SIGNATURE_FEATURES_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-23",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "GenreConformityValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-24",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "GenreBeatCoverageValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-12",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "genre_flattening_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-8",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Genre corpora with beat annotations to detect genre conformity and flattening."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-012",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "genre_flattening_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-abstraction_control_library-006",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "genre_schema_store"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-009",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "genre_beat_state"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-013",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "genre_conformity_metric"
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "genre_structure_and_signature_coverage",
+      "description": "Propose an enforcement concept for genre structure and signature coverage.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "medium",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-023",
+          "raw_text": "RULE_GENRE_BEAT_COVERAGE_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "genre_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-024",
+          "raw_text": "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "genre_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-23",
+          "raw_text": "GenreConformityValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "genre_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-24",
+          "raw_text": "GenreBeatCoverageValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "genre_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "FM-12",
+          "raw_text": "genre_flattening_failure",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "genre_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "EP-008",
+      "source_findings": [
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-1",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-1",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-6",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-1",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-8",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "System changes must pass sandbox evaluation before shadow evaluation."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-9",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "No change may be promoted to production without benchmark replay against the relevant fixture set."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-10",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "AI-generated reflections or rule proposals may never directly modify production rules."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-12",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-13",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-15",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-17",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "RULE-SD-18",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-6",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-11",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "OP-SD-12",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+        },
+        {
+          "source_file": "system_design_patterns_01.md",
+          "item_id": "FM-SD-5",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Governance capture where proposal and approval paths are not sufficiently separated."
+        }
+      ],
+      "proposal_type": "enforcement",
+      "normalized_name": "production_rule_boundary_enforcement",
+      "description": "Propose an enforcement concept for production rule boundary enforcement.",
+      "rationale": "Research findings repeatedly indicate that these behaviors fail when left as soft prompting and require explicit governed constraints.",
+      "expected_impact": "Defines candidate hard-boundary controls that can later feed runtime enforcement design and report generation.",
+      "dependencies": [
+        "proposal approval",
+        "supporting schema fields",
+        "future validator alignment"
+      ],
+      "risks": [
+        "over-enforcement can flatten style",
+        "soft literary effects may be misclassified",
+        "thresholds remain unresolved in this pass"
+      ],
+      "priority": "high",
+      "confidence": 0.95,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RULE-1",
+          "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "ProseConcretenessValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-1",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "continuity_state_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-6",
+          "raw_text": "SyntaxTemplateRepetitionValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-6",
+          "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "voice_library",
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "dialogue_behavior_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    }
+  ]
+}

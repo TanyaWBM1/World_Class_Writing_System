@@ -1,0 +1,90 @@
+{
+  "manifest_id": "pass_order_manifest_v1",
+  "execution_order": [
+    {
+      "step": 1,
+      "pass_id": "mode_resolution",
+      "layer": "orchestration",
+      "authoritative": true
+    },
+    {
+      "step": 2,
+      "pass_id": "genre_resolution",
+      "layer": "orchestration",
+      "authoritative": true
+    },
+    {
+      "step": 3,
+      "pass_id": "voice_resolution",
+      "layer": "orchestration",
+      "authoritative": true
+    },
+    {
+      "step": 4,
+      "pass_id": "library_resolution",
+      "layer": "orchestration",
+      "authoritative": true
+    },
+    {
+      "step": 5,
+      "pass_id": "draft_generation",
+      "layer": "generation",
+      "authoritative": false
+    },
+    {
+      "step": 6,
+      "pass_id": "continuity_pass",
+      "layer": "validation",
+      "authoritative": true,
+      "evaluation_dimension": "state_meaning_continuity"
+    },
+    {
+      "step": 7,
+      "pass_id": "cadence_pass",
+      "layer": "validation",
+      "authoritative": true,
+      "evaluation_dimension": "cadence"
+    },
+    {
+      "step": 8,
+      "pass_id": "human_texture_pass",
+      "layer": "validation",
+      "authoritative": true,
+      "evaluation_dimension": "human_texture"
+    },
+    {
+      "step": 9,
+      "pass_id": "dialogue_integrity_pass",
+      "layer": "validation",
+      "authoritative": true,
+      "evaluation_dimension": "dialogue_integrity"
+    },
+    {
+      "step": 10,
+      "pass_id": "prose_enforcement_pass",
+      "layer": "enforcement",
+      "authoritative": true,
+      "evaluation_dimension": "prose_enforcement"
+    },
+    {
+      "step": 11,
+      "pass_id": "evaluation_gate",
+      "layer": "validation",
+      "authoritative": true,
+      "evaluation_dimension": "acceptance_decision"
+    },
+    {
+      "step": 12,
+      "pass_id": "artifact_generation",
+      "layer": "orchestration",
+      "authoritative": true
+    }
+  ],
+  "invariants": [
+    "enforcement is authoritative",
+    "continuity is state and meaning based",
+    "cadence is core and non-optional",
+    "every run emits structured artifacts",
+    "no single run may mutate live runtime rules"
+  ]
+}

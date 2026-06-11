@@ -1,0 +1,19 @@
+{
+  "thought_visibility": {
+    "sequential_thinking_required": true,
+    "no_premature_summarization": true,
+    "experience_first": true,
+    "insight_after_process": true,
+    "allow_imperfect_transitions": true,
+    "allow_partial_sentences": true,
+    "allow_mid-thought phrasing": true
+  },
+  "roughness_rules": {
+    "allow_imperfect_transitions": true,
+    "allow_unresolved_tension": true,
+    "avoid_over_resolution": true,
+    "allow_natural_repetition": true,
+    "prevent_over_smoothing": true,
+    "preserve_thought_fragments": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "style_fingerprint_and_library_change_controls",
+  "name": "Style Fingerprint And Library Change Controls",
+  "description": "Propose a governance rule set for style fingerprint and library change controls.",
+  "source_proposals": [
+    "GP-007"
+  ],
+  "related_rules": [
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+    "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+    "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+  ],
+  "related_validators": [
+    "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+  ],
+  "related_failure_modes": [
+    "Governance capture where proposal and approval paths are not sufficiently separated.",
+    "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+    "Rubber-stamp governance fatigue that lets regressions through.",
+    "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+    "Style fingerprint overconstraint that preserves sameness instead of voice."
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library",
+    "schema:governance_artifacts"
+  ],
+  "priority": "medium",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "governance_scope": [
+    "human approval",
+    "promotion gates",
+    "regression protection"
+  ]
+}

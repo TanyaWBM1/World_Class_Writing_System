@@ -1,0 +1,40 @@
+{
+  "id": "human_likeness_discriminator_stack",
+  "name": "Human Likeness Discriminator Stack",
+  "description": "Propose a validation concept stack for human likeness discriminator stack.",
+  "source_proposals": [
+    "VP-001"
+  ],
+  "related_rules": [
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination."
+  ],
+  "related_validators": [
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "HumanLikenessDiscriminator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "related_failure_modes": [
+    "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment."
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "discriminator_human_like_v1",
+    "human_likeness_disc",
+    "llm_judge_human_like_pairwise_v2"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

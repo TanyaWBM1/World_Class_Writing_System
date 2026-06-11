@@ -1,0 +1,36 @@
+{
+  "id": "cadence_flattening_failure",
+  "name": "cadence_flattening_failure",
+  "description": "Normalized failure mode asset for Cadence Flattening Failure derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-CADENCE-AND-STRUCTURE-FAILURES"
+  ],
+  "related_rules": [
+    "RULE_GENERIC_TEMPLATE_CAP",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+  ],
+  "related_validators": [
+    "CadenceDistributionValidator",
+    "SyntaxTemplateRepetitionValidator"
+  ],
+  "related_failure_modes": [
+    "cadence_flattening_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "cadence_flattening_failure"
+  ],
+  "related_benchmarks": [
+    "BP-003"
+  ],
+  "related_enforcement_concepts": [
+    "EP-003"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "contract_id": "rule_resolution_contract_v1",
+  "purpose": "Resolve authoritative prose-enforcement rules from owned libraries before enforcement execution.",
+  "inputs": {
+    "ownership_map": "libraries/updated_library_crosswalk.json",
+    "rule_to_validator_map": "libraries/rule_to_validator_map.json",
+    "failure_mode_to_rule_map": "libraries/failure_mode_to_rule_map.json",
+    "run_context": [
+      "mode",
+      "genre",
+      "voice",
+      "resolved_libraries",
+      "detected_failure_modes"
+    ]
+  },
+  "resolution_order": [
+    "primary library rule ownership",
+    "secondary library augmentation",
+    "failure-mode targeted overlays",
+    "mode-specific constraints",
+    "genre and voice behavior overlays"
+  ],
+  "required_output_fields": [
+    "resolved_rule_ids",
+    "authoritative_rule_set",
+    "linked_validators",
+    "rule_ownership_trace"
+  ]
+}

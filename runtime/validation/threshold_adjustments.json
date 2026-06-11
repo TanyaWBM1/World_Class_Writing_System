@@ -1,0 +1,49 @@
+{
+  "change_set_id": "semantic_redundancy_v3_calibration_round_1",
+  "validator_id": "semantic_redundancy_detector",
+  "threshold_changes": {
+    "motif_transformation_score_min_for_pass": {
+      "before": 0.35,
+      "after": 0.3
+    },
+    "cluster_overuse_warn": {
+      "before": 0.58,
+      "after": 0.52
+    },
+    "cluster_overuse_fail": {
+      "before": 0.78,
+      "after": 0.68
+    },
+    "role_transition_score_warn_floor": {
+      "before": 0.28,
+      "after": 0.24
+    },
+    "role_transition_score_fail_floor": {
+      "before": 0.14,
+      "after": 0.18
+    },
+    "global_redundancy_risk_warn": {
+      "before": 0.56,
+      "after": 0.5
+    },
+    "global_redundancy_risk_fail": {
+      "before": 0.78,
+      "after": 0.7
+    },
+    "local_redundancy_risk_warn": {
+      "before": 0.52,
+      "after": 0.46
+    },
+    "local_redundancy_risk_fail": {
+      "before": 0.76,
+      "after": 0.68
+    }
+  },
+  "scoring_adjustments": [
+    "Removed modal auxiliaries from causal-edge counting to reduce false progression credit",
+    "Reduced progression_credit weight from cause and contrast edges when semantic frame loops are present",
+    "Reduced rhetorical_recurrence_credit dependence on repeated phrase count and added explicit refrain marker handling",
+    "Strengthened collapse_penalty with frame-loop risk contribution",
+    "Added bounded cadence-relief downgrade from collapse to warn-level semantic spin for cadence-driven refrain cases"
+  ]
+}

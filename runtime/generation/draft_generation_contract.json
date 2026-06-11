@@ -1,0 +1,31 @@
+{
+  "contract_id": "draft_generation_contract_v1",
+  "purpose": "Define the bounded draft-generation handoff between library resolution and ordered quality passes.",
+  "inputs": {
+    "input_bundle": "run-scoped normalized request",
+    "resolved_libraries": "library-resolution artifact",
+    "generation_constraints": [
+      "mode constraints",
+      "genre behavior constraints",
+      "voice behavior constraints",
+      "cadence profile constraints",
+      "continuity state constraints"
+    ]
+  },
+  "required_generation_outputs": [
+    "draft_text",
+    "draft_metadata",
+    "applied_constraints",
+    "state_refs"
+  ],
+  "generation_limits": {
+    "runtime_mutation_allowed": false,
+    "rule_mutation_allowed": false,
+    "validator_mutation_allowed": false,
+    "library_mutation_allowed": false
+  },
+  "notes": [
+    "Draft generation is controlled and pass-aware.",
+    "This contract does not specify the full writing engine."
+  ]
+}

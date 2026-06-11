@@ -1,0 +1,82 @@
+{
+  "id": "v4_hard_subversion_revolver_story",
+  "name": "V4 Hard Subversion Revolver Story",
+  "description": "A deterministic multi-scene narrative built to look like a failed object-payoff story to weak validators while actually succeeding through earned structural subversion, transformed object meaning, and downstream consequence.",
+  "status": "approved",
+  "fixture_type": "v4_hard_subversion_story",
+  "target_risk": "false_positive_rejection_on_apparent_setup_payoff_failure",
+  "scene_count": 6,
+  "scene_breakdown": [
+    {
+      "scene_id": "scene_01_gunsmith",
+      "title": "The Revolver In The Drawer",
+      "function": "Strong physical-object setup. The revolver is framed as the expected instrument of later salvation or violence."
+    },
+    {
+      "scene_id": "scene_02_warning",
+      "title": "Expectation Reinforced",
+      "function": "Secondary characters explicitly reinforce that the revolver will matter in direct action."
+    },
+    {
+      "scene_id": "scene_03_raid",
+      "title": "Apparent Payoff Failure",
+      "function": "The threat arrives and the revolver is not fired, creating the appearance of a broken setup."
+    },
+    {
+      "scene_id": "scene_04_reveal",
+      "title": "Object Meaning Transformed",
+      "function": "The revolver's true significance is revealed to be evidentiary and moral rather than tactical."
+    },
+    {
+      "scene_id": "scene_05_replacement_payoff",
+      "title": "Threat Resolved By The New Function",
+      "function": "A replacement payoff resolves external threat, theme, and character obligation through the transformed object meaning."
+    },
+    {
+      "scene_id": "scene_06_aftermath",
+      "title": "Behavioral Proof",
+      "function": "The protagonist's belief and conduct are measurably different from the opening pattern, confirming earned subversion rather than evasion."
+    }
+  ],
+  "text_under_test": "Scene 1: In the back room of the watchmaker's shop, Elian found the revolver wrapped in a yellowing cleaning cloth beneath his father's account books. It was heavier than he had imagined, blued steel with one ivory scale split near the screw. His father had once said the weapon mattered because a man should never enter a siege with empty hands. Elian, who had spent three years turning every fear into a calculation, slid the revolver into the drawer beside the ledger and told himself the night ahead would justify that inheritance.\n\nScene 2: By dusk the town had already learned that Rector Vale's deputies were searching houses for the missing petitions. Mara, the printer's widow, saw Elian glance toward the drawer and said, \"If they force the door, don't wait to become noble.\" He answered, \"I won't wait to become dead either.\" The line, the drawer, and the shared glance all reinforce the obvious expectation: when pressure peaks, the revolver will decide the scene. Even the rain against the shutters seemed to count down toward that use.\n\nScene 3: The deputies came after midnight with wet coats, lantern smoke, and the calm of men who expected fear to open every room for them. Elian reached the drawer. He opened it. He saw the revolver exactly where he had left it, black against the pale cloth, and for one sharpened second the story seemed ready to pay off in the easiest possible way. But behind the grip lay the folded purchase slip his father had hidden under the barrel years before, the one thing Elian had never noticed because he had only valued the weapon for what it could fire. He did not lift the gun. He took the paper instead. To a weak reading, this is the point where the story appears to break its strongest promise.\n\nScene 4: The slip was not a receipt for ammunition at all but a transfer record bearing Vale's signature from the winter he had publicly denied seizing the mill district. The revolver had belonged first to Tomas Rheen, the organizer shot on the canal road and later named by Vale as the man who had attacked the deputies. The split ivory scale matched the wound report everyone in town had been ordered to forget. In a single turn, the object's function changed: it was no longer primarily a weapon waiting to be fired, but material proof that the official story of violence had been staged from the beginning. Elian understood, with a shame that altered him, that he had inherited not his father's protection but his father's frightened obedience.\n\nScene 5: When Vale entered the shop himself, expecting either surrender or panic, Elian laid the revolver unopened on the counter between them and set the transfer slip beside it. He did not brandish the gun. He named the dead owner, the forged report, the canal-road seizure, and the deputies' false chronology in front of Mara, the baker from next door, and the clerk Vale had brought to witness confiscation. The revolver's apparent non-use becomes the real payoff here: by refusing to turn it into another private act of fear, Elian turns it into public evidence that collapses Vale's threat. The clerk, seeing the signature and the serial mark together, stepped back first. Mara unlocked the front shutters. Neighbors gathered. Vale lost the room before he lost the street.\n\nScene 6: At dawn, the petitions were carried openly to the square in the same ledger drawer that had hidden the revolver all week. Elian walked in front rather than behind the others. When Mara offered the gun back to him for safety, he said, \"No. Let it stay tagged with the record.\" The answer matters because the opening version of Elian would have kept the weapon close and called that prudence. The later version chooses exposure, testimony, and shared risk over secret control. The threat resolves, the object's meaning is transformed, the theme turns from private defense to public witness, and the character changes in a way the story can prove through behavior rather than declaration.",
+  "expected_validator_outcomes": {
+    "CharacterArcConsistencyValidator": "pass",
+    "ThreadPersistenceValidator": "pass",
+    "SetupPayoffIntegrityValidator": "pass",
+    "ThemeEvolutionValidator": "pass",
+    "PressureCurveValidator": "pass",
+    "SceneConsequenceValidator": "pass"
+  },
+  "expected_gating_outcome": "accepted_with_warnings",
+  "expected_failure_modes_absent": [
+    "unpaid_setup_failure",
+    "unsupported_payoff_failure",
+    "thread_dropout_failure",
+    "character_arc_discontinuity_failure",
+    "scene_consequence_failure"
+  ],
+  "expected_special_signals": {
+    "subversion_detected": true,
+    "payoff_transformation_score": 0.88,
+    "earned_subversion_score": 0.9,
+    "belief_shift_detected": true,
+    "object_function_transformed": true
+  },
+  "structural_nuance": {
+    "apparent_failure_surface": [
+      "The strong gun setup is not paid off by firing or threat display at the expected confrontation point.",
+      "The object appears to be sidelined at the exact moment a weak validator would demand direct tactical use."
+    ],
+    "true_success_mechanics": [
+      "The object returns with transformed function as public evidence rather than private force.",
+      "The replacement payoff resolves the central threat more completely than violence would have.",
+      "The protagonist shifts from fear-based control logic to public-risk logic, proving real character change."
+    ],
+    "false_positive_risk": [
+      "Weak setup/payoff logic may classify non-firing as a broken payoff.",
+      "Weak arc logic may miss belief change because it is enacted through later conduct instead of explicit confession.",
+      "Weak theme logic may miss that the object meaning evolves from weapon to record."
+    ]
+  },
+  "notes": "Designed to pressure v4 into distinguishing earned subversion from structural failure. The fixture should only be rejected by systems that overfit to literal object use and surface payoff expectation."
+}

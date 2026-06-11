@@ -1,0 +1,5299 @@
+{
+  "generated_at": "2026-03-21T19:22:38.085688+00:00",
+  "source": "research/structured_findings/structured_findings_master.json",
+  "resolution_policy": {
+    "primary_library_rule": "Use the normalized candidate_library as the single ownership library.",
+    "secondary_library_rule": "Preserve every additional candidate library as a secondary relationship.",
+    "deletion_policy": "No relationships removed; no entries deleted."
+  },
+  "summary": {
+    "rules_resolved": 71,
+    "validators_resolved": 121,
+    "failure_modes_resolved": 42,
+    "multi_library_conflicts_resolved": 234,
+    "primary_library_counts": {
+      "abstraction_control_library": 13,
+      "cadence_library": 32,
+      "continuity_state_library": 20,
+      "dialogue_behavior_library": 24,
+      "evaluation_library": 40,
+      "failure_mode_library": 57,
+      "human_texture_library": 10,
+      "narrative_pressure_library": 12,
+      "system_design_library": 8,
+      "voice_library": 18
+    },
+    "secondary_library_counts": {
+      "abstraction_control_library": 4,
+      "benchmark_fixture_library": 92,
+      "cadence_library": 58,
+      "continuity_state_library": 47,
+      "dialogue_behavior_library": 6,
+      "evaluation_library": 80,
+      "failure_mode_library": 61,
+      "genre_library": 5,
+      "human_texture_library": 81,
+      "idiosyncrasy_library": 15,
+      "narrative_pressure_library": 4,
+      "sentence_structure_library": 32,
+      "system_design_library": 47,
+      "voice_library": 23
+    },
+    "external_secondary_libraries": {
+      "human_texture_library": 81,
+      "idiosyncrasy_library": 15,
+      "narrative_pressure_library": 4,
+      "sentence_structure_library": 32
+    }
+  },
+  "existing_library_structure": {
+    "failure_mode_library": {
+      "entry_count": 16,
+      "entries": [
+        "prose_naturalness_collapse",
+        "over_abstraction_failure",
+        "dialogue_realism_collapse",
+        "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+        "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+        "cadence_flattening_failure",
+        "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+        "narrative_drift_failure",
+        "long_form_coherence_failure",
+        "continuity_memory_failure",
+        "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+        "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+        "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+        "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+        "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+        "genre_flattening_failure"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ]
+    },
+    "abstraction_control_library": {
+      "entry_count": 3,
+      "entries": [
+        "concreteness_and_density_controls",
+        "style_and_voice_anchor_controls",
+        "narrative_pressure_controls"
+      ],
+      "dependencies": [
+        "evaluation_library",
+        "failure_mode_library"
+      ]
+    },
+    "dialogue_behavior_library": {
+      "entry_count": 3,
+      "entries": [
+        "speaker_divergence_and_state",
+        "turn_taking_and_overlap",
+        "disfluency_and_subtext"
+      ],
+      "dependencies": [
+        "continuity_state_library",
+        "evaluation_library",
+        "voice_library"
+      ]
+    },
+    "cadence_library": {
+      "entry_count": 3,
+      "entries": [
+        "sentence_length_and_burstiness",
+        "syntax_template_and_clause_depth",
+        "register_and_transition_cadence"
+      ],
+      "dependencies": [
+        "evaluation_library"
+      ]
+    },
+    "continuity_state_library": {
+      "entry_count": 3,
+      "entries": [
+        "entity_and_canon_state",
+        "narrative_goal_and_thread_state",
+        "document_and_structure_state"
+      ],
+      "dependencies": [
+        "evaluation_library"
+      ]
+    },
+    "evaluation_library": {
+      "entry_count": 13,
+      "entries": [
+        "human_likeness_and_discriminators",
+        "coherence_and_continuity_metrics",
+        "style_voice_and_cadence_metrics",
+        "stability_and_robustness_metrics",
+        "argument_and_structure_metrics",
+        "human_likeness_discriminator_stack",
+        "dialogue_realism_validator_stack",
+        "cadence_and_syntax_validator_stack",
+        "continuity_state_and_contradiction_validator_stack",
+        "narrative_arc_and_goal_progress_metrics",
+        "voice_style_and_preservation_metrics",
+        "prompt_stability_and_cross_run_metrics",
+        "structure_schema_and_argument_quality_metrics"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library"
+      ]
+    },
+    "benchmark_fixture_library": {
+      "entry_count": 12,
+      "entries": [
+        "narrative_and_continuity_fixtures",
+        "dialogue_and_voice_fixtures",
+        "prompt_and_stability_fixtures",
+        "genre_and_structure_fixtures",
+        "human_vs_llm_naturalness_battles",
+        "multi_speaker_dialogue_homogenization_suite",
+        "cadence_and_burstiness_regression_suite",
+        "long_form_continuity_and_memory_suite",
+        "genre_conformity_and_structure_suite",
+        "voice_preservation_and_editing_suite",
+        "prompt_sensitivity_and_cross_run_suite",
+        "governance_promotion_and_failure_replay_suite"
+      ],
+      "dependencies": [
+        "evaluation_library",
+        "failure_mode_library"
+      ]
+    },
+    "voice_library": {
+      "entry_count": 3,
+      "entries": [
+        "style_fingerprint_and_anchor_assets",
+        "idiosyncrasy_and_register_assets",
+        "voice_preservation_assets"
+      ],
+      "dependencies": [
+        "continuity_state_library",
+        "evaluation_library"
+      ]
+    },
+    "genre_library": {
+      "entry_count": 3,
+      "entries": [
+        "genre_schema_and_beat_assets",
+        "genre_structure_and_signature_coverage",
+        "genre_conformity_and_structure_suite"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ]
+    },
+    "system_design_library": {
+      "entry_count": 7,
+      "entries": [
+        "human_approval_boundaries",
+        "promotion_gate_policy",
+        "deterministic_baseline_and_version_freeze_policy",
+        "regression_protection_and_pareto_rules",
+        "failure_ledger_and_fixture_promotion_governance",
+        "ai_on_ai_degradation_controls",
+        "style_fingerprint_and_library_change_controls"
+      ],
+      "dependencies": [
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ]
+    }
+  },
+  "cross_library_relationships": [
+    {
+      "entry_id": "prose_naturalness_collapse",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "prose_naturalness_collapse",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "over_abstraction_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "over_abstraction_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "dialogue_realism_collapse",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "dialogue_realism_collapse",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "cadence_flattening_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "cadence_flattening_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_drift_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_drift_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "long_form_coherence_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "long_form_coherence_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "continuity_memory_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "continuity_memory_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_flattening_failure",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_flattening_failure",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "concreteness_and_density_controls",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "concreteness_and_density_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_and_voice_anchor_controls",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "style_and_voice_anchor_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_pressure_controls",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "narrative_pressure_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "speaker_divergence_and_state",
+      "depends_on_library": "voice_library"
+    },
+    {
+      "entry_id": "speaker_divergence_and_state",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "speaker_divergence_and_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "turn_taking_and_overlap",
+      "depends_on_library": "voice_library"
+    },
+    {
+      "entry_id": "turn_taking_and_overlap",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "turn_taking_and_overlap",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "disfluency_and_subtext",
+      "depends_on_library": "voice_library"
+    },
+    {
+      "entry_id": "disfluency_and_subtext",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "disfluency_and_subtext",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "sentence_length_and_burstiness",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "syntax_template_and_clause_depth",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "register_and_transition_cadence",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "entity_and_canon_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_goal_and_thread_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "document_and_structure_state",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "human_likeness_and_discriminators",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "coherence_and_continuity_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "style_voice_and_cadence_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "stability_and_robustness_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "argument_and_structure_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "human_likeness_discriminator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "dialogue_realism_validator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "cadence_and_syntax_validator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "continuity_state_and_contradiction_validator_stack",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_arc_and_goal_progress_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "voice_style_and_preservation_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "prompt_stability_and_cross_run_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "structure_schema_and_argument_quality_metrics",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "narrative_and_continuity_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "narrative_and_continuity_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "dialogue_and_voice_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "dialogue_and_voice_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "prompt_and_stability_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "prompt_and_stability_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "genre_and_structure_fixtures",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_and_structure_fixtures",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "human_vs_llm_naturalness_battles",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "human_vs_llm_naturalness_battles",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "multi_speaker_dialogue_homogenization_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "multi_speaker_dialogue_homogenization_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "cadence_and_burstiness_regression_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "cadence_and_burstiness_regression_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "long_form_continuity_and_memory_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "long_form_continuity_and_memory_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "voice_preservation_and_editing_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "voice_preservation_and_editing_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "prompt_sensitivity_and_cross_run_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "prompt_sensitivity_and_cross_run_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "governance_promotion_and_failure_replay_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "governance_promotion_and_failure_replay_suite",
+      "depends_on_library": "failure_mode_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_anchor_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_anchor_assets",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "idiosyncrasy_and_register_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "idiosyncrasy_and_register_assets",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "voice_preservation_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "voice_preservation_assets",
+      "depends_on_library": "continuity_state_library"
+    },
+    {
+      "entry_id": "genre_schema_and_beat_assets",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_schema_and_beat_assets",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_structure_and_signature_coverage",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_structure_and_signature_coverage",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "genre_conformity_and_structure_suite",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "human_approval_boundaries",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "human_approval_boundaries",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "promotion_gate_policy",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "promotion_gate_policy",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "deterministic_baseline_and_version_freeze_policy",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "deterministic_baseline_and_version_freeze_policy",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "regression_protection_and_pareto_rules",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "regression_protection_and_pareto_rules",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "failure_ledger_and_fixture_promotion_governance",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "failure_ledger_and_fixture_promotion_governance",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "ai_on_ai_degradation_controls",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "ai_on_ai_degradation_controls",
+      "depends_on_library": "evaluation_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_library_change_controls",
+      "depends_on_library": "benchmark_fixture_library"
+    },
+    {
+      "entry_id": "style_fingerprint_and_library_change_controls",
+      "depends_on_library": "evaluation_library"
+    }
+  ],
+  "ownership_assignments": {
+    "rules": [
+      {
+        "id": "RU-core_failure_modes_01-001",
+        "name": "RULE_PROSE_CONCRETENESS_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-002",
+        "name": "RULE_GENERIC_TEMPLATE_CAP",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-003",
+        "name": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-004",
+        "name": "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-005",
+        "name": "RULE_SENTENCE_LENGTH_VAR_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "sentence_structure_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "failure_mode_library",
+          "evaluation_library",
+          "sentence_structure_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-006",
+        "name": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "sentence_structure_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "failure_mode_library",
+          "evaluation_library",
+          "sentence_structure_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-007",
+        "name": "RULE_SCENE_GOAL_REQUIRED",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "narrative_pressure_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "failure_mode_library",
+          "evaluation_library",
+          "narrative_pressure_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-008",
+        "name": "RULE_PROMISE_RESOLUTION_RATE",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-009",
+        "name": "RULE_ENTITY_INVARIANT_ENFORCED",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-010",
+        "name": "RULE_CONTINUITY_CONTRADICTION_CAP",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-011",
+        "name": "RULE_ABSTRACTION_RATIO_MAX",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-012",
+        "name": "RULE_META_SENTENCE_RUN_CAP",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "abstraction_control_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "abstraction_control_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-013",
+        "name": "RULE_SEMANTIC_REDUNDANCY_CAP",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-014",
+        "name": "RULE_SECTION_NOVELTY_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-015",
+        "name": "RULE_AFFECT_VARIANCE_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-016",
+        "name": "RULE_GENERIC_EMOTION_CAP",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-017",
+        "name": "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-018",
+        "name": "RULE_TERM_DEFINITION_STABILITY",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-019",
+        "name": "RULE_STYLE_DISTANCE_MAX",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-020",
+        "name": "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-021",
+        "name": "RULE_VOICE_DRIFT_CAP",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-022",
+        "name": "RULE_REVISION_SCOPE_STYLE_LOCK",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-023",
+        "name": "RULE_GENRE_BEAT_COVERAGE_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "genre_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "genre_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-024",
+        "name": "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "genre_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "genre_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-025",
+        "name": "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-026",
+        "name": "RULE_SECTION_PRESENCE",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-027",
+        "name": "RULE_LIST_FORMAT_INTEGRITY",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-028",
+        "name": "RULE_CLAIM_SUPPORT_REQUIRED",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RU-core_failure_modes_01-029",
+        "name": "RULE_WARRANT_SCORE_MIN",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-1",
+        "name": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-2",
+        "name": "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-3",
+        "name": "Every validator MUST have documented thresholds and associated failure modes in failure_mode_library.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-4",
+        "name": "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-5",
+        "name": "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-6",
+        "name": "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-7",
+        "name": "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "dialogue_behavior_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-8",
+        "name": "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "voice_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "voice_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-1",
+        "name": "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-10",
+        "name": "Scene-to-scene residue must carry forward with controlled decay and bounded similarity.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-11",
+        "name": "Dialogue must exhibit non-uniform turn lengths and controlled overlap or interruption patterns.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-12",
+        "name": "Character disfluency rates must match trait- and tension-specific ranges.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-13",
+        "name": "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-14",
+        "name": "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-2",
+        "name": "Sentence-length variance must stay above the configured lower bound for the active cadence profile.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-3",
+        "name": "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-4",
+        "name": "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-5",
+        "name": "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-6",
+        "name": "Narrative pressure must evolve within configured slope bounds and may not flatten unintentionally inside pressure-building scenes.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-7",
+        "name": "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-8",
+        "name": "Character or author idiosyncrasies must be present often enough to preserve voice, but not so often that they become caricature.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-HT-9",
+        "name": "In POV-deep scenes, free indirect discourse blend must remain within configured narrator/character mixing bounds.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-1",
+        "name": "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-10",
+        "name": "AI-generated reflections or rule proposals may never directly modify production rules.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-11",
+        "name": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-12",
+        "name": "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-13",
+        "name": "Style fingerprints must be versioned and frozen between releases unless changed through governance.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-14",
+        "name": "Multi-pass pipelines must preserve strict schema contracts between generation, refinement, and enforcement stages.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-15",
+        "name": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "continuity_state_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "continuity_state_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-16",
+        "name": "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-17",
+        "name": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-18",
+        "name": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-19",
+        "name": "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-2",
+        "name": "Every detected failure must be logged to an append-only structured failure ledger.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-20",
+        "name": "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-3",
+        "name": "Failure taxonomy changes must be versioned and may not silently rewrite historical labels.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-4",
+        "name": "Only validated failures may be promoted into benchmark fixtures.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "failure_mode_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "failure_mode_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-5",
+        "name": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-6",
+        "name": "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-7",
+        "name": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-8",
+        "name": "System changes must pass sandbox evaluation before shadow evaluation.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "RULE-SD-9",
+        "name": "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "RULESET_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      }
+    ],
+    "validators": [
+      {
+        "id": "FM-HT-1",
+        "name": "Cadence flattening through low sentence-length variance and medium-length clustering.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-10",
+        "name": "FID under-blending that erases character perspective.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-11",
+        "name": "FID over-blending that obscures perspective ownership.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-12",
+        "name": "Scene-reset behavior with no residue carryover.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-13",
+        "name": "Dialogue theater-script stiffness with no overlap or interruption.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-14",
+        "name": "Dialogue over-noise or under-noise relative to character profile.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-15",
+        "name": "Style averaging during editing that erodes voice.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-2",
+        "name": "Artificial over-bursting that alternates only ultra-short and ultra-long sentences.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-3",
+        "name": "Low lexical entropy causing safe, generic diction.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-4",
+        "name": "Clause-depth monotony or unreadable over-stacking.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-5",
+        "name": "Information-band collapse into all-high-density info-dumps or all-low-density filler.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-6",
+        "name": "Narrative-pressure flatlining or whiplash spikes.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-7",
+        "name": "Register monotony or abrupt register flips that confuse voice.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-8",
+        "name": "Idiosyncrasy absence leading to generic voice.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-HT-9",
+        "name": "Idiosyncrasy overuse leading to caricature.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-1",
+        "name": "ProseConcretenessValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-1",
+        "name": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-10",
+        "name": "EntityAttributeDriftValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-11",
+        "name": "AbstractionDensityValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-12",
+        "name": "MetaExplanationPatternValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-13",
+        "name": "SemanticRedundancyValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-14",
+        "name": "DiscourseNoveltyValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-15",
+        "name": "AffectVarianceValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-16",
+        "name": "GenericEmotionPhraseValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-17",
+        "name": "WorldCanonConsistencyValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-18",
+        "name": "TermUsageConsistencyValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-19",
+        "name": "AuthorStyleFingerprintValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-2",
+        "name": "HumanLikenessDiscriminator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-2",
+        "name": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-20",
+        "name": "CorpusStyleDiversityValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-21",
+        "name": "StyleDriftValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-22",
+        "name": "VoiceInvariantPreservationValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-23",
+        "name": "GenreConformityValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "genre_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "genre_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-24",
+        "name": "GenreBeatCoverageValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "genre_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "genre_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-25",
+        "name": "PromptRobustnessValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-26",
+        "name": "OutputVarianceValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-27",
+        "name": "StructureSchemaValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-28",
+        "name": "MarkdownFormatValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-29",
+        "name": "ClaimEvidenceLinkValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-3",
+        "name": "SpeakerDivergenceValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-3",
+        "name": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-30",
+        "name": "WarrantAcceptabilityValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "abstraction_control_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "abstraction_control_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-4",
+        "name": "PragmaticsCoverageValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-4",
+        "name": "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-5",
+        "name": "CadenceDistributionValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "sentence_structure_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "sentence_structure_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-5",
+        "name": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-6",
+        "name": "SyntaxTemplateRepetitionValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "sentence_structure_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "sentence_structure_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-6",
+        "name": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-7",
+        "name": "NarrativeGoalProgressValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-7",
+        "name": "Maintain and periodically expand benchmark_fixture_library with newly observed real-world failure examples.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-8",
+        "name": "PromisePayoffValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-8",
+        "name": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-9",
+        "name": "ContinuityNLIValidator",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "evaluation_library",
+          "failure_mode_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-1",
+        "name": "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-10",
+        "name": "Sample dialogue turn lengths from character-specific asymmetric distributions and inject bounded overlap markers under tension.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-11",
+        "name": "Apply disfluency policies by character archetype and tension level.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-12",
+        "name": "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-2",
+        "name": "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-3",
+        "name": "Parse clause depth per sentence and inject compensating low-depth or high-depth sentences when run limits are exceeded.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-4",
+        "name": "Tag each paragraph with an information-density band and route generation constraints through that band profile.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-5",
+        "name": "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "narrative_pressure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "narrative_pressure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-6",
+        "name": "Score each sentence on a register axis and block abrupt register jumps beyond configured drift thresholds.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-7",
+        "name": "Load per-character idiosyncrasy profiles and enforce bounded reuse of signature discourse markers or phrase fossils.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-8",
+        "name": "Apply FID blend coefficients in POV-deep scenes and keep coefficient changes smooth across adjacent sentences.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "narrative_pressure_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "cadence_library",
+          "sentence_structure_library",
+          "narrative_pressure_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-HT-9",
+        "name": "Compute a residue vector at scene end and bias the next scene with decayed lexical, affective, and conceptual carryover.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-1",
+        "name": "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "failure_mode_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-10",
+        "name": "Cap refinement passes and preserve stage-separated artifacts for generation, refinement, and enforcement outputs.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-11",
+        "name": "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-12",
+        "name": "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-2",
+        "name": "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-3",
+        "name": "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "system_design_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-4",
+        "name": "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "failure_mode_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "failure_mode_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-5",
+        "name": "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-6",
+        "name": "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-7",
+        "name": "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-8",
+        "name": "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-SD-9",
+        "name": "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "evaluation_library",
+        "secondary_libraries": [
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "failure_mode_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-013",
+        "name": "FAILURE_MODE_EXTRACT",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-029",
+        "name": "TEST_CASE_EXTRACT",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-042",
+        "name": "LIBRARY_EXTRACT",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-043",
+        "name": "cadence_library",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-044",
+        "name": "sentence_length_burstiness_profile",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-045",
+        "name": "paragraph_burst_window_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-046",
+        "name": "information_density_band_profiles",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-047",
+        "name": "narrative_pressure_curve_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-048",
+        "name": "dialogue_turn_length_profile",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-049",
+        "name": "overlap_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-050",
+        "name": "sentence_structure_library",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "continuity_state_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "continuity_state_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-051",
+        "name": "lexical_entropy_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-052",
+        "name": "clause_depth_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-053",
+        "name": "sentence_length_profile",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-054",
+        "name": "narrative_pressure_library",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-055",
+        "name": "information_band_state",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "continuity_state_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "continuity_state_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-056",
+        "name": "pressure_gradient_model",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-057",
+        "name": "scene_residue_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-058",
+        "name": "fid_scene_depth_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-059",
+        "name": "human_texture_library",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-060",
+        "name": "lexical_entropy_guard",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-061",
+        "name": "register_drift_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "failure_mode_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "failure_mode_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-062",
+        "name": "disfluency_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-063",
+        "name": "style_averaging_prevention_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-064",
+        "name": "idiosyncrasy_library",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-065",
+        "name": "character_idiosyncrasy_profile",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-066",
+        "name": "author_idiosyncrasy_profile",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-067",
+        "name": "edit_voice_preservation_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-068",
+        "name": "dialogue_behavior_library",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-069",
+        "name": "dialogue_turn_policy",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-070",
+        "name": "disfluency_profile",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "OP-hidden_techniques_01-071",
+        "name": "interruption_profile",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "human_texture_library",
+        "secondary_libraries": [
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-1",
+        "name": "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-10",
+        "name": "Generate clean alternating dialogue versus interrupted dialogue and ensure overlap-policy checks distinguish them.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-11",
+        "name": "Evaluate anxious versus confident character dialogue against disfluency-rate bands.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-12",
+        "name": "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "voice_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-2",
+        "name": "Compare low-entropy and corpus-matched sentences and confirm lexical-entropy thresholds separate them.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-3",
+        "name": "Construct paragraphs with excessive clause stacking and ensure clause-depth run caps trigger.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-4",
+        "name": "Generate high-density, medium-density, and low-density paragraphs and verify density-band assignment and enforcement.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-5",
+        "name": "Replay scenes with flat, rising, and whiplash pressure curves and verify pressure-slope validation behavior.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-6",
+        "name": "Create paragraphs with abrupt formal/informal register jumps and test register-drift detection.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "cadence_library",
+        "secondary_libraries": [
+          "sentence_structure_library",
+          "failure_mode_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "cadence_library",
+          "sentence_structure_library",
+          "failure_mode_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-7",
+        "name": "Produce dialogue for multiple characters with and without signature markers and verify idiosyncrasy-range checks.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "voice_library",
+          "human_texture_library",
+          "idiosyncrasy_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-8",
+        "name": "Compare narrator-only, balanced-FID, and over-blended FID passages and validate blend-policy scoring.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "dialogue_behavior_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "dialogue_behavior_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "TC-HT-9",
+        "name": "Run adjacent scenes with no residue, bounded residue, and excessive residue carryover and validate similarity-band enforcement.",
+        "source_file": "hidden_techniques_01.md",
+        "source_section": "OPERATOR_EXTRACT",
+        "primary_library": "narrative_pressure_library",
+        "secondary_libraries": [
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "all_related_libraries": [
+          "narrative_pressure_library",
+          "human_texture_library",
+          "cadence_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.75,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      }
+    ],
+    "failure_modes": [
+      {
+        "id": "FM-1",
+        "name": "prose_naturalness_collapse",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-1",
+        "name": "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-10",
+        "name": "style_homogenization_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-10",
+        "name": "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "voice_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "voice_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-11",
+        "name": "voice_erosion_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "voice_library",
+          "human_texture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-12",
+        "name": "genre_flattening_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "genre_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "genre_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-13",
+        "name": "prompt_sensitivity_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-14",
+        "name": "structure_drift_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "continuity_state_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "continuity_state_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-15",
+        "name": "weak_claim_architecture_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "abstraction_control_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "abstraction_control_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-2",
+        "name": "dialogue_realism_collapse",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "dialogue_behavior_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "dialogue_behavior_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-2",
+        "name": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-3",
+        "name": "cadence_flattening_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "cadence_library",
+          "evaluation_library",
+          "sentence_structure_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "cadence_library",
+          "evaluation_library",
+          "sentence_structure_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-3",
+        "name": "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-4",
+        "name": "narrative_drift_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-4",
+        "name": "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-5",
+        "name": "long_form_coherence_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-5",
+        "name": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "dialogue_behavior_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-6",
+        "name": "over_abstraction_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "abstraction_control_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "abstraction_control_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-6",
+        "name": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "voice_library",
+          "benchmark_fixture_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "voice_library",
+          "benchmark_fixture_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-7",
+        "name": "semantic_redundancy_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "abstraction_control_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "abstraction_control_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-7",
+        "name": "Template echo detector misclassifies genre-typical structures as template copies.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-8",
+        "name": "emotional_flattening_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 2,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-8",
+        "name": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-9",
+        "name": "continuity_memory_failure",
+        "source_file": "core_failure_modes_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "continuity_state_library",
+          "evaluation_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "continuity_state_library",
+          "evaluation_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-9",
+        "name": "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+        "source_file": "evaluation_methods_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-1",
+        "name": "Failure-ledger noise collapse caused by over-broad taxonomy or noisy evaluators.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-10",
+        "name": "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-11",
+        "name": "Multi-pass oscillation where refinement loops endlessly or degrades original intent.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-12",
+        "name": "Production style-flattening caused by overpowered enforcement stages.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-13",
+        "name": "Continuity lock-in where incorrect state is preserved and enforced downstream.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "continuity_state_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "continuity_state_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-14",
+        "name": "State explosion that makes long-form continuity unmanageable or too costly.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "continuity_state_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "continuity_state_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-15",
+        "name": "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-16",
+        "name": "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "continuity_state_library",
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "continuity_state_library",
+          "system_design_library",
+          "benchmark_fixture_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-17",
+        "name": "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-2",
+        "name": "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-3",
+        "name": "Benchmark overfitting where the system optimizes to historical fixtures but drifts elsewhere.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "evaluation_library",
+          "benchmark_fixture_library",
+          "system_design_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-4",
+        "name": "Evaluator drift that invalidates baseline comparisons across releases.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-5",
+        "name": "Governance capture where proposal and approval paths are not sufficiently separated.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-6",
+        "name": "Rubber-stamp governance fatigue that lets regressions through.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-7",
+        "name": "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 3,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-8",
+        "name": "Systemic-failure false positives caused by unstable clustering features or thresholds.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "benchmark_fixture_library",
+          "continuity_state_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      },
+      {
+        "id": "FM-SD-9",
+        "name": "Style fingerprint overconstraint that preserves sameness instead of voice.",
+        "source_file": "system_design_patterns_01.md",
+        "source_section": "FAILURE_MODE_EXTRACT",
+        "primary_library": "failure_mode_library",
+        "secondary_libraries": [
+          "system_design_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "all_related_libraries": [
+          "failure_mode_library",
+          "system_design_library",
+          "continuity_state_library",
+          "voice_library"
+        ],
+        "preserved_relationships": 4,
+        "confidence": 0.95,
+        "notes": "Normalized from source extract block; original wording preserved in raw_text."
+      }
+    ]
+  }
+}

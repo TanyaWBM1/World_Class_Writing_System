@@ -1,0 +1,1089 @@
+{
+  "template_id": "evaluation_report_template_v3",
+  "run_id": "v4_adversarial_lantern_story",
+  "status": "rejected",
+  "mode": "benchmark",
+  "genre": "literary_suspense",
+  "voice": "controlled_close_third",
+  "dimension_scores": {
+    "continuity": 0.66,
+    "cadence": 0.73,
+    "human_texture": 0.9,
+    "dialogue_integrity": 0.38,
+    "human_likeness": 0.86,
+    "narrative_intelligence": 0.52
+  },
+  "validator_results": [
+    {
+      "validator_id": "human_likeness_discriminator",
+      "validator_family": "human_likeness_discriminator_stack",
+      "pass": "evaluation_gate",
+      "dimension": "human_likeness",
+      "score": 0.81,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_GENERIC_TEMPLATE_CAP",
+        "RULE_PROSE_CONCRETENESS_MIN"
+      ],
+      "linked_failure_modes": [
+        "prose_naturalness_collapse",
+        "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa"
+      ],
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "threshold_key": "human_likeness_discriminator",
+      "evidence": {
+        "generic_phrase_hits": 0,
+        "unique_ratio": 0.551,
+        "dialogue_line_count": 0,
+        "concrete_detail_hits": 16
+      }
+    },
+    {
+      "validator_id": "cadence_variance_checker",
+      "validator_family": "cadence_and_syntax_validator_stack",
+      "pass": "cadence_pass",
+      "dimension": "cadence",
+      "score": 0.73,
+      "status": "warn",
+      "linked_rules": [
+        "RULE_SENTENCE_LENGTH_VAR_MIN",
+        "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+      ],
+      "linked_failure_modes": [
+        "cadence_flattening_failure"
+      ],
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "cadence_library",
+        "failure_mode_library"
+      ],
+      "threshold_key": "cadence_variance_checker",
+      "evidence": {
+        "sentence_length_variance": 70.592,
+        "sentence_lengths": [
+          19,
+          30,
+          12,
+          27,
+          14,
+          17,
+          22,
+          3,
+          28,
+          7,
+          3,
+          13,
+          26,
+          22,
+          3,
+          4,
+          19,
+          13,
+          23,
+          7,
+          7,
+          27,
+          27,
+          15,
+          20,
+          4,
+          32,
+          10,
+          13,
+          14,
+          11,
+          18,
+          24,
+          5,
+          11,
+          20,
+          20
+        ],
+        "sentence_opening_diversity": 0.351,
+        "clause_pattern_entropy": 0.162,
+        "punctuation_rhythm": 0.056,
+        "dialogue_context_relief": 0.0
+      }
+    },
+    {
+      "validator_id": "abstraction_ratio_checker",
+      "validator_family": "voice_style_and_preservation_metrics",
+      "pass": "human_texture_pass",
+      "dimension": "human_texture",
+      "score": 1.0,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_ABSTRACTION_RATIO_MAX",
+        "RULE_PROSE_CONCRETENESS_MIN"
+      ],
+      "linked_failure_modes": [
+        "over_abstraction_failure",
+        "prose_naturalness_collapse"
+      ],
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library"
+      ],
+      "threshold_key": "abstraction_ratio_checker",
+      "evidence": {
+        "abstract_term_hits": 4,
+        "concrete_detail_hits": 16,
+        "abstraction_ratio": 0.25,
+        "narrative_density_adjustment": 0.08
+      }
+    },
+    {
+      "validator_id": "semantic_redundancy_detector",
+      "validator_family": "voice_style_and_preservation_metrics",
+      "pass": "human_texture_pass",
+      "dimension": "human_texture",
+      "score": 0.79,
+      "status": "warn",
+      "linked_rules": [
+        "RULE_SEMANTIC_REDUNDANCY_CAP",
+        "RULE_SECTION_NOVELTY_MIN"
+      ],
+      "linked_failure_modes": [
+        "semantic_redundancy_failure",
+        "prose_naturalness_collapse"
+      ],
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library"
+      ],
+      "threshold_key": "semantic_redundancy_detector",
+      "evidence": {
+        "idea_nodes_created": 38,
+        "idea_edges_created": 169,
+        "graph_growth_rate": 1.0,
+        "restate_edges": 116,
+        "extend_edges": 36,
+        "contrast_edges": 8,
+        "cause_edges": 8,
+        "motif_recall_edges": 1,
+        "dialogue_correction_edges": 0,
+        "progression_credit": 1.0,
+        "rhetorical_recurrence_credit": 0.46,
+        "collapse_penalty": 0.535,
+        "local_cluster_density": 1.0,
+        "redundancy_score": 0.79,
+        "redundancy_class": "motif_recall",
+        "memory_cluster_hits": 1,
+        "distance_weighted_recurrence_score": 1.0,
+        "motif_candidates_detected": 1,
+        "motif_registry_matches": 1,
+        "motif_transformation_score": 0.3,
+        "dialogue_callback_matches": 0,
+        "dialogue_callback_legitimacy_score": 0.34,
+        "cluster_overuse_score": 1.0,
+        "role_transition_score": 1.0,
+        "global_redundancy_risk": 0.704,
+        "local_redundancy_risk": 0.549,
+        "lexical_diversity_collapse_penalty": 0.0,
+        "recurrence_mode": "global_motif_return",
+        "idea_cluster_memory": [
+          {
+            "idea_cluster_id": "cluster-1",
+            "first_seen_segment": 0,
+            "last_seen_segment": 1,
+            "recurrence_count": 120,
+            "relation_history": [
+              "restates",
+              "extends",
+              "contrasts",
+              "causes",
+              "recalls"
+            ],
+            "novelty_deltas": [
+              1.0,
+              0.953,
+              0.949,
+              0.97,
+              0.939,
+              0.92,
+              0.909,
+              0.958,
+              0.963,
+              0.931,
+              1.0,
+              1.0,
+              0.938,
+              0.895,
+              1.0,
+              0.833,
+              1.0,
+              0.931,
+              0.897,
+              0.96,
+              1.0,
+              0.966,
+              0.978,
+              0.906,
+              0.931,
+              0.952,
+              0.966,
+              0.939,
+              0.842,
+              1.0,
+              0.955,
+              0.96,
+              0.914,
+              0.962,
+              0.933,
+              0.967,
+              0.946
+            ],
+            "collapse_risk": 0.704
+          }
+        ],
+        "motif_registry": [
+          {
+            "motif_id": "motif-lantern",
+            "surface_forms": [
+              "lantern"
+            ],
+            "semantic_field": "object_memory",
+            "recurrence_count": 7,
+            "distance_since_last": 36,
+            "transformation_score": 0.3,
+            "motif_status": "active"
+          }
+        ],
+        "dialogue_callbacks": [],
+        "cadence_relief_factor": 0.0
+      }
+    },
+    {
+      "validator_id": "continuity_consistency_checker",
+      "validator_family": "continuity_state_and_contradiction_validator_stack",
+      "pass": "continuity_pass",
+      "dimension": "continuity",
+      "score": 0.66,
+      "status": "warn",
+      "linked_rules": [
+        "RULE_CONTINUITY_CONTRADICTION_CAP",
+        "RULE_ENTITY_INVARIANT_ENFORCED",
+        "RULE_CANON_NO_IMPLICIT_OVERRIDE"
+      ],
+      "linked_failure_modes": [
+        "continuity_memory_failure",
+        "long_form_coherence_failure"
+      ],
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "continuity_state_library",
+        "failure_mode_library"
+      ],
+      "threshold_key": "continuity_consistency_checker",
+      "evidence": {
+        "location_alignment": true,
+        "character_alignment": true,
+        "named_entity_mentions": [
+          "mara",
+          "platform",
+          "porter",
+          "station"
+        ],
+        "contradiction_markers": 3
+      }
+    },
+    {
+      "validator_id": "dialogue_realism_checker",
+      "validator_family": "dialogue_realism_validator_stack",
+      "pass": "dialogue_integrity_pass",
+      "dimension": "dialogue_integrity",
+      "score": 0.38,
+      "status": "fail",
+      "linked_rules": [
+        "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+        "RULE_DIALOGUE_ACT_DIVERSITY_MIN"
+      ],
+      "linked_failure_modes": [
+        "dialogue_realism_collapse",
+        "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses"
+      ],
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "dialogue_behavior_library",
+        "voice_library"
+      ],
+      "threshold_key": "dialogue_realism_checker",
+      "evidence": {
+        "dialogue_line_count": 0,
+        "dialogue_length_variation": 0.0,
+        "overlap_markers": 0,
+        "interruption_markers": 0,
+        "pragmatics_markers": 4,
+        "dialogue_bridge_present": false,
+        "mirrored_openings": 0,
+        "utterance_lengths": []
+      }
+    },
+    {
+      "validator_id": "human_style_preference_validator",
+      "validator_family": "human_likeness_discriminator_stack",
+      "pass": "evaluation_gate",
+      "dimension": "human_likeness",
+      "score": 0.92,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_PROSE_CONCRETENESS_MIN",
+        "RULE_STYLE_DISTANCE_MAX"
+      ],
+      "linked_failure_modes": [
+        "prose_naturalness_collapse",
+        "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions"
+      ],
+      "primary_library": "evaluation_library",
+      "secondary_libraries": [
+        "voice_library",
+        "abstraction_control_library"
+      ],
+      "threshold_key": "human_style_preference_validator",
+      "evidence": {
+        "paragraph_count": 6,
+        "bullet_ratio": 0.0,
+        "context_depth_signals": 14,
+        "emotional_energy_signals": 6,
+        "paragraph_flow_score": 1.0,
+        "context_sufficiency_score": 1.0,
+        "emotional_energy_score": 1.0,
+        "narrative_density_adjustment": 0.08
+      }
+    },
+    {
+      "validator_id": "character_arc_consistency_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.54,
+      "status": "fail",
+      "linked_rules": [
+        "RULE_CHARACTER_ARC_CONTINUITY_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "character_arc_discontinuity_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "character_arc_consistency_validator",
+      "evidence": {
+        "arc_integrity_score": 0.54,
+        "arc_stagnation_flags": [
+          {
+            "character": "Mara",
+            "turning_point_scene": "scene_02",
+            "post_turn_scene": "scene_05",
+            "issue": "turning point is declared but later behavior remains evasive and materially unchanged"
+          }
+        ],
+        "obligation_violations": [
+          {
+            "obligation_id": "arc_mara_turning_point_shift",
+            "obligation_type": "character_arc_shift",
+            "importance": "high",
+            "status": "violated",
+            "detail": "turning point is declared but later behavior remains evasive and materially unchanged"
+          }
+        ],
+        "structural_violation_score": 1.0,
+        "obligation_failure_count": 9
+      }
+    },
+    {
+      "validator_id": "thread_persistence_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.3,
+      "status": "fail",
+      "linked_rules": [
+        "RULE_THREAD_PERSISTENCE_MIN"
+      ],
+      "linked_failure_modes": [
+        "thread_dropout_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "thread_persistence_validator",
+      "evidence": {
+        "thread_persistence_score": 0.3,
+        "thread_dropouts": [
+          {
+            "thread_id": "thread_missing_docket",
+            "scene_id": "scene_03",
+            "dropout_type": "explicit_absence_after_weighted_setup"
+          }
+        ],
+        "unresolved_threads": [
+          {
+            "thread_id": "thread_missing_docket",
+            "scene_id": "scene_06",
+            "importance": "high",
+            "resolution_state": "unresolved_end_state"
+          },
+          {
+            "thread_id": "thread_spared_courier",
+            "scene_id": "scene_06",
+            "importance": "high",
+            "resolution_state": "abandoned_after_turning_point"
+          },
+          {
+            "thread_id": "thread_blue_lantern_meaning",
+            "scene_id": "scene_06",
+            "importance": "high",
+            "resolution_state": "motif_recurred_without_resolution"
+          }
+        ],
+        "obligation_violations": [
+          {
+            "obligation_id": "thread_missing_docket",
+            "obligation_type": "thread_resolution",
+            "importance": "high",
+            "status": "violated",
+            "detail": "unresolved_end_state"
+          },
+          {
+            "obligation_id": "thread_spared_courier",
+            "obligation_type": "thread_resolution",
+            "importance": "high",
+            "status": "violated",
+            "detail": "abandoned_after_turning_point"
+          },
+          {
+            "obligation_id": "thread_blue_lantern_meaning",
+            "obligation_type": "thread_resolution",
+            "importance": "high",
+            "status": "violated",
+            "detail": "motif_recurred_without_resolution"
+          }
+        ],
+        "structural_violation_score": 1.0,
+        "obligation_failure_count": 9
+      }
+    },
+    {
+      "validator_id": "setup_payoff_integrity_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.29,
+      "status": "fail",
+      "linked_rules": [
+        "RULE_SETUP_PAYOFF_LINK_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "unpaid_setup_failure",
+        "unsupported_payoff_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "setup_payoff_integrity_validator",
+      "evidence": {
+        "setup_payoff_score": 0.29,
+        "unmet_setups": [
+          {
+            "setup_id": "setup_missing_docket",
+            "scene_id": "scene_06",
+            "reason": "thread reaches end state unresolved",
+            "obligation_strength": "high"
+          },
+          {
+            "setup_id": "setup_spared_courier",
+            "scene_id": "scene_06",
+            "reason": "turning-point setup remains symbolic only with no downstream consequence",
+            "obligation_strength": "high"
+          },
+          {
+            "setup_id": "setup_blue_lantern",
+            "scene_id": "scene_06",
+            "reason": "motif recurs without causal or thematic payoff",
+            "obligation_strength": "high"
+          }
+        ],
+        "unsupported_payoffs": [
+          {
+            "payoff_id": "unsupported_payoff_ledgervia_hidden_compartment",
+            "scene_id": "scene_04",
+            "payoff_text": "ledger discovered through hidden compartment rather than weighted lantern setup",
+            "expected_setup_id": "setup_blue_lantern",
+            "failure_type": "unsupported_or_misaligned_payoff"
+          }
+        ],
+        "obligation_violations": [
+          {
+            "obligation_id": "setup_missing_docket",
+            "obligation_type": "setup_payoff",
+            "importance": "high",
+            "status": "violated",
+            "detail": "thread reaches end state unresolved"
+          },
+          {
+            "obligation_id": "setup_spared_courier",
+            "obligation_type": "setup_payoff",
+            "importance": "high",
+            "status": "violated",
+            "detail": "turning-point setup remains symbolic only with no downstream consequence"
+          },
+          {
+            "obligation_id": "setup_blue_lantern",
+            "obligation_type": "setup_payoff",
+            "importance": "high",
+            "status": "violated",
+            "detail": "motif recurs without causal or thematic payoff"
+          }
+        ],
+        "structural_violation_score": 1.0,
+        "obligation_failure_count": 9
+      }
+    },
+    {
+      "validator_id": "theme_evolution_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.66,
+      "status": "warn",
+      "linked_rules": [
+        "RULE_THEME_EVOLUTION_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "theme_stagnation_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "theme_evolution_validator",
+      "evidence": {
+        "theme_evolution_score": 0.66,
+        "theme_stagnation_points": [
+          {
+            "motif_id": "motif_blue_lantern",
+            "scenes": [
+              "scene_01",
+              "scene_03",
+              "scene_04",
+              "scene_06"
+            ],
+            "failure_type": "motif_without_transformation",
+            "transformation_score": 0.18
+          }
+        ],
+        "motif_failures": [
+          {
+            "motif_id": "motif_blue_lantern",
+            "scenes": [
+              "scene_01",
+              "scene_03",
+              "scene_04",
+              "scene_06"
+            ],
+            "failure_type": "motif_without_transformation",
+            "transformation_score": 0.18
+          }
+        ],
+        "obligation_violations": [
+          {
+            "obligation_id": "motif_blue_lantern",
+            "obligation_type": "motif_transformation",
+            "importance": "medium",
+            "status": "violated",
+            "detail": "motif_without_transformation"
+          }
+        ],
+        "structural_violation_score": 1.0,
+        "obligation_failure_count": 9
+      }
+    },
+    {
+      "validator_id": "pressure_curve_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.68,
+      "status": "warn",
+      "linked_rules": [
+        "RULE_PRESSURE_CURVE_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "pressure_curve_failure"
+      ],
+      "primary_library": "narrative_pressure_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "pressure_curve_validator",
+      "evidence": {
+        "pressure_curve_score": 0.68,
+        "pressure_flatlines": [
+          {
+            "scene_id": "scene_06",
+            "issue": "pressure builds rhetorically without commensurate release, reversal, or consequence"
+          }
+        ],
+        "consequence_gaps": [
+          {
+            "event_id": "event_spare_courier",
+            "source_scene": "scene_02",
+            "check_scene": "scene_05",
+            "gap_type": "decision_without_behavioral_or_external_consequence"
+          }
+        ],
+        "structural_violation_score": 1.0,
+        "obligation_failure_count": 9
+      }
+    },
+    {
+      "validator_id": "scene_consequence_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.66,
+      "status": "warn",
+      "linked_rules": [
+        "RULE_SCENE_CONSEQUENCE_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "scene_consequence_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "scene_consequence_validator",
+      "evidence": {
+        "scene_consequence_score": 0.66,
+        "consequence_gaps": [
+          {
+            "event_id": "event_spare_courier",
+            "source_scene": "scene_02",
+            "check_scene": "scene_05",
+            "gap_type": "decision_without_behavioral_or_external_consequence"
+          }
+        ],
+        "obligation_violations": [
+          {
+            "obligation_id": "event_spare_courier",
+            "obligation_type": "scene_consequence",
+            "importance": "high",
+            "status": "violated",
+            "detail": "decision_without_behavioral_or_external_consequence"
+          }
+        ],
+        "structural_violation_score": 1.0,
+        "obligation_failure_count": 9
+      }
+    }
+  ],
+  "threshold_results": [
+    {
+      "dimension": "continuity",
+      "score": 0.66,
+      "minimum_score": 0.86,
+      "warning_floor": 0.75,
+      "status": "fail",
+      "driving_validators": [
+        "continuity_consistency_checker"
+      ]
+    },
+    {
+      "dimension": "cadence",
+      "score": 0.73,
+      "minimum_score": 0.74,
+      "warning_floor": 0.66,
+      "status": "warn",
+      "driving_validators": [
+        "cadence_variance_checker"
+      ]
+    },
+    {
+      "dimension": "human_texture",
+      "score": 0.9,
+      "minimum_score": 0.73,
+      "warning_floor": 0.66,
+      "status": "pass",
+      "driving_validators": [
+        "abstraction_ratio_checker",
+        "semantic_redundancy_detector"
+      ]
+    },
+    {
+      "dimension": "dialogue_integrity",
+      "score": 0.38,
+      "minimum_score": 0.74,
+      "warning_floor": 0.66,
+      "status": "fail",
+      "driving_validators": [
+        "dialogue_realism_checker"
+      ]
+    },
+    {
+      "dimension": "human_likeness",
+      "score": 0.86,
+      "minimum_score": 0.75,
+      "warning_floor": 0.68,
+      "status": "pass",
+      "driving_validators": [
+        "human_likeness_discriminator",
+        "human_style_preference_validator"
+      ]
+    },
+    {
+      "dimension": "narrative_intelligence",
+      "score": 0.52,
+      "minimum_score": 0.78,
+      "warning_floor": 0.58,
+      "status": "fail",
+      "driving_validators": [
+        "character_arc_consistency_validator",
+        "thread_persistence_validator",
+        "setup_payoff_integrity_validator",
+        "theme_evolution_validator",
+        "pressure_curve_validator",
+        "scene_consequence_validator"
+      ]
+    },
+    {
+      "dimension": "narrative_obligation_gate",
+      "score": 1.0,
+      "minimum_score": 0.4,
+      "warning_floor": 0.7,
+      "status": "fail",
+      "driving_validators": [
+        "character_arc_consistency_validator",
+        "thread_persistence_validator",
+        "setup_payoff_integrity_validator",
+        "theme_evolution_validator",
+        "scene_consequence_validator"
+      ]
+    }
+  ],
+  "validators_run": [
+    "human_likeness_discriminator",
+    "cadence_variance_checker",
+    "abstraction_ratio_checker",
+    "semantic_redundancy_detector",
+    "continuity_consistency_checker",
+    "dialogue_realism_checker",
+    "human_style_preference_validator",
+    "character_arc_consistency_validator",
+    "thread_persistence_validator",
+    "setup_payoff_integrity_validator",
+    "theme_evolution_validator",
+    "pressure_curve_validator",
+    "scene_consequence_validator"
+  ],
+  "primary_library_trace": [
+    "continuity_state_library",
+    "evaluation_library",
+    "narrative_pressure_library"
+  ],
+  "secondary_library_trace": [
+    "abstraction_control_library",
+    "benchmark_fixture_library",
+    "cadence_library",
+    "continuity_state_library",
+    "dialogue_behavior_library",
+    "evaluation_library",
+    "failure_mode_library",
+    "voice_library"
+  ],
+  "warnings": [
+    "cadence_variance_checker",
+    "semantic_redundancy_detector",
+    "continuity_consistency_checker",
+    "theme_evolution_validator",
+    "pressure_curve_validator",
+    "scene_consequence_validator"
+  ],
+  "blocking_failures": [
+    "dialogue_realism_checker",
+    "character_arc_consistency_validator",
+    "thread_persistence_validator",
+    "setup_payoff_integrity_validator"
+  ],
+  "evidence_spans": [],
+  "thread_dropouts": [
+    {
+      "thread_id": "thread_missing_docket",
+      "scene_id": "scene_03",
+      "dropout_type": "explicit_absence_after_weighted_setup"
+    }
+  ],
+  "unpaid_setups": [
+    "setup_blue_lantern",
+    "setup_missing_docket",
+    "setup_spared_courier"
+  ],
+  "unsupported_payoffs": [
+    {
+      "payoff_id": "unsupported_payoff_ledgervia_hidden_compartment",
+      "scene_id": "scene_04",
+      "payoff_text": "ledger discovered through hidden compartment rather than weighted lantern setup",
+      "expected_setup_id": "setup_blue_lantern",
+      "failure_type": "unsupported_or_misaligned_payoff"
+    }
+  ],
+  "arc_jump_candidates": [],
+  "theme_stagnation_points": [
+    {
+      "motif_id": "motif_blue_lantern",
+      "scenes": [
+        "scene_01",
+        "scene_03",
+        "scene_04",
+        "scene_06"
+      ],
+      "failure_type": "motif_without_transformation",
+      "transformation_score": 0.18
+    }
+  ],
+  "pressure_flatlines": [
+    {
+      "scene_id": "scene_06",
+      "issue": "pressure builds rhetorically without commensurate release, reversal, or consequence"
+    }
+  ],
+  "consequence_gaps": [
+    {
+      "event_id": "event_spare_courier",
+      "source_scene": "scene_02",
+      "check_scene": "scene_05",
+      "gap_type": "decision_without_behavioral_or_external_consequence"
+    }
+  ],
+  "obligation_violations": [
+    {
+      "obligation_id": "setup_missing_docket",
+      "obligation_type": "setup_payoff",
+      "importance": "high",
+      "status": "violated",
+      "detail": "thread reaches end state unresolved"
+    },
+    {
+      "obligation_id": "setup_spared_courier",
+      "obligation_type": "setup_payoff",
+      "importance": "high",
+      "status": "violated",
+      "detail": "turning-point setup remains symbolic only with no downstream consequence"
+    },
+    {
+      "obligation_id": "setup_blue_lantern",
+      "obligation_type": "setup_payoff",
+      "importance": "high",
+      "status": "violated",
+      "detail": "motif recurs without causal or thematic payoff"
+    },
+    {
+      "obligation_id": "thread_missing_docket",
+      "obligation_type": "thread_resolution",
+      "importance": "high",
+      "status": "violated",
+      "detail": "unresolved_end_state"
+    },
+    {
+      "obligation_id": "thread_spared_courier",
+      "obligation_type": "thread_resolution",
+      "importance": "high",
+      "status": "violated",
+      "detail": "abandoned_after_turning_point"
+    },
+    {
+      "obligation_id": "thread_blue_lantern_meaning",
+      "obligation_type": "thread_resolution",
+      "importance": "high",
+      "status": "violated",
+      "detail": "motif_recurred_without_resolution"
+    },
+    {
+      "obligation_id": "arc_mara_turning_point_shift",
+      "obligation_type": "character_arc_shift",
+      "importance": "high",
+      "status": "violated",
+      "detail": "turning point is declared but later behavior remains evasive and materially unchanged"
+    },
+    {
+      "obligation_id": "motif_blue_lantern",
+      "obligation_type": "motif_transformation",
+      "importance": "medium",
+      "status": "violated",
+      "detail": "motif_without_transformation"
+    },
+    {
+      "obligation_id": "event_spare_courier",
+      "obligation_type": "scene_consequence",
+      "importance": "high",
+      "status": "violated",
+      "detail": "decision_without_behavioral_or_external_consequence"
+    }
+  ],
+  "unmet_setups": [
+    {
+      "setup_id": "setup_missing_docket",
+      "scene_id": "scene_06",
+      "reason": "thread reaches end state unresolved",
+      "obligation_strength": "high"
+    },
+    {
+      "setup_id": "setup_spared_courier",
+      "scene_id": "scene_06",
+      "reason": "turning-point setup remains symbolic only with no downstream consequence",
+      "obligation_strength": "high"
+    },
+    {
+      "setup_id": "setup_blue_lantern",
+      "scene_id": "scene_06",
+      "reason": "motif recurs without causal or thematic payoff",
+      "obligation_strength": "high"
+    }
+  ],
+  "unresolved_threads": [
+    {
+      "thread_id": "thread_missing_docket",
+      "scene_id": "scene_06",
+      "importance": "high",
+      "resolution_state": "unresolved_end_state"
+    },
+    {
+      "thread_id": "thread_spared_courier",
+      "scene_id": "scene_06",
+      "importance": "high",
+      "resolution_state": "abandoned_after_turning_point"
+    },
+    {
+      "thread_id": "thread_blue_lantern_meaning",
+      "scene_id": "scene_06",
+      "importance": "high",
+      "resolution_state": "motif_recurred_without_resolution"
+    }
+  ],
+  "arc_stagnation_flags": [
+    {
+      "character": "Mara",
+      "turning_point_scene": "scene_02",
+      "post_turn_scene": "scene_05",
+      "issue": "turning point is declared but later behavior remains evasive and materially unchanged"
+    }
+  ],
+  "motif_failures": [
+    {
+      "motif_id": "motif_blue_lantern",
+      "scenes": [
+        "scene_01",
+        "scene_03",
+        "scene_04",
+        "scene_06"
+      ],
+      "failure_type": "motif_without_transformation",
+      "transformation_score": 0.18
+    }
+  ],
+  "structural_violation_score": 1.0,
+  "obligation_failure_count": 9,
+  "thresholds_ref": "runtime/validation/evaluation_thresholds.json",
+  "semantic_redundancy_v3_fields": {
+    "validator_id": "semantic_redundancy_detector",
+    "idea_graph": {
+      "node_types": [
+        "proposition",
+        "entity_state",
+        "emotion_state",
+        "cause_effect",
+        "contrast",
+        "decision",
+        "motif",
+        "dialogue_act",
+        "narrative_pressure_shift"
+      ],
+      "edge_types": [
+        "restates",
+        "extends",
+        "contrasts",
+        "explains",
+        "causes",
+        "intensifies",
+        "recalls",
+        "mirrors",
+        "resolves"
+      ]
+    },
+    "memory_tracking": {
+      "idea_cluster": {
+        "idea_cluster_id": "",
+        "first_seen_segment": 0,
+        "last_seen_segment": 0,
+        "recurrence_count": 0,
+        "relation_history": [],
+        "novelty_deltas": [],
+        "collapse_risk": 0.0
+      },
+      "motif_registry": {
+        "motif_id": "",
+        "surface_forms": [],
+        "semantic_field": "",
+        "recurrence_count": 0,
+        "distance_since_last": 0,
+        "transformation_score": 0.0,
+        "motif_status": "candidate|active|stale|resolved"
+      },
+      "dialogue_callback": {
+        "callback_id": "",
+        "speaker_a": "",
+        "speaker_b": "",
+        "callback_type": "correction|emphasis|reversal|irony|escalation",
+        "source_turn": 0,
+        "callback_turn": 0,
+        "semantic_distance": 0.0,
+        "pragmatic_shift": 0.0
+      }
+    },
+    "evidence_fields": {
+      "idea_nodes_created": 0,
+      "idea_edges_created": 0,
+      "graph_growth_rate": 0.0,
+      "restate_edges": 0,
+      "extend_edges": 0,
+      "contrast_edges": 0,
+      "cause_edges": 0,
+      "motif_recall_edges": 0,
+      "dialogue_correction_edges": 0,
+      "progression_credit": 0.0,
+      "rhetorical_recurrence_credit": 0.0,
+      "collapse_penalty": 0.0,
+      "local_cluster_density": 0.0,
+      "redundancy_score": 0.0,
+      "redundancy_class": "clean_progression",
+      "memory_cluster_hits": 0,
+      "distance_weighted_recurrence_score": 0.0,
+      "motif_candidates_detected": 0,
+      "motif_registry_matches": 0,
+      "motif_transformation_score": 0.0,
+      "dialogue_callback_matches": 0,
+      "dialogue_callback_legitimacy_score": 0.0,
+      "cluster_overuse_score": 0.0,
+      "role_transition_score": 0.0,
+      "global_redundancy_risk": 0.0,
+      "local_redundancy_risk": 0.0,
+      "recurrence_mode": "local_progression"
+    }
+  }
+}

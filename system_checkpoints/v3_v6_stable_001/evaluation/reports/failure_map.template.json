@@ -1,0 +1,16 @@
+{
+  "template_id": "failure_map_template_v1",
+  "run_id": "",
+  "detected_failure_modes": [],
+  "failure_to_rule_links": [],
+  "failure_to_validator_links": [],
+  "severity_bands": {
+    "critical": [],
+    "warning": [],
+    "informational": []
+  },
+  "library_trace": {
+    "primary": [],
+    "secondary": []
+  }
+}

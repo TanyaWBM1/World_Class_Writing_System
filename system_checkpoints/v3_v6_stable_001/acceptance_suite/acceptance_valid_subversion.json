@@ -1,0 +1,21 @@
+{
+  "acceptance_id": "acceptance_valid_subversion",
+  "purpose": "Confirm transformation-aware fulfillment survives v4 obligation checks.",
+  "category": "transformed_payoff_success",
+  "text_pattern": "apparent payoff failure resolves through transformed object meaning, belief shift, and valid transformed resolution",
+  "target_dimensions": [
+    "narrative_intelligence",
+    "reader_impact"
+  ],
+  "required_expectations": {
+    "final_status": "accepted|accepted_with_warnings",
+    "transformation_detected": true,
+    "transformation_validity_score": ">= 0.8",
+    "resolution_type": "transformed"
+  },
+  "must_emit_signals": [
+    "object_function_transformed",
+    "belief_shift_detected",
+    "payoff_transformation_score"
+  ]
+}

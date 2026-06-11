@@ -1,0 +1,39 @@
+{
+  "id": "emotional_manipulation_without_payoff_failure",
+  "name": "emotional_manipulation_without_payoff_failure",
+  "description": "Normalized failure mode for content that drives high arousal or outrage without delivering proportional explanatory, structural, or emotional payoff.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_HIGH_AROUSAL_MIN",
+    "RULE_PAYOFF_SATISFACTION_MIN",
+    "RULE_VIRAL_INTEGRITY_MIN"
+  ],
+  "related_validators": [
+    "HighArousalEmotionValidator",
+    "PayoffSatisfactionValidator",
+    "ViralIntegrityValidator"
+  ],
+  "related_failure_modes": [
+    "emotional_manipulation_without_payoff_failure",
+    "hook_content_mismatch_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.83,
+  "status": "approved",
+  "aliases": [
+    "empty_outrage",
+    "hollow_arousal"
+  ],
+  "related_benchmarks": [
+    "v6_meaningful_virality_atomic_suite"
+  ],
+  "related_enforcement_concepts": [
+    "viral_integrity_gate"
+  ]
+}

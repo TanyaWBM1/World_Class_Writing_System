@@ -1,0 +1,48 @@
+{
+  "id": "genre_conformity_and_structure_suite",
+  "name": "Genre Conformity And Structure Suite",
+  "description": "Propose a benchmark concept for genre conformity and structure suite.",
+  "source_proposals": [
+    "BP-005"
+  ],
+  "related_rules": [
+    "RULE_GENRE_BEAT_COVERAGE_MIN",
+    "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+    "RULE_LIST_FORMAT_INTEGRITY"
+  ],
+  "related_validators": [
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator",
+    "MarkdownFormatValidator",
+    "StructureSchemaValidator"
+  ],
+  "related_failure_modes": [
+    "genre_flattening_failure",
+    "structure_drift_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "document_structure_state",
+    "genre_flattening_failure",
+    "genre_schema_store",
+    "structure_drift_failure"
+  ],
+  "fixture_axes": {
+    "failure_modes": [
+      "genre_flattening_failure",
+      "structure_drift_failure"
+    ],
+    "evaluation_types": [
+      "genre_structure"
+    ],
+    "narrative_dimensions": [
+      "genre_conformity"
+    ]
+  }
+}

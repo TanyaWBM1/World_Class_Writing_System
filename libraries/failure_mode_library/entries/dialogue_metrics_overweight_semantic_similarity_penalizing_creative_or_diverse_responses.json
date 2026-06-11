@@ -1,0 +1,39 @@
+{
+  "id": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+  "name": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+  "description": "Normalized failure mode asset for Dialogue Metrics Overweight Semantic Similarity, Penalizing Creative Or Diverse Responses. derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-DIALOGUE-AND-VOICE-FAILURES"
+  ],
+  "related_rules": [
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "related_validators": [
+    "SpeakerDivergenceValidator"
+  ],
+  "related_failure_modes": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [
+    "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "dialogue_realism_collapse"
+  ],
+  "related_benchmarks": [
+    "BP-002",
+    "BP-004",
+    "BP-005"
+  ],
+  "related_enforcement_concepts": [
+    "EP-002"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "hook_content_mismatch_failure",
+  "name": "hook_content_mismatch_failure",
+  "description": "Normalized failure mode for cases where opening-hook intensity or promise materially exceeds delivered substance or payoff.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_HOOK_STRENGTH_MIN",
+    "RULE_PAYOFF_SATISFACTION_MIN",
+    "RULE_VIRAL_INTEGRITY_MIN"
+  ],
+  "related_validators": [
+    "HookStrengthValidator",
+    "PayoffSatisfactionValidator",
+    "ViralIntegrityValidator"
+  ],
+  "related_failure_modes": [
+    "hook_content_mismatch_failure",
+    "clickbait_pattern_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.84,
+  "status": "approved",
+  "aliases": [
+    "promise_delivery_gap",
+    "hook_body_mismatch"
+  ],
+  "related_benchmarks": [
+    "v6_meaningful_virality_atomic_suite"
+  ],
+  "related_enforcement_concepts": [
+    "viral_integrity_gate"
+  ]
+}

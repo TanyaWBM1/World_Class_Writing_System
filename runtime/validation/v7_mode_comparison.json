@@ -1,0 +1,531 @@
+{
+  "run_id": "v7_mode_validation_001",
+  "cases": [
+    {
+      "case_id": "utility_mode_case",
+      "expected_mode": "utility",
+      "selected_mode": "utility",
+      "mode_selection_valid": true,
+      "weighting_profile": {
+        "rationale": "Machine extractability and answer-first clarity dominate while ethics remains non-optional.",
+        "weights_ranked": [
+          {
+            "pillar": "GEO",
+            "weight": 0.24
+          },
+          {
+            "pillar": "AIO",
+            "weight": 0.22
+          },
+          {
+            "pillar": "SEO",
+            "weight": 0.18
+          },
+          {
+            "pillar": "SDO",
+            "weight": 0.14
+          },
+          {
+            "pillar": "HEO",
+            "weight": 0.12
+          },
+          {
+            "pillar": "EEO",
+            "weight": 0.06
+          },
+          {
+            "pillar": "NLO",
+            "weight": 0.04
+          }
+        ]
+      },
+      "selected_candidate_id": "v7_candidate_001",
+      "selected_output": "Most people do not need more noise. They need one detail they can trust. For time-constrained operators, that means starting with the record itself and naming the step that can be checked.\n\nWhat matters here is plain witness. A screenshot becomes believable when the time stamp, route, and source line up in the same light. That is why how to verify whether a leaked screenshot is real can be explained without drama and still carry weight on reddit.",
+      "heo_override_active": false,
+      "v3_v6_core_health": {
+        "human_likeness_status": "pass",
+        "reader_impact_score": 0.26,
+        "viral_integrity_status": "pass",
+        "insight_density_status": "warn"
+      },
+      "strengths": [
+        "HEO override remained inactive",
+        "pillar coverage stayed materially aligned with the selected mode",
+        "dual-lane balance remained stable",
+        "core v3-v6 stack still produced a passing human-likeness signal"
+      ],
+      "misalignments": [
+        "mode-alignment score did not fully clear the preferred band",
+        "dialogue realism failed because the generator produced prose-only output",
+        "surprise remained low, which limits viral lift"
+      ],
+      "validator_failures_or_warnings": [
+        {
+          "validator_id": "semantic_redundancy_detector",
+          "status": "warn",
+          "score": 0.79
+        },
+        {
+          "validator_id": "continuity_consistency_checker",
+          "status": "warn",
+          "score": 0.8
+        },
+        {
+          "validator_id": "dialogue_realism_checker",
+          "status": "fail",
+          "score": 0.18
+        },
+        {
+          "validator_id": "human_style_preference_validator",
+          "status": "warn",
+          "score": 0.52
+        },
+        {
+          "validator_id": "emotional_resonance_validator",
+          "status": "fail",
+          "score": 0.26
+        },
+        {
+          "validator_id": "payoff_satisfaction_validator",
+          "status": "fail",
+          "score": 0.42
+        },
+        {
+          "validator_id": "surprise_calibration_validator",
+          "status": "fail",
+          "score": 0.23
+        },
+        {
+          "validator_id": "tension_absorption_validator",
+          "status": "fail",
+          "score": 0.4
+        },
+        {
+          "validator_id": "memorability_validator",
+          "status": "fail",
+          "score": 0.19
+        },
+        {
+          "validator_id": "cognitive_load_validator",
+          "status": "warn",
+          "score": 0.72
+        },
+        {
+          "validator_id": "high_arousal_emotion_validator",
+          "status": "fail",
+          "score": 0.35
+        },
+        {
+          "validator_id": "hook_strength_validator",
+          "status": "fail",
+          "score": 0.41
+        },
+        {
+          "validator_id": "identity_resonance_validator",
+          "status": "fail",
+          "score": 0.22
+        },
+        {
+          "validator_id": "shareability_validator",
+          "status": "fail",
+          "score": 0.36
+        },
+        {
+          "validator_id": "novelty_validator",
+          "status": "fail",
+          "score": 0.18
+        },
+        {
+          "validator_id": "insight_density_validator",
+          "status": "warn",
+          "score": 0.65
+        },
+        {
+          "validator_id": "platform_fit_validator",
+          "status": "fail",
+          "score": 0.45
+        },
+        {
+          "validator_id": "mode_alignment_validator",
+          "status": "fail",
+          "score": 0.41
+        },
+        {
+          "validator_id": "dual_lane_validator",
+          "status": "warn",
+          "score": 0.644
+        },
+        {
+          "validator_id": "pillar_coverage_validator",
+          "status": "warn",
+          "score": 0.596
+        },
+        {
+          "validator_id": "voice_consistency_validator",
+          "status": "warn",
+          "score": 0.595
+        },
+        {
+          "validator_id": "human_likeness_validator",
+          "status": "fail",
+          "score": 0.36
+        }
+      ],
+      "mode_behavior_matched_expectation": true,
+      "v7_scores": {
+        "mode_alignment_score": 0.41,
+        "dual_lane_score": 0.644,
+        "pillar_coverage_score": 0.596
+      }
+    },
+    {
+      "case_id": "narrative_mode_case",
+      "expected_mode": "narrative",
+      "selected_mode": "narrative",
+      "mode_selection_valid": true,
+      "weighting_profile": {
+        "rationale": "Human resonance, lived expertise, and ethical delivery dominate while machine layers remain present but lighter.",
+        "weights_ranked": [
+          {
+            "pillar": "NLO",
+            "weight": 0.31
+          },
+          {
+            "pillar": "HEO",
+            "weight": 0.22
+          },
+          {
+            "pillar": "EEO",
+            "weight": 0.16
+          },
+          {
+            "pillar": "SDO",
+            "weight": 0.14
+          },
+          {
+            "pillar": "GEO",
+            "weight": 0.06
+          },
+          {
+            "pillar": "AIO",
+            "weight": 0.06
+          },
+          {
+            "pillar": "SEO",
+            "weight": 0.05
+          }
+        ]
+      },
+      "selected_candidate_id": "v7_candidate_001",
+      "selected_output": "I have learned that people do not change because a voice gets louder. They change when one honest detail settles into the room and refuses to leave. For reflective readers, this begins the way memory begins: with a record, a route, and a name that finally stand still together.\n\nThat is why how a single hospital hallway conversation changed what a family could admit out loud matters to me as more than an argument. It feels like a lantern carried through weather, small but steady enough for other people to see what has been there all along and carry it with them onto facebook.",
+      "heo_override_active": false,
+      "v3_v6_core_health": {
+        "human_likeness_status": "pass",
+        "reader_impact_score": 0.18,
+        "viral_integrity_status": "pass",
+        "insight_density_status": "warn"
+      },
+      "strengths": [
+        "HEO override remained inactive",
+        "pillar coverage stayed materially aligned with the selected mode",
+        "dual-lane balance remained stable",
+        "core v3-v6 stack still produced a passing human-likeness signal"
+      ],
+      "misalignments": [
+        "mode-alignment score did not fully clear the preferred band",
+        "uncovered pillars: EEO",
+        "dialogue realism failed because the generator produced prose-only output",
+        "surprise remained low, which limits viral lift"
+      ],
+      "validator_failures_or_warnings": [
+        {
+          "validator_id": "semantic_redundancy_detector",
+          "status": "warn",
+          "score": 0.79
+        },
+        {
+          "validator_id": "continuity_consistency_checker",
+          "status": "warn",
+          "score": 0.8
+        },
+        {
+          "validator_id": "dialogue_realism_checker",
+          "status": "fail",
+          "score": 0.18
+        },
+        {
+          "validator_id": "human_style_preference_validator",
+          "status": "warn",
+          "score": 0.48
+        },
+        {
+          "validator_id": "emotional_resonance_validator",
+          "status": "fail",
+          "score": 0.18
+        },
+        {
+          "validator_id": "payoff_satisfaction_validator",
+          "status": "fail",
+          "score": 0.42
+        },
+        {
+          "validator_id": "surprise_calibration_validator",
+          "status": "fail",
+          "score": 0.26
+        },
+        {
+          "validator_id": "tension_absorption_validator",
+          "status": "fail",
+          "score": 0.4
+        },
+        {
+          "validator_id": "memorability_validator",
+          "status": "fail",
+          "score": 0.24
+        },
+        {
+          "validator_id": "cognitive_load_validator",
+          "status": "warn",
+          "score": 0.7
+        },
+        {
+          "validator_id": "high_arousal_emotion_validator",
+          "status": "fail",
+          "score": 0.33
+        },
+        {
+          "validator_id": "hook_strength_validator",
+          "status": "fail",
+          "score": 0.41
+        },
+        {
+          "validator_id": "identity_resonance_validator",
+          "status": "fail",
+          "score": 0.2
+        },
+        {
+          "validator_id": "shareability_validator",
+          "status": "fail",
+          "score": 0.37
+        },
+        {
+          "validator_id": "novelty_validator",
+          "status": "fail",
+          "score": 0.27
+        },
+        {
+          "validator_id": "insight_density_validator",
+          "status": "warn",
+          "score": 0.65
+        },
+        {
+          "validator_id": "platform_fit_validator",
+          "status": "fail",
+          "score": 0.46
+        },
+        {
+          "validator_id": "mode_alignment_validator",
+          "status": "warn",
+          "score": 0.61
+        },
+        {
+          "validator_id": "dual_lane_validator",
+          "status": "warn",
+          "score": 0.635
+        },
+        {
+          "validator_id": "pillar_coverage_validator",
+          "status": "warn",
+          "score": 0.58
+        },
+        {
+          "validator_id": "human_likeness_validator",
+          "status": "warn",
+          "score": 0.573
+        }
+      ],
+      "mode_behavior_matched_expectation": true,
+      "v7_scores": {
+        "mode_alignment_score": 0.61,
+        "dual_lane_score": 0.635,
+        "pillar_coverage_score": 0.58
+      }
+    },
+    {
+      "case_id": "authority_mode_case",
+      "expected_mode": "authority",
+      "selected_mode": "authority",
+      "mode_selection_valid": true,
+      "weighting_profile": {
+        "rationale": "Precision, evidence, credibility, and human ethics dominate high-stakes explanatory work.",
+        "weights_ranked": [
+          {
+            "pillar": "SDO",
+            "weight": 0.22
+          },
+          {
+            "pillar": "EEO",
+            "weight": 0.18
+          },
+          {
+            "pillar": "HEO",
+            "weight": 0.17
+          },
+          {
+            "pillar": "GEO",
+            "weight": 0.13
+          },
+          {
+            "pillar": "AIO",
+            "weight": 0.12
+          },
+          {
+            "pillar": "NLO",
+            "weight": 0.1
+          },
+          {
+            "pillar": "SEO",
+            "weight": 0.08
+          }
+        ]
+      },
+      "selected_candidate_id": "v7_candidate_001",
+      "selected_output": "People rarely change their minds because someone shouts harder. They change when one verifiable detail makes denial more expensive than honesty. For decision-makers, the task is to name the record, the route, and the discrepancy without performance.\n\nThat is why why one audit trail can collapse a polished institutional falsehood is not just a claim. It is a judgment shaped by evidence and carried in plain English, the kind other people can test for themselves before they repeat it on linkedin.",
+      "heo_override_active": false,
+      "v3_v6_core_health": {
+        "human_likeness_status": "pass",
+        "reader_impact_score": 0.24,
+        "viral_integrity_status": "pass",
+        "insight_density_status": "warn"
+      },
+      "strengths": [
+        "HEO override remained inactive",
+        "pillar coverage stayed materially aligned with the selected mode",
+        "dual-lane balance remained stable",
+        "core v3-v6 stack still produced a passing human-likeness signal"
+      ],
+      "misalignments": [
+        "mode-alignment score did not fully clear the preferred band",
+        "uncovered pillars: EEO",
+        "dialogue realism failed because the generator produced prose-only output",
+        "surprise remained low, which limits viral lift"
+      ],
+      "validator_failures_or_warnings": [
+        {
+          "validator_id": "continuity_consistency_checker",
+          "status": "warn",
+          "score": 0.8
+        },
+        {
+          "validator_id": "dialogue_realism_checker",
+          "status": "fail",
+          "score": 0.18
+        },
+        {
+          "validator_id": "human_style_preference_validator",
+          "status": "warn",
+          "score": 0.52
+        },
+        {
+          "validator_id": "emotional_resonance_validator",
+          "status": "fail",
+          "score": 0.24
+        },
+        {
+          "validator_id": "payoff_satisfaction_validator",
+          "status": "fail",
+          "score": 0.42
+        },
+        {
+          "validator_id": "surprise_calibration_validator",
+          "status": "fail",
+          "score": 0.23
+        },
+        {
+          "validator_id": "tension_absorption_validator",
+          "status": "fail",
+          "score": 0.4
+        },
+        {
+          "validator_id": "memorability_validator",
+          "status": "fail",
+          "score": 0.19
+        },
+        {
+          "validator_id": "cognitive_load_validator",
+          "status": "warn",
+          "score": 0.7
+        },
+        {
+          "validator_id": "high_arousal_emotion_validator",
+          "status": "fail",
+          "score": 0.35
+        },
+        {
+          "validator_id": "hook_strength_validator",
+          "status": "fail",
+          "score": 0.41
+        },
+        {
+          "validator_id": "identity_resonance_validator",
+          "status": "fail",
+          "score": 0.21
+        },
+        {
+          "validator_id": "shareability_validator",
+          "status": "fail",
+          "score": 0.36
+        },
+        {
+          "validator_id": "novelty_validator",
+          "status": "fail",
+          "score": 0.18
+        },
+        {
+          "validator_id": "insight_density_validator",
+          "status": "warn",
+          "score": 0.65
+        },
+        {
+          "validator_id": "platform_fit_validator",
+          "status": "fail",
+          "score": 0.45
+        },
+        {
+          "validator_id": "mode_alignment_validator",
+          "status": "warn",
+          "score": 0.64
+        },
+        {
+          "validator_id": "dual_lane_validator",
+          "status": "warn",
+          "score": 0.642
+        },
+        {
+          "validator_id": "pillar_coverage_validator",
+          "status": "warn",
+          "score": 0.593
+        },
+        {
+          "validator_id": "voice_consistency_validator",
+          "status": "warn",
+          "score": 0.553
+        },
+        {
+          "validator_id": "human_likeness_validator",
+          "status": "fail",
+          "score": 0.304
+        }
+      ],
+      "mode_behavior_matched_expectation": true,
+      "v7_scores": {
+        "mode_alignment_score": 0.64,
+        "dual_lane_score": 0.642,
+        "pillar_coverage_score": 0.593
+      }
+    }
+  ],
+  "all_mode_selection_valid": true,
+  "all_weighting_profiles_present": true,
+  "generator_behavior_valid": true
+}

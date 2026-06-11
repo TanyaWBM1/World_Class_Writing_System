@@ -1,0 +1,97 @@
+{
+  "id": "v6_3_platform_suite",
+  "name": "V6.3 Platform Fit Suite",
+  "description": "Deterministic contextual suite for platform-specific distribution fit across Facebook, YouTube, Twitter/X, LinkedIn, Instagram, and Reddit.",
+  "status": "approved",
+  "fixture_family": "platform_distribution_context_pack",
+  "fixtures": [
+    {
+      "fixture_id": "v6_3_platform_linkedin_001",
+      "title": "LinkedIn High-Insight Professional Post",
+      "task_type": "platform_fit",
+      "text_under_test": "One honest detail can break a larger fraud, but only if someone makes the detail legible. The useful lesson is not to be louder than the system. It is to surface the record, the route, and the signature that let other people verify what you know.",
+      "validator_targets": [
+        "platform_fit_validator",
+        "insight_density_validator",
+        "viral_integrity_validator"
+      ],
+      "expected_status_by_validator": {
+        "platform_fit_validator": "pass",
+        "insight_density_validator": "warn",
+        "viral_integrity_validator": "pass"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "expected_best_fit_platforms": [
+        "linkedin",
+        "reddit"
+      ],
+      "notes": "High-value professional framing with explicit takeaway and substance."
+    },
+    {
+      "fixture_id": "v6_3_platform_instagram_001",
+      "title": "Instagram Visual Emotion Hook",
+      "task_type": "platform_fit",
+      "text_under_test": "At midnight the whole square went quiet when the page turned and the lie finally had a name. People did not lean in because the moment was dramatic. They leaned in because the proof was visible in ink.",
+      "validator_targets": [
+        "platform_fit_validator",
+        "memorability_validator",
+        "high_arousal_emotion_validator"
+      ],
+      "expected_status_by_validator": {
+        "platform_fit_validator": "pass",
+        "memorability_validator": "warn",
+        "high_arousal_emotion_validator": "warn"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "expected_best_fit_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "notes": "Visually portable, emotionally legible, not instructional-first."
+    },
+    {
+      "fixture_id": "v6_3_platform_twitter_mismatch_001",
+      "title": "Thread-Length Abstract Post For Twitter",
+      "task_type": "platform_fit",
+      "text_under_test": "The relationship between institutional opacity and distributed civic recovery is often misunderstood in ways that matter later. Important systems produce meaningful effects through layered contexts that require patient synthesis before the audience can act.",
+      "validator_targets": [
+        "platform_fit_validator",
+        "insight_density_validator",
+        "shareability_validator"
+      ],
+      "expected_status_by_validator": {
+        "platform_fit_validator": "fail",
+        "insight_density_validator": "fail",
+        "shareability_validator": "fail"
+      },
+      "expected_gating_outcome": "rejected",
+      "expected_weak_fit_platforms": [
+        "twitter",
+        "instagram"
+      ],
+      "notes": "Abstract and structurally wrong for fast-share platforms."
+    },
+    {
+      "fixture_id": "v6_3_platform_reddit_001",
+      "title": "Reddit Story With Interpretable Stakes",
+      "task_type": "platform_fit",
+      "text_under_test": "I thought the clerk was stalling until she slid the ledger across the desk and showed me the same number appearing under three different shell vendors. The point was not that corruption existed. The point was that one repeated detail made denial impossible.",
+      "validator_targets": [
+        "platform_fit_validator",
+        "insight_density_validator",
+        "novelty_validator"
+      ],
+      "expected_status_by_validator": {
+        "platform_fit_validator": "pass",
+        "insight_density_validator": "warn",
+        "novelty_validator": "warn"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "expected_best_fit_platforms": [
+        "reddit",
+        "linkedin"
+      ],
+      "notes": "Interpretive anecdote with evidence and discussion value."
+    }
+  ]
+}

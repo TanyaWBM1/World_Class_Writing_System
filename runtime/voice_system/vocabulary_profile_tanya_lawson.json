@@ -1,0 +1,135 @@
+{
+  "profile_id": "tanya_lawson_vocabulary_v7_4",
+  "voice_id": "tanya_lawson_v1",
+  "purpose": "Lexical grounding profile for everyday, lived-experience language with low tolerance for corporate or AI-default drift.",
+  "discouraged_terms": [
+    {
+      "term": "friction",
+      "preferred_substitution": "resistance",
+      "category": "ai_default"
+    },
+    {
+      "term": "leverage",
+      "preferred_substitution": "use well",
+      "category": "corporate"
+    },
+    {
+      "term": "lands",
+      "preferred_substitution": "hits",
+      "category": "ai_default"
+    },
+    {
+      "term": "optimize",
+      "preferred_substitution": "steady",
+      "category": "corporate"
+    },
+    {
+      "term": "utilize",
+      "preferred_substitution": "use",
+      "category": "corporate"
+    },
+    {
+      "term": "show up",
+      "preferred_substitution": "be there",
+      "category": "generic_motivation"
+    },
+    {
+      "term": "elevate",
+      "preferred_substitution": "strengthen",
+      "category": "corporate"
+    },
+    {
+      "term": "impactful",
+      "preferred_substitution": "meaningful",
+      "category": "corporate"
+    },
+    {
+      "term": "alignment",
+      "preferred_substitution": "shared understanding",
+      "category": "corporate"
+    },
+    {
+      "term": "transformation",
+      "preferred_substitution": "change",
+      "category": "ai_default"
+    }
+  ],
+  "term_banks": {
+    "abstract_terms": [
+      "alignment",
+      "architecture",
+      "bandwidth",
+      "clarity",
+      "complexity",
+      "context",
+      "dynamic",
+      "ecosystem",
+      "efficiency",
+      "framework",
+      "friction",
+      "impact",
+      "landscape",
+      "leverage",
+      "mindset",
+      "narrative",
+      "optimize",
+      "outcome",
+      "process",
+      "signal",
+      "strategy",
+      "synergy",
+      "transformation",
+      "value"
+    ],
+    "concrete_grounding_terms": [
+      "bench",
+      "body",
+      "church",
+      "door",
+      "garden",
+      "grandmother",
+      "hallway",
+      "hands",
+      "home",
+      "kitchen",
+      "neighbor",
+      "porch",
+      "record",
+      "room",
+      "school",
+      "song",
+      "street",
+      "table",
+      "train",
+      "window",
+      "yard"
+    ]
+  },
+  "tone_signals": {
+    "lived_grounding_terms": [
+      "body",
+      "hands",
+      "home",
+      "kitchen",
+      "porch",
+      "street",
+      "table"
+    ],
+    "cultural_spiritual_terms": [
+      "ancestor",
+      "blessing",
+      "church",
+      "faith",
+      "grace",
+      "mercy",
+      "prayer",
+      "ritual",
+      "spirit"
+    ]
+  },
+  "thresholds": {
+    "abstract_word_ratio_warn": 0.09,
+    "abstract_word_ratio_fail": 0.16,
+    "concrete_word_ratio_min": 0.025
+  }
+}

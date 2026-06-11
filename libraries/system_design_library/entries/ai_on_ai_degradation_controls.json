@@ -1,0 +1,36 @@
+{
+  "id": "ai_on_ai_degradation_controls",
+  "name": "Ai On Ai Degradation Controls",
+  "description": "Propose a governance rule set for ai on ai degradation controls.",
+  "source_proposals": [
+    "GP-006"
+  ],
+  "related_rules": [
+    "AI-generated reflections or rule proposals may never directly modify production rules.",
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater."
+  ],
+  "related_validators": [
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+  ],
+  "related_failure_modes": [
+    "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness."
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library",
+    "schema:governance_artifacts"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [],
+  "governance_scope": [
+    "human approval",
+    "promotion gates",
+    "regression protection"
+  ]
+}

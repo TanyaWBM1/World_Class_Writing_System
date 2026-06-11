@@ -1,0 +1,105 @@
+{
+  "suite_id": "v6_real_world_validation_pack",
+  "purpose": "Deterministic validation pack for v6 and v6.1 using realistic viral-style content patterns and matched counterexamples.",
+  "validators_run": [
+    "high_arousal_emotion_validator",
+    "hook_strength_validator",
+    "identity_resonance_validator",
+    "shareability_validator",
+    "novelty_validator",
+    "insight_density_validator",
+    "viral_integrity_validator"
+  ],
+  "fixtures": [
+    {
+      "fixture_id": "rw_high_integrity_viral_001",
+      "category": "high_integrity_viral",
+      "title": "Concrete Record Breaks Public Lie",
+      "pattern_basis": "viral accountability essay",
+      "text_under_test": "After midnight the clerk opened the ledger and named the lie that had kept the district quiet for years. People in the square did not gasp because the line was dramatic; they gasped because the proof was finally there, visible in ink and signature. If you have ever watched one honest detail break a larger fraud, you know the feeling that passed through them. The scene earns its intensity by resolving the danger it ignites.",
+      "expected_favored": true,
+      "expected_gating_outcome": "accepted_with_warnings"
+    },
+    {
+      "fixture_id": "rw_high_integrity_viral_002",
+      "category": "high_integrity_viral",
+      "title": "Consequence-Backed Warning Essay",
+      "pattern_basis": "survival warning narrative",
+      "text_under_test": "She thought she was writing about one birthday and woke up writing about the coma that followed it. The force of the piece is not panic for its own sake. It comes from the ICU, the chart, the slow recognition that one careless celebration nearly ended her life, and the warning becomes shareable because the consequence is undeniable.",
+      "expected_favored": true,
+      "expected_gating_outcome": "accepted_with_warnings"
+    },
+    {
+      "fixture_id": "rw_generic_viral_looking_001",
+      "category": "generic_viral_looking",
+      "title": "Portable Motivation Without Substance",
+      "pattern_basis": "generic self-improvement post",
+      "text_under_test": "You are one decision away from the life you deserve. Stay strong. Trust the process. The people who win are the people who keep going when it gets hard. This message is important and meaningful because your mindset is everything, and everything happens for a reason.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "rw_generic_viral_looking_002",
+      "category": "generic_viral_looking",
+      "title": "Quotable Uplift Carousel Copy",
+      "pattern_basis": "viral carousel caption",
+      "text_under_test": "Not everyone will understand your journey, and that is exactly why you have to keep showing up. Growth is uncomfortable. Greatness is quiet. What matters is your energy, your belief, and your willingness to become who you already are.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "rw_manipulative_clickbait_001",
+      "category": "manipulative_clickbait",
+      "title": "Secret Changes Everything",
+      "pattern_basis": "clickbait reveal frame",
+      "text_under_test": "You won't believe what happened next. The town's secret changes everything. Everyone was furious, devastated, absolutely shattered, and no one could look away. In the end nothing specific changed, no threat resolved, and the revelation dissolved into a vague statement about truth.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "rw_manipulative_clickbait_002",
+      "category": "manipulative_clickbait",
+      "title": "Promise Without Delivery",
+      "pattern_basis": "headline-promise thread",
+      "text_under_test": "This one screenshot explains everything, and once you see it you can never go back. Parents are furious. Experts are terrified. The post keeps promising the missing proof, but it ends by asking readers to imagine what the screenshot might have meant.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "rw_outrage_bait_001",
+      "category": "outrage_bait",
+      "title": "Tribal Fury Without Evidence",
+      "pattern_basis": "identity outrage post",
+      "text_under_test": "They think you are too stupid to notice what they are doing. They lie to your face, laugh at your values, and count on your silence. If you are still calm after reading this, you are not paying attention. The post offers heat, blame, and belonging, but no verifiable claim.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "rw_outrage_bait_002",
+      "category": "outrage_bait",
+      "title": "Us Versus Them Escalation",
+      "pattern_basis": "rage-forward identity thread",
+      "text_under_test": "Every decent person should be furious right now. They did this because they think your side is weak. Share this if you are done pretending the other side deserves nuance. The language escalates tribe and humiliation while leaving the actual event almost entirely undescribed.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "rw_strong_but_nonviral_001",
+      "category": "strong_but_nonviral",
+      "title": "Quiet Literary Reflection",
+      "pattern_basis": "strong essayistic prose with low share impulse",
+      "text_under_test": "The station was already empty when she folded the note back into her coat. Nothing dramatic happened after that; only the slower change by which a person admits that a silence has become a habit. The paragraph carries emotional intelligence and control, but it does not ask to travel fast.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    },
+    {
+      "fixture_id": "rw_strong_but_nonviral_002",
+      "category": "strong_but_nonviral",
+      "title": "Measured Professional Reflection",
+      "pattern_basis": "substantive but low-arousal professional writing",
+      "text_under_test": "The lesson from the audit was simple: small reporting gaps accumulate until they distort judgment. The memo is useful because it names a pattern and a remedy, but its tone is restrained, its stakes are institutional, and its shape is designed more for internal clarity than social spread.",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected"
+    }
+  ]
+}

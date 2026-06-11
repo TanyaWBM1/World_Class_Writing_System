@@ -1,0 +1,34 @@
+{
+  "id": "low_shareability_density_failure",
+  "name": "low_shareability_density_failure",
+  "description": "Normalized failure mode for writing that contains too little quotable, compressible, or clearly extractable material to support resharing.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_SHAREABILITY_MIN"
+  ],
+  "related_validators": [
+    "ShareabilityValidator"
+  ],
+  "related_failure_modes": [
+    "low_shareability_density_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.81,
+  "status": "approved",
+  "aliases": [
+    "low_extraction_value",
+    "unclear_repostability"
+  ],
+  "related_benchmarks": [
+    "v6_meaningful_virality_atomic_suite"
+  ],
+  "related_enforcement_concepts": [
+    "shareability_density_floor"
+  ]
+}

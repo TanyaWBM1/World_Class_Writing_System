@@ -1,0 +1,22 @@
+{
+  "cadence_profile": "natural_thinking_flow",
+  "rules": {
+    "paragraph_first": true,
+    "min_avg_sentences_per_paragraph": 4,
+    "max_short_sentence_ratio": 0.25,
+    "allow_conversational_runons": true,
+    "strict_punctuation_enforcement": false,
+    "avoid_stacked_short_lines": true,
+    "avoid_punchline_spacing": true,
+    "context_building_required": true,
+    "idea_development_required": true
+  },
+  "roughness_rules": {
+    "allow_imperfect_transitions": true,
+    "allow_unresolved_tension": true,
+    "avoid_over_resolution": true,
+    "allow_natural_repetition": true,
+    "prevent_over_smoothing": true,
+    "preserve_thought_fragments": true
+  }
+}

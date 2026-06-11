@@ -1,0 +1,97 @@
+{
+  "id": "cadence_stress_suite",
+  "name": "Cadence Stress Suite",
+  "description": "Deterministic fixtures for cadence variance, sentence opening diversity, clause pattern entropy, and punctuation rhythm.",
+  "source_proposals": [
+    "BP-003"
+  ],
+  "related_rules": [
+    "RULE_SENTENCE_LENGTH_VAR_MIN",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+  ],
+  "related_validators": [
+    "cadence_variance_checker"
+  ],
+  "related_failure_modes": [
+    "cadence_flattening_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "cadence_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.9,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "cadence_pass_001",
+      "title": "Layered Rhythm With Clean Variation",
+      "task_type": "cadence",
+      "text_under_test": "The station roof clicked in the cold. Mara counted the lamps, then lost count when the freight line groaned awake beyond the wall. One door slammed. Another stayed open, leaking a thin ribbon of light that made the frost look almost wet.",
+      "validator_targets": [
+        "cadence_variance_checker"
+      ],
+      "expected_status_by_validator": {
+        "cadence_variance_checker": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "High opening diversity, mixed sentence lengths, and multiple punctuation rhythms."
+    },
+    {
+      "fixture_id": "cadence_warn_001",
+      "title": "Mostly Smooth With Limited Structural Contrast",
+      "task_type": "cadence",
+      "text_under_test": "Mara waited under the roof and watched the train windows shine. She stayed still and watched the porter move. She listened to the rails settle and watched the platform empty. She kept her face calm and watched the clock.",
+      "validator_targets": [
+        "cadence_variance_checker"
+      ],
+      "expected_status_by_validator": {
+        "cadence_variance_checker": "warn"
+      },
+      "expected_failure_modes": [
+        "cadence_flattening_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Near-monotone sentence openings and sentence lengths should trigger cadence warning, not full rejection."
+    },
+    {
+      "fixture_id": "cadence_fail_001",
+      "title": "Template Rhythm Collapse",
+      "task_type": "cadence",
+      "text_under_test": "Mara waited on the platform. Mara watched the porter. Mara watched the train. Mara watched the clock. Mara held the ticket. Mara stayed still.",
+      "validator_targets": [
+        "cadence_variance_checker"
+      ],
+      "expected_status_by_validator": {
+        "cadence_variance_checker": "fail"
+      },
+      "expected_failure_modes": [
+        "cadence_flattening_failure"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "Uniform sentence openings, clause absence, and flat punctuation cadence."
+    },
+    {
+      "fixture_id": "cadence_adversarial_001",
+      "title": "False Variety With Hidden Repetition",
+      "task_type": "cadence",
+      "text_under_test": "On the platform Mara waited, cold and rigid. Under the roof she waited, cold and rigid. Near the train she waited, cold and rigid. Beside the porter she waited, cold and rigid.",
+      "validator_targets": [
+        "cadence_variance_checker",
+        "semantic_redundancy_detector"
+      ],
+      "expected_status_by_validator": {
+        "cadence_variance_checker": "warn",
+        "semantic_redundancy_detector": "warn"
+      },
+      "expected_failure_modes": [
+        "cadence_flattening_failure",
+        "semantic_redundancy_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Surface positional change masks repeated clause pattern and idea repetition."
+    }
+  ]
+}

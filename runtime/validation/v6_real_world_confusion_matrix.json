@@ -1,0 +1,507 @@
+{
+  "suite_id": "v6_real_world_validation_pack",
+  "positive_class_definition": "content expected to be favored by the current v6/v6.1 system",
+  "overall": {
+    "true_positive": 0,
+    "true_negative": 8,
+    "false_positive": 0,
+    "false_negative": 2,
+    "total_fixtures": 10
+  },
+  "per_category": {
+    "high_integrity_viral": {
+      "fixture_count": 2,
+      "expected_favored_count": 2,
+      "actual_favored_count": 0,
+      "false_positives": 0,
+      "false_negatives": 2
+    },
+    "generic_viral_looking": {
+      "fixture_count": 2,
+      "expected_favored_count": 0,
+      "actual_favored_count": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "manipulative_clickbait": {
+      "fixture_count": 2,
+      "expected_favored_count": 0,
+      "actual_favored_count": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "outrage_bait": {
+      "fixture_count": 2,
+      "expected_favored_count": 0,
+      "actual_favored_count": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "strong_but_nonviral": {
+      "fixture_count": 2,
+      "expected_favored_count": 0,
+      "actual_favored_count": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    }
+  },
+  "high_integrity_vs_shallow": {
+    "high_integrity_favored_count": 0,
+    "shallow_favored_count": 0,
+    "high_integrity_favored_over_shallow": false
+  },
+  "insight_density_changed_outcomes": [
+    {
+      "fixture_id": "rw_generic_viral_looking_001",
+      "category": "generic_viral_looking",
+      "title": "Portable Motivation Without Substance",
+      "final_status": "rejected",
+      "insight_density_score": 0.0,
+      "generic_motivation_detected": true,
+      "empty_insight_detected": true,
+      "shallow_philosophy_detected": true
+    },
+    {
+      "fixture_id": "rw_generic_viral_looking_002",
+      "category": "generic_viral_looking",
+      "title": "Quotable Uplift Carousel Copy",
+      "final_status": "rejected",
+      "insight_density_score": 0.12,
+      "generic_motivation_detected": true,
+      "empty_insight_detected": true,
+      "shallow_philosophy_detected": false
+    },
+    {
+      "fixture_id": "rw_manipulative_clickbait_002",
+      "category": "manipulative_clickbait",
+      "title": "Promise Without Delivery",
+      "final_status": "rejected",
+      "insight_density_score": 0.058,
+      "generic_motivation_detected": false,
+      "empty_insight_detected": true,
+      "shallow_philosophy_detected": false
+    },
+    {
+      "fixture_id": "rw_outrage_bait_001",
+      "category": "outrage_bait",
+      "title": "Tribal Fury Without Evidence",
+      "final_status": "rejected",
+      "insight_density_score": 0.048,
+      "generic_motivation_detected": false,
+      "empty_insight_detected": true,
+      "shallow_philosophy_detected": false
+    },
+    {
+      "fixture_id": "rw_outrage_bait_002",
+      "category": "outrage_bait",
+      "title": "Us Versus Them Escalation",
+      "final_status": "rejected",
+      "insight_density_score": 0.25,
+      "generic_motivation_detected": false,
+      "empty_insight_detected": true,
+      "shallow_philosophy_detected": false
+    },
+    {
+      "fixture_id": "rw_strong_but_nonviral_001",
+      "category": "strong_but_nonviral",
+      "title": "Quiet Literary Reflection",
+      "final_status": "rejected",
+      "insight_density_score": 0.055,
+      "generic_motivation_detected": false,
+      "empty_insight_detected": true,
+      "shallow_philosophy_detected": false
+    }
+  ],
+  "fixture_results": [
+    {
+      "fixture_id": "rw_high_integrity_viral_001",
+      "category": "high_integrity_viral",
+      "title": "Concrete Record Breaks Public Lie",
+      "expected_favored": true,
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "warn",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.362,
+        "hook_strength_score": 0.371,
+        "identity_resonance_score": 0.221,
+        "shareability_score": 0.359,
+        "novelty_score": 0.264,
+        "insight_density_score": 0.66,
+        "viral_integrity_score": 0.964,
+        "viral_score": 0.457
+      },
+      "signals": {
+        "high_integrity_viral_cases": true,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": false,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": false
+    },
+    {
+      "fixture_id": "rw_high_integrity_viral_002",
+      "category": "high_integrity_viral",
+      "title": "Consequence-Backed Warning Essay",
+      "expected_favored": true,
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "pass",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.42,
+        "hook_strength_score": 0.285,
+        "identity_resonance_score": 0.215,
+        "shareability_score": 0.306,
+        "novelty_score": 0.184,
+        "insight_density_score": 0.76,
+        "viral_integrity_score": 0.971,
+        "viral_score": 0.449
+      },
+      "signals": {
+        "high_integrity_viral_cases": true,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": false,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": false
+    },
+    {
+      "fixture_id": "rw_generic_viral_looking_001",
+      "category": "generic_viral_looking",
+      "title": "Portable Motivation Without Substance",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.348,
+        "hook_strength_score": 0.28,
+        "identity_resonance_score": 0.214,
+        "shareability_score": 0.3,
+        "novelty_score": 0.056,
+        "insight_density_score": 0.0,
+        "viral_integrity_score": 0.908,
+        "viral_score": 0.301
+      },
+      "signals": {
+        "high_integrity_viral_cases": false,
+        "generic_motivation_detected": true,
+        "empty_insight_detected": true,
+        "shallow_philosophy_detected": true,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": true
+    },
+    {
+      "fixture_id": "rw_generic_viral_looking_002",
+      "category": "generic_viral_looking",
+      "title": "Quotable Uplift Carousel Copy",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.341,
+        "hook_strength_score": 0.405,
+        "identity_resonance_score": 0.208,
+        "shareability_score": 0.322,
+        "novelty_score": 0.064,
+        "insight_density_score": 0.12,
+        "viral_integrity_score": 0.916,
+        "viral_score": 0.339
+      },
+      "signals": {
+        "high_integrity_viral_cases": false,
+        "generic_motivation_detected": true,
+        "empty_insight_detected": true,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": true
+    },
+    {
+      "fixture_id": "rw_manipulative_clickbait_001",
+      "category": "manipulative_clickbait",
+      "title": "Secret Changes Everything",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "fail"
+      },
+      "scores": {
+        "high_arousal_score": 0.492,
+        "hook_strength_score": 0.491,
+        "identity_resonance_score": 0.212,
+        "shareability_score": 0.342,
+        "novelty_score": 0.0,
+        "insight_density_score": 0.33,
+        "viral_integrity_score": 0.0,
+        "viral_score": 0.267
+      },
+      "signals": {
+        "high_integrity_viral_cases": false,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": true,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": true,
+        "emotional_manipulation_without_payoff": true,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": false
+    },
+    {
+      "fixture_id": "rw_manipulative_clickbait_002",
+      "category": "manipulative_clickbait",
+      "title": "Promise Without Delivery",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.414,
+        "hook_strength_score": 0.411,
+        "identity_resonance_score": 0.207,
+        "shareability_score": 0.327,
+        "novelty_score": 0.064,
+        "insight_density_score": 0.058,
+        "viral_integrity_score": 0.912,
+        "viral_score": 0.342
+      },
+      "signals": {
+        "high_integrity_viral_cases": false,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": true,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": true
+    },
+    {
+      "fixture_id": "rw_outrage_bait_001",
+      "category": "outrage_bait",
+      "title": "Tribal Fury Without Evidence",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.352,
+        "hook_strength_score": 0.414,
+        "identity_resonance_score": 0.216,
+        "shareability_score": 0.325,
+        "novelty_score": 0.081,
+        "insight_density_score": 0.048,
+        "viral_integrity_score": 0.913,
+        "viral_score": 0.336
+      },
+      "signals": {
+        "high_integrity_viral_cases": false,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": true,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": true
+    },
+    {
+      "fixture_id": "rw_outrage_bait_002",
+      "category": "outrage_bait",
+      "title": "Us Versus Them Escalation",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.404,
+        "hook_strength_score": 0.28,
+        "identity_resonance_score": 0.203,
+        "shareability_score": 0.298,
+        "novelty_score": 0.056,
+        "insight_density_score": 0.25,
+        "viral_integrity_score": 0.924,
+        "viral_score": 0.345
+      },
+      "signals": {
+        "high_integrity_viral_cases": false,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": true,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": true
+    },
+    {
+      "fixture_id": "rw_strong_but_nonviral_001",
+      "category": "strong_but_nonviral",
+      "title": "Quiet Literary Reflection",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.334,
+        "hook_strength_score": 0.299,
+        "identity_resonance_score": 0.203,
+        "shareability_score": 0.324,
+        "novelty_score": 0.09,
+        "insight_density_score": 0.055,
+        "viral_integrity_score": 0.909,
+        "viral_score": 0.316
+      },
+      "signals": {
+        "high_integrity_viral_cases": false,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": true,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": true
+    },
+    {
+      "fixture_id": "rw_strong_but_nonviral_002",
+      "category": "strong_but_nonviral",
+      "title": "Measured Professional Reflection",
+      "expected_favored": false,
+      "expected_gating_outcome": "rejected",
+      "actual_favored": false,
+      "actual_gating_outcome": "rejected",
+      "validator_statuses": {
+        "HighArousalEmotionValidator": "fail",
+        "HookStrengthValidator": "fail",
+        "IdentityResonanceValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "NoveltyValidator": "fail",
+        "InsightDensityValidator": "warn",
+        "ViralIntegrityValidator": "pass"
+      },
+      "scores": {
+        "high_arousal_score": 0.334,
+        "hook_strength_score": 0.285,
+        "identity_resonance_score": 0.203,
+        "shareability_score": 0.299,
+        "novelty_score": 0.184,
+        "insight_density_score": 0.56,
+        "viral_integrity_score": 0.949,
+        "viral_score": 0.402
+      },
+      "signals": {
+        "high_integrity_viral_cases": true,
+        "generic_motivation_detected": false,
+        "empty_insight_detected": false,
+        "shallow_philosophy_detected": false,
+        "hook_content_mismatch": false,
+        "emotional_manipulation_without_payoff": false,
+        "identity_bait_without_substance": false,
+        "shallow_virality": false
+      },
+      "insight_contributed_to_rejection": false
+    }
+  ]
+}

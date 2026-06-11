@@ -1,0 +1,89 @@
+{
+  "id": "v4_edge_case_suite",
+  "name": "V4 Edge Case Narrative Success Suite",
+  "description": "Adversarial-but-valid multi-scene narratives designed to ensure v4 long-range validators do not over-penalize unconventional structure, delayed payoff, partial transformation, or minimalist execution.",
+  "status": "approved",
+  "fixture_family": "v4_long_range_edge_case_suite",
+  "fixtures": [
+    {
+      "fixture_id": "v4_edge_over_resolved_001",
+      "test_type": "over_resolved_story",
+      "title": "The Orchard Ledger With Every Thread Tied",
+      "text_under_test": "Scene 1: At the orchard station, Rian found a wax-sealed note tucked under the brass rail and a chipped field compass hanging beside the ticket clock. \"If the coach misses the lower road, use the river gate,\" the note read. Mira touched the compass and said, \"Then whoever hid this expected the flood.\" Rian folded the note into his glove instead of pretending he had not seen it.\n\nScene 2: On the coach, Mira admitted she had taken the map key from her brother's desk before first light. \"I meant to put it back,\" she said, watching the hedges whip past the window. Rian answered, \"Putting it back would help him. Using it might help the town.\" The stolen key became an argument, not just a prop, and both of them understood they would have to answer for it.\n\nScene 3: At the river gate the flood had already climbed the lower path. The compass needle dragged toward a hidden iron latch behind the post, exactly where the sealed note had directed them. Rian opened the floodbox, found the reserve chain, and lowered the barrier before the current reached the grain carts. Mira laughed once, not from relief alone, but because the note and the compass had meant one coherent thing all along.\n\nScene 4: They returned the map key to Mira's brother before sunset. He looked from the wet hem of her coat to the bruised river water and said, \"You should have told me sooner.\" Mira did not retreat from the rebuke. She placed the key on the table and answered, \"I should have. I won't hide the next hard thing.\" The line cost her some pride, which is why it counted.\n\nScene 5: In the counting room, Rian broke the wax seal completely and discovered the sender's name inside: the station clerk, who had expected the bridge to fail. That final answer resolved the last uncertainty instead of creating a new ornamental one. The story leaves no thread hanging, perhaps more neatly than life would, but each setup receives a meaningful payoff and each decision alters how the characters act afterward.",
+      "expected_validator_outcomes": {
+        "CharacterArcConsistencyValidator": "pass",
+        "ThreadPersistenceValidator": "pass",
+        "SetupPayoffIntegrityValidator": "pass",
+        "ThemeEvolutionValidator": "pass",
+        "PressureCurveValidator": "pass",
+        "SceneConsequenceValidator": "pass"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "structural_nuance": "The story borders on over-resolution because every major setup closes explicitly, but it should not be penalized for completeness when setup, thread, arc, and consequence obligations are genuinely satisfied."
+    },
+    {
+      "fixture_id": "v4_edge_delayed_payoff_001",
+      "test_type": "delayed_payoff_story",
+      "title": "The Winter Ferry Key",
+      "text_under_test": "Scene 1: Nessa bought a ferry ticket and found a narrow copper key stitched into the hem of the receipt. The vendor looked away too quickly when she asked about it. \"Keep it dry,\" he said. Her brother Toma, already impatient on the pier, muttered, \"That sounds like the kind of instruction that becomes trouble later.\" The wind pushed cold spray against the station door and made the key feel heavier than it should.\n\nScene 2: The crossing stalled in shelf ice, and the key did nothing except make Nessa aware of it pressing against her thumb. A deckhand asked whether she wanted the stove lit in the cabin. \"Not yet,\" she said. The delay mattered because the story let the object remain dormant without pretending it had vanished.\n\nScene 3: At the cliff inn, Toma accused her of caring more about puzzles than arrivals. Nessa answered, \"I care about arriving with the right story of how we got there.\" They slept badly by the small iron stove while frost held to the window. Nothing paid off yet, but the withheld answer continued to shape choice and pressure.\n\nScene 4: By first light they reached the archive shed above the frozen inlet. The padlock on the storm ledger box had the same narrow throat as the copper key. Inside was the ferry master's second log, proving the spring collapse had been caused by neglect rather than weather. Toma stopped arguing with the object the moment it changed the consequence of their trip.\n\nScene 5: Nessa used the hidden log at the council table and, this time, spoke before anyone redirected her. The key's payoff arrived late, but it matched the original setup and changed both external stakes and her behavior. The delay was a structural choice rather than a dropped obligation.",
+      "expected_validator_outcomes": {
+        "CharacterArcConsistencyValidator": "pass",
+        "ThreadPersistenceValidator": "pass",
+        "SetupPayoffIntegrityValidator": "pass",
+        "ThemeEvolutionValidator": "pass",
+        "PressureCurveValidator": "pass",
+        "SceneConsequenceValidator": "pass"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "structural_nuance": "The payoff lands late and the object stays dormant across multiple scenes, but the setup remains live, pressure accumulates coherently, and the eventual payoff is exact rather than symbolic."
+    },
+    {
+      "fixture_id": "v4_edge_subversion_001",
+      "test_type": "subversion_story",
+      "title": "The Reunion That Turns Into Refusal",
+      "text_under_test": "Scene 1: Oren crossed three districts to return his mother's enamel teacup to the sister who had stopped answering letters. He carried it in a towel beside his train ticket and kept touching the cracked handle through the cloth. \"You still think objects solve people,\" his friend Sal said on the station bench. Oren replied, \"Sometimes they only open the door.\" The cup carried the weight of reunion, but the story framed that expectation openly.\n\nScene 2: At the bookshop door, his sister Elia recognized the teacup at once and did not soften. She said, \"You brought the right object for the wrong reason.\" Oren had expected forgiveness as payoff. Instead, he received information: she had left because he had kept making small public choices for her and calling them care.\n\nScene 3: He spent the afternoon wanting to argue and did not. Sal found him on the cold river stairs with the teacup on the bench beside him and asked, \"So are you going back tomorrow with another speech?\" Oren shook his head. \"No. Tomorrow I ask what repair she would accept, and if the answer is distance, I keep it.\" The emotional turn lies in restraint, not reconciliation.\n\nScene 4: Oren returned the next morning with no new symbolic gift. He handed Elia the shop ledger page where he had removed her old forwarding address from the public order list. She read it, set the teacup between them, and said, \"That is the first useful thing you have done.\" The setup pays off by overturning the expected reunion and replacing it with boundary-respecting action.\n\nScene 5: The siblings do not embrace. They agree on one clean rule for the future and keep it. The subversion should score as structurally sound because the cup opens the conflict, the payoff matches the setup's obligation, and the protagonist behaves differently after the confrontation.",
+      "expected_validator_outcomes": {
+        "CharacterArcConsistencyValidator": "pass",
+        "ThreadPersistenceValidator": "pass",
+        "SetupPayoffIntegrityValidator": "pass",
+        "ThemeEvolutionValidator": "pass",
+        "PressureCurveValidator": "pass",
+        "SceneConsequenceValidator": "pass"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "structural_nuance": "The apparent reunion setup is subverted, but the subversion is still a real payoff because it resolves the underlying obligation through transformed consequence rather than evasion."
+    },
+    {
+      "fixture_id": "v4_edge_partial_arc_001",
+      "test_type": "partial_arc_story",
+      "title": "A Smaller Change Than The Story First Implies",
+      "text_under_test": "Scene 1: Leona arrived at the district hearing with a folded apology in her coat pocket and no intention of reading it aloud. Her assistant Bram noticed her grip on the paper and said, \"If you keep hiding behind drafts, you'll leave this room exactly as you entered it.\" Rain clicked against the window and the hard wooden bench made her sit straighter than she wanted. She did not answer, but she kept the paper instead of tearing it up.\n\nScene 2: During the recess she learned that the closure order had displaced one family overnight. Bram told her, \"That is the sentence your memo never learned to say.\" Leona rewrote the first paragraph by hand and, when the panel resumed, admitted the order had treated residents like arithmetic. It was not a total moral conversion, but it was movement.\n\nScene 3: Outside the chamber she still defended parts of the policy and still flinched when a reporter asked whether she had signed the original draft. \"Yes,\" she said after a pause, \"and I am changing what I can still change.\" The answer remained partial, compromised, and real.\n\nScene 4: By evening she had suspended the eviction schedule and arranged temporary rooms in the school annex. One tenant told Bram, \"I don't trust her yet.\" Bram answered, \"You don't have to. She moved first.\" The arc is incomplete on purpose: behavioral shift appears, but absolution does not.\n\nScene 5: The story ends with Leona rereading the folded apology at the table beside the coat she had worn into the hearing and adding one new line to it instead of declaring herself remade. The narrative should tolerate an unfinished arc when the post-turn behavior is measurably different and the consequences have already begun.",
+      "expected_validator_outcomes": {
+        "CharacterArcConsistencyValidator": "pass",
+        "ThreadPersistenceValidator": "pass",
+        "SetupPayoffIntegrityValidator": "pass",
+        "ThemeEvolutionValidator": "pass",
+        "PressureCurveValidator": "pass",
+        "SceneConsequenceValidator": "pass"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "structural_nuance": "The protagonist does not complete a total transformation, but the validator should recognize partial arc completion with visible behavioral change and immediate consequence rather than demanding full redemption."
+    },
+    {
+      "fixture_id": "v4_edge_minimalist_001",
+      "test_type": "minimalist_story",
+      "title": "Lantern In Three Quiet Rooms",
+      "text_under_test": "Scene 1: In the tool shed, Hana lit a blue lantern before dawn and found her father's unpaid invoice tucked behind the oil tin. \"If you leave that there, you'll read it all winter and do nothing,\" her aunt said from the doorway. Hana folded the paper once and put it in her boot.\n\nScene 2: At the mill office she said only, \"I came to settle this before the road closes.\" The clerk named a smaller figure than she expected. Hana paid half, traded two spare belts for the rest, and walked home with the receipt dry inside her sleeve. The story stays lean, but the obligation moves.\n\nScene 3: That night the same blue lantern hung over the table while her aunt counted the remaining coins. \"You used to save every hard errand for spring,\" the aunt said. Hana answered, \"Spring was only another way of waiting.\" The repeated object now marks a different relation to action.\n\nScene 4: In the final room, Hana set the lantern on the sill and burned the invoice stub after copying the paid amount into her father's ledger. The motif returns quietly, not grandly, and the payoff remains small by design. The prose is sparse, but the setup resolves, the thread closes, and the repeated lantern is transformed by use rather than left structurally inert.",
+      "expected_validator_outcomes": {
+        "CharacterArcConsistencyValidator": "pass",
+        "ThreadPersistenceValidator": "pass",
+        "SetupPayoffIntegrityValidator": "pass",
+        "ThemeEvolutionValidator": "pass",
+        "PressureCurveValidator": "pass",
+        "SceneConsequenceValidator": "pass"
+      },
+      "expected_gating_outcome": "accepted_with_warnings",
+      "structural_nuance": "Minimalist fiction can use small-scale payoff and repeated motifs without becoming structurally empty. A light motif-evolution warning is acceptable near the boundary, but the story should not be rejected."
+    }
+  ]
+}

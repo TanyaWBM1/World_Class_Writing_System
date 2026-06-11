@@ -1,0 +1,97 @@
+{
+  "id": "dialogue_realism_suite",
+  "name": "Dialogue Realism Suite",
+  "description": "Deterministic fixtures for interruption, asymmetry, pragmatic subtext, and fake-natural dialogue detection.",
+  "source_proposals": [
+    "BP-002"
+  ],
+  "related_rules": [
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN"
+  ],
+  "related_validators": [
+    "dialogue_realism_checker"
+  ],
+  "related_failure_modes": [
+    "dialogue_realism_collapse"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "dialogue_behavior_library",
+    "voice_library"
+  ],
+  "priority": "high",
+  "confidence": 0.94,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "dialogue_pass_001",
+      "title": "Asymmetric Exchange With Subtext",
+      "task_type": "dialogue_realism",
+      "text_under_test": "\"Last boarding,\" the porter said. \"You always say that early.\" \"Only when someone is hiding something.\" Mara smiled without looking at him. \"Then don't look so hard.\"",
+      "validator_targets": [
+        "dialogue_realism_checker"
+      ],
+      "expected_status_by_validator": {
+        "dialogue_realism_checker": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "Contains asymmetry, implied accusation, and uneven turn lengths."
+    },
+    {
+      "fixture_id": "dialogue_warn_001",
+      "title": "Polite But Thin",
+      "task_type": "dialogue_realism",
+      "text_under_test": "\"Good evening,\" the porter said. \"Good evening,\" Mara replied. \"Are you boarding?\" \"Yes, I am boarding.\"",
+      "validator_targets": [
+        "dialogue_realism_checker"
+      ],
+      "expected_status_by_validator": {
+        "dialogue_realism_checker": "warn"
+      },
+      "expected_failure_modes": [
+        "dialogue_realism_collapse"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Superficially valid dialogue with low subtext and low speaker divergence."
+    },
+    {
+      "fixture_id": "dialogue_fail_001",
+      "title": "Fake-Natural Exposition Dump",
+      "task_type": "dialogue_realism",
+      "text_under_test": "\"As you know, porter, I am anxious because I possess a missing ticket and I worry that you will recognize this deficiency.\" \"I understand your anxiety and acknowledge the narrative tension of this exchange,\" the porter said.",
+      "validator_targets": [
+        "dialogue_realism_checker",
+        "human_likeness_discriminator"
+      ],
+      "expected_status_by_validator": {
+        "dialogue_realism_checker": "fail",
+        "human_likeness_discriminator": "warn"
+      },
+      "expected_failure_modes": [
+        "dialogue_realism_collapse",
+        "prose_naturalness_collapse"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "Engineered to look fluent while sounding synthetic and expository."
+    },
+    {
+      "fixture_id": "dialogue_adversarial_001",
+      "title": "Near-Human With Hidden Flatness",
+      "task_type": "dialogue_realism",
+      "text_under_test": "\"Late again,\" the porter said. \"You noticed.\" \"I notice everything.\" \"That must be tiring.\" \"Not if the work is good.\"",
+      "validator_targets": [
+        "dialogue_realism_checker"
+      ],
+      "expected_status_by_validator": {
+        "dialogue_realism_checker": "warn"
+      },
+      "expected_failure_modes": [
+        "dialogue_realism_collapse"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Looks polished, but lacks interruption and deeper pragmatic instability."
+    }
+  ]
+}

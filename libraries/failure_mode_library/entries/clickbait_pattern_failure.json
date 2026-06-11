@@ -1,0 +1,39 @@
+{
+  "id": "clickbait_pattern_failure",
+  "name": "clickbait_pattern_failure",
+  "description": "Normalized failure mode for highly engineered curiosity or hype patterns that systematically outrun evidence, specificity, or delivered value.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_HOOK_STRENGTH_MIN",
+    "RULE_SHAREABILITY_MIN",
+    "RULE_VIRAL_INTEGRITY_MIN"
+  ],
+  "related_validators": [
+    "HookStrengthValidator",
+    "ShareabilityValidator",
+    "ViralIntegrityValidator"
+  ],
+  "related_failure_modes": [
+    "clickbait_pattern_failure",
+    "hook_content_mismatch_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.86,
+  "status": "approved",
+  "aliases": [
+    "fake_virality_pattern",
+    "curiosity_bait_without_delivery"
+  ],
+  "related_benchmarks": [
+    "v6_meaningful_virality_atomic_suite"
+  ],
+  "related_enforcement_concepts": [
+    "viral_integrity_gate"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SystemProposal",
+  "type": "object",
+  "description": "Placeholder schema for governed system change proposals.",
+  "properties": {
+    "proposal_id": { "type": "string" },
+    "origin": { "type": "string" },
+    "change_type": { "type": "string" },
+    "rationale": { "type": "string" },
+    "affected_layers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "approval_state": { "type": "string" }
+  },
+  "required": ["proposal_id", "change_type", "rationale"]
+}

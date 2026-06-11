@@ -1,0 +1,1530 @@
+{
+  "generated_at": "2026-03-21T19:14:02.702560+00:00",
+  "proposal_type": "validation",
+  "proposals": [
+    {
+      "id": "VP-001",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-2",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "HumanLikenessDiscriminator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-1",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Human vs LLM prose naturalness ranking tasks using parallel prompts with concreteness and texture discriminators."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-3",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Cadence-only classification tasks distinguishing human vs LLM paragraphs using structural features."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-9",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Revision workflows comparing human drafts vs LLM revisions to detect voice erosion."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "human_likeness_disc"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-2",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-1",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-3",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-8",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-1",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-8",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-1",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Human vs AI discrimination \u2013 evaluate mixed corpus using discriminator_human_like_v1 and llm_judge_human_like_pairwise_v2; assert AUC and Elo within target ranges."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-3",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Dialogue realism \u2013 evaluate multi_turn_reference_dialogue_set_v1 with dialogue_automatic_metric_suite_v2 and human_dialogue_realism_rubric_v1 alignment checks."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-5",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Voice preservation after editing \u2013 measure voice_preservation_after_edit_v1 and semantic fidelity on edited_pairs_voice_labelled_v1; compare to human labels."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-evaluation_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "discriminator_human_like_v1"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-evaluation_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "llm_judge_human_like_pairwise_v2"
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "human_likeness_discriminator_stack",
+      "description": "Propose a validation concept stack for human likeness discriminator stack.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "high",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "OP-2",
+          "raw_text": "HumanLikenessDiscriminator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-2",
+          "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "TC-1",
+          "raw_text": "Human vs LLM prose naturalness ranking tasks using parallel prompts with concreteness and texture discriminators.",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "TC-1",
+          "raw_text": "Human vs AI discrimination \u2013 evaluate mixed corpus using discriminator_human_like_v1 and llm_judge_human_like_pairwise_v2; assert AUC and Elo within target ranges.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "TC-3",
+          "raw_text": "Cadence-only classification tasks distinguishing human vs LLM paragraphs using structural features.",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "VP-002",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-003",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-004",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-3",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "SpeakerDivergenceValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-4",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "PragmaticsCoverageValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-2",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "dialogue_realism_collapse"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-2",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Multi-speaker scenes with permuted speaker identities to detect dialogue homogenization."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "dialogue_realism_collapse"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-dialogue_behavior_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "speaker_state_embedding"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-dialogue_behavior_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "dialogue_act_tracker"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "dialogue_realism_disc"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-2",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-7",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-3",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-5",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-3",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Dialogue realism \u2013 evaluate multi_turn_reference_dialogue_set_v1 with dialogue_automatic_metric_suite_v2 and human_dialogue_realism_rubric_v1 alignment checks."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-evaluation_library-007",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "human_dialogue_realism_rubric_v1"
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "dialogue_realism_validator_stack",
+      "description": "Propose a validation concept stack for dialogue realism validator stack.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "high",
+      "confidence": 0.9,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-003",
+          "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "voice_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-004",
+          "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-3",
+          "raw_text": "SpeakerDivergenceValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-3",
+          "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "dialogue_behavior_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-4",
+          "raw_text": "PragmaticsCoverageValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "VP-003",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-006",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "CadenceDistributionValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-6",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "SyntaxTemplateRepetitionValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-3",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "cadence_flattening_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-3",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Cadence-only classification tasks distinguishing human vs LLM paragraphs using structural features."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "cadence_flattening_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-cadence_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "syntax_template_tracker"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-cadence_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "author_cadence_profile"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "cadence_realism_disc"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-8",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-cadence_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "episode_transition_cadence_v1"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-cadence_library-005",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "event_progression_cadence_v1"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-cadence_library-008",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "prosodic_cadence_features_v1"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-cadence_library-009",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "edit_preserved_cadence_delta_v1"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-cadence_library-011",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "prompt_phrasing_cadence_invariance_v1"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "LIB-evaluation_methods_01-cadence_library-012",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "long_range_cadence_consistency_v1"
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "cadence_and_syntax_validator_stack",
+      "description": "Propose a validation concept stack for cadence and syntax validator stack.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "high",
+      "confidence": 0.84,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-006",
+          "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-5",
+          "raw_text": "CadenceDistributionValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-5",
+          "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-6",
+          "raw_text": "SyntaxTemplateRepetitionValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "cadence_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "sentence_structure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-6",
+          "raw_text": "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "voice_library",
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "dialogue_behavior_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "VP-004",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-009",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-010",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_CONTINUITY_CONTRADICTION_CAP"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-017",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-9",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "ContinuityNLIValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-10",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "EntityAttributeDriftValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-17",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "WorldCanonConsistencyValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-9",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "continuity_memory_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-5",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Documents with injected contradictions to test continuity and canon enforcement."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-009",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "continuity_memory_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-dialogue_behavior_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "speaker_state_embedding"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-001",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "character_voice_state"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "narrative_goal_state"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "entity_registry"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-006",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "world_canon_store"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-008",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "document_structure_state"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-009",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "genre_beat_state"
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "continuity_state_and_contradiction_validator_stack",
+      "description": "Propose a validation concept stack for continuity state and contradiction validator stack.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "high",
+      "confidence": 0.97,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-009",
+          "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-010",
+          "raw_text": "RULE_CONTINUITY_CONTRADICTION_CAP",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-017",
+          "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-9",
+          "raw_text": "ContinuityNLIValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-10",
+          "raw_text": "EntityAttributeDriftValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "VP-005",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-007",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_SCENE_GOAL_REQUIRED"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-008",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_PROMISE_RESOLUTION_RATE"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-7",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "NarrativeGoalProgressValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-8",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "PromisePayoffValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-4",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "narrative_drift_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-15",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "weak_claim_architecture_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-4",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Long narratives with removed climaxes to test narrative progression and payoff detection."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "narrative_drift_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-015",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "weak_claim_architecture_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-002",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "narrative_goal_state"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-continuity_state_library-003",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "promise_registry"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-005",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "arc_coherence_metric"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-1",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-7",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-3",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-3",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic."
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "narrative_arc_and_goal_progress_metrics",
+      "description": "Propose a validation concept stack for narrative arc and goal progress metrics.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "high",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-007",
+          "raw_text": "RULE_SCENE_GOAL_REQUIRED",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "narrative_pressure_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-008",
+          "raw_text": "RULE_PROMISE_RESOLUTION_RATE",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-7",
+          "raw_text": "NarrativeGoalProgressValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-7",
+          "raw_text": "Maintain and periodically expand benchmark_fixture_library with newly observed real-world failure examples.",
+          "source_file": "evaluation_methods_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "benchmark_fixture_library",
+            "failure_mode_library",
+            "system_design_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-8",
+          "raw_text": "PromisePayoffValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "VP-006",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-003",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-019",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_STYLE_DISTANCE_MAX"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-020",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_CORPUS_STYLE_DIVERSITY_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-021",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_VOICE_DRIFT_CAP"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-022",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_REVISION_SCOPE_STYLE_LOCK"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-10",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "EntityAttributeDriftValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-19",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "AuthorStyleFingerprintValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-20",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "CorpusStyleDiversityValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-21",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "StyleDriftValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-22",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "VoiceInvariantPreservationValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-4",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "narrative_drift_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-10",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "style_homogenization_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-11",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "voice_erosion_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-14",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "structure_drift_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-9",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Revision workflows comparing human drafts vs LLM revisions to detect voice erosion."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-004",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "narrative_drift_failure"
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "voice_style_and_preservation_metrics",
+      "description": "Propose a validation concept stack for voice style and preservation metrics.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "high",
+      "confidence": 0.91,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-003",
+          "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "dialogue_behavior_library",
+            "failure_mode_library",
+            "evaluation_library",
+            "voice_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-019",
+          "raw_text": "RULE_STYLE_DISTANCE_MAX",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "voice_library",
+            "human_texture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-020",
+          "raw_text": "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "voice_library",
+            "human_texture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-021",
+          "raw_text": "RULE_VOICE_DRIFT_CAP",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "voice_library",
+            "human_texture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-022",
+          "raw_text": "RULE_REVISION_SCOPE_STYLE_LOCK",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "voice_library",
+            "human_texture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "VP-007",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-018",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_TERM_DEFINITION_STABILITY"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-025",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_PROMPT_PARAPHRASE_STABILITY_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-25",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "PromptRobustnessValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-13",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "prompt_sensitivity_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-1",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Human vs LLM prose naturalness ranking tasks using parallel prompts with concreteness and texture discriminators."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-7",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Prompt paraphrase robustness suites measuring output stability across equivalent prompts."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-013",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "prompt_sensitivity_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-014",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "robustness_metric"
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-4",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "RULE-5",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-2",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-5",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "OP-8",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-2",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "FM-8",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment."
+        },
+        {
+          "source_file": "evaluation_methods_01.md",
+          "item_id": "TC-7",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Prompt sensitivity \u2013 apply prompt_sensitivity_metric_v2 to prompt_variant_family_suite_v1 for all evaluators; ensure sensitivity scores below ceiling per task."
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "prompt_stability_and_cross_run_metrics",
+      "description": "Propose a validation concept stack for prompt stability and cross run metrics.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "high",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-018",
+          "raw_text": "RULE_TERM_DEFINITION_STABILITY",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "continuity_state_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-025",
+          "raw_text": "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-25",
+          "raw_text": "PromptRobustnessValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "FM-13",
+          "raw_text": "prompt_sensitivity_failure",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "failure_mode_library",
+            "evaluation_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "TC-1",
+          "raw_text": "Human vs LLM prose naturalness ranking tasks using parallel prompts with concreteness and texture discriminators.",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    },
+    {
+      "id": "VP-008",
+      "source_findings": [
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-028",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_CLAIM_SUPPORT_REQUIRED"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "RU-core_failure_modes_01-029",
+          "item_type": "ruleset",
+          "source_section": "RULESET_EXTRACT",
+          "raw_text": "RULE_WARRANT_SCORE_MIN"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-28",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "MarkdownFormatValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-29",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "ClaimEvidenceLinkValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "OP-30",
+          "item_type": "operator",
+          "source_section": "OPERATOR_EXTRACT",
+          "raw_text": "WarrantAcceptabilityValidator"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "FM-15",
+          "item_type": "failure_mode",
+          "source_section": "FAILURE_MODE_EXTRACT",
+          "raw_text": "weak_claim_architecture_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "TC-6",
+          "item_type": "test_case",
+          "source_section": "TEST_CASE_EXTRACT",
+          "raw_text": "Argument corpora with annotated claims, evidence, and warrants to evaluate reasoning structure."
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-failure_mode_library-015",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "weak_claim_architecture_failure"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-abstraction_control_library-007",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "argument_graph_store"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-016",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "warrant_score_metric"
+        },
+        {
+          "source_file": "core_failure_modes_01.md",
+          "item_id": "LIB-core_failure_modes_01-evaluation_library-017",
+          "item_type": "library_entry",
+          "source_section": "LIBRARY_EXTRACT",
+          "raw_text": "argument_quality_metric"
+        }
+      ],
+      "proposal_type": "validation",
+      "normalized_name": "structure_schema_and_argument_quality_metrics",
+      "description": "Propose a validation concept stack for structure schema and argument quality metrics.",
+      "rationale": "The findings converge on multi-metric evaluation rather than single-score checking, with separate discriminators, validators, and scoring surfaces.",
+      "expected_impact": "Creates a future validation portfolio that can support acceptance, regression detection, and comparative evaluation.",
+      "dependencies": [
+        "evaluation schemas",
+        "benchmark fixtures",
+        "frozen configs for later implementation"
+      ],
+      "risks": [
+        "validator overlap and inconsistent naming",
+        "distribution shift in learned evaluators",
+        "false positives on creative prose"
+      ],
+      "priority": "medium",
+      "confidence": 0.96,
+      "requires_human_approval": true,
+      "conflicts": [
+        {
+          "record_id": "RU-core_failure_modes_01-028",
+          "raw_text": "RULE_CLAIM_SUPPORT_REQUIRED",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "failure_mode_library",
+            "evaluation_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "RU-core_failure_modes_01-029",
+          "raw_text": "RULE_WARRANT_SCORE_MIN",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-28",
+          "raw_text": "MarkdownFormatValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-29",
+          "raw_text": "ClaimEvidenceLinkValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        },
+        {
+          "record_id": "OP-30",
+          "raw_text": "WarrantAcceptabilityValidator",
+          "source_file": "core_failure_modes_01.md",
+          "candidate_libraries": [
+            "abstraction_control_library",
+            "evaluation_library",
+            "failure_mode_library",
+            "benchmark_fixture_library"
+          ],
+          "issue": "multiple plausible library targets"
+        }
+      ]
+    }
+  ]
+}

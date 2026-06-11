@@ -1,0 +1,29 @@
+{
+  "contract_id": "generation_profile_contract_v1",
+  "purpose": "Define the structured profile required to drive a bounded generation run optimized across semantic quality, structure, reader impact, virality, and insight density.",
+  "required_fields": {
+    "profile_id": "stable profile identifier",
+    "mode": "generation mode or operating intent",
+    "genre": "genre behavior system target",
+    "voice": "voice behavior system target",
+    "audience": "intended reader cohort",
+    "target_platform": "primary distribution target",
+    "desired_reader_impact": "reader impact vector",
+    "desired_viral_profile": "viral shape vector",
+    "insight_density_target": "minimum insight-density objective",
+    "structure_constraints": "v4 structural guardrails",
+    "disallowed_failure_modes": "failure modes generator must avoid"
+  },
+  "optional_fields": {
+    "secondary_platforms": "non-primary distribution contexts",
+    "length_target": "desired word-count or passage-length band",
+    "scene_or_section_plan": "planned structural sections",
+    "obligation_targets": "required setups, payoffs, threads, or shifts",
+    "style_constraints": "surface form constraints that do not override voice system",
+    "revision_budget": "max allowed iterative passes"
+  },
+  "schema_notes": [
+    "Profiles define targets and guardrails, not runtime authority.",
+    "Platform targeting remains contextual and may not override v4/v5/v6 gating."
+  ]
+}

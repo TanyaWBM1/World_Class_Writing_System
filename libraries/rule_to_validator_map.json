@@ -1,0 +1,473 @@
+{
+  "AI-generated reflections or rule proposals may never directly modify production rules.": [
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+  ],
+  "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "ContinuityNLIValidator",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+    "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+    "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+    "NarrativeGoalProgressValidator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PromisePayoffValidator",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.": [
+    "CadenceDistributionValidator",
+    "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+    "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "SpeakerDivergenceValidator",
+    "SyntaxTemplateRepetitionValidator"
+  ],
+  "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+    "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+    "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.": [
+    "ContinuityNLIValidator",
+    "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+    "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+    "NarrativeGoalProgressValidator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PragmaticsCoverageValidator",
+    "PromisePayoffValidator",
+    "SpeakerDivergenceValidator"
+  ],
+  "Character disfluency rates must match trait- and tension-specific ranges.": [
+    "PragmaticsCoverageValidator",
+    "SpeakerDivergenceValidator"
+  ],
+  "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.": [
+    "SyntaxTemplateRepetitionValidator"
+  ],
+  "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.": [
+    "CadenceDistributionValidator",
+    "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+    "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+    "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+    "SyntaxTemplateRepetitionValidator",
+    "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar."
+  ],
+  "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.": [
+    "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+    "CadenceDistributionValidator",
+    "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+    "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+    "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+    "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+    "Style averaging during editing that erodes voice.",
+    "SyntaxTemplateRepetitionValidator",
+    "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar.",
+    "edit_voice_preservation_policy"
+  ],
+  "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+    "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Every detected failure must be logged to an append-only structured failure ledger.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator",
+    "MarkdownFormatValidator",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "StructureSchemaValidator",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.": [
+    "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised."
+  ],
+  "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+    "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Failure taxonomy changes must be versioned and may not silently rewrite historical labels.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+    "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+    "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Keep AI-generated rule or prompt proposals in proposal logs only until human approval occurs.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.": [
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "ContinuityNLIValidator",
+    "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+    "HumanLikenessDiscriminator",
+    "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+    "NarrativeGoalProgressValidator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PragmaticsCoverageValidator",
+    "SpeakerDivergenceValidator",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.": [
+    "CadenceDistributionValidator",
+    "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+    "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+    "SyntaxTemplateRepetitionValidator",
+    "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar."
+  ],
+  "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone.": [
+    "StructureSchemaValidator"
+  ],
+  "No change may be promoted to production without benchmark replay against the relevant fixture set.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Only validated failures may be promoted into benchmark fixtures.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.": [
+    "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+  ],
+  "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "PromptRobustnessValidator",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved."
+  ],
+  "RULE_ABSTRACTION_RATIO_MAX": [
+    "AbstractionDensityValidator",
+    "ClaimEvidenceLinkValidator",
+    "GenericEmotionPhraseValidator",
+    "ProseConcretenessValidator",
+    "SemanticRedundancyValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "RULE_CANON_NO_IMPLICIT_OVERRIDE": [
+    "ContinuityNLIValidator",
+    "EntityAttributeDriftValidator",
+    "NarrativeGoalProgressValidator",
+    "PromisePayoffValidator",
+    "WorldCanonConsistencyValidator"
+  ],
+  "RULE_CLAIM_SUPPORT_REQUIRED": [
+    "AbstractionDensityValidator",
+    "ClaimEvidenceLinkValidator",
+    "MarkdownFormatValidator",
+    "ProseConcretenessValidator",
+    "SemanticRedundancyValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "RULE_CONTINUITY_CONTRADICTION_CAP": [
+    "ContinuityNLIValidator",
+    "EntityAttributeDriftValidator",
+    "NarrativeGoalProgressValidator",
+    "PromisePayoffValidator",
+    "WorldCanonConsistencyValidator"
+  ],
+  "RULE_CORPUS_STYLE_DIVERSITY_MIN": [
+    "AuthorStyleFingerprintValidator",
+    "CadenceDistributionValidator",
+    "CorpusStyleDiversityValidator",
+    "EntityAttributeDriftValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "RULE_DIALOGUE_ACT_DIVERSITY_MIN": [
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PragmaticsCoverageValidator",
+    "SpeakerDivergenceValidator"
+  ],
+  "RULE_ENTITY_INVARIANT_ENFORCED": [
+    "ContinuityNLIValidator",
+    "EntityAttributeDriftValidator",
+    "NarrativeGoalProgressValidator",
+    "PromisePayoffValidator",
+    "WorldCanonConsistencyValidator"
+  ],
+  "RULE_GENERIC_EMOTION_CAP": [
+    "AbstractionDensityValidator",
+    "GenericEmotionPhraseValidator"
+  ],
+  "RULE_GENERIC_TEMPLATE_CAP": [
+    "AbstractionDensityValidator",
+    "CadenceDistributionValidator",
+    "GenericEmotionPhraseValidator",
+    "SyntaxTemplateRepetitionValidator"
+  ],
+  "RULE_GENRE_BEAT_COVERAGE_MIN": [
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator",
+    "MarkdownFormatValidator",
+    "StructureSchemaValidator"
+  ],
+  "RULE_GENRE_SIGNATURE_FEATURES_MIN": [
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator",
+    "MarkdownFormatValidator",
+    "StructureSchemaValidator"
+  ],
+  "RULE_LIST_FORMAT_INTEGRITY": [
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator",
+    "MarkdownFormatValidator",
+    "StructureSchemaValidator"
+  ],
+  "RULE_PROMISE_RESOLUTION_RATE": [
+    "ContinuityNLIValidator",
+    "EntityAttributeDriftValidator",
+    "NarrativeGoalProgressValidator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PromisePayoffValidator",
+    "WorldCanonConsistencyValidator"
+  ],
+  "RULE_PROMPT_PARAPHRASE_STABILITY_MIN": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "PromptRobustnessValidator",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "RULE_PROSE_CONCRETENESS_MIN": [
+    "AbstractionDensityValidator",
+    "ClaimEvidenceLinkValidator",
+    "ProseConcretenessValidator",
+    "SemanticRedundancyValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "RULE_REVISION_SCOPE_STYLE_LOCK": [
+    "AuthorStyleFingerprintValidator",
+    "CadenceDistributionValidator",
+    "CorpusStyleDiversityValidator",
+    "EntityAttributeDriftValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "RULE_SCENE_GOAL_REQUIRED": [
+    "NarrativeGoalProgressValidator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PromisePayoffValidator"
+  ],
+  "RULE_SECTION_NOVELTY_MIN": [
+    "DiscourseNoveltyValidator"
+  ],
+  "RULE_SEMANTIC_REDUNDANCY_CAP": [
+    "AbstractionDensityValidator",
+    "ClaimEvidenceLinkValidator",
+    "ProseConcretenessValidator",
+    "SemanticRedundancyValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "RULE_SPEAKER_STYLE_DISTANCE_MIN": [
+    "AuthorStyleFingerprintValidator",
+    "CadenceDistributionValidator",
+    "CorpusStyleDiversityValidator",
+    "EntityAttributeDriftValidator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PragmaticsCoverageValidator",
+    "SpeakerDivergenceValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "RULE_STYLE_DISTANCE_MAX": [
+    "AuthorStyleFingerprintValidator",
+    "CadenceDistributionValidator",
+    "CorpusStyleDiversityValidator",
+    "EntityAttributeDriftValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "RULE_SYNTAX_TEMPLATE_REPEAT_CAP": [
+    "CadenceDistributionValidator",
+    "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+    "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+    "SyntaxTemplateRepetitionValidator",
+    "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar."
+  ],
+  "RULE_TERM_DEFINITION_STABILITY": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "PromptRobustnessValidator",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "RULE_VOICE_DRIFT_CAP": [
+    "AuthorStyleFingerprintValidator",
+    "CadenceDistributionValidator",
+    "CorpusStyleDiversityValidator",
+    "EntityAttributeDriftValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "RULE_WARRANT_SCORE_MIN": [
+    "AbstractionDensityValidator",
+    "ClaimEvidenceLinkValidator",
+    "MarkdownFormatValidator",
+    "ProseConcretenessValidator",
+    "SemanticRedundancyValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.": [
+    "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.": [
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "Sentence-length variance must stay above the configured lower bound for the active cadence profile.": [
+    "CadenceDistributionValidator",
+    "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+    "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+    "SyntaxTemplateRepetitionValidator",
+    "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar."
+  ],
+  "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.": [
+    "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+    "EntityAttributeDriftValidator",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "WorldCanonConsistencyValidator"
+  ],
+  "Style fingerprints must be versioned and frozen between releases unless changed through governance.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Compute style-conformity scores against frozen style fingerprints and log drift over time.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+    "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+    "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.": [
+    "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+    "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+    "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+    "Style averaging during editing that erodes voice.",
+    "edit_voice_preservation_policy"
+  ],
+  "System changes must pass sandbox evaluation before shadow evaluation.": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Configure evaluators (LLM-judges, discriminators, metrics) to run with greedy decoding and fixed seeds to ensure deterministic behavior.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "Freeze evaluator prompts, thresholds, and configs per release so score comparisons remain historically meaningful.",
+    "Load continuity state snapshots before generation or refinement and emit deterministic `state_diff` artifacts after each segment.",
+    "Maintain `failure_taxonomy.json` as a controlled vocabulary with explicit versioning.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes.": [
+    "Apply template echo detector to sample batches for each major prompt or fine-tune version, adjusting thresholds using benchmark fixtures.",
+    "For any change to prompts, rubrics, or fixtures, record a new version identifier and run prompt sensitivity and stability checks.",
+    "PromptRobustnessValidator",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step.": [
+    "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+    "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+    "Monitor style consistency dashboards to detect unexpected voice drift across releases.",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+    "SpeakerDivergenceValidator",
+    "Style averaging during editing that erodes voice.",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator",
+    "edit_voice_preservation_policy"
+  ]
+}

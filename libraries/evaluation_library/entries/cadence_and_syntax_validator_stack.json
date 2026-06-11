@@ -1,0 +1,45 @@
+{
+  "id": "cadence_and_syntax_validator_stack",
+  "name": "Cadence And Syntax Validator Stack",
+  "description": "Propose a validation concept stack for cadence and syntax validator stack.",
+  "source_proposals": [
+    "VP-003"
+  ],
+  "related_rules": [
+    "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+  ],
+  "related_validators": [
+    "CadenceDistributionValidator",
+    "SyntaxTemplateRepetitionValidator"
+  ],
+  "related_failure_modes": [
+    "cadence_flattening_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.84,
+  "status": "approved",
+  "aliases": [
+    "author_cadence_profile",
+    "cadence_flattening_failure",
+    "cadence_realism_disc",
+    "edit_preserved_cadence_delta_v1",
+    "episode_transition_cadence_v1",
+    "event_progression_cadence_v1",
+    "long_range_cadence_consistency_v1",
+    "prompt_phrasing_cadence_invariance_v1",
+    "prosodic_cadence_features_v1",
+    "syntax_template_tracker"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResearchFinding",
+  "type": "object",
+  "description": "Placeholder schema for normalized research findings.",
+  "properties": {
+    "finding_id": { "type": "string" },
+    "source_ref": { "type": "string" },
+    "topic": { "type": "string" },
+    "summary": { "type": "string" },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "proposed_targets": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["finding_id", "topic", "summary"]
+}

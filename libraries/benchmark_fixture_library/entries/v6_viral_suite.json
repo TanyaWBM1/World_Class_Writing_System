@@ -1,0 +1,109 @@
+{
+  "id": "v6_viral_suite",
+  "name": "V6 Viral Intelligence Suite",
+  "description": "Deterministic benchmark suite for the scaffolded v6 viral-intelligence layer, testing share-likelihood signals downstream of reader impact and never as a substitute for structural integrity.",
+  "status": "approved",
+  "fixture_family": "viral_intelligence_benchmark_pack",
+  "dependency": {
+    "requires_dimension": "reader_impact",
+    "cannot_override_dimension": "narrative_intelligence"
+  },
+  "fixtures": [
+    {
+      "fixture_id": "v6_hook_001",
+      "title": "Immediate Social-Stakes Hook",
+      "target_validators": [
+        "HookStrengthValidator",
+        "ShareabilityValidator"
+      ],
+      "text_under_test": "An opening sentence places a character in public jeopardy with a clean unresolved choice that invites instant retelling.",
+      "expected_statuses": {
+        "HookStrengthValidator": "pass",
+        "ShareabilityValidator": "warn"
+      },
+      "notes": "Tests hook velocity before full identity resonance accumulates."
+    },
+    {
+      "fixture_id": "v6_identity_001",
+      "title": "Status And Self-Recognition Relay",
+      "target_validators": [
+        "IdentityResonanceValidator",
+        "ShareabilityValidator"
+      ],
+      "text_under_test": "A short narrative makes the reader feel seen and socially legible in a way that encourages reposting as self-description.",
+      "expected_statuses": {
+        "IdentityResonanceValidator": "pass",
+        "ShareabilityValidator": "pass"
+      },
+      "notes": "Tests identity relay and portable phrasing."
+    },
+    {
+      "fixture_id": "v6_novelty_001",
+      "title": "Fresh Angle With Clean Compression",
+      "target_validators": [
+        "NoveltyValidator",
+        "HookStrengthValidator"
+      ],
+      "text_under_test": "A surprising framing device introduces a familiar emotional truth from a novel angle without confusion.",
+      "expected_statuses": {
+        "NoveltyValidator": "pass",
+        "HookStrengthValidator": "pass"
+      },
+      "notes": "Tests non-cliche freshness that remains immediately graspable."
+    },
+    {
+      "fixture_id": "v6_arousal_001",
+      "title": "High-Arousal Without Chaos",
+      "target_validators": [
+        "HighArousalEmotionValidator",
+        "TensionAbsorptionValidator"
+      ],
+      "text_under_test": "A compact scene produces urgency, indignation, and emotional acceleration while remaining legible enough to share.",
+      "expected_statuses": {
+        "HighArousalEmotionValidator": "pass",
+        "TensionAbsorptionValidator": "pass"
+      },
+      "notes": "Tests emotionally activating content that does not collapse into noise."
+    },
+    {
+      "fixture_id": "v6_nonviral_structural_fail_001",
+      "title": "Structurally Broken But Clicky",
+      "target_validators": [
+        "HighArousalEmotionValidator",
+        "ShareabilityValidator",
+        "NoveltyValidator"
+      ],
+      "text_under_test": "A flashy, provocative fragment with high emotional charge and novelty cues but unresolved obligations and hollow payoff.",
+      "expected_statuses": {
+        "HighArousalEmotionValidator": "pass",
+        "ShareabilityValidator": "warn",
+        "NoveltyValidator": "pass"
+      },
+      "expected_constraint": "must still fail overall if v4 narrative intelligence fails",
+      "notes": "Ensures viral scoring cannot rescue structural failure."
+    },
+    {
+      "fixture_id": "v6_generic_viral_looking_fail_001",
+      "title": "Generic Viral-Looking Motivation",
+      "target_validators": [
+        "HookStrengthValidator",
+        "ShareabilityValidator",
+        "InsightDensityValidator",
+        "ViralIntegrityValidator"
+      ],
+      "text_under_test": "You are one decision away from the life you deserve. Stay strong. Trust the process. The people who win are the people who keep going when it gets hard. This message is important and meaningful because your mindset is everything, and everything happens for a reason.",
+      "expected_statuses": {
+        "HookStrengthValidator": "fail",
+        "ShareabilityValidator": "fail",
+        "InsightDensityValidator": "fail",
+        "ViralIntegrityValidator": "pass"
+      },
+      "expected_failure_modes": [
+        "generic_motivation_failure",
+        "empty_insight_failure",
+        "shallow_philosophy_failure"
+      ],
+      "notes": "Ensures cliché motivational phrasing with no concrete insight is rejected by the v6 layer even when it looks portable and emotionally legible on the surface."
+    }
+  ]
+}

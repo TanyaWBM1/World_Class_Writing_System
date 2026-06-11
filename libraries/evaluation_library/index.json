@@ -1,0 +1,197 @@
+{
+  "library_id": "evaluation_library",
+  "generated_at": "2026-03-21T19:18:34.250608+00:00",
+  "entry_count": 14,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "argument_and_structure_metrics",
+      "name": "Argument And Structure Metrics",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-ARGUMENT-AND-STRUCTURE-METRICS"
+      ]
+    },
+    {
+      "id": "cadence_and_syntax_validator_stack",
+      "name": "Cadence And Syntax Validator Stack",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.84,
+      "source_proposals": [
+        "VP-003"
+      ]
+    },
+    {
+      "id": "coherence_and_continuity_metrics",
+      "name": "Coherence And Continuity Metrics",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-COHERENCE-AND-CONTINUITY-METRICS"
+      ]
+    },
+    {
+      "id": "continuity_state_and_contradiction_validator_stack",
+      "name": "Continuity State And Contradiction Validator Stack",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.97,
+      "source_proposals": [
+        "VP-004"
+      ]
+    },
+    {
+      "id": "dialogue_realism_validator_stack",
+      "name": "Dialogue Realism Validator Stack",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.9,
+      "source_proposals": [
+        "VP-002"
+      ]
+    },
+    {
+      "id": "human_likeness_and_discriminators",
+      "name": "Human Likeness And Discriminators",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-HUMAN-LIKENESS-AND-DISCRIMINATORS"
+      ]
+    },
+    {
+      "id": "human_likeness_discriminator_stack",
+      "name": "Human Likeness Discriminator Stack",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "VP-001"
+      ]
+    },
+    {
+      "id": "narrative_arc_and_goal_progress_metrics",
+      "name": "Narrative Arc And Goal Progress Metrics",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "VP-005"
+      ]
+    },
+    {
+      "id": "prompt_stability_and_cross_run_metrics",
+      "name": "Prompt Stability And Cross Run Metrics",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "VP-007"
+      ]
+    },
+    {
+      "id": "stability_and_robustness_metrics",
+      "name": "Stability And Robustness Metrics",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-STABILITY-AND-ROBUSTNESS-METRICS"
+      ]
+    },
+    {
+      "id": "structure_schema_and_argument_quality_metrics",
+      "name": "Structure Schema And Argument Quality Metrics",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.96,
+      "source_proposals": [
+        "VP-008"
+      ]
+    },
+    {
+      "id": "style_voice_and_cadence_metrics",
+      "name": "Style Voice And Cadence Metrics",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.94,
+      "source_proposals": [
+        "LP-STYLE-VOICE-AND-CADENCE-METRICS"
+      ]
+    },
+    {
+      "id": "voice_style_and_preservation_metrics",
+      "name": "Voice Style And Preservation Metrics",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.91,
+      "source_proposals": [
+        "VP-006"
+      ]
+    },
+    {
+      "id": "viral_intelligence_atomic_components",
+      "name": "Viral Intelligence Atomic Components",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.82,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    }
+  ],
+  "schema_expectations": {
+    "evaluation_outputs": [
+      "metric family",
+      "scoring config version",
+      "judge config",
+      "evidence spans",
+      "calibration refs",
+      "stability metadata"
+    ],
+    "enforcement_reports": [
+      "rule id",
+      "threshold snapshot",
+      "violation spans",
+      "affected dimensions",
+      "recommended action"
+    ],
+    "narrative_state_tracking": [
+      "entity registry",
+      "thread registry",
+      "canon invariants",
+      "promise registry",
+      "state diffs",
+      "scene goals",
+      "pressure state"
+    ]
+  },
+  "unresolved_conflicts": [
+    "FM-13",
+    "FM-5",
+    "FM-9",
+    "OP-10",
+    "OP-2",
+    "OP-25",
+    "OP-28",
+    "OP-29",
+    "OP-3",
+    "OP-30",
+    "OP-4",
+    "OP-5",
+    "OP-6",
+    "OP-7",
+    "OP-8",
+    "OP-9",
+    "RU-core_failure_modes_01-003",
+    "RU-core_failure_modes_01-004",
+    "RU-core_failure_modes_01-006",
+    "RU-core_failure_modes_01-007"
+  ]
+}

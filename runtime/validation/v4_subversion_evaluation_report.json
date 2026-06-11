@@ -1,0 +1,344 @@
+{
+  "run_id": "v4_hard_subversion_revolver_story",
+  "status": "accepted_with_warnings",
+  "v4_validator_results": [
+    {
+      "validator_id": "character_arc_consistency_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.92,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_CHARACTER_ARC_CONTINUITY_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "character_arc_discontinuity_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "character_arc_consistency_validator",
+      "evidence": {
+        "arc_integrity_score": 0.92,
+        "arc_stagnation_flags": [],
+        "obligation_violations": [],
+        "structural_violation_score": 0.0,
+        "obligation_failure_count": 0
+      }
+    },
+    {
+      "validator_id": "thread_persistence_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.94,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_THREAD_PERSISTENCE_MIN"
+      ],
+      "linked_failure_modes": [
+        "thread_dropout_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "thread_persistence_validator",
+      "evidence": {
+        "thread_persistence_score": 0.94,
+        "thread_dropouts": [],
+        "unresolved_threads": [],
+        "resolution_type": "transformed",
+        "transformation_detected": true,
+        "transformation_validity_score": 1.0,
+        "semantic_role_shift": "weapon_to_public_evidence",
+        "obligation_violations": [],
+        "structural_violation_score": 0.0,
+        "obligation_failure_count": 0
+      }
+    },
+    {
+      "validator_id": "setup_payoff_integrity_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.95,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_SETUP_PAYOFF_LINK_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "unpaid_setup_failure",
+        "unsupported_payoff_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "setup_payoff_integrity_validator",
+      "evidence": {
+        "setup_payoff_score": 0.95,
+        "unmet_setups": [],
+        "unsupported_payoffs": [],
+        "payoff_type_mismatch": true,
+        "transformation_detected": true,
+        "transformation_validity_score": 1.0,
+        "resolution_type": "transformed",
+        "object_function_transformed": true,
+        "payoff_transformation_score": 0.88,
+        "earned_subversion_score": 0.9,
+        "semantic_role_shift": "weapon_to_public_evidence",
+        "obligation_violations": [],
+        "structural_violation_score": 0.0,
+        "obligation_failure_count": 0
+      }
+    },
+    {
+      "validator_id": "theme_evolution_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.9,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_THEME_EVOLUTION_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "theme_stagnation_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "theme_evolution_validator",
+      "evidence": {
+        "theme_evolution_score": 0.9,
+        "theme_stagnation_points": [],
+        "motif_failures": [],
+        "object_function_transformed": true,
+        "semantic_role_shift": "weapon_to_public_evidence",
+        "obligation_violations": [],
+        "structural_violation_score": 0.0,
+        "obligation_failure_count": 0
+      }
+    },
+    {
+      "validator_id": "pressure_curve_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.88,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_PRESSURE_CURVE_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "pressure_curve_failure"
+      ],
+      "primary_library": "narrative_pressure_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "pressure_curve_validator",
+      "evidence": {
+        "pressure_curve_score": 0.88,
+        "pressure_flatlines": [],
+        "consequence_gaps": [],
+        "structural_violation_score": 0.0,
+        "obligation_failure_count": 0
+      }
+    },
+    {
+      "validator_id": "scene_consequence_validator",
+      "validator_family": "long_range_narrative_intelligence_stack",
+      "pass": "evaluation_gate",
+      "dimension": "narrative_intelligence",
+      "score": 0.9,
+      "status": "pass",
+      "linked_rules": [
+        "RULE_SCENE_CONSEQUENCE_REQUIRED"
+      ],
+      "linked_failure_modes": [
+        "scene_consequence_failure"
+      ],
+      "primary_library": "continuity_state_library",
+      "secondary_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "threshold_key": "scene_consequence_validator",
+      "evidence": {
+        "scene_consequence_score": 0.9,
+        "consequence_gaps": [],
+        "belief_shift_detected": true,
+        "transformation_detected": true,
+        "obligation_violations": [],
+        "structural_violation_score": 0.0,
+        "obligation_failure_count": 0
+      }
+    }
+  ],
+  "narrative_metrics": {
+    "setup_obligations": [
+      {
+        "setup_id": "setup_revolver",
+        "source_scene": "scene_01",
+        "setup_text": "revolver framed as inherited instrument of later salvation or violence",
+        "expected_payoff_type": "direct_force_or_tactical_resolution",
+        "actual_payoff_type": "transformed_public_evidence",
+        "obligation_strength": "high",
+        "resolved": true,
+        "payoff_quality": "supported",
+        "resolution_type": "transformed",
+        "semantic_role_shift": "weapon_to_public_evidence",
+        "transformation_validity_score": 1.0
+      },
+      {
+        "setup_id": "setup_petitions_threat",
+        "source_scene": "scene_02",
+        "setup_text": "raid threat against hidden petitions and witnesses",
+        "expected_payoff_type": "threat_resolution",
+        "actual_payoff_type": "public_exposure_of_false_narrative",
+        "obligation_strength": "high",
+        "resolved": true,
+        "payoff_quality": "supported",
+        "resolution_type": "transformed",
+        "semantic_role_shift": "private_fear_to_public_testimony",
+        "transformation_validity_score": 1.0
+      }
+    ],
+    "unmet_setups": [],
+    "unsupported_payoffs": [],
+    "thread_registry": [
+      {
+        "thread_id": "thread_revolver_meaning",
+        "importance": "high",
+        "opened_in_scene": "scene_01",
+        "last_seen_scene": "scene_06",
+        "resolved": true,
+        "resolution_type": "transformed",
+        "semantic_role_shift": "weapon_to_public_evidence"
+      },
+      {
+        "thread_id": "thread_vale_threat",
+        "importance": "high",
+        "opened_in_scene": "scene_02",
+        "last_seen_scene": "scene_05",
+        "resolved": true,
+        "resolution_type": "direct"
+      },
+      {
+        "thread_id": "thread_elian_belief",
+        "importance": "high",
+        "opened_in_scene": "scene_01",
+        "last_seen_scene": "scene_06",
+        "resolved": true,
+        "resolution_type": "transformed",
+        "semantic_role_shift": "fear_control_to_public_witness"
+      }
+    ],
+    "unresolved_threads": [],
+    "thread_dropouts": [],
+    "arc_stagnation_flags": [],
+    "motif_failures": [],
+    "consequence_gaps": [],
+    "obligation_violations": [],
+    "structural_violation_score": 0.0,
+    "obligation_failure_count": 0,
+    "unpaid_setups": [],
+    "unsupported_payoff_count": 0,
+    "transformation_detected": true,
+    "transformation_validity_score": 1.0,
+    "resolution_type": "transformed",
+    "subversion_detected": true,
+    "object_function_transformed": true,
+    "belief_shift_detected": true,
+    "payoff_transformation_score": 0.88,
+    "earned_subversion_score": 0.9,
+    "semantic_role_shift": "weapon_to_public_evidence"
+  },
+  "threshold_results": [
+    {
+      "dimension": "continuity",
+      "score": 0.77,
+      "minimum_score": 0.86,
+      "warning_floor": 0.75,
+      "status": "warn",
+      "driving_validators": [
+        "continuity_consistency_checker"
+      ]
+    },
+    {
+      "dimension": "cadence",
+      "score": 0.74,
+      "minimum_score": 0.74,
+      "warning_floor": 0.66,
+      "status": "pass",
+      "driving_validators": [
+        "cadence_variance_checker"
+      ]
+    },
+    {
+      "dimension": "human_texture",
+      "score": 0.83,
+      "minimum_score": 0.73,
+      "warning_floor": 0.66,
+      "status": "pass",
+      "driving_validators": [
+        "abstraction_ratio_checker",
+        "semantic_redundancy_detector"
+      ]
+    },
+    {
+      "dimension": "dialogue_integrity",
+      "score": 0.72,
+      "minimum_score": 0.74,
+      "warning_floor": 0.66,
+      "status": "warn",
+      "driving_validators": [
+        "dialogue_realism_checker"
+      ]
+    },
+    {
+      "dimension": "human_likeness",
+      "score": 0.79,
+      "minimum_score": 0.75,
+      "warning_floor": 0.68,
+      "status": "pass",
+      "driving_validators": [
+        "human_likeness_discriminator",
+        "human_style_preference_validator"
+      ]
+    },
+    {
+      "dimension": "narrative_intelligence",
+      "score": 0.92,
+      "minimum_score": 0.78,
+      "warning_floor": 0.58,
+      "status": "pass",
+      "driving_validators": [
+        "character_arc_consistency_validator",
+        "thread_persistence_validator",
+        "setup_payoff_integrity_validator",
+        "theme_evolution_validator",
+        "pressure_curve_validator",
+        "scene_consequence_validator"
+      ]
+    }
+  ],
+  "dimension_scores": {
+    "continuity": 0.77,
+    "cadence": 0.74,
+    "human_texture": 0.83,
+    "dialogue_integrity": 0.72,
+    "human_likeness": 0.79,
+    "narrative_intelligence": 0.92
+  }
+}

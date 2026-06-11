@@ -1,0 +1,32 @@
+{
+  "id": "genre_structure_and_signature_coverage",
+  "name": "Genre Structure And Signature Coverage",
+  "description": "Propose an enforcement concept for genre structure and signature coverage.",
+  "source_proposals": [
+    "EP-007"
+  ],
+  "related_rules": [
+    "RULE_GENRE_BEAT_COVERAGE_MIN",
+    "RULE_GENRE_SIGNATURE_FEATURES_MIN"
+  ],
+  "related_validators": [
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator"
+  ],
+  "related_failure_modes": [
+    "genre_flattening_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "genre_beat_state",
+    "genre_conformity_metric",
+    "genre_flattening_failure",
+    "genre_schema_store"
+  ]
+}

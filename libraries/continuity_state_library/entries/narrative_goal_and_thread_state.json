@@ -1,0 +1,40 @@
+{
+  "id": "narrative_goal_and_thread_state",
+  "name": "Narrative Goal And Thread State",
+  "description": "Propose a curated continuity_state_library addition set for narrative goal and thread state.",
+  "source_proposals": [
+    "LP-NARRATIVE-GOAL-AND-THREAD-STATE"
+  ],
+  "related_rules": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "RULE_PROMISE_RESOLUTION_RATE",
+    "RULE_SCENE_GOAL_REQUIRED"
+  ],
+  "related_validators": [
+    "PromisePayoffValidator"
+  ],
+  "related_failure_modes": [
+    "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "schema:narrative_state",
+    "schema:continuity_state"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "entity_thread_memory_state",
+    "narrative_goal_state",
+    "promise_registry",
+    "thread_status_registry",
+    "timeline_registry"
+  ],
+  "schema_expectations": [
+    "entity registry",
+    "fact invariants",
+    "thread tracking",
+    "state diffs"
+  ]
+}

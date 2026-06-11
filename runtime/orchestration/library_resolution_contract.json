@@ -1,0 +1,50 @@
+{
+  "contract_id": "library_resolution_contract_v1",
+  "purpose": "Resolve owned and related libraries for mode, genre, voice, rules, validators, and failure modes before draft generation.",
+  "inputs": {
+    "ownership_map": "libraries/updated_library_crosswalk.json",
+    "library_indexes": [
+      "libraries/failure_mode_library/index.json",
+      "libraries/abstraction_control_library/index.json",
+      "libraries/dialogue_behavior_library/index.json",
+      "libraries/cadence_library/index.json",
+      "libraries/continuity_state_library/index.json",
+      "libraries/evaluation_library/index.json",
+      "libraries/benchmark_fixture_library/index.json",
+      "libraries/voice_library/index.json",
+      "libraries/genre_library/index.json",
+      "libraries/system_design_library/index.json"
+    ],
+    "run_context_fields": [
+      "mode",
+      "genre",
+      "voice",
+      "tone_profile",
+      "cadence_profile",
+      "constraints"
+    ]
+  },
+  "resolution_rules": {
+    "rules": {
+      "ownership_field": "primary_library",
+      "related_field": "secondary_libraries"
+    },
+    "validators": {
+      "ownership_field": "primary_library",
+      "related_field": "secondary_libraries"
+    },
+    "failure_modes": {
+      "ownership_field": "primary_library",
+      "related_field": "secondary_libraries"
+    }
+  },
+  "required_output_fields": [
+    "resolved_primary_libraries",
+    "resolved_secondary_libraries",
+    "resolved_rules",
+    "resolved_validators",
+    "resolved_failure_modes",
+    "schema_expectations",
+    "benchmark_links"
+  ]
+}

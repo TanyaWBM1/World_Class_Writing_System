@@ -1,0 +1,326 @@
+{
+  "template_id": "evaluation_report_template_v6",
+  "run_id": "",
+  "status": "accepted|accepted_with_warnings|rejected",
+  "mode": "",
+  "genre": "",
+  "voice": "",
+  "dimension_scores": {
+    "continuity": 0.0,
+    "cadence": 0.0,
+    "human_texture": 0.0,
+    "dialogue_integrity": 0.0,
+    "human_likeness": 0.0,
+    "narrative_intelligence": 0.0,
+    "reader_impact": 0.0,
+    "viral_intelligence": 0.0
+  },
+  "validator_results": [],
+  "threshold_results": [],
+  "validators_run": [],
+  "primary_library_trace": [],
+  "secondary_library_trace": [],
+  "warnings": [],
+  "blocking_failures": [],
+  "evidence_spans": [],
+  "thread_dropouts": [],
+  "unpaid_setups": [],
+  "unsupported_payoffs": [],
+  "arc_jump_candidates": [],
+  "theme_stagnation_points": [],
+  "pressure_flatlines": [],
+  "consequence_gaps": [],
+  "obligation_violations": [],
+  "unmet_setups": [],
+  "unresolved_threads": [],
+  "arc_stagnation_flags": [],
+  "motif_failures": [],
+  "structural_violation_score": 0.0,
+  "obligation_failure_count": 0,
+  "reader_state": {
+    "emotional_state": {
+      "baseline": "neutral",
+      "peak": "",
+      "trajectory": []
+    },
+    "expectation_state": {
+      "active_expectations": [],
+      "confirmed_expectations": [],
+      "subverted_expectations": []
+    },
+    "tension_state": {
+      "entry_level": 0.0,
+      "peak_level": 0.0,
+      "release_quality": ""
+    },
+    "curiosity_state": {
+      "open_questions": [],
+      "retained_questions": [],
+      "resolved_questions": []
+    },
+    "understanding_state": {
+      "clarity_level": 0.0,
+      "confusion_spikes": [],
+      "recovery_points": []
+    }
+  },
+  "emotional_resonance_score": 0.0,
+  "payoff_satisfaction_score": 0.0,
+  "surprise_score": 0.0,
+  "tension_absorption_score": 0.0,
+  "memorability_score": 0.0,
+  "cognitive_load_score": 0.0,
+  "high_arousal_score": 0.0,
+  "hook_strength_score": 0.0,
+  "identity_resonance_score": 0.0,
+  "shareability_score": 0.0,
+  "novelty_score": 0.0,
+  "insight_density_score": 0.0,
+  "abstraction_ratio": 0.0,
+  "concrete_example_count": 0,
+  "articulated_takeaway_count": 0,
+  "claim_density": 0.0,
+  "experiential_specificity_score": 0.0,
+  "human_stakes_score": 0.0,
+  "interpretive_density_score": 0.0,
+  "memorable_meaning_score": 0.0,
+  "viral_score": 0.0,
+  "viral_integrity_score": 0.0,
+  "manipulation_risk": 0.0,
+  "clickbait_risk": 0.0,
+  "facebook_score": 0.0,
+  "youtube_score": 0.0,
+  "twitter_score": 0.0,
+  "linkedin_score": 0.0,
+  "instagram_score": 0.0,
+  "reddit_score": 0.0,
+  "platform_fit_score": 0.0,
+  "platform_fit_analysis": {
+    "tone_mismatch": [],
+    "structure_mismatch": [],
+    "audience_mismatch": [],
+    "best_fit_platforms": [],
+    "weak_fit_platforms": []
+  },
+  "viral_intelligence_constraints": {
+    "depends_on_dimension": "reader_impact",
+    "cannot_override_narrative_failures": true
+  },
+  "platform_context_constraints": {
+    "contextual_only": true,
+    "cannot_override_v4_v5_v6_gating": true
+  },
+  "v7_mode_context": {
+    "mode_id": "",
+    "dominant_pillars": [],
+    "supporting_pillars": [],
+    "selection_evidence": {}
+  },
+  "v7_pillar_weighting_context": {
+    "weights": {},
+    "rationale": ""
+  },
+  "v7_1_voice_context": {
+    "voice_id": "",
+    "mode_id": "",
+    "mode_expression": []
+  },
+  "v7_2_grit_context": {
+    "grit_level": "",
+    "requested_grit_level": "",
+    "pre_clamp_grit_level": "",
+    "mode_id": "",
+    "selection_reason": "",
+    "max_allowed_for_mode": "",
+    "selected_grit_phrase": "",
+    "grit_phrase_family": "",
+    "grit_cooldown_applied": false,
+    "cooled_down_phrases": [],
+    "grit_phrase_candidates": [],
+    "selected_phrase_score": 0.0,
+    "selected_phrase_penalty": 0.0,
+    "recent_grit_phrases": [],
+    "recent_grit_phrase_counts": {}
+  },
+  "v7_3_phrase_context": {
+    "controls_applied": [],
+    "post_control_analysis": {}
+  },
+  "v7_validator_results": {
+    "mode_alignment_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "dual_lane_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "pillar_coverage_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "heo_override_validator": {
+      "score": 0.0,
+      "status": "pass|fail",
+      "evidence": {}
+    },
+    "voice_consistency_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "style_drift_detector": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "human_likeness_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "grit_appropriateness_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "phrase_repetition_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "rhetorical_frame_repetition_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "metaphor_overuse_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "grit_phrase_reuse_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    },
+    "lexical_grounding_validator": {
+      "score": 0.0,
+      "status": "pass|warn|fail",
+      "evidence": {}
+    }
+  },
+  "voice_alignment_score": 0.0,
+  "style_consistency_score": 0.0,
+  "human_likeness_score": 0.0,
+  "marketer_voice_risk": 0.0,
+  "corporate_language_risk": 0.0,
+  "generic_motivation_risk": 0.0,
+  "list_overuse_risk": 0.0,
+  "lived_grounding_score": 0.0,
+  "cultural_spiritual_grounding_score": 0.0,
+  "grit_level": "",
+  "grit_force_score": 0.0,
+  "heo_violation_risk": 0.0,
+  "phrase_diversity_score": 0.0,
+  "exact_repetition_count": 0,
+  "near_duplicate_phrase_count": 0,
+  "grit_phrase_reuse_risk": 0.0,
+  "grit_cooldown_applied": false,
+  "cooled_down_phrases": [],
+  "metaphor_overuse_risk": 0.0,
+  "signature_phrase_overuse_flag": false,
+  "lexical_alignment_score": 0.0,
+  "abstract_word_ratio": 0.0,
+  "flagged_terms": [],
+  "thresholds_ref": "runtime/validation/evaluation_thresholds.json",
+  "semantic_redundancy_v3_fields": {
+    "validator_id": "semantic_redundancy_detector",
+    "idea_graph": {
+      "node_types": [
+        "proposition",
+        "entity_state",
+        "emotion_state",
+        "cause_effect",
+        "contrast",
+        "decision",
+        "motif",
+        "dialogue_act",
+        "narrative_pressure_shift"
+      ],
+      "edge_types": [
+        "restates",
+        "extends",
+        "contrasts",
+        "explains",
+        "causes",
+        "intensifies",
+        "recalls",
+        "mirrors",
+        "resolves"
+      ]
+    },
+    "memory_tracking": {
+      "idea_cluster": {
+        "idea_cluster_id": "",
+        "first_seen_segment": 0,
+        "last_seen_segment": 0,
+        "recurrence_count": 0,
+        "relation_history": [],
+        "novelty_deltas": [],
+        "collapse_risk": 0.0
+      },
+      "motif_registry": {
+        "motif_id": "",
+        "surface_forms": [],
+        "semantic_field": "",
+        "recurrence_count": 0,
+        "distance_since_last": 0,
+        "transformation_score": 0.0,
+        "motif_status": "candidate|active|stale|resolved"
+      },
+      "dialogue_callback": {
+        "callback_id": "",
+        "speaker_a": "",
+        "speaker_b": "",
+        "callback_type": "correction|emphasis|reversal|irony|escalation",
+        "source_turn": 0,
+        "callback_turn": 0,
+        "semantic_distance": 0.0,
+        "pragmatic_shift": 0.0
+      }
+    },
+    "evidence_fields": {
+      "idea_nodes_created": 0,
+      "idea_edges_created": 0,
+      "graph_growth_rate": 0.0,
+      "restate_edges": 0,
+      "extend_edges": 0,
+      "contrast_edges": 0,
+      "cause_edges": 0,
+      "motif_recall_edges": 0,
+      "dialogue_correction_edges": 0,
+      "progression_credit": 0.0,
+      "rhetorical_recurrence_credit": 0.0,
+      "collapse_penalty": 0.0,
+      "local_cluster_density": 0.0,
+      "redundancy_score": 0.0,
+      "redundancy_class": "clean_progression",
+      "memory_cluster_hits": 0,
+      "distance_weighted_recurrence_score": 0.0,
+      "motif_candidates_detected": 0,
+      "motif_registry_matches": 0,
+      "motif_transformation_score": 0.0,
+      "dialogue_callback_matches": 0,
+      "dialogue_callback_legitimacy_score": 0.0,
+      "cluster_overuse_score": 0.0,
+      "role_transition_score": 0.0,
+      "global_redundancy_risk": 0.0,
+      "local_redundancy_risk": 0.0,
+      "recurrence_mode": "local_progression"
+    }
+  }
+}

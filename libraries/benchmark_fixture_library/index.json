@@ -1,0 +1,222 @@
+{
+  "library_id": "benchmark_fixture_library",
+  "generated_at": "2026-03-21T19:18:34.285227+00:00",
+  "entry_count": 19,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "cadence_and_burstiness_regression_suite",
+      "name": "Cadence And Burstiness Regression Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.82,
+      "source_proposals": [
+        "BP-003"
+      ]
+    },
+    {
+      "id": "dialogue_and_voice_fixtures",
+      "name": "Dialogue And Voice Fixtures",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-DIALOGUE-AND-VOICE-FIXTURES"
+      ]
+    },
+    {
+      "id": "genre_and_structure_fixtures",
+      "name": "Genre And Structure Fixtures",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-GENRE-AND-STRUCTURE-FIXTURES"
+      ]
+    },
+    {
+      "id": "genre_conformity_and_structure_suite",
+      "name": "Genre Conformity And Structure Suite",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.96,
+      "source_proposals": [
+        "BP-005"
+      ]
+    },
+    {
+      "id": "governance_promotion_and_failure_replay_suite",
+      "name": "Governance Promotion And Failure Replay Suite",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.95,
+      "source_proposals": [
+        "BP-008"
+      ]
+    },
+    {
+      "id": "human_vs_llm_naturalness_battles",
+      "name": "Human Vs LLM Naturalness Battles",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "BP-001"
+      ]
+    },
+    {
+      "id": "long_form_continuity_and_memory_suite",
+      "name": "Long Form Continuity And Memory Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.97,
+      "source_proposals": [
+        "BP-004"
+      ]
+    },
+    {
+      "id": "multi_speaker_dialogue_homogenization_suite",
+      "name": "Multi Speaker Dialogue Homogenization Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.97,
+      "source_proposals": [
+        "BP-002"
+      ]
+    },
+    {
+      "id": "narrative_and_continuity_fixtures",
+      "name": "Narrative And Continuity Fixtures",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-NARRATIVE-AND-CONTINUITY-FIXTURES"
+      ]
+    },
+    {
+      "id": "prompt_and_stability_fixtures",
+      "name": "Prompt And Stability Fixtures",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-PROMPT-AND-STABILITY-FIXTURES"
+      ]
+    },
+    {
+      "id": "prompt_sensitivity_and_cross_run_suite",
+      "name": "Prompt Sensitivity And Cross Run Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "BP-007"
+      ]
+    },
+    {
+      "id": "voice_preservation_and_editing_suite",
+      "name": "Voice Preservation And Editing Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.88,
+      "source_proposals": [
+        "BP-006"
+      ]
+    },
+    {
+      "id": "cadence_stress_suite",
+      "name": "Cadence Stress Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.9,
+      "source_proposals": [
+        "BP-003"
+      ]
+    },
+    {
+      "id": "semantic_redundancy_suite",
+      "name": "Semantic Redundancy Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.92,
+      "source_proposals": [
+        "BP-003"
+      ]
+    },
+    {
+      "id": "abstraction_density_suite",
+      "name": "Abstraction Density Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.92,
+      "source_proposals": [
+        "BP-001"
+      ]
+    },
+    {
+      "id": "continuity_consistency_suite",
+      "name": "Continuity Consistency Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "BP-004"
+      ]
+    },
+    {
+      "id": "dialogue_realism_suite",
+      "name": "Dialogue Realism Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.94,
+      "source_proposals": [
+        "BP-002"
+      ]
+    },
+    {
+      "id": "human_style_preference_suite",
+      "name": "Human Style Preference Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.93,
+      "source_proposals": [
+        "BP-001"
+      ]
+    },
+    {
+      "id": "v6_meaningful_virality_atomic_suite",
+      "name": "V6 Meaningful Virality Atomic Suite",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.82,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    }
+  ],
+  "schema_expectations": {},
+  "unresolved_conflicts": [
+    "FM-1",
+    "FM-13",
+    "FM-2",
+    "FM-6",
+    "FM-9",
+    "OP-23",
+    "OP-24",
+    "OP-25",
+    "OP-27",
+    "OP-28",
+    "OP-3",
+    "OP-5",
+    "OP-6",
+    "OP-7",
+    "OP-9",
+    "RU-core_failure_modes_01-003",
+    "RU-core_failure_modes_01-004",
+    "RU-core_failure_modes_01-006",
+    "RU-core_failure_modes_01-010",
+    "RU-core_failure_modes_01-018"
+  ]
+}

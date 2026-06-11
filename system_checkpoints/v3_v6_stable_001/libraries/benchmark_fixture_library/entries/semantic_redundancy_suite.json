@@ -1,0 +1,98 @@
+{
+  "id": "semantic_redundancy_suite",
+  "name": "Semantic Redundancy Suite",
+  "description": "Deterministic fixtures for near-duplicate meaning, repeated ideas, and low-local novelty.",
+  "source_proposals": [
+    "BP-003"
+  ],
+  "related_rules": [
+    "RULE_SEMANTIC_REDUNDANCY_CAP",
+    "RULE_SECTION_NOVELTY_MIN"
+  ],
+  "related_validators": [
+    "semantic_redundancy_detector"
+  ],
+  "related_failure_modes": [
+    "semantic_redundancy_failure",
+    "prose_naturalness_collapse"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "abstraction_control_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.92,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "semantic_pass_001",
+      "title": "Distinct Thought Progression",
+      "task_type": "semantic_redundancy",
+      "text_under_test": "Mara checked the porter first, then the timetable, then the dark seam between the last two cars. Each glance changed the problem. The train was leaving, but recognition would arrive sooner.",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "expected_status_by_validator": {
+        "semantic_redundancy_detector": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "Each sentence advances meaning rather than paraphrasing the prior one."
+    },
+    {
+      "fixture_id": "semantic_warn_001",
+      "title": "Near-Duplicate Tension Restatement",
+      "task_type": "semantic_redundancy",
+      "text_under_test": "She did not want him to ask for the ticket. She did not want the porter to ask for proof. She needed him to wave her through without looking too closely.",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "expected_status_by_validator": {
+        "semantic_redundancy_detector": "warn"
+      },
+      "expected_failure_modes": [
+        "semantic_redundancy_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "The first two sentences restate the same idea with only slight lexical change."
+    },
+    {
+      "fixture_id": "semantic_fail_001",
+      "title": "Repeated Idea Loop",
+      "task_type": "semantic_redundancy",
+      "text_under_test": "Mara was afraid of being stopped. Mara feared being stopped by the porter. Being stopped by the porter was what she feared. What she feared was being stopped.",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "expected_status_by_validator": {
+        "semantic_redundancy_detector": "fail"
+      },
+      "expected_failure_modes": [
+        "semantic_redundancy_failure",
+        "prose_naturalness_collapse"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "All sentences circle the same idea with almost no novelty."
+    },
+    {
+      "fixture_id": "semantic_adversarial_001",
+      "title": "Lexically Varied Same Meaning",
+      "task_type": "semantic_redundancy",
+      "text_under_test": "The porter might recognize the missing ticket. The old man could notice the absent proof. His eyes might catch the gap where authority should have been. He might simply see that she did not belong on the train.",
+      "validator_targets": [
+        "semantic_redundancy_detector",
+        "human_likeness_discriminator"
+      ],
+      "expected_status_by_validator": {
+        "semantic_redundancy_detector": "warn",
+        "human_likeness_discriminator": "pass"
+      },
+      "expected_failure_modes": [
+        "semantic_redundancy_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Surface variation tries to hide repeated meaning."
+    }
+  ]
+}

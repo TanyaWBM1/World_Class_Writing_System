@@ -1,0 +1,516 @@
+{
+  "lantern_story": {
+    "final_status": "rejected",
+    "reader_metrics": {
+      "reader_state": {
+        "emotional_state": {
+          "baseline": "neutral",
+          "peak": "medium",
+          "trajectory": [
+            {
+              "scene_id": "scene_01",
+              "state": "building",
+              "intensity": 0.35
+            },
+            {
+              "scene_id": "scene_02",
+              "state": "building",
+              "intensity": 0.43
+            },
+            {
+              "scene_id": "scene_03",
+              "state": "building",
+              "intensity": 0.51
+            },
+            {
+              "scene_id": "scene_04",
+              "state": "building",
+              "intensity": 0.59
+            },
+            {
+              "scene_id": "scene_05",
+              "state": "building",
+              "intensity": 0.67
+            },
+            {
+              "scene_id": "scene_06",
+              "state": "medium",
+              "intensity": 0.75
+            }
+          ]
+        },
+        "expectation_state": {
+          "active_expectations": [
+            "setup payoff",
+            "threat resolution"
+          ],
+          "confirmed_expectations": [],
+          "subverted_expectations": []
+        },
+        "tension_state": {
+          "entry_level": 0.38,
+          "peak_level": 0.65,
+          "release_quality": "misaligned"
+        },
+        "curiosity_state": {
+          "open_questions": [
+            "what resolves the setup"
+          ],
+          "retained_questions": [
+            "reader holds central obligation"
+          ],
+          "resolved_questions": []
+        },
+        "understanding_state": {
+          "clarity_level": 0.64,
+          "confusion_spikes": [],
+          "recovery_points": []
+        }
+      },
+      "emotional_resonance_score": 0.575,
+      "payoff_satisfaction_score": 0.0,
+      "surprise_score": 0.34,
+      "tension_absorption_score": 0.42,
+      "memorability_score": 0.56,
+      "cognitive_load_score": 0.64,
+      "emotional_band": "medium",
+      "payoff_band": "low"
+    },
+    "reader_state": {
+      "emotional_state": {
+        "baseline": "neutral",
+        "peak": "medium",
+        "trajectory": [
+          {
+            "scene_id": "scene_01",
+            "state": "building",
+            "intensity": 0.35
+          },
+          {
+            "scene_id": "scene_02",
+            "state": "building",
+            "intensity": 0.43
+          },
+          {
+            "scene_id": "scene_03",
+            "state": "building",
+            "intensity": 0.51
+          },
+          {
+            "scene_id": "scene_04",
+            "state": "building",
+            "intensity": 0.59
+          },
+          {
+            "scene_id": "scene_05",
+            "state": "building",
+            "intensity": 0.67
+          },
+          {
+            "scene_id": "scene_06",
+            "state": "medium",
+            "intensity": 0.75
+          }
+        ]
+      },
+      "expectation_state": {
+        "active_expectations": [
+          "setup payoff",
+          "threat resolution"
+        ],
+        "confirmed_expectations": [],
+        "subverted_expectations": []
+      },
+      "tension_state": {
+        "entry_level": 0.38,
+        "peak_level": 0.65,
+        "release_quality": "misaligned"
+      },
+      "curiosity_state": {
+        "open_questions": [
+          "what resolves the setup"
+        ],
+        "retained_questions": [
+          "reader holds central obligation"
+        ],
+        "resolved_questions": []
+      },
+      "understanding_state": {
+        "clarity_level": 0.64,
+        "confusion_spikes": [],
+        "recovery_points": []
+      }
+    },
+    "validator_scores": {
+      "emotional_resonance_validator": {
+        "score": 0.57,
+        "status": "warn"
+      },
+      "payoff_satisfaction_validator": {
+        "score": 0.0,
+        "status": "fail"
+      },
+      "surprise_calibration_validator": {
+        "score": 0.34,
+        "status": "fail"
+      },
+      "tension_absorption_validator": {
+        "score": 0.42,
+        "status": "fail"
+      },
+      "memorability_validator": {
+        "score": 0.56,
+        "status": "warn"
+      },
+      "cognitive_load_validator": {
+        "score": 0.64,
+        "status": "warn"
+      }
+    },
+    "narrative_metrics": {
+      "structural_violation_score": 1.0,
+      "obligation_failure_count": 9,
+      "transformation_detected": false
+    }
+  },
+  "revolver_subversion_story": {
+    "final_status": "rejected",
+    "reader_metrics": {
+      "reader_state": {
+        "emotional_state": {
+          "baseline": "neutral",
+          "peak": "high",
+          "trajectory": [
+            {
+              "scene_id": "scene_01",
+              "state": "building",
+              "intensity": 0.35
+            },
+            {
+              "scene_id": "scene_02",
+              "state": "building",
+              "intensity": 0.43
+            },
+            {
+              "scene_id": "scene_03",
+              "state": "building",
+              "intensity": 0.51
+            },
+            {
+              "scene_id": "scene_04",
+              "state": "building",
+              "intensity": 0.59
+            },
+            {
+              "scene_id": "scene_05",
+              "state": "building",
+              "intensity": 0.67
+            },
+            {
+              "scene_id": "scene_06",
+              "state": "high",
+              "intensity": 0.75
+            }
+          ]
+        },
+        "expectation_state": {
+          "active_expectations": [
+            "setup payoff",
+            "threat resolution"
+          ],
+          "confirmed_expectations": [
+            "transformed payoff"
+          ],
+          "subverted_expectations": [
+            "literal object use"
+          ]
+        },
+        "tension_state": {
+          "entry_level": 0.53,
+          "peak_level": 0.9,
+          "release_quality": "clean"
+        },
+        "curiosity_state": {
+          "open_questions": [
+            "what resolves the setup"
+          ],
+          "retained_questions": [
+            "reader holds central obligation"
+          ],
+          "resolved_questions": [
+            "core payoff lands"
+          ]
+        },
+        "understanding_state": {
+          "clarity_level": 0.57,
+          "confusion_spikes": [
+            "high abstraction density"
+          ],
+          "recovery_points": []
+        }
+      },
+      "emotional_resonance_score": 0.9,
+      "payoff_satisfaction_score": 0.86,
+      "surprise_score": 0.76,
+      "tension_absorption_score": 0.76,
+      "memorability_score": 0.76,
+      "cognitive_load_score": 0.57,
+      "emotional_band": "high",
+      "payoff_band": "high"
+    },
+    "reader_state": {
+      "emotional_state": {
+        "baseline": "neutral",
+        "peak": "high",
+        "trajectory": [
+          {
+            "scene_id": "scene_01",
+            "state": "building",
+            "intensity": 0.35
+          },
+          {
+            "scene_id": "scene_02",
+            "state": "building",
+            "intensity": 0.43
+          },
+          {
+            "scene_id": "scene_03",
+            "state": "building",
+            "intensity": 0.51
+          },
+          {
+            "scene_id": "scene_04",
+            "state": "building",
+            "intensity": 0.59
+          },
+          {
+            "scene_id": "scene_05",
+            "state": "building",
+            "intensity": 0.67
+          },
+          {
+            "scene_id": "scene_06",
+            "state": "high",
+            "intensity": 0.75
+          }
+        ]
+      },
+      "expectation_state": {
+        "active_expectations": [
+          "setup payoff",
+          "threat resolution"
+        ],
+        "confirmed_expectations": [
+          "transformed payoff"
+        ],
+        "subverted_expectations": [
+          "literal object use"
+        ]
+      },
+      "tension_state": {
+        "entry_level": 0.53,
+        "peak_level": 0.9,
+        "release_quality": "clean"
+      },
+      "curiosity_state": {
+        "open_questions": [
+          "what resolves the setup"
+        ],
+        "retained_questions": [
+          "reader holds central obligation"
+        ],
+        "resolved_questions": [
+          "core payoff lands"
+        ]
+      },
+      "understanding_state": {
+        "clarity_level": 0.57,
+        "confusion_spikes": [
+          "high abstraction density"
+        ],
+        "recovery_points": []
+      }
+    },
+    "validator_scores": {
+      "emotional_resonance_validator": {
+        "score": 0.9,
+        "status": "pass"
+      },
+      "payoff_satisfaction_validator": {
+        "score": 0.86,
+        "status": "pass"
+      },
+      "surprise_calibration_validator": {
+        "score": 0.76,
+        "status": "pass"
+      },
+      "tension_absorption_validator": {
+        "score": 0.76,
+        "status": "pass"
+      },
+      "memorability_validator": {
+        "score": 0.76,
+        "status": "pass"
+      },
+      "cognitive_load_validator": {
+        "score": 0.57,
+        "status": "fail"
+      }
+    },
+    "narrative_metrics": {
+      "structural_violation_score": 0.0,
+      "obligation_failure_count": 0,
+      "transformation_detected": true
+    }
+  },
+  "flat_baseline_story": {
+    "final_status": "rejected",
+    "reader_metrics": {
+      "reader_state": {
+        "emotional_state": {
+          "baseline": "neutral",
+          "peak": "low",
+          "trajectory": [
+            {
+              "scene_id": "scene_01",
+              "state": "building",
+              "intensity": 0.35
+            },
+            {
+              "scene_id": "scene_02",
+              "state": "building",
+              "intensity": 0.43
+            },
+            {
+              "scene_id": "scene_03",
+              "state": "building",
+              "intensity": 0.51
+            },
+            {
+              "scene_id": "scene_04",
+              "state": "low",
+              "intensity": 0.59
+            }
+          ]
+        },
+        "expectation_state": {
+          "active_expectations": [
+            "setup payoff",
+            "threat resolution"
+          ],
+          "confirmed_expectations": [
+            "direct payoff"
+          ],
+          "subverted_expectations": []
+        },
+        "tension_state": {
+          "entry_level": 0.2,
+          "peak_level": 0.35,
+          "release_quality": "clean"
+        },
+        "curiosity_state": {
+          "open_questions": [],
+          "retained_questions": [],
+          "resolved_questions": []
+        },
+        "understanding_state": {
+          "clarity_level": 0.68,
+          "confusion_spikes": [],
+          "recovery_points": []
+        }
+      },
+      "emotional_resonance_score": 0.18,
+      "payoff_satisfaction_score": 0.42,
+      "surprise_score": 0.29,
+      "tension_absorption_score": 0.54,
+      "memorability_score": 0.06,
+      "cognitive_load_score": 0.685,
+      "emotional_band": "low",
+      "payoff_band": "low"
+    },
+    "reader_state": {
+      "emotional_state": {
+        "baseline": "neutral",
+        "peak": "low",
+        "trajectory": [
+          {
+            "scene_id": "scene_01",
+            "state": "building",
+            "intensity": 0.35
+          },
+          {
+            "scene_id": "scene_02",
+            "state": "building",
+            "intensity": 0.43
+          },
+          {
+            "scene_id": "scene_03",
+            "state": "building",
+            "intensity": 0.51
+          },
+          {
+            "scene_id": "scene_04",
+            "state": "low",
+            "intensity": 0.59
+          }
+        ]
+      },
+      "expectation_state": {
+        "active_expectations": [
+          "setup payoff",
+          "threat resolution"
+        ],
+        "confirmed_expectations": [
+          "direct payoff"
+        ],
+        "subverted_expectations": []
+      },
+      "tension_state": {
+        "entry_level": 0.2,
+        "peak_level": 0.35,
+        "release_quality": "clean"
+      },
+      "curiosity_state": {
+        "open_questions": [],
+        "retained_questions": [],
+        "resolved_questions": []
+      },
+      "understanding_state": {
+        "clarity_level": 0.68,
+        "confusion_spikes": [],
+        "recovery_points": []
+      }
+    },
+    "validator_scores": {
+      "emotional_resonance_validator": {
+        "score": 0.18,
+        "status": "fail"
+      },
+      "payoff_satisfaction_validator": {
+        "score": 0.42,
+        "status": "fail"
+      },
+      "surprise_calibration_validator": {
+        "score": 0.29,
+        "status": "fail"
+      },
+      "tension_absorption_validator": {
+        "score": 0.54,
+        "status": "fail"
+      },
+      "memorability_validator": {
+        "score": 0.06,
+        "status": "fail"
+      },
+      "cognitive_load_validator": {
+        "score": 0.69,
+        "status": "warn"
+      }
+    },
+    "narrative_metrics": {
+      "structural_violation_score": 0.0,
+      "obligation_failure_count": 0,
+      "transformation_detected": false
+    }
+  }
+}

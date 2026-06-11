@@ -1,0 +1,38 @@
+{
+  "id": "genre_flattening_failure",
+  "name": "genre_flattening_failure",
+  "description": "Normalized failure mode asset for Genre Flattening Failure derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-GENRE-AND-PROMPT-FAILURES"
+  ],
+  "related_rules": [
+    "RULE_GENRE_BEAT_COVERAGE_MIN",
+    "RULE_GENRE_SIGNATURE_FEATURES_MIN"
+  ],
+  "related_validators": [
+    "GenreBeatCoverageValidator",
+    "GenreConformityValidator"
+  ],
+  "related_failure_modes": [
+    "genre_flattening_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "genre_flattening_failure",
+    "genre_trope_false_positive_v1"
+  ],
+  "related_benchmarks": [
+    "BP-005"
+  ],
+  "related_enforcement_concepts": [
+    "EP-007"
+  ]
+}

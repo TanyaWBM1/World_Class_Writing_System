@@ -1,0 +1,36 @@
+{
+  "id": "document_and_structure_state",
+  "name": "Document And Structure State",
+  "description": "Propose a curated continuity_state_library addition set for document and structure state.",
+  "source_proposals": [
+    "LP-DOCUMENT-AND-STRUCTURE-STATE"
+  ],
+  "related_rules": [
+    "Every detected failure must be logged to an append-only structured failure ledger.",
+    "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone."
+  ],
+  "related_validators": [
+    "StructureSchemaValidator"
+  ],
+  "related_failure_modes": [
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "structure_drift_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "schema:narrative_state",
+    "schema:continuity_state"
+  ],
+  "priority": "high",
+  "confidence": 0.93,
+  "status": "approved",
+  "aliases": [
+    "document_structure_state"
+  ],
+  "schema_expectations": [
+    "entity registry",
+    "fact invariants",
+    "thread tracking",
+    "state diffs"
+  ]
+}

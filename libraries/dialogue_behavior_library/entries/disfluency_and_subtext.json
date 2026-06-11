@@ -1,0 +1,27 @@
+{
+  "id": "disfluency_and_subtext",
+  "name": "Disfluency And Subtext",
+  "description": "Propose a curated dialogue_behavior_library addition set for disfluency and subtext.",
+  "source_proposals": [
+    "LP-DISFLUENCY-AND-SUBTEXT"
+  ],
+  "related_rules": [
+    "Character disfluency rates must match trait- and tension-specific ranges."
+  ],
+  "related_validators": [
+    "PragmaticsCoverageValidator"
+  ],
+  "related_failure_modes": [],
+  "dependencies": [
+    "voice_library",
+    "continuity_state_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.78,
+  "status": "proposed",
+  "aliases": [],
+  "related_enforcement_concepts": [
+    "EP-002"
+  ]
+}

@@ -1,0 +1,2718 @@
+{
+  "generated_at": "2026-03-21T19:05:21.948683+00:00",
+  "source_file": "core_failure_modes_01.md",
+  "record_count": 142,
+  "records": [
+    {
+      "id": "RU-core_failure_modes_01-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_PROSE_CONCRETENESS_MIN",
+      "normalized_name": "rule_prose_concreteness_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENERIC_TEMPLATE_CAP",
+      "normalized_name": "rule_generic_template_cap",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-003",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+      "normalized_name": "rule_speaker_style_distance_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-004",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+      "normalized_name": "rule_dialogue_act_diversity_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-005",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SENTENCE_LENGTH_VAR_MIN",
+      "normalized_name": "rule_sentence_length_var_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-006",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+      "normalized_name": "rule_syntax_template_repeat_cap",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-007",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SCENE_GOAL_REQUIRED",
+      "normalized_name": "rule_scene_goal_required",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "narrative_pressure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-008",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_PROMISE_RESOLUTION_RATE",
+      "normalized_name": "rule_promise_resolution_rate",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-009",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED",
+      "normalized_name": "rule_entity_invariant_enforced",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-010",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CONTINUITY_CONTRADICTION_CAP",
+      "normalized_name": "rule_continuity_contradiction_cap",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-011",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_ABSTRACTION_RATIO_MAX",
+      "normalized_name": "rule_abstraction_ratio_max",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-012",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_META_SENTENCE_RUN_CAP",
+      "normalized_name": "rule_meta_sentence_run_cap",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-013",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SEMANTIC_REDUNDANCY_CAP",
+      "normalized_name": "rule_semantic_redundancy_cap",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-014",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SECTION_NOVELTY_MIN",
+      "normalized_name": "rule_section_novelty_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-015",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_AFFECT_VARIANCE_MIN",
+      "normalized_name": "rule_affect_variance_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-016",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENERIC_EMOTION_CAP",
+      "normalized_name": "rule_generic_emotion_cap",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-017",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+      "normalized_name": "rule_canon_no_implicit_override",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-018",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_TERM_DEFINITION_STABILITY",
+      "normalized_name": "rule_term_definition_stability",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-019",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_STYLE_DISTANCE_MAX",
+      "normalized_name": "rule_style_distance_max",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-020",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+      "normalized_name": "rule_corpus_style_diversity_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-021",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_VOICE_DRIFT_CAP",
+      "normalized_name": "rule_voice_drift_cap",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-022",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_REVISION_SCOPE_STYLE_LOCK",
+      "normalized_name": "rule_revision_scope_style_lock",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-023",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENRE_BEAT_COVERAGE_MIN",
+      "normalized_name": "rule_genre_beat_coverage_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-024",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+      "normalized_name": "rule_genre_signature_features_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-025",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+      "normalized_name": "rule_prompt_paraphrase_stability_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-026",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SECTION_PRESENCE",
+      "normalized_name": "rule_section_presence",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-027",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_LIST_FORMAT_INTEGRITY",
+      "normalized_name": "rule_list_format_integrity",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-028",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CLAIM_SUPPORT_REQUIRED",
+      "normalized_name": "rule_claim_support_required",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-029",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_WARRANT_SCORE_MIN",
+      "normalized_name": "rule_warrant_score_min",
+      "description": "Ruleset candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-1",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "ProseConcretenessValidator",
+      "normalized_name": "proseconcretenessvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-2",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "HumanLikenessDiscriminator",
+      "normalized_name": "humanlikenessdiscriminator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-3",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "SpeakerDivergenceValidator",
+      "normalized_name": "speakerdivergencevalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-4",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "PragmaticsCoverageValidator",
+      "normalized_name": "pragmaticscoveragevalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-5",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "CadenceDistributionValidator",
+      "normalized_name": "cadencedistributionvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-6",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "SyntaxTemplateRepetitionValidator",
+      "normalized_name": "syntaxtemplaterepetitionvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-7",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "NarrativeGoalProgressValidator",
+      "normalized_name": "narrativegoalprogressvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-8",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "PromisePayoffValidator",
+      "normalized_name": "promisepayoffvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-9",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "ContinuityNLIValidator",
+      "normalized_name": "continuitynlivalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-10",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "EntityAttributeDriftValidator",
+      "normalized_name": "entityattributedriftvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-11",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "AbstractionDensityValidator",
+      "normalized_name": "abstractiondensityvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-12",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "MetaExplanationPatternValidator",
+      "normalized_name": "metaexplanationpatternvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-13",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "SemanticRedundancyValidator",
+      "normalized_name": "semanticredundancyvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-14",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "DiscourseNoveltyValidator",
+      "normalized_name": "discoursenoveltyvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-15",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "AffectVarianceValidator",
+      "normalized_name": "affectvariancevalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-16",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "GenericEmotionPhraseValidator",
+      "normalized_name": "genericemotionphrasevalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-17",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "WorldCanonConsistencyValidator",
+      "normalized_name": "worldcanonconsistencyvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-18",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "TermUsageConsistencyValidator",
+      "normalized_name": "termusageconsistencyvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-19",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "AuthorStyleFingerprintValidator",
+      "normalized_name": "authorstylefingerprintvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-20",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "CorpusStyleDiversityValidator",
+      "normalized_name": "corpusstylediversityvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-21",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "StyleDriftValidator",
+      "normalized_name": "styledriftvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-22",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "VoiceInvariantPreservationValidator",
+      "normalized_name": "voiceinvariantpreservationvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-23",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "GenreConformityValidator",
+      "normalized_name": "genreconformityvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "genre_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-24",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "GenreBeatCoverageValidator",
+      "normalized_name": "genrebeatcoveragevalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "genre_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-25",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "PromptRobustnessValidator",
+      "normalized_name": "promptrobustnessvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-26",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "OutputVarianceValidator",
+      "normalized_name": "outputvariancevalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-27",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "StructureSchemaValidator",
+      "normalized_name": "structureschemavalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-28",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "MarkdownFormatValidator",
+      "normalized_name": "markdownformatvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-29",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "ClaimEvidenceLinkValidator",
+      "normalized_name": "claimevidencelinkvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "OP-30",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "OPERATOR_EXTRACT",
+      "item_type": "operator",
+      "raw_text": "WarrantAcceptabilityValidator",
+      "normalized_name": "warrantacceptabilityvalidator",
+      "description": "Operator candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-1",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "prose_naturalness_collapse",
+      "normalized_name": "prose_naturalness_collapse",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-2",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "dialogue_realism_collapse",
+      "normalized_name": "dialogue_realism_collapse",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "dialogue_behavior_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-3",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "cadence_flattening_failure",
+      "normalized_name": "cadence_flattening_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "cadence_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-4",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "narrative_drift_failure",
+      "normalized_name": "narrative_drift_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-5",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "long_form_coherence_failure",
+      "normalized_name": "long_form_coherence_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-6",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "over_abstraction_failure",
+      "normalized_name": "over_abstraction_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-7",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "semantic_redundancy_failure",
+      "normalized_name": "semantic_redundancy_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-8",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "emotional_flattening_failure",
+      "normalized_name": "emotional_flattening_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-9",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "continuity_memory_failure",
+      "normalized_name": "continuity_memory_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-10",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "style_homogenization_failure",
+      "normalized_name": "style_homogenization_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-11",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "voice_erosion_failure",
+      "normalized_name": "voice_erosion_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-12",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "genre_flattening_failure",
+      "normalized_name": "genre_flattening_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-13",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "prompt_sensitivity_failure",
+      "normalized_name": "prompt_sensitivity_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-14",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "structure_drift_failure",
+      "normalized_name": "structure_drift_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-15",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "weak_claim_architecture_failure",
+      "normalized_name": "weak_claim_architecture_failure",
+      "description": "Failure Mode candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-1",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Human vs LLM prose naturalness ranking tasks using parallel prompts with concreteness and texture discriminators.",
+      "normalized_name": "human_vs_llm_prose_naturalness_ranking_tasks_using_parallel_prompts_with_concreteness_and_texture_discriminators",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-2",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Multi-speaker scenes with permuted speaker identities to detect dialogue homogenization.",
+      "normalized_name": "multi_speaker_scenes_with_permuted_speaker_identities_to_detect_dialogue_homogenization",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "narrative_pressure_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-3",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Cadence-only classification tasks distinguishing human vs LLM paragraphs using structural features.",
+      "normalized_name": "cadence_only_classification_tasks_distinguishing_human_vs_llm_paragraphs_using_structural_features",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-4",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Long narratives with removed climaxes to test narrative progression and payoff detection.",
+      "normalized_name": "long_narratives_with_removed_climaxes_to_test_narrative_progression_and_payoff_detection",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-5",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Documents with injected contradictions to test continuity and canon enforcement.",
+      "normalized_name": "documents_with_injected_contradictions_to_test_continuity_and_canon_enforcement",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-6",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Argument corpora with annotated claims, evidence, and warrants to evaluate reasoning structure.",
+      "normalized_name": "argument_corpora_with_annotated_claims_evidence_and_warrants_to_evaluate_reasoning_structure",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-7",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Prompt paraphrase robustness suites measuring output stability across equivalent prompts.",
+      "normalized_name": "prompt_paraphrase_robustness_suites_measuring_output_stability_across_equivalent_prompts",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-8",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Genre corpora with beat annotations to detect genre conformity and flattening.",
+      "normalized_name": "genre_corpora_with_beat_annotations_to_detect_genre_conformity_and_flattening",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-9",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Revision workflows comparing human drafts vs LLM revisions to detect voice erosion.",
+      "normalized_name": "revision_workflows_comparing_human_drafts_vs_llm_revisions_to_detect_voice_erosion",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "TC-10",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "TEST_CASE_EXTRACT",
+      "item_type": "test_case",
+      "raw_text": "Structured documents with formatting perturbations to test schema adherence.",
+      "normalized_name": "structured_documents_with_formatting_perturbations_to_test_schema_adherence",
+      "description": "Test Case candidate extracted during research ingestion.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "prose_naturalness_collapse",
+      "normalized_name": "prose_naturalness_collapse",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "dialogue_realism_collapse",
+      "normalized_name": "dialogue_realism_collapse",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-003",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "cadence_flattening_failure",
+      "normalized_name": "cadence_flattening_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-004",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "narrative_drift_failure",
+      "normalized_name": "narrative_drift_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-005",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "long_form_coherence_failure",
+      "normalized_name": "long_form_coherence_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-006",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "over_abstraction_failure",
+      "normalized_name": "over_abstraction_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-007",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "semantic_redundancy_failure",
+      "normalized_name": "semantic_redundancy_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-008",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "emotional_flattening_failure",
+      "normalized_name": "emotional_flattening_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-009",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "continuity_memory_failure",
+      "normalized_name": "continuity_memory_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-010",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_homogenization_failure",
+      "normalized_name": "style_homogenization_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-011",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "voice_erosion_failure",
+      "normalized_name": "voice_erosion_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-012",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "genre_flattening_failure",
+      "normalized_name": "genre_flattening_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-013",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "prompt_sensitivity_failure",
+      "normalized_name": "prompt_sensitivity_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [
+        "LIB-evaluation_methods_01-evaluation_library-012"
+      ],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-014",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "structure_drift_failure",
+      "normalized_name": "structure_drift_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-failure_mode_library-015",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "weak_claim_architecture_failure",
+      "normalized_name": "weak_claim_architecture_failure",
+      "description": "Library entry candidate extracted from failure_mode_library.",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "concreteness_ratio_monitor",
+      "normalized_name": "concreteness_ratio_monitor",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "abstraction_level_tracker",
+      "normalized_name": "abstraction_level_tracker",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-003",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "proposition_graph_tracker",
+      "normalized_name": "proposition_graph_tracker",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-004",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "affect_curve_model",
+      "normalized_name": "affect_curve_model",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-005",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "author_style_profile_store",
+      "normalized_name": "author_style_profile_store",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-006",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "genre_schema_store",
+      "normalized_name": "genre_schema_store",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-007",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "argument_graph_store",
+      "normalized_name": "argument_graph_store",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-008",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "tension_curve_model",
+      "normalized_name": "tension_curve_model",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-abstraction_control_library-009",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "voice_anchor_store",
+      "normalized_name": "voice_anchor_store",
+      "description": "Library entry candidate extracted from abstraction_control_library.",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-dialogue_behavior_library-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "speaker_state_embedding",
+      "normalized_name": "speaker_state_embedding",
+      "description": "Library entry candidate extracted from dialogue_behavior_library.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-dialogue_behavior_library-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "dialogue_act_tracker",
+      "normalized_name": "dialogue_act_tracker",
+      "description": "Library entry candidate extracted from dialogue_behavior_library.",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-cadence_library-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "local_surprisal_var_tracker",
+      "normalized_name": "local_surprisal_var_tracker",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-cadence_library-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "sentence_length_monitor",
+      "normalized_name": "sentence_length_monitor",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-cadence_library-003",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "syntax_template_tracker",
+      "normalized_name": "syntax_template_tracker",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-cadence_library-004",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "author_cadence_profile",
+      "normalized_name": "author_cadence_profile",
+      "description": "Library entry candidate extracted from cadence_library.",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "character_voice_state",
+      "normalized_name": "character_voice_state",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "narrative_goal_state",
+      "normalized_name": "narrative_goal_state",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-003",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "promise_registry",
+      "normalized_name": "promise_registry",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-004",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "entity_registry",
+      "normalized_name": "entity_registry",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-005",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "fact_invariant_store",
+      "normalized_name": "fact_invariant_store",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-006",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "world_canon_store",
+      "normalized_name": "world_canon_store",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-007",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "timeline_registry",
+      "normalized_name": "timeline_registry",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-008",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "document_structure_state",
+      "normalized_name": "document_structure_state",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-continuity_state_library-009",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "genre_beat_state",
+      "normalized_name": "genre_beat_state",
+      "description": "Library entry candidate extracted from continuity_state_library.",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "human_likeness_disc",
+      "normalized_name": "human_likeness_disc",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "texture_score_metric",
+      "normalized_name": "texture_score_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-003",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "dialogue_realism_disc",
+      "normalized_name": "dialogue_realism_disc",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-004",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "cadence_realism_disc",
+      "normalized_name": "cadence_realism_disc",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-005",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "arc_coherence_metric",
+      "normalized_name": "arc_coherence_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-006",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "coherence_over_distance_metric",
+      "normalized_name": "coherence_over_distance_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-007",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "abstraction_balance_metric",
+      "normalized_name": "abstraction_balance_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-008",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "semantic_density_metric",
+      "normalized_name": "semantic_density_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-009",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "affect_dynamics_metric",
+      "normalized_name": "affect_dynamics_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-010",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "continuity_integrity_metric",
+      "normalized_name": "continuity_integrity_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-011",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_fingerprint_metric",
+      "normalized_name": "style_fingerprint_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-012",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "style_drift_metric",
+      "normalized_name": "style_drift_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-013",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "genre_conformity_metric",
+      "normalized_name": "genre_conformity_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-014",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "robustness_metric",
+      "normalized_name": "robustness_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-015",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "schema_conformity_metric",
+      "normalized_name": "schema_conformity_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-016",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "warrant_score_metric",
+      "normalized_name": "warrant_score_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-017",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "argument_quality_metric",
+      "normalized_name": "argument_quality_metric",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-018",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "Which of these failure modes do you want to prototype validators for first?",
+      "normalized_name": "which_of_these_failure_modes_do_you_want_to_prototype_validators_for_first",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    },
+    {
+      "id": "LIB-core_failure_modes_01-evaluation_library-019",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "LIBRARY_EXTRACT",
+      "item_type": "library_entry",
+      "raw_text": "For each failure mode, note whether solving it likely requires explicit state tracking, runtime enforcement, symbolic constraints, or purely statistical generation changes.",
+      "normalized_name": "for_each_failure_mode_note_whether_solving_it_likely_requires_explicit_state_tracking_runtime_enforcement_symbolic_constraints_or_purely_statistical_generation_changes",
+      "description": "Library entry candidate extracted from evaluation_library.",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "medium",
+      "confidence": 0.98,
+      "notes": "Direct library extraction; preserve as candidate only, not production library truth."
+    }
+  ],
+  "library_extract_groups": {
+    "failure_mode_library": [
+      "prose_naturalness_collapse",
+      "dialogue_realism_collapse",
+      "cadence_flattening_failure",
+      "narrative_drift_failure",
+      "long_form_coherence_failure",
+      "over_abstraction_failure",
+      "semantic_redundancy_failure",
+      "emotional_flattening_failure",
+      "continuity_memory_failure",
+      "style_homogenization_failure",
+      "voice_erosion_failure",
+      "genre_flattening_failure",
+      "prompt_sensitivity_failure",
+      "structure_drift_failure",
+      "weak_claim_architecture_failure"
+    ],
+    "abstraction_control_library": [
+      "concreteness_ratio_monitor",
+      "abstraction_level_tracker",
+      "proposition_graph_tracker",
+      "affect_curve_model",
+      "author_style_profile_store",
+      "genre_schema_store",
+      "argument_graph_store",
+      "tension_curve_model",
+      "voice_anchor_store"
+    ],
+    "dialogue_behavior_library": [
+      "speaker_state_embedding",
+      "dialogue_act_tracker"
+    ],
+    "cadence_library": [
+      "local_surprisal_var_tracker",
+      "sentence_length_monitor",
+      "syntax_template_tracker",
+      "author_cadence_profile"
+    ],
+    "continuity_state_library": [
+      "character_voice_state",
+      "narrative_goal_state",
+      "promise_registry",
+      "entity_registry",
+      "fact_invariant_store",
+      "world_canon_store",
+      "timeline_registry",
+      "document_structure_state",
+      "genre_beat_state"
+    ],
+    "evaluation_library": [
+      "human_likeness_disc",
+      "texture_score_metric",
+      "dialogue_realism_disc",
+      "cadence_realism_disc",
+      "arc_coherence_metric",
+      "coherence_over_distance_metric",
+      "abstraction_balance_metric",
+      "semantic_density_metric",
+      "affect_dynamics_metric",
+      "continuity_integrity_metric",
+      "style_fingerprint_metric",
+      "style_drift_metric",
+      "genre_conformity_metric",
+      "robustness_metric",
+      "schema_conformity_metric",
+      "warrant_score_metric",
+      "argument_quality_metric",
+      "Which of these failure modes do you want to prototype validators for first?",
+      "For each failure mode, note whether solving it likely requires explicit state tracking, runtime enforcement, symbolic constraints, or purely statistical generation changes."
+    ]
+  },
+  "duplicate_candidates": [
+    {
+      "canonical_name": "prompt sensitivity",
+      "record_ids": [
+        "FM-13",
+        "LIB-core_failure_modes_01-failure_mode_library-013",
+        "LIB-evaluation_methods_01-evaluation_library-012"
+      ],
+      "source_files": [
+        "core_failure_modes_01.md",
+        "evaluation_methods_01.md"
+      ],
+      "labels": [
+        "prompt_sensitivity_failure",
+        "prompt_sensitivity_metric_v2"
+      ]
+    }
+  ],
+  "overlap_candidates": []
+}

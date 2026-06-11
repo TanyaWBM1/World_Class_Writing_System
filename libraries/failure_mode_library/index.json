@@ -1,0 +1,282 @@
+{
+  "library_id": "failure_mode_library",
+  "generated_at": "2026-03-21T19:18:34.175498+00:00",
+  "entry_count": 25,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "cadence_flattening_failure",
+      "name": "cadence_flattening_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-CADENCE-AND-STRUCTURE-FAILURES"
+      ]
+    },
+    {
+      "id": "continuity_memory_failure",
+      "name": "continuity_memory_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-CONTINUITY-AND-NARRATIVE-FAILURES"
+      ]
+    },
+    {
+      "id": "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+      "name": "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-EVALUATION-AND-GOVERNANCE-FAILURES"
+      ]
+    },
+    {
+      "id": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+      "name": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-DIALOGUE-AND-VOICE-FAILURES"
+      ]
+    },
+    {
+      "id": "dialogue_realism_collapse",
+      "name": "dialogue_realism_collapse",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-DIALOGUE-AND-VOICE-FAILURES"
+      ]
+    },
+    {
+      "id": "genre_flattening_failure",
+      "name": "genre_flattening_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-GENRE-AND-PROMPT-FAILURES"
+      ]
+    },
+    {
+      "id": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+      "name": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-EVALUATION-AND-GOVERNANCE-FAILURES"
+      ]
+    },
+    {
+      "id": "long_form_coherence_failure",
+      "name": "long_form_coherence_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-CONTINUITY-AND-NARRATIVE-FAILURES"
+      ]
+    },
+    {
+      "id": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+      "name": "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-EVALUATION-AND-GOVERNANCE-FAILURES"
+      ]
+    },
+    {
+      "id": "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+      "name": "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-EVALUATION-AND-GOVERNANCE-FAILURES"
+      ]
+    },
+    {
+      "id": "narrative_drift_failure",
+      "name": "narrative_drift_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-CONTINUITY-AND-NARRATIVE-FAILURES"
+      ]
+    },
+    {
+      "id": "over_abstraction_failure",
+      "name": "over_abstraction_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-PROSE-NATURALNESS-AND-ABSTRACTION"
+      ]
+    },
+    {
+      "id": "prose_naturalness_collapse",
+      "name": "prose_naturalness_collapse",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-PROSE-NATURALNESS-AND-ABSTRACTION"
+      ]
+    },
+    {
+      "id": "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+      "name": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.96,
+      "source_proposals": [
+        "LP-EVALUATION-AND-GOVERNANCE-FAILURES"
+      ]
+    },
+    {
+      "id": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+      "name": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-DIALOGUE-AND-VOICE-FAILURES"
+      ]
+    },
+    {
+      "id": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+      "name": "Template echo detector misclassifies genre-typical structures as template copies.",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.95,
+      "source_proposals": [
+        "LP-CADENCE-AND-STRUCTURE-FAILURES"
+      ]
+    },
+    {
+      "id": "hook_content_mismatch_failure",
+      "name": "hook_content_mismatch_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.84,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "emotional_manipulation_without_payoff_failure",
+      "name": "emotional_manipulation_without_payoff_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.83,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "identity_bait_without_substance_failure",
+      "name": "identity_bait_without_substance_failure",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.8,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "clickbait_pattern_failure",
+      "name": "clickbait_pattern_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.86,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "cliche_repetition_failure",
+      "name": "cliche_repetition_failure",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.8,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "low_shareability_density_failure",
+      "name": "low_shareability_density_failure",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.81,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "generic_motivation_failure",
+      "name": "generic_motivation_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.84,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "empty_insight_failure",
+      "name": "empty_insight_failure",
+      "status": "approved",
+      "priority": "high",
+      "confidence": 0.86,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    },
+    {
+      "id": "shallow_philosophy_failure",
+      "name": "shallow_philosophy_failure",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.82,
+      "source_proposals": [
+        "EXT-PERPLEXITY-VIRALITY-01"
+      ]
+    }
+  ],
+  "schema_expectations": {},
+  "unresolved_conflicts": [
+    "FM-1",
+    "FM-12",
+    "FM-2",
+    "OP-11",
+    "OP-16",
+    "OP-23",
+    "OP-24",
+    "OP-3",
+    "OP-5",
+    "OP-6",
+    "OP-7",
+    "RU-core_failure_modes_01-002",
+    "RU-core_failure_modes_01-003",
+    "RU-core_failure_modes_01-004",
+    "RU-core_failure_modes_01-006",
+    "RU-core_failure_modes_01-008",
+    "RU-core_failure_modes_01-009",
+    "RU-core_failure_modes_01-010",
+    "RU-core_failure_modes_01-011",
+    "RU-core_failure_modes_01-016"
+  ]
+}

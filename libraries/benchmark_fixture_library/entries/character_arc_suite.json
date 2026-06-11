@@ -1,0 +1,96 @@
+{
+  "id": "character_arc_suite",
+  "name": "Character Arc Suite",
+  "description": "Deterministic long-range fixtures for testing character arc continuity, growth legitimacy, arc jumps, and adversarial pseudo-growth.",
+  "source_proposals": [
+    "V4-ARC-001"
+  ],
+  "related_rules": [
+    "RULE_CHARACTER_ARC_CONTINUITY_REQUIRED",
+    "RULE_ARC_TRANSITION_SUPPORT_MIN"
+  ],
+  "related_validators": [
+    "CharacterArcConsistencyValidator"
+  ],
+  "related_failure_modes": [
+    "character_arc_discontinuity_failure",
+    "unsupported_growth_jump_failure"
+  ],
+  "dependencies": [
+    "continuity_state_library",
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "arc_pass_001",
+      "title": "Fear To Agency With Earned Progression",
+      "task_type": "character_arc",
+      "text_under_test": "At the station Mara kept her chin lowered whenever the porter looked her way. She had rehearsed three lies and trusted none of them. When the whistle shook the glass overhead, she almost stepped back from the train instead of forward.\n\nIn the second town she still shook when questioned, but the shaking no longer made her silent. She answered too quickly, heard the weakness in it, and corrected herself before the clerk could exploit it. The correction cost her pride, yet it taught her that fear could be managed in public instead of merely hidden.\n\nBy the river crossing, Mara no longer mistook composure for safety. She still felt fear, but she used it as timing. When the inspector reached for her satchel, she interrupted him with the question she had once been too frightened to ask. The old reflex remained, yet it had been reorganized into action.",
+      "validator_targets": [
+        "CharacterArcConsistencyValidator"
+      ],
+      "expected_status_by_validator": {
+        "CharacterArcConsistencyValidator": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "Arc evolution is continuous, internal state persists, and each later behavior is supported by prior transitions."
+    },
+    {
+      "fixture_id": "arc_warn_001",
+      "title": "Partial Growth With Thin Bridge",
+      "task_type": "character_arc",
+      "text_under_test": "Mara began the journey as a woman who avoided direct questions. At the first inspection she let other passengers speak around her and pretended not to hear when the porter asked who had stamped the ticket.\n\nLater, in the market quarter, she suddenly refused a guard's accusation with unusual clarity. The refusal worked, but the passage barely lingers on what she learned between silence and resistance. Her new firmness reads plausible, yet the middle span of the arc feels compressed.\n\nBy the final checkpoint she is steadier than before, though some of that steadiness still seems imported from an unwritten scene rather than built fully on the page.",
+      "validator_targets": [
+        "CharacterArcConsistencyValidator"
+      ],
+      "expected_status_by_validator": {
+        "CharacterArcConsistencyValidator": "warn"
+      },
+      "expected_failure_modes": [
+        "unsupported_growth_jump_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "The endpoint is plausible, but the bridge scene is underdeveloped and should surface as an arc jump candidate instead of full failure."
+    },
+    {
+      "fixture_id": "arc_fail_001",
+      "title": "Unmotivated Arc Reversal",
+      "task_type": "character_arc",
+      "text_under_test": "Mara spent the opening chapters terrified of being seen. She hid behind luggage stacks, lied badly under pressure, and treated every official question as a threat.\n\nWithout any intermediate confrontation, the next scene presents her as effortlessly charismatic. She jokes with the captain, improvises a speech to calm a crowd, and explains that she has always been good with authority.\n\nNo earlier wound is revised, no learning moment appears, and the final posture contradicts the established self rather than evolving from it.",
+      "validator_targets": [
+        "CharacterArcConsistencyValidator"
+      ],
+      "expected_status_by_validator": {
+        "CharacterArcConsistencyValidator": "fail"
+      },
+      "expected_failure_modes": [
+        "character_arc_discontinuity_failure",
+        "unsupported_growth_jump_failure"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "The passage performs a hard personality jump with no supporting transition or consequence trail."
+    },
+    {
+      "fixture_id": "arc_adversarial_001",
+      "title": "Pseudo-Arc Through Summary Language",
+      "task_type": "character_arc",
+      "text_under_test": "Mara changed over the course of the journey, or so everyone said. The narration repeatedly insists she became stronger, more decisive, and more willing to risk humiliation.\n\nYet the actual scenes keep showing the same evasions. At the customs desk she still avoids the key question. On the ferry she still lets another passenger answer for her. At the border inn she once again delays the choice until someone else forces it.\n\nThe text speaks the language of transformation while the enacted behavior remains nearly flat.",
+      "validator_targets": [
+        "CharacterArcConsistencyValidator"
+      ],
+      "expected_status_by_validator": {
+        "CharacterArcConsistencyValidator": "warn"
+      },
+      "expected_failure_modes": [
+        "character_arc_discontinuity_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Adversarial case: summary claims growth, but scene-level evidence does not fully support it."
+    }
+  ]
+}

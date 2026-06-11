@@ -1,0 +1,19 @@
+{
+  "acceptance_id": "acceptance_flat_but_correct",
+  "purpose": "Confirm technically correct but low-impact writing is not mistaken for viral or high-impact success.",
+  "category": "correct_but_nonviral",
+  "text_pattern": "accurate, coherent, low-arousal, low-portability prose with restrained emotional movement",
+  "target_dimensions": [
+    "reader_impact",
+    "viral_intelligence"
+  ],
+  "required_expectations": {
+    "final_status": "rejected|accepted_with_warnings",
+    "viral_score": "< high-integrity viral band",
+    "high_integrity_viral_cases": false
+  },
+  "must_not_trigger": [
+    "generic_motivation_failure",
+    "clickbait_pattern_failure"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunRequest",
+  "type": "object",
+  "description": "Placeholder schema for future runtime requests.",
+  "properties": {
+    "run_id": { "type": "string" },
+    "mode": { "type": "string" },
+    "genre": { "type": "string" },
+    "voice": { "type": "string" },
+    "tone_profile": { "type": "string" },
+    "cadence_profile": { "type": "string" },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["run_id", "mode"]
+}

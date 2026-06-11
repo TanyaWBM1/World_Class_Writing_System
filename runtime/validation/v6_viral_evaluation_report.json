@@ -1,0 +1,101 @@
+{
+  "suite_id": "v6_adversarial_viral_suite",
+  "results": [
+    {
+      "fixture_id": "v6_viral_integrity_fail_001",
+      "title": "Hook With Hollow Core",
+      "expected_gating_outcome": "rejected",
+      "actual_gating_outcome": "rejected",
+      "viral_score": 0.231,
+      "viral_integrity_score": 0.0,
+      "manipulation_risk": 0.42,
+      "clickbait_risk": 0.54,
+      "detected_patterns": {
+        "clickbait_without_payoff": false,
+        "emotional_manipulation": false,
+        "identity_bait": false,
+        "shallow_virality": false,
+        "high_integrity_viral_cases": false
+      },
+      "v6_validators": {
+        "high_arousal_emotion_validator": {
+          "status": "fail",
+          "score": 0.33
+        },
+        "hook_strength_validator": {
+          "status": "fail",
+          "score": 0.42
+        },
+        "identity_resonance_validator": {
+          "status": "fail",
+          "score": 0.28
+        },
+        "novelty_validator": {
+          "status": "fail",
+          "score": 0.09
+        },
+        "shareability_validator": {
+          "status": "fail",
+          "score": 0.27
+        },
+        "viral_integrity_validator": {
+          "status": "fail",
+          "score": 0.0
+        }
+      }
+    },
+    {
+      "fixture_id": "v6_viral_integrity_pass_001",
+      "title": "High-Arousal With Earned Payoff",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "actual_gating_outcome": "rejected",
+      "viral_score": 0.362,
+      "viral_integrity_score": 0.91,
+      "manipulation_risk": 0.0,
+      "clickbait_risk": 0.0,
+      "detected_patterns": {
+        "clickbait_without_payoff": false,
+        "emotional_manipulation": false,
+        "identity_bait": false,
+        "shallow_virality": false,
+        "high_integrity_viral_cases": false
+      },
+      "v6_validators": {
+        "high_arousal_emotion_validator": {
+          "status": "fail",
+          "score": 0.23
+        },
+        "hook_strength_validator": {
+          "status": "fail",
+          "score": 0.3
+        },
+        "identity_resonance_validator": {
+          "status": "fail",
+          "score": 0.29
+        },
+        "novelty_validator": {
+          "status": "fail",
+          "score": 0.17
+        },
+        "shareability_validator": {
+          "status": "fail",
+          "score": 0.28
+        },
+        "viral_integrity_validator": {
+          "status": "pass",
+          "score": 0.91
+        }
+      }
+    }
+  ],
+  "false_positives": 0,
+  "false_negatives": 0,
+  "validator_set": [
+    "high_arousal_emotion_validator",
+    "hook_strength_validator",
+    "identity_resonance_validator",
+    "novelty_validator",
+    "shareability_validator",
+    "viral_integrity_validator"
+  ]
+}

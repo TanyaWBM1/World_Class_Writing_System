@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "llm_response_contract_v1",
+  "title": "LLM Draft Response",
+  "type": "object",
+  "required": [
+    "ok",
+    "output_dir"
+  ],
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "final_status": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    },
+    "raw_text": {
+      "type": "string"
+    },
+    "final_text": {
+      "type": "string"
+    },
+    "output_dir": {
+      "type": "string"
+    },
+    "run_summary": {
+      "type": "object"
+    },
+    "evaluation_report": {
+      "type": "object"
+    },
+    "enforcement_report": {
+      "type": "object"
+    }
+  }
+}

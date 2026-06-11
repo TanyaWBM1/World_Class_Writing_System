@@ -1,0 +1,35 @@
+{
+  "id": "regression_protection_and_pareto_rules",
+  "name": "Regression Protection And Pareto Rules",
+  "description": "Propose a governance rule set for regression protection and pareto rules.",
+  "source_proposals": [
+    "GP-004"
+  ],
+  "related_rules": [
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone."
+  ],
+  "related_validators": [
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use regression tests to block deployments where stability improves but agreement with human or reference metrics degrades."
+  ],
+  "related_failure_modes": [
+    "Rubber-stamp governance fatigue that lets regressions through.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library",
+    "schema:governance_artifacts"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [],
+  "governance_scope": [
+    "human approval",
+    "promotion gates",
+    "regression protection"
+  ]
+}

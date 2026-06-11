@@ -1,0 +1,30 @@
+{
+  "id": "narrative_pressure_controls",
+  "name": "Narrative Pressure Controls",
+  "description": "Propose a curated abstraction_control_library addition set for narrative pressure controls.",
+  "source_proposals": [
+    "LP-NARRATIVE-PRESSURE-CONTROLS"
+  ],
+  "related_rules": [
+    "RULE_SECTION_NOVELTY_MIN"
+  ],
+  "related_validators": [
+    "DiscourseNoveltyValidator"
+  ],
+  "related_failure_modes": [],
+  "dependencies": [
+    "failure_mode_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "tension_curve_model"
+  ],
+  "related_enforcement_concepts": [
+    "EP-001",
+    "EP-004",
+    "EP-006"
+  ]
+}

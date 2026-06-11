@@ -1,0 +1,50 @@
+{
+  "id": "governance_promotion_and_failure_replay_suite",
+  "name": "Governance Promotion And Failure Replay Suite",
+  "description": "Propose a benchmark concept for governance promotion and failure replay suite.",
+  "source_proposals": [
+    "BP-008"
+  ],
+  "related_rules": [
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "Every detected failure must be logged to an append-only structured failure ledger.",
+    "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+    "System changes must pass sandbox evaluation before shadow evaluation."
+  ],
+  "related_validators": [
+    "Cluster failure-ledger entries periodically to identify systemic spikes by fixture, genre, style, failure type, and model version.",
+    "Convert approved representative failures into versioned benchmark fixtures and record failure-to-fixture lineage.",
+    "Generate `system_change_proposal` artifacts for every candidate update and route them through sandbox then shadow evaluation.",
+    "Run multi-metric regression suites on frozen fixtures before any architecture, prompt, rule, or model change is promoted.",
+    "Use rule-based checks in production runtime; confine LLM-as-judge and Reflexion-style loops to sandbox analysis unless explicitly frozen and approved.",
+    "Write every failure event to `failure_log.jsonl` with fixture id, pipeline stage, version metadata, evaluator outputs, and resolution state."
+  ],
+  "related_failure_modes": [],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "fixture_axes": {
+    "failure_modes": [],
+    "evaluation_types": [
+      "genre_structure",
+      "stability",
+      "voice_style"
+    ],
+    "narrative_dimensions": [
+      "genre_conformity",
+      "human_likeness",
+      "voice_preservation"
+    ]
+  }
+}

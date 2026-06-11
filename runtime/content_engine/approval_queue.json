@@ -1,0 +1,168 @@
+{
+  "queue_id": "content_engine_approval_queue_v1",
+  "items": [
+    {
+      "item_id": "why_discipline_is_not_the_problem_base_01",
+      "topic": "Why discipline is not the problem",
+      "variant_label": "base_long_form",
+      "platform": "none",
+      "output_index": 1,
+      "approval_state": "approved",
+      "final_status": "rejected",
+      "ranking": {
+        "weighted_score": 0.608,
+        "score_breakdown": {
+          "voice_alignment": 0.578,
+          "lexical_alignment": 0.96,
+          "phrase_diversity": 0.92,
+          "reader_impact": 0.39,
+          "virality": 0.43,
+          "platform_fit": 0.349
+        }
+      },
+      "run_dir": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\base",
+      "raw_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\base\\raw_llm_output.txt",
+      "governed_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\base\\final_governed_output.txt",
+      "evaluation_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\base\\evaluation_report.json",
+      "enforcement_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\base\\enforcement_report.json",
+      "run_summary_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\base\\run_summary.json",
+      "batch_id": "content_engine_batch_20260321_214608"
+    },
+    {
+      "item_id": "why_discipline_is_not_the_problem_linkedin_01",
+      "topic": "Why discipline is not the problem",
+      "variant_label": "platform_variant",
+      "platform": "linkedin",
+      "output_index": 1,
+      "approval_state": "needs_review",
+      "final_status": "rejected",
+      "ranking": {
+        "weighted_score": 0.608,
+        "score_breakdown": {
+          "voice_alignment": 0.578,
+          "lexical_alignment": 0.96,
+          "phrase_diversity": 0.92,
+          "reader_impact": 0.39,
+          "virality": 0.43,
+          "platform_fit": 0.349
+        }
+      },
+      "run_dir": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\linkedin",
+      "raw_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\linkedin\\raw_llm_output.txt",
+      "governed_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\linkedin\\final_governed_output.txt",
+      "evaluation_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\linkedin\\evaluation_report.json",
+      "enforcement_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\linkedin\\enforcement_report.json",
+      "run_summary_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\linkedin\\run_summary.json",
+      "batch_id": "content_engine_batch_20260321_214608"
+    },
+    {
+      "item_id": "why_discipline_is_not_the_problem_twitter_01",
+      "topic": "Why discipline is not the problem",
+      "variant_label": "platform_variant",
+      "platform": "twitter",
+      "output_index": 1,
+      "approval_state": "needs_review",
+      "final_status": "rejected",
+      "ranking": {
+        "weighted_score": 0.608,
+        "score_breakdown": {
+          "voice_alignment": 0.578,
+          "lexical_alignment": 0.96,
+          "phrase_diversity": 0.92,
+          "reader_impact": 0.39,
+          "virality": 0.43,
+          "platform_fit": 0.349
+        }
+      },
+      "run_dir": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\twitter",
+      "raw_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\twitter\\raw_llm_output.txt",
+      "governed_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\twitter\\final_governed_output.txt",
+      "evaluation_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\twitter\\evaluation_report.json",
+      "enforcement_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\twitter\\enforcement_report.json",
+      "run_summary_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\why_discipline_is_not_the_problem\\output_01\\twitter\\run_summary.json",
+      "batch_id": "content_engine_batch_20260321_214608"
+    },
+    {
+      "item_id": "what_looks_like_procrastination_is_often_fear_base_01",
+      "topic": "What looks like procrastination is often fear",
+      "variant_label": "base_long_form",
+      "platform": "none",
+      "output_index": 1,
+      "approval_state": "needs_review",
+      "final_status": "rejected",
+      "ranking": {
+        "weighted_score": 0.605,
+        "score_breakdown": {
+          "voice_alignment": 0.578,
+          "lexical_alignment": 0.96,
+          "phrase_diversity": 0.92,
+          "reader_impact": 0.41,
+          "virality": 0.446,
+          "platform_fit": 0.286
+        }
+      },
+      "run_dir": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\base",
+      "raw_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\base\\raw_llm_output.txt",
+      "governed_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\base\\final_governed_output.txt",
+      "evaluation_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\base\\evaluation_report.json",
+      "enforcement_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\base\\enforcement_report.json",
+      "run_summary_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\base\\run_summary.json",
+      "batch_id": "content_engine_batch_20260321_214608"
+    },
+    {
+      "item_id": "what_looks_like_procrastination_is_often_fear_linkedin_01",
+      "topic": "What looks like procrastination is often fear",
+      "variant_label": "platform_variant",
+      "platform": "linkedin",
+      "output_index": 1,
+      "approval_state": "needs_review",
+      "final_status": "rejected",
+      "ranking": {
+        "weighted_score": 0.605,
+        "score_breakdown": {
+          "voice_alignment": 0.578,
+          "lexical_alignment": 0.96,
+          "phrase_diversity": 0.92,
+          "reader_impact": 0.41,
+          "virality": 0.446,
+          "platform_fit": 0.286
+        }
+      },
+      "run_dir": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\linkedin",
+      "raw_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\linkedin\\raw_llm_output.txt",
+      "governed_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\linkedin\\final_governed_output.txt",
+      "evaluation_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\linkedin\\evaluation_report.json",
+      "enforcement_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\linkedin\\enforcement_report.json",
+      "run_summary_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\linkedin\\run_summary.json",
+      "batch_id": "content_engine_batch_20260321_214608"
+    },
+    {
+      "item_id": "what_looks_like_procrastination_is_often_fear_twitter_01",
+      "topic": "What looks like procrastination is often fear",
+      "variant_label": "platform_variant",
+      "platform": "twitter",
+      "output_index": 1,
+      "approval_state": "needs_review",
+      "final_status": "rejected",
+      "ranking": {
+        "weighted_score": 0.605,
+        "score_breakdown": {
+          "voice_alignment": 0.578,
+          "lexical_alignment": 0.96,
+          "phrase_diversity": 0.92,
+          "reader_impact": 0.41,
+          "virality": 0.446,
+          "platform_fit": 0.286
+        }
+      },
+      "run_dir": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\twitter",
+      "raw_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\twitter\\raw_llm_output.txt",
+      "governed_output_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\twitter\\final_governed_output.txt",
+      "evaluation_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\twitter\\evaluation_report.json",
+      "enforcement_report_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\twitter\\enforcement_report.json",
+      "run_summary_path": "C:\\Users\\Billionaire Mind DT\\World_Class_Writing_System\\runs\\content_engine_batch_20260321_214608\\what_looks_like_procrastination_is_often_fear\\output_01\\twitter\\run_summary.json",
+      "batch_id": "content_engine_batch_20260321_214608"
+    }
+  ],
+  "last_updated": "2026-03-21T21:46:08.920455"
+}

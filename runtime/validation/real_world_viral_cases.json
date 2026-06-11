@@ -1,0 +1,51 @@
+{
+  "suite_id": "real_world_viral_content_proxy_suite",
+  "purpose": "Stress-test v3 through v6 on sourced, paraphrased proxies of real-world viral writing or viral media framing.",
+  "cases": [
+    {
+      "case_id": "real_world_viral_001",
+      "label": "Marina Keegan Farewell Proxy",
+      "source_title": "Yale Student’s Final Essay Goes Viral After Fatal Car Accident",
+      "source_url": "https://newsfeed.time.com/2012/05/29/yale-students-final-essay-goes-viral-after-fatal-car-accident/",
+      "source_date": "2012-05-29",
+      "proxy_text": "A graduating senior writes that the most important discovery of college is not prestige but the proof that intense connection is still possible. Ordinary campus rituals become charged because the voice knows they are ending, and the piece turns private loss into a public argument for closeness before time closes.",
+      "expected_profile": "high_integrity_emotional_viral"
+    },
+    {
+      "case_id": "real_world_viral_002",
+      "label": "Binge Drinking Warning Essay Proxy",
+      "source_title": "This College Student’s Harrowing Essay About Binge Drinking Is Going Viral",
+      "source_url": "https://time.com/4179229/college-student-binge-drinking/",
+      "source_date": "2016-01-11",
+      "proxy_text": "A young writer recounts waking from alcohol poisoning and turns a birthday story into a consequence-backed warning. The hook is bodily and immediate, but the force comes from concrete aftermath: a coma, the ICU, and the recognition that one careless celebration nearly ended her life.",
+      "expected_profile": "high_integrity_warning_viral"
+    },
+    {
+      "case_id": "real_world_viral_003",
+      "label": "Ayana Johnson Commencement Proxy",
+      "source_title": "Be Tenacious on Behalf of Life on Earth",
+      "source_url": "https://time.com/6283728/be-tenacious-on-behalf-of-life-on-earth/",
+      "source_date": "2023-05-29",
+      "proxy_text": "A commencement address asks graduates to be useful, thank the people who helped them, and join work larger than themselves. Its emotional lift is real, but some sections lean on exhortation rather than sharp example, making it a useful test for the boundary between meaningful uplift and generic motivation.",
+      "expected_profile": "mixed_integrity_motivational"
+    },
+    {
+      "case_id": "real_world_viral_004",
+      "label": "Bee Rescue Viral Framing Proxy",
+      "source_title": "Watch a Bee Heroically Save His Friend From an Attacking Spider",
+      "source_url": "https://time.com/2859357/watch-a-bee-heroically-save-another-bee-from-an-attacking-spider/",
+      "source_date": "2014-05-29",
+      "proxy_text": "A tiny rescue video is framed as a full hero story: one bee trapped, one bee intervening, one spider as villain. The appeal is instantly portable and emotionally legible, but its idea density is low and its value comes mostly from vivid, shareable compression.",
+      "expected_profile": "hooky_low_insight_viral"
+    },
+    {
+      "case_id": "real_world_viral_005",
+      "label": "Climate Letter Proxy",
+      "source_title": "A Letter to My Son About the Earth He’ll Inherit",
+      "source_url": "https://time.com/6987436/father-son-climate-change-essay/",
+      "source_date": "2024-06-14",
+      "proxy_text": "A father addresses his son directly and apologizes for the damaged world the child may inherit. The piece draws force from a private relationship, but it also binds that intimacy to concrete public stakes like rising seas and broken institutions, making its emotional pressure legible beyond the family frame.",
+      "expected_profile": "high_resonance_high_insight"
+    }
+  ]
+}

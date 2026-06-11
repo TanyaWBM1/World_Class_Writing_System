@@ -1,0 +1,61 @@
+{
+  "cooldowns_id": "grit_phrase_cooldowns_v7_2",
+  "scope_multipliers": {
+    "same_paragraph": 1.0,
+    "same_draft": 0.8,
+    "previous_draft": 0.45
+  },
+  "phrases": {
+    "that's fear talking": {
+      "cooldown_penalty_weight": 0.42
+    },
+    "cut the crap": {
+      "cooldown_penalty_weight": 0.65
+    },
+    "stop pretending": {
+      "cooldown_penalty_weight": 0.5
+    },
+    "you're lying to yourself": {
+      "cooldown_penalty_weight": 0.6
+    },
+    "that's not confusion. that's avoidance.": {
+      "cooldown_penalty_weight": 0.58
+    },
+    "you are going in circles, and some part of you already knows why.": {
+      "cooldown_penalty_weight": 0.34
+    },
+    "this keeps returning because the truth has not been faced cleanly yet.": {
+      "cooldown_penalty_weight": 0.28
+    },
+    "that is not confusion. it is avoidance dressed up as uncertainty.": {
+      "cooldown_penalty_weight": 0.44
+    },
+    "stop pretending this is complexity when it is refusal.": {
+      "cooldown_penalty_weight": 0.48
+    },
+    "that is fear pretending to be truth.": {
+      "cooldown_penalty_weight": 0.52
+    },
+    "you are lying to yourself and calling it discernment.": {
+      "cooldown_penalty_weight": 0.57
+    }
+  },
+  "phrase_families": {
+    "low": [
+      "You might be avoiding something here, but it may be easier to see once the facts stop moving.",
+      "Something in this may need gentler honesty before it becomes clear."
+    ],
+    "medium": [
+      "You are going in circles, and some part of you already knows why.",
+      "This keeps returning because the truth has not been faced cleanly yet."
+    ],
+    "high": [
+      "That is not confusion. It is avoidance dressed up as uncertainty.",
+      "Stop pretending this is complexity when it is refusal."
+    ],
+    "extreme": [
+      "That is fear pretending to be truth.",
+      "You are lying to yourself and calling it discernment."
+    ]
+  }
+}

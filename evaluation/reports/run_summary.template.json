@@ -1,0 +1,20 @@
+{
+  "template_id": "run_summary_template_v1",
+  "run_id": "",
+  "final_status": "accepted|accepted_with_warnings|rejected",
+  "pass_order_ref": "runtime/orchestration/pass_order_manifest.json",
+  "artifacts_emitted": [
+    "input_bundle.json",
+    "resolved_libraries.json",
+    "draft_output.txt",
+    "evaluation_report.json",
+    "enforcement_report.json",
+    "failure_map.json",
+    "run_summary.json"
+  ],
+  "primary_library_trace": [],
+  "secondary_library_trace": [],
+  "blocking_reasons": [],
+  "warning_reasons": [],
+  "next_action": "deliver|deliver_with_warnings|reject_and_return_artifacts"
+}

@@ -1,0 +1,150 @@
+{
+  "registry_id": "mode_registry_v7",
+  "purpose": "Canonical mode definitions for the 7 Pillars execution layer, normalized from practitioner-layer and weighting-strategy source material.",
+  "pillar_order": [
+    "SEO",
+    "GEO",
+    "AIO",
+    "SDO",
+    "EEO",
+    "NLO",
+    "HEO"
+  ],
+  "canonical_modes": [
+    {
+      "mode_id": "utility",
+      "display_name": "Utility Mode",
+      "intent_profile": [
+        "inform",
+        "guide",
+        "define",
+        "support"
+      ],
+      "description": "Rapid information delivery and machine extractability.",
+      "dominant_pillars": [
+        "GEO",
+        "AIO",
+        "SEO"
+      ],
+      "supporting_pillars": [
+        "SDO",
+        "HEO"
+      ],
+      "minimal_pillars": [
+        "NLO",
+        "EEO"
+      ],
+      "runtime_affinities": {
+        "primary_runtime_dimensions": [
+          "viral_intelligence",
+          "reader_impact"
+        ],
+        "preferred_structural_style": "answer_first_scannable"
+      }
+    },
+    {
+      "mode_id": "narrative",
+      "display_name": "Narrative Mode",
+      "intent_profile": [
+        "engage",
+        "resonate",
+        "remember",
+        "storytell"
+      ],
+      "description": "Human engagement, emotional resonance, and memory retention.",
+      "dominant_pillars": [
+        "NLO",
+        "HEO"
+      ],
+      "supporting_pillars": [
+        "EEO",
+        "SDO"
+      ],
+      "minimal_pillars": [
+        "GEO",
+        "AIO",
+        "SEO"
+      ],
+      "runtime_affinities": {
+        "primary_runtime_dimensions": [
+          "reader_impact",
+          "human_texture"
+        ],
+        "preferred_structural_style": "flowing_contextual"
+      }
+    },
+    {
+      "mode_id": "authority",
+      "display_name": "Authority Mode",
+      "intent_profile": [
+        "prove",
+        "educate",
+        "govern",
+        "explain_reality"
+      ],
+      "description": "Maximum credibility, precision, and trust integrity.",
+      "dominant_pillars": [
+        "SDO",
+        "EEO",
+        "HEO"
+      ],
+      "supporting_pillars": [
+        "GEO",
+        "AIO",
+        "NLO",
+        "SEO"
+      ],
+      "minimal_pillars": [],
+      "runtime_affinities": {
+        "primary_runtime_dimensions": [
+          "narrative_intelligence",
+          "reader_impact",
+          "viral_intelligence"
+        ],
+        "preferred_structural_style": "evidence_backed_depth"
+      }
+    },
+    {
+      "mode_id": "hybrid",
+      "display_name": "Hybrid Mode",
+      "intent_profile": [
+        "mixed",
+        "cross_surface",
+        "tutorial_with_context",
+        "thought_leadership"
+      ],
+      "description": "Intentional cross-mode balance where the pillars remain constant but their weighting shifts by use case.",
+      "dominant_pillars": [
+        "SDO",
+        "NLO",
+        "HEO"
+      ],
+      "supporting_pillars": [
+        "GEO",
+        "AIO",
+        "EEO",
+        "SEO"
+      ],
+      "minimal_pillars": [],
+      "runtime_affinities": {
+        "primary_runtime_dimensions": [
+          "reader_impact",
+          "viral_intelligence",
+          "human_texture"
+        ],
+        "preferred_structural_style": "dual_lane_balanced"
+      }
+    }
+  ],
+  "compatibility_aliases": {
+    "creative": "narrative",
+    "acf": "authority",
+    "hybrid": "hybrid"
+  },
+  "selection_rules": [
+    "use utility for fast answers, extraction, and procedural delivery",
+    "use narrative for emotional connection and memory retention",
+    "use authority for high-stakes credibility, nuance, and evidence",
+    "use hybrid when intent spans multiple lanes and must be handled intentionally"
+  ]
+}

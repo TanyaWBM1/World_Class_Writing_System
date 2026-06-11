@@ -1,0 +1,276 @@
+{
+  "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.": [
+    "AI-generated reflections or rule proposals may never directly modify production rules.",
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater."
+  ],
+  "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.": [
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "Only validated failures may be promoted into benchmark fixtures."
+  ],
+  "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.": [
+    "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.": [
+    "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_VOICE_DRIFT_CAP",
+    "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+    "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.": [
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+    "System changes must pass sandbox evaluation before shadow evaluation."
+  ],
+  "Governance capture where proposal and approval paths are not sufficiently separated.": [
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+    "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+    "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+  ],
+  "Hybrid-evaluator silent drift where soft components shift behavior without governance.": [
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+    "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+    "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+  ],
+  "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.": [
+    "AI-generated reflections or rule proposals may never directly modify production rules.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+    "RULE_TERM_DEFINITION_STABILITY",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+    "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes."
+  ],
+  "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "RULE_CONTINUITY_CONTRADICTION_CAP"
+  ],
+  "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.": [
+    "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "RULE_PROMISE_RESOLUTION_RATE",
+    "RULE_SCENE_GOAL_REQUIRED"
+  ],
+  "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.": [
+    "AI-generated reflections or rule proposals may never directly modify production rules.",
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+    "System changes must pass sandbox evaluation before shadow evaluation."
+  ],
+  "Rubber-stamp governance fatigue that lets regressions through.": [
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.",
+    "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+    "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+  ],
+  "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.": [
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+    "RULE_TERM_DEFINITION_STABILITY",
+    "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes."
+  ],
+  "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.": [
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+    "Only validated failures may be promoted into benchmark fixtures.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "RULE_PROMISE_RESOLUTION_RATE",
+    "RULE_SCENE_GOAL_REQUIRED",
+    "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+    "System changes must pass sandbox evaluation before shadow evaluation."
+  ],
+  "State-tracking continuity checker cascades extraction errors and reports false contradictions.": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_CONTINUITY_CONTRADICTION_CAP"
+  ],
+  "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.": [
+    "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+    "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_VOICE_DRIFT_CAP",
+    "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+    "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.",
+    "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "Style fingerprint creep caused by retraining on already-homogenized outputs.": [
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+    "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+    "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+  ],
+  "Style fingerprint overconstraint that preserves sameness instead of voice.": [
+    "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+    "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+    "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+    "Style fingerprints must be versioned and frozen between releases unless changed through governance."
+  ],
+  "Template echo detector misclassifies genre-typical structures as template copies.": [
+    "Every detected failure must be logged to an append-only structured failure ledger.",
+    "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone.",
+    "RULE_GENERIC_TEMPLATE_CAP",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+  ],
+  "cadence_flattening_failure": [
+    "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+    "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+    "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+    "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.",
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_GENERIC_TEMPLATE_CAP",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+    "RULE_VOICE_DRIFT_CAP",
+    "Sentence-length variance must stay above the configured lower bound for the active cadence profile."
+  ],
+  "continuity_memory_failure": [
+    "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+    "RULE_CONTINUITY_CONTRADICTION_CAP",
+    "RULE_ENTITY_INVARIANT_ENFORCED",
+    "RULE_PROMISE_RESOLUTION_RATE"
+  ],
+  "dialogue_realism_collapse": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "genre_flattening_failure": [
+    "RULE_GENRE_BEAT_COVERAGE_MIN",
+    "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+    "RULE_LIST_FORMAT_INTEGRITY"
+  ],
+  "long_form_coherence_failure": [
+    "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+    "RULE_CONTINUITY_CONTRADICTION_CAP",
+    "RULE_ENTITY_INVARIANT_ENFORCED",
+    "RULE_PROMISE_RESOLUTION_RATE"
+  ],
+  "narrative_drift_failure": [
+    "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+    "RULE_CONTINUITY_CONTRADICTION_CAP",
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_ENTITY_INVARIANT_ENFORCED",
+    "RULE_PROMISE_RESOLUTION_RATE",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SCENE_GOAL_REQUIRED",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_VOICE_DRIFT_CAP"
+  ],
+  "over_abstraction_failure": [
+    "RULE_ABSTRACTION_RATIO_MAX",
+    "RULE_CLAIM_SUPPORT_REQUIRED",
+    "RULE_GENERIC_EMOTION_CAP",
+    "RULE_GENERIC_TEMPLATE_CAP",
+    "RULE_PROSE_CONCRETENESS_MIN",
+    "RULE_SEMANTIC_REDUNDANCY_CAP",
+    "RULE_WARRANT_SCORE_MIN"
+  ],
+  "prompt_sensitivity_failure": [
+    "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+    "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+    "RULE_TERM_DEFINITION_STABILITY",
+    "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes."
+  ],
+  "prose_naturalness_collapse": [
+    "RULE_ABSTRACTION_RATIO_MAX",
+    "RULE_GENERIC_EMOTION_CAP",
+    "RULE_GENERIC_TEMPLATE_CAP"
+  ],
+  "semantic_redundancy_failure": [
+    "RULE_ABSTRACTION_RATIO_MAX",
+    "RULE_CLAIM_SUPPORT_REQUIRED",
+    "RULE_PROSE_CONCRETENESS_MIN",
+    "RULE_SEMANTIC_REDUNDANCY_CAP",
+    "RULE_WARRANT_SCORE_MIN"
+  ],
+  "structure_drift_failure": [
+    "Every detected failure must be logged to an append-only structured failure ledger.",
+    "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone.",
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_GENRE_BEAT_COVERAGE_MIN",
+    "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+    "RULE_LIST_FORMAT_INTEGRITY",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_VOICE_DRIFT_CAP"
+  ],
+  "style_homogenization_failure": [
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_VOICE_DRIFT_CAP"
+  ],
+  "voice_erosion_failure": [
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_VOICE_DRIFT_CAP"
+  ],
+  "weak_claim_architecture_failure": [
+    "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_CLAIM_SUPPORT_REQUIRED",
+    "RULE_CONTINUITY_CONTRADICTION_CAP",
+    "RULE_PROMISE_RESOLUTION_RATE",
+    "RULE_SCENE_GOAL_REQUIRED",
+    "RULE_WARRANT_SCORE_MIN"
+  ]
+}

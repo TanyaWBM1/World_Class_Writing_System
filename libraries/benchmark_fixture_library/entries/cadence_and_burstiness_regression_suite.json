@@ -1,0 +1,51 @@
+{
+  "id": "cadence_and_burstiness_regression_suite",
+  "name": "Cadence And Burstiness Regression Suite",
+  "description": "Propose a benchmark concept for cadence and burstiness regression suite.",
+  "source_proposals": [
+    "BP-003"
+  ],
+  "related_rules": [
+    "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+    "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+    "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+    "Sentence-length variance must stay above the configured lower bound for the active cadence profile."
+  ],
+  "related_validators": [
+    "CadenceDistributionValidator",
+    "Compute per-sentence lexical entropy and bias generation toward context-appropriate synonymy when entropy is too low.",
+    "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+    "SyntaxTemplateRepetitionValidator",
+    "Update a narrative-pressure scalar through each scene and bind cadence decisions to that scalar."
+  ],
+  "related_failure_modes": [
+    "cadence_flattening_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.82,
+  "status": "approved",
+  "aliases": [
+    "author_cadence_profile",
+    "cadence_flattening_failure",
+    "cadence_realism_disc",
+    "syntax_template_tracker"
+  ],
+  "fixture_axes": {
+    "failure_modes": [
+      "cadence_flattening_failure"
+    ],
+    "evaluation_types": [
+      "cadence_structure",
+      "continuity_narrative"
+    ],
+    "narrative_dimensions": [
+      "cadence",
+      "human_likeness"
+    ]
+  }
+}

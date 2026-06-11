@@ -1,0 +1,42 @@
+{
+  "id": "continuity_memory_failure",
+  "name": "continuity_memory_failure",
+  "description": "Normalized failure mode asset for Continuity Memory Failure derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-CONTINUITY-AND-NARRATIVE-FAILURES"
+  ],
+  "related_rules": [
+    "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+    "RULE_CONTINUITY_CONTRADICTION_CAP",
+    "RULE_ENTITY_INVARIANT_ENFORCED",
+    "RULE_PROMISE_RESOLUTION_RATE"
+  ],
+  "related_validators": [
+    "ContinuityNLIValidator",
+    "EntityAttributeDriftValidator",
+    "NarrativeGoalProgressValidator",
+    "PromisePayoffValidator",
+    "WorldCanonConsistencyValidator"
+  ],
+  "related_failure_modes": [
+    "continuity_memory_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "continuity_memory_failure",
+    "long_form_coherence_failure",
+    "narrative_drift_failure"
+  ],
+  "related_benchmarks": [
+    "BP-004"
+  ],
+  "related_enforcement_concepts": [
+    "EP-005"
+  ]
+}

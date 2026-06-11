@@ -1,0 +1,37 @@
+{
+  "id": "entity_and_canon_state",
+  "name": "Entity And Canon State",
+  "description": "Propose a curated continuity_state_library addition set for entity and canon state.",
+  "source_proposals": [
+    "LP-ENTITY-AND-CANON-STATE"
+  ],
+  "related_rules": [
+    "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+    "RULE_ENTITY_INVARIANT_ENFORCED",
+    "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance."
+  ],
+  "related_validators": [
+    "EntityAttributeDriftValidator",
+    "WorldCanonConsistencyValidator"
+  ],
+  "related_failure_modes": [],
+  "dependencies": [
+    "evaluation_library",
+    "schema:narrative_state",
+    "schema:continuity_state"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "entity_registry",
+    "entity_thread_memory_state",
+    "world_canon_store"
+  ],
+  "schema_expectations": [
+    "entity registry",
+    "fact invariants",
+    "thread tracking",
+    "state diffs"
+  ]
+}

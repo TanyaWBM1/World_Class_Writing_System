@@ -1,0 +1,20 @@
+{
+  "acceptance_id": "acceptance_cross_platform",
+  "purpose": "Confirm platform scoring emits contextual fit without changing core gating.",
+  "category": "platform_contextual_output",
+  "text_pattern": "content with differentiated fit across Facebook, YouTube, Twitter/X, LinkedIn, Instagram, and Reddit",
+  "target_dimensions": [
+    "platform_context",
+    "viral_intelligence"
+  ],
+  "required_expectations": {
+    "platform_scores_present": true,
+    "platform_fit_validator_present": true,
+    "platform_context_constraints.contextual_only": true
+  },
+  "must_not_allow": [
+    "platform scores overriding v4 failure",
+    "platform scores overriding v5 weakness",
+    "platform scores overriding v6 integrity failure"
+  ]
+}

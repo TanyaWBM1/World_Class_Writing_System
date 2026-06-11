@@ -1,0 +1,95 @@
+{
+  "id": "thread_persistence_suite",
+  "name": "Thread Persistence Suite",
+  "description": "Deterministic long-range fixtures for open-thread carrythrough, dropout detection, delayed returns, and adversarial thread masking.",
+  "source_proposals": [
+    "V4-THREAD-001"
+  ],
+  "related_rules": [
+    "RULE_THREAD_PERSISTENCE_MIN",
+    "RULE_THREAD_DROPOUT_CAP"
+  ],
+  "related_validators": [
+    "ThreadPersistenceValidator"
+  ],
+  "related_failure_modes": [
+    "thread_dropout_failure",
+    "continuity_memory_failure"
+  ],
+  "dependencies": [
+    "continuity_state_library",
+    "narrative_pressure_library",
+    "evaluation_library"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "thread_pass_001",
+      "title": "Open Thread Returns With Escalation",
+      "task_type": "thread_persistence",
+      "text_under_test": "Early in the journey Mara notices that her brother's last letter is missing a full page. The tear matters because the missing page should explain where he was meant to meet her after the border crossing.\n\nSeveral scenes later the missing page is not forgotten. When she bargains with the bookseller, she spots the same paper stock in his wrapping scraps and realizes the torn sheet may have passed through the station before she did. The mystery thread tightens rather than disappearing.\n\nNear the end, the absent page returns as a concrete choice. Mara can finally read it, but only by surrendering the forged ticket that carried her this far. The thread persists, evolves, and changes the scene-level stakes.",
+      "validator_targets": [
+        "ThreadPersistenceValidator"
+      ],
+      "expected_status_by_validator": {
+        "ThreadPersistenceValidator": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "The open thread remains active across distance and comes back with higher consequence."
+    },
+    {
+      "fixture_id": "thread_warn_001",
+      "title": "Delayed Return With Thin Reminders",
+      "task_type": "thread_persistence",
+      "text_under_test": "The opening chapter frames the missing page in Mara's letter as urgent. She cannot find her brother without it, and she believes the porter may have seen whoever tore it out.\n\nThe next several scenes move elsewhere. A warehouse search and a ferry crossing take over the plot, and the letter thread only survives through one brief mention when Mara touches the folded envelope in her coat.\n\nMuch later the letter returns, but the gap is long enough that the reader may feel the thread went dormant without adequate maintenance. The recovery is possible, though the persistence signal is weak.",
+      "validator_targets": [
+        "ThreadPersistenceValidator"
+      ],
+      "expected_status_by_validator": {
+        "ThreadPersistenceValidator": "warn"
+      },
+      "expected_failure_modes": [
+        "thread_dropout_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "The thread does return, but reminder cadence is sparse and the registry should flag a near-dropout."
+    },
+    {
+      "fixture_id": "thread_fail_001",
+      "title": "Primary Thread Vanishes",
+      "task_type": "thread_persistence",
+      "text_under_test": "The novel opens on Mara's missing page and treats it as the reason she boards the train at all. Her brother's whereabouts depend on it, and the torn letter is named as the engine of the journey.\n\nAfter the first scene, the thread disappears completely. The story turns into a smuggling caper, then a romance, then a courtroom argument. Nobody mentions the letter again, and Mara behaves as if her original objective never existed.\n\nThe document-level promise is abandoned rather than deferred.",
+      "validator_targets": [
+        "ThreadPersistenceValidator"
+      ],
+      "expected_status_by_validator": {
+        "ThreadPersistenceValidator": "fail"
+      },
+      "expected_failure_modes": [
+        "thread_dropout_failure"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "A central thread is opened, then fully dropped with no recovery or substitution."
+    },
+    {
+      "fixture_id": "thread_adversarial_001",
+      "title": "Thread Replaced By Similar Noise",
+      "task_type": "thread_persistence",
+      "text_under_test": "Mara's initial concern is the missing page in her brother's letter. The text names the tear, the missing directions, and the porter who may have witnessed the theft.\n\nLater scenes keep invoking paper, messages, and scraps of writing, but none of them are the same thread. A receipt turns up in a drawer. A manifesto is read aloud in the square. A menu is used to hide a knife. The prose creates the impression that the original line is still alive because paper keeps appearing.\n\nBy the end, the actual missing page has not advanced, yet nearby imagery attempts to disguise the dropout.",
+      "validator_targets": [
+        "ThreadPersistenceValidator"
+      ],
+      "expected_status_by_validator": {
+        "ThreadPersistenceValidator": "warn"
+      },
+      "expected_failure_modes": [
+        "thread_dropout_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Adversarial case: thematic neighbors mask the fact that the original thread registry entry has stalled."
+    }
+  ]
+}

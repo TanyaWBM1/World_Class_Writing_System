@@ -1,0 +1,45 @@
+{
+  "blacklist_id": "tanya_lawson_live_word_blacklist_v1",
+  "voice_id": "tanya_lawson_v1",
+  "entries": [
+    {
+      "term": "friction",
+      "status": "discourage",
+      "reason": "AI-default abstraction when a more lived word can carry the same meaning.",
+      "occurrence_count": 3,
+      "last_updated": "2026-03-21",
+      "allowed_contexts": []
+    },
+    {
+      "term": "lands",
+      "status": "discourage",
+      "reason": "Flattened AI-default reaction verb; Tanya voice prefers plainer impact language.",
+      "occurrence_count": 2,
+      "last_updated": "2026-03-21",
+      "allowed_contexts": []
+    },
+    {
+      "term": "leverage",
+      "status": "block",
+      "reason": "Corporate strategy language breaks Tanya Lawson voice unless explicitly allowed by context.",
+      "occurrence_count": 3,
+      "last_updated": "2026-03-21",
+      "allowed_contexts": []
+    },
+    {
+      "term": "pressure",
+      "status": "context_only",
+      "reason": "Allowed when tied to lived, narrative, or structural stakes; discouraged when vague.",
+      "occurrence_count": 4,
+      "last_updated": "2026-03-21",
+      "allowed_contexts": [
+        "lived pressure",
+        "narrative pressure",
+        "pressure curve",
+        "public pressure",
+        "time pressure",
+        "family pressure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "contract_id": "generation_objectives_contract_v1",
+  "purpose": "Define the bounded multi-objective generation goals for controlled drafting across v3 through v6.1 without authorizing autonomous runtime mutation.",
+  "optimization_scope": [
+    "v3_meaning_quality",
+    "v4_structure_and_obligation_fulfillment",
+    "v5_reader_impact",
+    "v6_viral_potential",
+    "v6_1_insight_density"
+  ],
+  "core_objectives": {
+    "v3_meaning_quality": {
+      "target_outcomes": [
+        "semantic progression",
+        "low redundancy collapse risk",
+        "healthy cadence variation",
+        "concrete and legible prose"
+      ],
+      "driving_validators": [
+        "semantic_redundancy_detector",
+        "cadence_variance_checker",
+        "abstraction_ratio_checker",
+        "human_style_preference_validator"
+      ]
+    },
+    "v4_structure_and_obligation_fulfillment": {
+      "target_outcomes": [
+        "setup/payoff integrity",
+        "thread persistence",
+        "character arc continuity",
+        "scene consequence traceability"
+      ],
+      "driving_validators": [
+        "character_arc_consistency_validator",
+        "thread_persistence_validator",
+        "setup_payoff_integrity_validator",
+        "theme_evolution_validator",
+        "pressure_curve_validator",
+        "scene_consequence_validator"
+      ]
+    },
+    "v5_reader_impact": {
+      "target_outcomes": [
+        "emotional resonance",
+        "earned payoff satisfaction",
+        "surprise calibration",
+        "memorability without overload"
+      ],
+      "driving_validators": [
+        "emotional_resonance_validator",
+        "payoff_satisfaction_validator",
+        "surprise_calibration_validator",
+        "tension_absorption_validator",
+        "memorability_validator",
+        "cognitive_load_validator"
+      ]
+    },
+    "v6_viral_potential": {
+      "target_outcomes": [
+        "hook strength",
+        "identity resonance",
+        "shareability",
+        "novelty with integrity"
+      ],
+      "driving_validators": [
+        "high_arousal_emotion_validator",
+        "hook_strength_validator",
+        "identity_resonance_validator",
+        "shareability_validator",
+        "novelty_validator",
+        "viral_integrity_validator"
+      ]
+    },
+    "v6_1_insight_density": {
+      "target_outcomes": [
+        "explicit insight or implicit experiential insight",
+        "concrete support or memorable meaning",
+        "no generic motivation collapse"
+      ],
+      "driving_validators": [
+        "insight_density_validator"
+      ]
+    }
+  },
+  "hard_invariants": [
+    "v4 failure blocks promotion",
+    "v6 cannot override v4 or v5",
+    "viral scoring cannot justify shallow content",
+    "insight density must remain above threshold",
+    "no live validator or rule mutation is allowed"
+  ]
+}

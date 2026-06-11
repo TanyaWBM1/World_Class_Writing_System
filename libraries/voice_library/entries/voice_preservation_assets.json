@@ -1,0 +1,34 @@
+{
+  "id": "voice_preservation_assets",
+  "name": "Voice Preservation Assets",
+  "description": "Propose a curated voice_library addition set for voice preservation assets.",
+  "source_proposals": [
+    "LP-VOICE-PRESERVATION-ASSETS"
+  ],
+  "related_rules": [
+    "RULE_VOICE_DRIFT_CAP",
+    "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "related_validators": [
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "related_failure_modes": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "continuity_state_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.87,
+  "status": "approved",
+  "aliases": [
+    "pre_post_edit_style_encoder_v1"
+  ],
+  "related_enforcement_concepts": [
+    "EP-006"
+  ]
+}

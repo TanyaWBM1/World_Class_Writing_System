@@ -1,0 +1,34 @@
+{
+  "id": "cliche_repetition_failure",
+  "name": "cliche_repetition_failure",
+  "description": "Normalized failure mode for novelty collapse caused by predictable framing, expected ideas, or repeated stock formulations.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_NOVELTY_MIN"
+  ],
+  "related_validators": [
+    "NoveltyValidator"
+  ],
+  "related_failure_modes": [
+    "cliche_repetition_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.8,
+  "status": "approved",
+  "aliases": [
+    "predictable_idea_failure",
+    "novelty_flatline"
+  ],
+  "related_benchmarks": [
+    "v6_meaningful_virality_atomic_suite"
+  ],
+  "related_enforcement_concepts": [
+    "viral_novelty_floor"
+  ]
+}

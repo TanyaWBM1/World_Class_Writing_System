@@ -1,0 +1,37 @@
+{
+  "id": "shallow_philosophy_failure",
+  "name": "shallow_philosophy_failure",
+  "description": "Normalized failure mode for vague reflective language that imitates insight while avoiding concrete examples, grounded claims, or practical value.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_INSIGHT_DENSITY_MIN",
+    "RULE_NOVELTY_MIN"
+  ],
+  "related_validators": [
+    "InsightDensityValidator",
+    "NoveltyValidator"
+  ],
+  "related_failure_modes": [
+    "shallow_philosophy_failure",
+    "empty_insight_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.82,
+  "status": "approved",
+  "aliases": [
+    "vague_reflection_failure",
+    "abstract_wisdom_mimicry"
+  ],
+  "related_benchmarks": [
+    "v6_viral_suite"
+  ],
+  "related_enforcement_concepts": [
+    "insight_density_floor"
+  ]
+}

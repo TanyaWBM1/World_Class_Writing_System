@@ -1,0 +1,53 @@
+{
+  "id": "voice_preservation_and_editing_suite",
+  "name": "Voice Preservation And Editing Suite",
+  "description": "Propose a benchmark concept for voice preservation and editing suite.",
+  "source_proposals": [
+    "BP-006"
+  ],
+  "related_rules": [
+    "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+    "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+    "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step."
+  ],
+  "related_validators": [
+    "After each edit pass, compare entropy and idiosyncrasy against the pre-edit reference and restore voice markers when needed.",
+    "For editing pipelines, measure voice preservation and semantic fidelity before enabling new editors in production.",
+    "Run edit passes that normalize voice and verify post-edit entropy/idiosyncrasy preservation checks catch degradation.",
+    "Style averaging during editing that erodes voice.",
+    "edit_voice_preservation_policy"
+  ],
+  "related_failure_modes": [
+    "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.88,
+  "status": "approved",
+  "aliases": [
+    "edit_preserved_cadence_delta_v1",
+    "edited_pairs_voice_labelled_v1",
+    "pre_post_edit_style_encoder_v1",
+    "voice_preservation_after_edit_v1"
+  ],
+  "fixture_axes": {
+    "failure_modes": [
+      "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+      "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions."
+    ],
+    "evaluation_types": [
+      "cadence_structure",
+      "continuity_narrative",
+      "voice_style"
+    ],
+    "narrative_dimensions": [
+      "cadence",
+      "human_likeness",
+      "voice_preservation"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "empty_insight_failure",
+  "name": "empty_insight_failure",
+  "description": "Normalized failure mode for writing that gestures at insight or wisdom but contains too little idea density, reasoning, or specificity to justify virality.",
+  "source_proposals": [
+    "EXT-PERPLEXITY-VIRALITY-01"
+  ],
+  "related_rules": [
+    "RULE_INSIGHT_DENSITY_MIN"
+  ],
+  "related_validators": [
+    "InsightDensityValidator"
+  ],
+  "related_failure_modes": [
+    "empty_insight_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.86,
+  "status": "approved",
+  "aliases": [
+    "low_idea_density_failure",
+    "signal_without_substance"
+  ],
+  "related_benchmarks": [
+    "v6_viral_suite"
+  ],
+  "related_enforcement_concepts": [
+    "insight_density_floor"
+  ]
+}

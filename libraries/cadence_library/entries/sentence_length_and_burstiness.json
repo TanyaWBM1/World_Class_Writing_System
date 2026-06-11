@@ -1,0 +1,37 @@
+{
+  "id": "sentence_length_and_burstiness",
+  "name": "Sentence Length And Burstiness",
+  "description": "Propose a curated cadence_library addition set for sentence length and burstiness.",
+  "source_proposals": [
+    "LP-SENTENCE-LENGTH-AND-BURSTINESS"
+  ],
+  "related_rules": [
+    "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library."
+  ],
+  "related_validators": [
+    "CadenceDistributionValidator"
+  ],
+  "related_failure_modes": [
+    "cadence_flattening_failure"
+  ],
+  "dependencies": [
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.87,
+  "status": "approved",
+  "aliases": [
+    "author_cadence_profile",
+    "edit_preserved_cadence_delta_v1",
+    "episode_transition_cadence_v1",
+    "event_progression_cadence_v1",
+    "prompt_phrasing_cadence_invariance_v1",
+    "prosodic_cadence_features_v1",
+    "sentence_rhythm_profile_v1",
+    "template_rhythm_signature_v1"
+  ],
+  "related_enforcement_concepts": [
+    "EP-003"
+  ],
+  "related_techniques": []
+}

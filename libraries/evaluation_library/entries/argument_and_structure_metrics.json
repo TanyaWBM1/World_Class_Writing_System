@@ -1,0 +1,37 @@
+{
+  "id": "argument_and_structure_metrics",
+  "name": "Argument And Structure Metrics",
+  "description": "Propose a curated evaluation_library addition set for argument and structure metrics.",
+  "source_proposals": [
+    "LP-ARGUMENT-AND-STRUCTURE-METRICS"
+  ],
+  "related_rules": [
+    "RULE_CLAIM_SUPPORT_REQUIRED",
+    "RULE_WARRANT_SCORE_MIN"
+  ],
+  "related_validators": [
+    "ClaimEvidenceLinkValidator",
+    "MarkdownFormatValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "related_failure_modes": [
+    "weak_claim_architecture_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [
+    "warrant_score_metric"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

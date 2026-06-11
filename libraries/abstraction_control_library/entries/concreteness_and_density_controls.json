@@ -1,0 +1,39 @@
+{
+  "id": "concreteness_and_density_controls",
+  "name": "Concreteness And Density Controls",
+  "description": "Propose a curated abstraction_control_library addition set for concreteness and density controls.",
+  "source_proposals": [
+    "LP-CONCRETENESS-AND-DENSITY-CONTROLS"
+  ],
+  "related_rules": [
+    "RULE_ABSTRACTION_RATIO_MAX",
+    "RULE_CLAIM_SUPPORT_REQUIRED",
+    "RULE_PROSE_CONCRETENESS_MIN",
+    "RULE_SEMANTIC_REDUNDANCY_CAP",
+    "RULE_WARRANT_SCORE_MIN"
+  ],
+  "related_validators": [
+    "AbstractionDensityValidator",
+    "ClaimEvidenceLinkValidator",
+    "ProseConcretenessValidator",
+    "SemanticRedundancyValidator",
+    "WarrantAcceptabilityValidator"
+  ],
+  "related_failure_modes": [
+    "over_abstraction_failure",
+    "semantic_redundancy_failure"
+  ],
+  "dependencies": [
+    "failure_mode_library",
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "related_enforcement_concepts": [
+    "EP-001",
+    "EP-004",
+    "EP-006"
+  ]
+}

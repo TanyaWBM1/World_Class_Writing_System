@@ -1,0 +1,52 @@
+{
+  "library_id": "cadence_library",
+  "generated_at": "2026-03-21T19:18:34.233976+00:00",
+  "entry_count": 3,
+  "status": "structured",
+  "source": "research/evolution_proposals",
+  "entries": [
+    {
+      "id": "register_and_transition_cadence",
+      "name": "Register And Transition Cadence",
+      "status": "proposed",
+      "priority": "medium",
+      "confidence": 0.78,
+      "source_proposals": [
+        "LP-REGISTER-AND-TRANSITION-CADENCE"
+      ]
+    },
+    {
+      "id": "sentence_length_and_burstiness",
+      "name": "Sentence Length And Burstiness",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.87,
+      "source_proposals": [
+        "LP-SENTENCE-LENGTH-AND-BURSTINESS"
+      ]
+    },
+    {
+      "id": "syntax_template_and_clause_depth",
+      "name": "Syntax Template And Clause Depth",
+      "status": "approved",
+      "priority": "medium",
+      "confidence": 0.85,
+      "source_proposals": [
+        "LP-SYNTAX-TEMPLATE-AND-CLAUSE-DEPTH"
+      ]
+    }
+  ],
+  "schema_expectations": {},
+  "unresolved_conflicts": [
+    "FM-3",
+    "OP-5",
+    "OP-6",
+    "OP-HT-3",
+    "RU-core_failure_modes_01-006",
+    "RULE-HT-1",
+    "RULE-HT-4",
+    "RULE-HT-5",
+    "RULE-HT-7",
+    "TC-3"
+  ]
+}

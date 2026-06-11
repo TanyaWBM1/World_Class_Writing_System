@@ -1,0 +1,36 @@
+{
+  "id": "syntax_template_and_clause_depth",
+  "name": "Syntax Template And Clause Depth",
+  "description": "Propose a curated cadence_library addition set for syntax template and clause depth.",
+  "source_proposals": [
+    "LP-SYNTAX-TEMPLATE-AND-CLAUSE-DEPTH"
+  ],
+  "related_rules": [
+    "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.",
+    "RULE_SYNTAX_TEMPLATE_REPEAT_CAP"
+  ],
+  "related_validators": [
+    "SyntaxTemplateRepetitionValidator"
+  ],
+  "related_failure_modes": [],
+  "dependencies": [
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.85,
+  "status": "approved",
+  "aliases": [
+    "syntax_template_tracker",
+    "template_rhythm_signature_v1"
+  ],
+  "related_enforcement_concepts": [
+    "EP-003"
+  ],
+  "related_techniques": [
+    "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.",
+    "Parse clause depth per sentence and inject compensating low-depth or high-depth sentences when run limits are exceeded.",
+    "Clause-depth monotony or unreadable over-stacking.",
+    "Construct paragraphs with excessive clause stacking and ensure clause-depth run caps trigger.",
+    "clause_depth_policy"
+  ]
+}

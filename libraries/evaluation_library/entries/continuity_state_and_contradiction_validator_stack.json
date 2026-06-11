@@ -1,0 +1,45 @@
+{
+  "id": "continuity_state_and_contradiction_validator_stack",
+  "name": "Continuity State And Contradiction Validator Stack",
+  "description": "Propose a validation concept stack for continuity state and contradiction validator stack.",
+  "source_proposals": [
+    "VP-004"
+  ],
+  "related_rules": [
+    "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+    "RULE_CONTINUITY_CONTRADICTION_CAP",
+    "RULE_ENTITY_INVARIANT_ENFORCED"
+  ],
+  "related_validators": [
+    "ContinuityNLIValidator",
+    "EntityAttributeDriftValidator",
+    "WorldCanonConsistencyValidator"
+  ],
+  "related_failure_modes": [
+    "continuity_memory_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.97,
+  "status": "approved",
+  "aliases": [
+    "character_voice_state",
+    "continuity_memory_failure",
+    "document_structure_state",
+    "entity_registry",
+    "genre_beat_state",
+    "narrative_goal_state",
+    "speaker_state_embedding",
+    "world_canon_store"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

@@ -1,0 +1,2569 @@
+{
+  "generated_at": "2026-03-21T19:05:21.987632+00:00",
+  "item_type": "ruleset",
+  "mapping_count": 71,
+  "mappings": [
+    {
+      "id": "RU-core_failure_modes_01-001",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_PROSE_CONCRETENESS_MIN",
+      "normalized_name": "rule_prose_concreteness_min",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-002",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENERIC_TEMPLATE_CAP",
+      "normalized_name": "rule_generic_template_cap",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-003",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+      "normalized_name": "rule_speaker_style_distance_min",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-004",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+      "normalized_name": "rule_dialogue_act_diversity_min",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-005",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SENTENCE_LENGTH_VAR_MIN",
+      "normalized_name": "rule_sentence_length_var_min",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-006",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+      "normalized_name": "rule_syntax_template_repeat_cap",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-007",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SCENE_GOAL_REQUIRED",
+      "normalized_name": "rule_scene_goal_required",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "narrative_pressure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-008",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_PROMISE_RESOLUTION_RATE",
+      "normalized_name": "rule_promise_resolution_rate",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-009",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED",
+      "normalized_name": "rule_entity_invariant_enforced",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-010",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CONTINUITY_CONTRADICTION_CAP",
+      "normalized_name": "rule_continuity_contradiction_cap",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-011",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_ABSTRACTION_RATIO_MAX",
+      "normalized_name": "rule_abstraction_ratio_max",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-012",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_META_SENTENCE_RUN_CAP",
+      "normalized_name": "rule_meta_sentence_run_cap",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-013",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SEMANTIC_REDUNDANCY_CAP",
+      "normalized_name": "rule_semantic_redundancy_cap",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-014",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SECTION_NOVELTY_MIN",
+      "normalized_name": "rule_section_novelty_min",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-015",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_AFFECT_VARIANCE_MIN",
+      "normalized_name": "rule_affect_variance_min",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-016",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENERIC_EMOTION_CAP",
+      "normalized_name": "rule_generic_emotion_cap",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-017",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+      "normalized_name": "rule_canon_no_implicit_override",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-018",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_TERM_DEFINITION_STABILITY",
+      "normalized_name": "rule_term_definition_stability",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-019",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_STYLE_DISTANCE_MAX",
+      "normalized_name": "rule_style_distance_max",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-020",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+      "normalized_name": "rule_corpus_style_diversity_min",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-021",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_VOICE_DRIFT_CAP",
+      "normalized_name": "rule_voice_drift_cap",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-022",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_REVISION_SCOPE_STYLE_LOCK",
+      "normalized_name": "rule_revision_scope_style_lock",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-023",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENRE_BEAT_COVERAGE_MIN",
+      "normalized_name": "rule_genre_beat_coverage_min",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-024",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+      "normalized_name": "rule_genre_signature_features_min",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-025",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+      "normalized_name": "rule_prompt_paraphrase_stability_min",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-026",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_SECTION_PRESENCE",
+      "normalized_name": "rule_section_presence",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-027",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_LIST_FORMAT_INTEGRITY",
+      "normalized_name": "rule_list_format_integrity",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-028",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_CLAIM_SUPPORT_REQUIRED",
+      "normalized_name": "rule_claim_support_required",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RU-core_failure_modes_01-029",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "RULE_WARRANT_SCORE_MIN",
+      "normalized_name": "rule_warrant_score_min",
+      "candidate_library": "abstraction_control_library",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-1",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+      "normalized_name": "all_core_evaluation_paths_must_be_deterministic_for_fixed_inputs_and_configuration_in_the_deterministic_writing_architecture",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [
+        "RULE-SD-1"
+      ],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-2",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+      "normalized_name": "human_like_quality_must_be_operationalized_via_multi_dimensional_rubrics_including_coherence_continuity_dialogue_realism_style_consistency_and_human_likeness_discrimination",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-3",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Every validator MUST have documented thresholds and associated failure modes in failure_mode_library.",
+      "normalized_name": "every_validator_must_have_documented_thresholds_and_associated_failure_modes_in_failure_mode_library",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-4",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+      "normalized_name": "prompt_sensitivity_and_cross_run_stability_must_be_measured_explicitly_for_all_judge_and_scoring_subsystems",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-5",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes.",
+      "normalized_name": "template_echo_detection_must_run_on_any_output_produced_under_few_shot_or_example_based_prompting_regimes",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-6",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step.",
+      "normalized_name": "voice_preservation_and_style_drift_metrics_must_be_applied_before_and_after_any_automated_editing_or_post_processing_step",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-7",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+      "normalized_name": "benchmarks_must_include_long_form_narrative_and_multi_turn_dialogue_fixtures_with_seeded_continuity_and_memory_challenges",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-8",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+      "normalized_name": "all_evaluation_components_must_map_to_entries_in_evaluation_library_benchmark_fixture_library_failure_mode_library_voice_library_and_cadence_library",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-1",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+      "normalized_name": "each_paragraph_must_include_controlled_sentence_length_burstiness_rather_than_a_flat_medium_length_distribution",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-2",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Sentence-length variance must stay above the configured lower bound for the active cadence profile.",
+      "normalized_name": "sentence_length_variance_must_stay_above_the_configured_lower_bound_for_the_active_cadence_profile",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-3",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.",
+      "normalized_name": "lexical_entropy_per_sentence_must_remain_within_corpus_relative_min_max_thresholds",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-4",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.",
+      "normalized_name": "clause_depth_runs_must_be_bounded_the_system_may_not_emit_too_many_consecutive_high_depth_or_low_depth_sentences",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-5",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.",
+      "normalized_name": "every_paragraph_must_be_assigned_an_information_density_band_and_must_conform_to_that_band_s_density_constraints",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-6",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Narrative pressure must evolve within configured slope bounds and may not flatten unintentionally inside pressure-building scenes.",
+      "normalized_name": "narrative_pressure_must_evolve_within_configured_slope_bounds_and_may_not_flatten_unintentionally_inside_pressure_building_scenes",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-7",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+      "normalized_name": "register_drift_per_sentence_and_per_paragraph_must_remain_inside_the_allowed_drift_window_for_the_active_voice",
+      "candidate_library": "cadence_library",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-8",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Character or author idiosyncrasies must be present often enough to preserve voice, but not so often that they become caricature.",
+      "normalized_name": "character_or_author_idiosyncrasies_must_be_present_often_enough_to_preserve_voice_but_not_so_often_that_they_become_caricature",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-9",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "In POV-deep scenes, free indirect discourse blend must remain within configured narrator/character mixing bounds.",
+      "normalized_name": "in_pov_deep_scenes_free_indirect_discourse_blend_must_remain_within_configured_narrator_character_mixing_bounds",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-10",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Scene-to-scene residue must carry forward with controlled decay and bounded similarity.",
+      "normalized_name": "scene_to_scene_residue_must_carry_forward_with_controlled_decay_and_bounded_similarity",
+      "candidate_library": "narrative_pressure_library",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-11",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Dialogue must exhibit non-uniform turn lengths and controlled overlap or interruption patterns.",
+      "normalized_name": "dialogue_must_exhibit_non_uniform_turn_lengths_and_controlled_overlap_or_interruption_patterns",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-12",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Character disfluency rates must match trait- and tension-specific ranges.",
+      "normalized_name": "character_disfluency_rates_must_match_trait_and_tension_specific_ranges",
+      "candidate_library": "dialogue_behavior_library",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-13",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+      "normalized_name": "editing_passes_may_not_reduce_entropy_and_idiosyncrasy_below_the_configured_preservation_floor",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-HT-14",
+      "source_file": "hidden_techniques_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+      "normalized_name": "style_preservation_edits_must_restore_voice_markers_when_cleanup_operations_over_normalize_prose",
+      "candidate_library": "voice_library",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.75,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-1",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration.",
+      "normalized_name": "all_production_evaluation_paths_must_be_deterministic_for_fixed_inputs_versions_and_configuration",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [
+        "RULE-1"
+      ],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-2",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Every detected failure must be logged to an append-only structured failure ledger.",
+      "normalized_name": "every_detected_failure_must_be_logged_to_an_append_only_structured_failure_ledger",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-3",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Failure taxonomy changes must be versioned and may not silently rewrite historical labels.",
+      "normalized_name": "failure_taxonomy_changes_must_be_versioned_and_may_not_silently_rewrite_historical_labels",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-4",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Only validated failures may be promoted into benchmark fixtures.",
+      "normalized_name": "only_validated_failures_may_be_promoted_into_benchmark_fixtures",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-5",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+      "normalized_name": "benchmark_promotion_requires_human_approval_before_a_fixture_becomes_part_of_replayable_suites",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-6",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.",
+      "normalized_name": "regression_suites_must_score_outputs_across_multiple_dimensions_rather_than_a_single_aggregate_score_alone",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-7",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+      "normalized_name": "evaluator_prompts_thresholds_and_model_versions_must_be_frozen_for_any_baseline_used_in_promotion_decisions",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-8",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "System changes must pass sandbox evaluation before shadow evaluation.",
+      "normalized_name": "system_changes_must_pass_sandbox_evaluation_before_shadow_evaluation",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-9",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+      "normalized_name": "no_change_may_be_promoted_to_production_without_benchmark_replay_against_the_relevant_fixture_set",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-10",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "AI-generated reflections or rule proposals may never directly modify production rules.",
+      "normalized_name": "ai_generated_reflections_or_rule_proposals_may_never_directly_modify_production_rules",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-11",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+      "normalized_name": "human_approval_is_mandatory_for_rule_acceptance_benchmark_promotion_and_override_of_critical_regressions",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-12",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows.",
+      "normalized_name": "systemic_versus_one_off_failure_classification_must_use_deterministic_clustering_or_deterministic_feature_analytics_in_primary_workflows",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-13",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance.",
+      "normalized_name": "style_fingerprints_must_be_versioned_and_frozen_between_releases_unless_changed_through_governance",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-14",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Multi-pass pipelines must preserve strict schema contracts between generation, refinement, and enforcement stages.",
+      "normalized_name": "multi_pass_pipelines_must_preserve_strict_schema_contracts_between_generation_refinement_and_enforcement_stages",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-15",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+      "normalized_name": "production_runtime_style_enforcement_must_be_rule_based_or_use_frozen_numeric_thresholds_from_hybrid_evaluators",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-16",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone.",
+      "normalized_name": "long_form_coherence_must_be_backed_by_structured_continuity_state_rather_than_raw_context_recall_alone",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-17",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+      "normalized_name": "state_transitions_must_be_logged_as_explicit_diffs_and_may_not_retroactively_rewrite_canonical_state_without_governance",
+      "candidate_library": "continuity_state_library",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-18",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+      "normalized_name": "reflexion_style_self_reflection_may_run_only_in_sandboxed_improvement_loops_never_as_a_live_production_writer_or_updater",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-19",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+      "normalized_name": "promotion_decisions_must_reject_pareto_unsafe_changes_that_improve_one_dimension_while_dropping_another_below_minimum_thresholds",
+      "candidate_library": "system_design_library",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "RULE-SD-20",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "RULESET_EXTRACT",
+      "item_type": "ruleset",
+      "raw_text": "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+      "normalized_name": "external_dependency_changes_including_evaluator_or_model_version_changes_require_fresh_benchmark_replay_before_promotion",
+      "candidate_library": "evaluation_library",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    }
+  ],
+  "overlaps": [
+    {
+      "record_ids": [
+        "RULE-1",
+        "RULE-SD-1"
+      ],
+      "item_type": "ruleset",
+      "names": [
+        "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+        "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration."
+      ],
+      "source_files": [
+        "evaluation_methods_01.md",
+        "system_design_patterns_01.md"
+      ],
+      "similarity": 0.61,
+      "merge_candidate": false
+    }
+  ],
+  "conflicts": [
+    {
+      "record_id": "RU-core_failure_modes_01-001",
+      "raw_text": "RULE_PROSE_CONCRETENESS_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-002",
+      "raw_text": "RULE_GENERIC_TEMPLATE_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-003",
+      "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-004",
+      "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-005",
+      "raw_text": "RULE_SENTENCE_LENGTH_VAR_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-006",
+      "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-007",
+      "raw_text": "RULE_SCENE_GOAL_REQUIRED",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library",
+        "narrative_pressure_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-008",
+      "raw_text": "RULE_PROMISE_RESOLUTION_RATE",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-009",
+      "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-010",
+      "raw_text": "RULE_CONTINUITY_CONTRADICTION_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-011",
+      "raw_text": "RULE_ABSTRACTION_RATIO_MAX",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-012",
+      "raw_text": "RULE_META_SENTENCE_RUN_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-013",
+      "raw_text": "RULE_SEMANTIC_REDUNDANCY_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-014",
+      "raw_text": "RULE_SECTION_NOVELTY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-015",
+      "raw_text": "RULE_AFFECT_VARIANCE_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-016",
+      "raw_text": "RULE_GENERIC_EMOTION_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-017",
+      "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-018",
+      "raw_text": "RULE_TERM_DEFINITION_STABILITY",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-019",
+      "raw_text": "RULE_STYLE_DISTANCE_MAX",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-020",
+      "raw_text": "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-021",
+      "raw_text": "RULE_VOICE_DRIFT_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-022",
+      "raw_text": "RULE_REVISION_SCOPE_STYLE_LOCK",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-023",
+      "raw_text": "RULE_GENRE_BEAT_COVERAGE_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-024",
+      "raw_text": "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-025",
+      "raw_text": "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-026",
+      "raw_text": "RULE_SECTION_PRESENCE",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-027",
+      "raw_text": "RULE_LIST_FORMAT_INTEGRITY",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-028",
+      "raw_text": "RULE_CLAIM_SUPPORT_REQUIRED",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-029",
+      "raw_text": "RULE_WARRANT_SCORE_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "abstraction_control_library",
+        "evaluation_library",
+        "failure_mode_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-1",
+      "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-2",
+      "raw_text": "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-3",
+      "raw_text": "Every validator MUST have documented thresholds and associated failure modes in failure_mode_library.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-4",
+      "raw_text": "Prompt sensitivity and cross-run stability MUST be measured explicitly for all judge and scoring subsystems.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-5",
+      "raw_text": "Template echo detection MUST run on any output produced under few-shot or example-based prompting regimes.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-6",
+      "raw_text": "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-7",
+      "raw_text": "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-8",
+      "raw_text": "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-1",
+      "raw_text": "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-2",
+      "raw_text": "Sentence-length variance must stay above the configured lower bound for the active cadence profile.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-3",
+      "raw_text": "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-4",
+      "raw_text": "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-5",
+      "raw_text": "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-6",
+      "raw_text": "Narrative pressure must evolve within configured slope bounds and may not flatten unintentionally inside pressure-building scenes.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-7",
+      "raw_text": "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "cadence_library",
+        "sentence_structure_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-8",
+      "raw_text": "Character or author idiosyncrasies must be present often enough to preserve voice, but not so often that they become caricature.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-9",
+      "raw_text": "In POV-deep scenes, free indirect discourse blend must remain within configured narrator/character mixing bounds.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-10",
+      "raw_text": "Scene-to-scene residue must carry forward with controlled decay and bounded similarity.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "narrative_pressure_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-11",
+      "raw_text": "Dialogue must exhibit non-uniform turn lengths and controlled overlap or interruption patterns.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-12",
+      "raw_text": "Character disfluency rates must match trait- and tension-specific ranges.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "dialogue_behavior_library",
+        "human_texture_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-13",
+      "raw_text": "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-HT-14",
+      "raw_text": "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+      "source_file": "hidden_techniques_01.md",
+      "candidate_libraries": [
+        "voice_library",
+        "human_texture_library",
+        "idiosyncrasy_library",
+        "cadence_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-1",
+      "raw_text": "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-2",
+      "raw_text": "Every detected failure must be logged to an append-only structured failure ledger.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-3",
+      "raw_text": "Failure taxonomy changes must be versioned and may not silently rewrite historical labels.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-4",
+      "raw_text": "Only validated failures may be promoted into benchmark fixtures.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "failure_mode_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-5",
+      "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-6",
+      "raw_text": "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-7",
+      "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-8",
+      "raw_text": "System changes must pass sandbox evaluation before shadow evaluation.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-9",
+      "raw_text": "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-10",
+      "raw_text": "AI-generated reflections or rule proposals may never directly modify production rules.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-11",
+      "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-12",
+      "raw_text": "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "failure_mode_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-13",
+      "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-14",
+      "raw_text": "Multi-pass pipelines must preserve strict schema contracts between generation, refinement, and enforcement stages.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-15",
+      "raw_text": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-16",
+      "raw_text": "Long-form coherence must be backed by structured continuity state rather than raw-context recall alone.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-17",
+      "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-18",
+      "raw_text": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-19",
+      "raw_text": "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "RULE-SD-20",
+      "raw_text": "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    }
+  ],
+  "missing_library_targets": [],
+  "escalate_to_research_evolution_architect": [
+    {
+      "record_id": "RU-core_failure_modes_01-001",
+      "raw_text": "RULE_PROSE_CONCRETENESS_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-003",
+      "raw_text": "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-004",
+      "raw_text": "RULE_DIALOGUE_ACT_DIVERSITY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-005",
+      "raw_text": "RULE_SENTENCE_LENGTH_VAR_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-006",
+      "raw_text": "RULE_SYNTAX_TEMPLATE_REPEAT_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-007",
+      "raw_text": "RULE_SCENE_GOAL_REQUIRED",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-008",
+      "raw_text": "RULE_PROMISE_RESOLUTION_RATE",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-009",
+      "raw_text": "RULE_ENTITY_INVARIANT_ENFORCED",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-010",
+      "raw_text": "RULE_CONTINUITY_CONTRADICTION_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-011",
+      "raw_text": "RULE_ABSTRACTION_RATIO_MAX",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-012",
+      "raw_text": "RULE_META_SENTENCE_RUN_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-013",
+      "raw_text": "RULE_SEMANTIC_REDUNDANCY_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-014",
+      "raw_text": "RULE_SECTION_NOVELTY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-017",
+      "raw_text": "RULE_CANON_NO_IMPLICIT_OVERRIDE",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-018",
+      "raw_text": "RULE_TERM_DEFINITION_STABILITY",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-019",
+      "raw_text": "RULE_STYLE_DISTANCE_MAX",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-020",
+      "raw_text": "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-021",
+      "raw_text": "RULE_VOICE_DRIFT_CAP",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-022",
+      "raw_text": "RULE_REVISION_SCOPE_STYLE_LOCK",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-023",
+      "raw_text": "RULE_GENRE_BEAT_COVERAGE_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-024",
+      "raw_text": "RULE_GENRE_SIGNATURE_FEATURES_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-025",
+      "raw_text": "RULE_PROMPT_PARAPHRASE_STABILITY_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-028",
+      "raw_text": "RULE_CLAIM_SUPPORT_REQUIRED",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RU-core_failure_modes_01-029",
+      "raw_text": "RULE_WARRANT_SCORE_MIN",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-1",
+      "raw_text": "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-2",
+      "raw_text": "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-3",
+      "raw_text": "Every validator MUST have documented thresholds and associated failure modes in failure_mode_library.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-6",
+      "raw_text": "Voice preservation and style drift metrics MUST be applied before and after any automated editing or post-processing step.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-7",
+      "raw_text": "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-8",
+      "raw_text": "All evaluation components MUST map to entries in evaluation_library, benchmark_fixture_library, failure_mode_library, voice_library, and cadence_library.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-1",
+      "raw_text": "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-2",
+      "raw_text": "Sentence-length variance must stay above the configured lower bound for the active cadence profile.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-3",
+      "raw_text": "Lexical entropy per sentence must remain within corpus-relative min/max thresholds.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-4",
+      "raw_text": "Clause-depth runs must be bounded; the system may not emit too many consecutive high-depth or low-depth sentences.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-5",
+      "raw_text": "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-6",
+      "raw_text": "Narrative pressure must evolve within configured slope bounds and may not flatten unintentionally inside pressure-building scenes.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-7",
+      "raw_text": "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-8",
+      "raw_text": "Character or author idiosyncrasies must be present often enough to preserve voice, but not so often that they become caricature.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-9",
+      "raw_text": "In POV-deep scenes, free indirect discourse blend must remain within configured narrator/character mixing bounds.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-10",
+      "raw_text": "Scene-to-scene residue must carry forward with controlled decay and bounded similarity.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-11",
+      "raw_text": "Dialogue must exhibit non-uniform turn lengths and controlled overlap or interruption patterns.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-12",
+      "raw_text": "Character disfluency rates must match trait- and tension-specific ranges.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-13",
+      "raw_text": "Editing passes may not reduce entropy and idiosyncrasy below the configured preservation floor.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-HT-14",
+      "raw_text": "Style-preservation edits must restore voice markers when cleanup operations over-normalize prose.",
+      "source_file": "hidden_techniques_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-1",
+      "raw_text": "All production evaluation paths must be deterministic for fixed inputs, versions, and configuration.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-2",
+      "raw_text": "Every detected failure must be logged to an append-only structured failure ledger.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-3",
+      "raw_text": "Failure taxonomy changes must be versioned and may not silently rewrite historical labels.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-4",
+      "raw_text": "Only validated failures may be promoted into benchmark fixtures.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-5",
+      "raw_text": "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-6",
+      "raw_text": "Regression suites must score outputs across multiple dimensions rather than a single aggregate score alone.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-7",
+      "raw_text": "Evaluator prompts, thresholds, and model versions must be frozen for any baseline used in promotion decisions.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-8",
+      "raw_text": "System changes must pass sandbox evaluation before shadow evaluation.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-9",
+      "raw_text": "No change may be promoted to production without benchmark replay against the relevant fixture set.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-11",
+      "raw_text": "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-12",
+      "raw_text": "Systemic-versus-one-off failure classification must use deterministic clustering or deterministic feature analytics in primary workflows.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-13",
+      "raw_text": "Style fingerprints must be versioned and frozen between releases unless changed through governance.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-15",
+      "raw_text": "Production runtime style enforcement must be rule-based or use frozen numeric thresholds from hybrid evaluators.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-17",
+      "raw_text": "State transitions must be logged as explicit diffs and may not retroactively rewrite canonical state without governance.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-18",
+      "raw_text": "Reflexion-style self-reflection may run only in sandboxed improvement loops, never as a live production writer or updater.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-19",
+      "raw_text": "Promotion decisions must reject Pareto-unsafe changes that improve one dimension while dropping another below minimum thresholds.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "RULE-SD-20",
+      "raw_text": "External dependency changes, including evaluator or model-version changes, require fresh benchmark replay before promotion.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    }
+  ]
+}

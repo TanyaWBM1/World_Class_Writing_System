@@ -1,0 +1,76 @@
+{
+  "id": "v5_reader_impact_suite",
+  "name": "V5 Reader Impact Suite",
+  "description": "Deterministic benchmark fixtures for the scaffolded v5 reader-impact layer, targeting felt reader response rather than structural validity alone.",
+  "status": "approved",
+  "fixture_family": "reader_impact_benchmark_pack",
+  "fixtures": [
+    {
+      "fixture_id": "v5_reader_emotional_resonance_001",
+      "title": "Delayed Grief Letter",
+      "target_validator": "EmotionalResonanceValidator",
+      "text_under_test": "A daughter postpones reading her mother's last letter through three scenes of practical labor, then finally opens it in the workshop where the mother's voice returns through specific remembered instruction.",
+      "expected_status": "pass",
+      "reader_state_expectation": {
+        "emotional_state": "grief deepens through action before release",
+        "curiosity_state": "letter contents remain active and consequential"
+      },
+      "notes": "Tests whether emotional movement is earned through scene consequence rather than sentimental declaration."
+    },
+    {
+      "fixture_id": "v5_reader_payoff_satisfaction_001",
+      "title": "Transformed Object Payoff",
+      "target_validator": "PayoffSatisfactionValidator",
+      "text_under_test": "A strongly planted object is never used in its expected literal way but returns as the key to a more complete, transformed payoff.",
+      "expected_status": "pass",
+      "reader_state_expectation": {
+        "expectation_state": "literal payoff expectation is replaced by higher-order fulfillment"
+      },
+      "notes": "Targets satisfaction under transformed obligation fulfillment rather than direct payoff mimicry."
+    },
+    {
+      "fixture_id": "v5_reader_surprise_calibration_001",
+      "title": "Retrospectively Fair Twist",
+      "target_validator": "SurpriseCalibrationValidator",
+      "text_under_test": "A late reveal reorders prior scenes but remains fully traceable through earlier phrasing, object placement, and motive shading.",
+      "expected_status": "pass",
+      "reader_state_expectation": {
+        "expectation_state": "reader should feel surprised but not cheated"
+      },
+      "notes": "Tests balance between predictability and arbitrariness."
+    },
+    {
+      "fixture_id": "v5_reader_tension_absorption_001",
+      "title": "Pressure Held Without Numbness",
+      "target_validator": "TensionAbsorptionValidator",
+      "text_under_test": "A pursuit sequence escalates across four scenes with intermittent breaths that deepen dread instead of dissipating it.",
+      "expected_status": "pass",
+      "reader_state_expectation": {
+        "tension_state": "sustained uptake with coherent release"
+      },
+      "notes": "Tests whether tension accumulation remains absorbable rather than exhausting."
+    },
+    {
+      "fixture_id": "v5_reader_memorability_001",
+      "title": "Single Image Retention",
+      "target_validator": "MemorabilityValidator",
+      "text_under_test": "A story returns to one concrete image in transformed contexts so that the image lingers after plot details fade.",
+      "expected_status": "pass",
+      "reader_state_expectation": {
+        "curiosity_state": "image persists as cognitive residue"
+      },
+      "notes": "Tests motif stickiness without semantic redundancy collapse."
+    },
+    {
+      "fixture_id": "v5_reader_cognitive_load_001",
+      "title": "Dense But Trackable Revelation",
+      "target_validator": "CognitiveLoadValidator",
+      "text_under_test": "A scene introduces multiple institutions, names, and obligations, but referents remain recoverable and the reader's understanding stabilizes by the end.",
+      "expected_status": "warn",
+      "reader_state_expectation": {
+        "understanding_state": "momentary overload with successful recovery"
+      },
+      "notes": "Tests upper-bound complexity that should remain readable rather than collapsing into confusion."
+    }
+  ]
+}

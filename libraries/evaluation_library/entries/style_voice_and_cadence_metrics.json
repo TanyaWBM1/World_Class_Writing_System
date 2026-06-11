@@ -1,0 +1,41 @@
+{
+  "id": "style_voice_and_cadence_metrics",
+  "name": "Style Voice And Cadence Metrics",
+  "description": "Propose a curated evaluation_library addition set for style voice and cadence metrics.",
+  "source_proposals": [
+    "LP-STYLE-VOICE-AND-CADENCE-METRICS"
+  ],
+  "related_rules": [
+    "RULE_CORPUS_STYLE_DIVERSITY_MIN",
+    "RULE_REVISION_SCOPE_STYLE_LOCK",
+    "RULE_SPEAKER_STYLE_DISTANCE_MIN",
+    "RULE_STYLE_DISTANCE_MAX",
+    "RULE_VOICE_DRIFT_CAP"
+  ],
+  "related_validators": [
+    "AuthorStyleFingerprintValidator",
+    "CadenceDistributionValidator",
+    "CorpusStyleDiversityValidator",
+    "StyleDriftValidator",
+    "VoiceInvariantPreservationValidator"
+  ],
+  "related_failure_modes": [
+    "cadence_flattening_failure",
+    "style_homogenization_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.94,
+  "status": "approved",
+  "aliases": [],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

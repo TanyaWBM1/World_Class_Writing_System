@@ -1,0 +1,37 @@
+{
+  "id": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+  "name": "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+  "description": "Normalized failure mode asset for Memory Benchmarks Encourage Benchmark Specific Pattern Learning Instead Of General Long Range Reasoning. derived from approved evolution proposals.",
+  "source_proposals": [
+    "LP-EVALUATION-AND-GOVERNANCE-FAILURES"
+  ],
+  "related_rules": [
+    "Only validated failures may be promoted into benchmark fixtures."
+  ],
+  "related_validators": [],
+  "related_failure_modes": [
+    "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning."
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "benchmark_fixture_library"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+    "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+    "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+    "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+    "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+    "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+    "Template echo detector misclassifies genre-typical structures as template copies.",
+    "detector_overfit_artifact_v1",
+    "llm_judge_prompt_sensitivity_v1"
+  ],
+  "related_benchmarks": [
+    "BP-004"
+  ],
+  "related_enforcement_concepts": []
+}

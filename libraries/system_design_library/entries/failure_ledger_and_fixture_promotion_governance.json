@@ -1,0 +1,29 @@
+{
+  "id": "failure_ledger_and_fixture_promotion_governance",
+  "name": "Failure Ledger And Fixture Promotion Governance",
+  "description": "Propose a governance rule set for failure ledger and fixture promotion governance.",
+  "source_proposals": [
+    "GP-005"
+  ],
+  "related_rules": [
+    "Benchmark promotion requires human approval before a fixture becomes part of replayable suites.",
+    "Every detected failure must be logged to an append-only structured failure ledger.",
+    "Human approval is mandatory for rule acceptance, benchmark promotion, and override of critical regressions."
+  ],
+  "related_validators": [],
+  "related_failure_modes": [],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "evaluation_library",
+    "schema:governance_artifacts"
+  ],
+  "priority": "medium",
+  "confidence": 0.95,
+  "status": "approved",
+  "aliases": [],
+  "governance_scope": [
+    "human approval",
+    "promotion gates",
+    "regression protection"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "abstraction_density_suite",
+  "name": "Abstraction Density Suite",
+  "description": "Deterministic fixtures for grounded detail versus abstract summary pressure.",
+  "source_proposals": [
+    "BP-001"
+  ],
+  "related_rules": [
+    "RULE_ABSTRACTION_RATIO_MAX",
+    "RULE_PROSE_CONCRETENESS_MIN"
+  ],
+  "related_validators": [
+    "abstraction_ratio_checker"
+  ],
+  "related_failure_modes": [
+    "over_abstraction_failure",
+    "prose_naturalness_collapse"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "abstraction_control_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.92,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "abstraction_pass_001",
+      "title": "Concrete Scene Anchoring",
+      "task_type": "abstraction_density",
+      "text_under_test": "The ticket edge cut into Mara's palm. Frost silvered the bench slats. When the porter turned, his lantern threw a bent stripe across her boot and the cracked platform tile beside it.",
+      "validator_targets": [
+        "abstraction_ratio_checker"
+      ],
+      "expected_status_by_validator": {
+        "abstraction_ratio_checker": "pass"
+      },
+      "expected_failure_modes": [],
+      "expected_gating_outcome": "accepted",
+      "notes": "High ratio of physical detail to abstract statement."
+    },
+    {
+      "fixture_id": "abstraction_warn_001",
+      "title": "Mixed Concrete And Summary",
+      "task_type": "abstraction_density",
+      "text_under_test": "The wind scraped the platform, but the deeper problem was pressure. Mara felt the weight of consequence, of timing, of exposure, even while the lamp glass clicked in the cold beside her.",
+      "validator_targets": [
+        "abstraction_ratio_checker"
+      ],
+      "expected_status_by_validator": {
+        "abstraction_ratio_checker": "warn"
+      },
+      "expected_failure_modes": [
+        "over_abstraction_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "Some concrete grounding remains, but abstract nouns start dominating."
+    },
+    {
+      "fixture_id": "abstraction_fail_001",
+      "title": "Disembodied Summary Drift",
+      "task_type": "abstraction_density",
+      "text_under_test": "The situation carried significance. Her decision represented risk, pressure, vulnerability, and meaning. Everything about the moment suggested consequence and identity rather than any single material fact.",
+      "validator_targets": [
+        "abstraction_ratio_checker",
+        "human_likeness_discriminator"
+      ],
+      "expected_status_by_validator": {
+        "abstraction_ratio_checker": "fail",
+        "human_likeness_discriminator": "warn"
+      },
+      "expected_failure_modes": [
+        "over_abstraction_failure",
+        "prose_naturalness_collapse"
+      ],
+      "expected_gating_outcome": "rejected",
+      "notes": "High abstraction with almost no observable grounding."
+    },
+    {
+      "fixture_id": "abstraction_adversarial_001",
+      "title": "Token Detail Wrapped In Summary",
+      "task_type": "abstraction_density",
+      "text_under_test": "A lantern hung by the door, but mostly the scene was about consequence, tension, uncertainty, identity, and exposure. The glove in her hand meant less than the meaning of the choice itself.",
+      "validator_targets": [
+        "abstraction_ratio_checker"
+      ],
+      "expected_status_by_validator": {
+        "abstraction_ratio_checker": "warn"
+      },
+      "expected_failure_modes": [
+        "over_abstraction_failure"
+      ],
+      "expected_gating_outcome": "accepted_with_warnings",
+      "notes": "A few concrete nouns are present, but they should not outweigh abstract density."
+    }
+  ]
+}

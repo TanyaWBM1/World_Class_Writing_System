@@ -1,0 +1,47 @@
+{
+  "contract_id": "run_artifact_contract_v1",
+  "purpose": "Define the artifact bundle emitted by every runtime execution.",
+  "artifact_bundle": {
+    "input_bundle.json": {
+      "required": true,
+      "contains": [
+        "run request",
+        "normalized inputs",
+        "execution metadata"
+      ]
+    },
+    "resolved_libraries.json": {
+      "required": true,
+      "contains": [
+        "primary libraries",
+        "secondary libraries",
+        "resolved rules",
+        "resolved validators",
+        "resolved failure modes"
+      ]
+    },
+    "draft_output.txt": {
+      "required": true,
+      "contains": [
+        "controlled draft text"
+      ]
+    },
+    "evaluation_report.json": {
+      "required": true,
+      "template_ref": "evaluation/reports/evaluation_report.template.json"
+    },
+    "enforcement_report.json": {
+      "required": true,
+      "template_ref": "evaluation/reports/enforcement_report.template.json"
+    },
+    "failure_map.json": {
+      "required": true,
+      "template_ref": "evaluation/reports/failure_map.template.json"
+    },
+    "run_summary.json": {
+      "required": true,
+      "template_ref": "evaluation/reports/run_summary.template.json"
+    }
+  },
+  "artifact_emission_rule": "Every run must end in structured evaluation artifacts regardless of acceptance state."
+}

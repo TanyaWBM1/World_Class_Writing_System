@@ -1,0 +1,41 @@
+{
+  "id": "register_and_transition_cadence",
+  "name": "Register And Transition Cadence",
+  "description": "Propose a curated cadence_library addition set for register and transition cadence.",
+  "source_proposals": [
+    "LP-REGISTER-AND-TRANSITION-CADENCE"
+  ],
+  "related_rules": [
+    "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+    "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.",
+    "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice."
+  ],
+  "related_validators": [
+    "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised."
+  ],
+  "related_failure_modes": [],
+  "dependencies": [
+    "evaluation_library"
+  ],
+  "priority": "medium",
+  "confidence": 0.78,
+  "status": "proposed",
+  "aliases": [
+    "episode_transition_cadence_v1"
+  ],
+  "related_enforcement_concepts": [
+    "EP-003"
+  ],
+  "related_techniques": [
+    "Each paragraph must include controlled sentence-length burstiness rather than a flat medium-length distribution.",
+    "Every paragraph must be assigned an information-density band and must conform to that band's density constraints.",
+    "Register drift per sentence and per paragraph must remain inside the allowed drift window for the active voice.",
+    "Maintain a rolling paragraph buffer for sentence lengths and trigger burst modulation when medium-length clustering persists.",
+    "Tag each paragraph with an information-density band and route generation constraints through that band profile.",
+    "Score each sentence on a register axis and block abrupt register jumps beyond configured drift thresholds.",
+    "Register monotony or abrupt register flips that confuse voice.",
+    "Feed paragraphs with uniform sentence lengths into the cadence validator and verify burstiness violations are raised.",
+    "Construct paragraphs with excessive clause stacking and ensure clause-depth run caps trigger.",
+    "Generate high-density, medium-density, and low-density paragraphs and verify density-band assignment and enforcement."
+  ]
+}

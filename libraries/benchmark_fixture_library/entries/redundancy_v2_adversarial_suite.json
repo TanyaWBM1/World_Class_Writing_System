@@ -1,0 +1,113 @@
+{
+  "id": "redundancy_v2_adversarial_suite",
+  "name": "Semantic Redundancy V2 Adversarial Suite",
+  "description": "Adversarial edge cases for idea-graph-based semantic redundancy classification boundaries.",
+  "source_proposals": [
+    "BP-003"
+  ],
+  "related_rules": [
+    "RULE_SEMANTIC_REDUNDANCY_CAP",
+    "RULE_SECTION_NOVELTY_MIN"
+  ],
+  "related_validators": [
+    "semantic_redundancy_detector"
+  ],
+  "related_failure_modes": [
+    "semantic_redundancy_failure",
+    "prose_naturalness_collapse"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "abstraction_control_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.94,
+  "status": "approved",
+  "fixtures": [
+    {
+      "fixture_id": "redundancy_v2_refrain_001",
+      "title": "Refrain Under Escalating Stakes",
+      "task_type": "semantic_redundancy_v2",
+      "text_under_test": "She told herself not yet when the porter glanced her way. Not yet, when his lantern paused over the brass rail. Not yet, when the conductor called the final minute and the whole platform seemed to lean toward her. The words repeated, but by the end they had turned from restraint into panic.",
+      "expected_redundancy_class": "refrain_like",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "notes": "Repeated phrase appears four times, but each recurrence intensifies emotional pressure and changes local narrative function."
+    },
+    {
+      "fixture_id": "redundancy_v2_motif_001",
+      "title": "Motif Return Across Distance",
+      "task_type": "semantic_redundancy_v2",
+      "text_under_test": "At the gate she noticed one feather frozen into the coal grit beside the tracks. Hours later, after the porter checked the compartments and the women in the dining car stopped pretending not to stare, she found the same feather caught in the seam of her glove. It did not repeat the scene so much as drag the first omen back into the second.",
+      "expected_redundancy_class": "motif_recall",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "notes": "The recurring object is intentional thematic recall rather than proposition collapse; the graph should create a motif node, not a restatement loop."
+    },
+    {
+      "fixture_id": "redundancy_v2_dialogue_001",
+      "title": "Dialogue Callback With Correction",
+      "task_type": "semantic_redundancy_v2",
+      "text_under_test": "\"You are late,\" the porter said. \"I am careful,\" Mara said. When he laughed, she leaned in and corrected herself. \"No. I was careful yesterday. Tonight I am desperate.\" The repeated structure is there to reverse the claim, not to recycle it.",
+      "expected_redundancy_class": "dialogue_callback",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "notes": "A callback repeats the original proposition only long enough to negate and replace it."
+    },
+    {
+      "fixture_id": "redundancy_v2_argument_001",
+      "title": "Argument Deepening Through Consequence",
+      "task_type": "semantic_redundancy_v2",
+      "text_under_test": "If the porter asked for the ticket, she could still lie. If he doubted the lie, she would miss the train. If she missed the train, her brother would keep waiting in a city already closing against him. The subject stays the same, but every sentence extends the consequence chain.",
+      "expected_redundancy_class": "clean_progression",
+      "expected_gating_outcome": "accepted",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "notes": "Surface continuity is high, but the causal graph should grow at each step."
+    },
+    {
+      "fixture_id": "redundancy_v2_spin_001",
+      "title": "Semantic Spin Without Advancement",
+      "task_type": "semantic_redundancy_v2",
+      "text_under_test": "She was afraid he would stop her. The fear was that he might stop her before she reached the train. What frightened her was the possibility of being stopped by him at the train. In every version the sentence rotated, but nothing in the situation actually moved.",
+      "expected_redundancy_class": "semantic_spin",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "notes": "The language mutates slightly while the idea graph should remain almost flat."
+    },
+    {
+      "fixture_id": "redundancy_v2_collapse_001",
+      "title": "Lexically Diverse Collapse",
+      "task_type": "semantic_redundancy_v2",
+      "text_under_test": "The porter might detect the absent ticket. The old man could notice the missing proof. His eyes could register the vacancy where authority should have been. He might simply understand that she had no right to be there. Each line sounds different, but all four propositions point to the same unchanged threat.",
+      "expected_redundancy_class": "collapse",
+      "expected_gating_outcome": "rejected",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "notes": "Phrase overlap is low, so overlap counting alone may under-detect the collapse."
+    },
+    {
+      "fixture_id": "redundancy_v2_emotion_001",
+      "title": "Emotional Circling at the Border",
+      "task_type": "semantic_redundancy_v2",
+      "text_under_test": "At first she called it caution. A minute later it felt more like shame. By the time the whistle sounded she could not tell whether the feeling was shame, fear, or the stubborn refusal to be witnessed in either state. The emotion circles the same wound, but it does move.",
+      "expected_redundancy_class": "legitimate_recurrence",
+      "expected_gating_outcome": "accepted_with_warnings",
+      "validator_targets": [
+        "semantic_redundancy_detector"
+      ],
+      "notes": "Borderline case between emotional deepening and redundant circling; intended to stress class boundaries rather than raw score only."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "narrative_arc_and_goal_progress_metrics",
+  "name": "Narrative Arc And Goal Progress Metrics",
+  "description": "Propose a validation concept stack for narrative arc and goal progress metrics.",
+  "source_proposals": [
+    "VP-005"
+  ],
+  "related_rules": [
+    "All core evaluation paths MUST be deterministic for fixed inputs and configuration in the deterministic writing architecture.",
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "RULE_PROMISE_RESOLUTION_RATE",
+    "RULE_SCENE_GOAL_REQUIRED"
+  ],
+  "related_validators": [
+    "NarrativeGoalProgressValidator",
+    "Periodically re-calibrate automated evaluators against human rubric benchmarks for both narrative and dialogue.",
+    "PromisePayoffValidator"
+  ],
+  "related_failure_modes": [
+    "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+    "narrative_drift_failure",
+    "weak_claim_architecture_failure"
+  ],
+  "dependencies": [
+    "benchmark_fixture_library",
+    "schema:evaluation_report"
+  ],
+  "priority": "high",
+  "confidence": 0.96,
+  "status": "approved",
+  "aliases": [
+    "arc_coherence_metric",
+    "narrative_drift_failure",
+    "narrative_goal_state",
+    "promise_registry",
+    "weak_claim_architecture_failure"
+  ],
+  "evaluation_output_expectations": [
+    "metric family id",
+    "config version",
+    "evidence spans",
+    "stability metadata",
+    "calibration reference"
+  ]
+}

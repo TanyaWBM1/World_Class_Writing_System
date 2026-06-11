@@ -1,0 +1,38 @@
+{
+  "threshold_set_id": "enforcement_thresholds_v1",
+  "purpose": "Declare authoritative enforcement thresholds used before evaluation gating.",
+  "authoritative_rules": {
+    "continuity_contradiction": {
+      "critical": true,
+      "max_violations": 0
+    },
+    "canon_override": {
+      "critical": true,
+      "max_violations": 0
+    },
+    "abstraction_ratio": {
+      "critical": false,
+      "warning_threshold": 1,
+      "reject_threshold": 3
+    },
+    "cadence_flattening": {
+      "critical": false,
+      "warning_threshold": 1,
+      "reject_threshold": 3
+    },
+    "dialogue_homogenization": {
+      "critical": false,
+      "warning_threshold": 1,
+      "reject_threshold": 3
+    },
+    "voice_erosion": {
+      "critical": false,
+      "warning_threshold": 1,
+      "reject_threshold": 2
+    }
+  },
+  "artifact_requirements": [
+    "all enforcement decisions must be emitted to enforcement_report.json",
+    "critical failures must be mirrored into failure_map.json"
+  ]
+}

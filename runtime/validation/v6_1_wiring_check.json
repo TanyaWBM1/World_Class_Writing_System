@@ -1,0 +1,67 @@
+{
+  "audit_id": "v6_1_insight_density_integration_audit",
+  "validator_id": "insight_density_validator",
+  "status": "partial_pass",
+  "checks": {
+    "registered_correctly": true,
+    "thresholds_defined": true,
+    "included_in_viral_dimension_aggregation": true,
+    "contributes_to_viral_scoring": true,
+    "machine_readable_evidence_emitted": true,
+    "report_template_fields_present": true,
+    "adversarial_benchmark_expectations_present": false
+  },
+  "report_fields": {
+    "insight_density_score": {
+      "exists_in_template": true,
+      "populated_in_live_run": true,
+      "sample_value": 0.0
+    },
+    "abstraction_ratio": {
+      "exists_in_template": true,
+      "populated_in_live_run": true,
+      "sample_value": 1.0
+    },
+    "concrete_example_count": {
+      "exists_in_template": true,
+      "populated_in_live_run": true,
+      "sample_value": 0
+    }
+  },
+  "runtime_scoring_links": {
+    "build_v6_viral_metrics_computes_insight_fields": true,
+    "viral_score_uses_insight_density_score": true,
+    "viral_integrity_score_uses_insight_density_score": true,
+    "novelty_score_penalized_when_insight_density_low": true,
+    "score_validator_branch_exists": true
+  },
+  "false_positive_reduction_targets": {
+    "generic_motivation": true,
+    "empty_insight": true,
+    "shallow_philosophy": true
+  },
+  "live_run_sample": {
+    "fixture_type": "generic_viral_looking_content",
+    "final_status": "rejected",
+    "insight_density_validator_status": "fail",
+    "evidence": {
+      "insight_density_score": 0.0,
+      "abstraction_ratio": 1.0,
+      "concrete_example_count": 0,
+      "generic_motivation_detected": true,
+      "empty_insight_detected": true,
+      "shallow_philosophy_detected": true
+    }
+  },
+  "benchmark_alignment": {
+    "file_checked": "libraries/benchmark_fixture_library/entries/v6_adversarial_viral_suite.json",
+    "alignment_status": "incomplete",
+    "missing_expectations": [
+      "InsightDensityValidator expected outcomes",
+      "insight_density_score-oriented signals",
+      "generic_motivation_failure coverage",
+      "empty_insight_failure coverage",
+      "shallow_philosophy_failure coverage"
+    ]
+  }
+}

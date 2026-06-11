@@ -1,0 +1,1529 @@
+{
+  "generated_at": "2026-03-21T19:05:22.007136+00:00",
+  "item_type": "failure_mode",
+  "mapping_count": 42,
+  "mappings": [
+    {
+      "id": "FM-1",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "prose_naturalness_collapse",
+      "normalized_name": "prose_naturalness_collapse",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-2",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "dialogue_realism_collapse",
+      "normalized_name": "dialogue_realism_collapse",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "dialogue_behavior_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-3",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "cadence_flattening_failure",
+      "normalized_name": "cadence_flattening_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "cadence_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-4",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "narrative_drift_failure",
+      "normalized_name": "narrative_drift_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-5",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "long_form_coherence_failure",
+      "normalized_name": "long_form_coherence_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-6",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "over_abstraction_failure",
+      "normalized_name": "over_abstraction_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-7",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "semantic_redundancy_failure",
+      "normalized_name": "semantic_redundancy_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-8",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "emotional_flattening_failure",
+      "normalized_name": "emotional_flattening_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-9",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "continuity_memory_failure",
+      "normalized_name": "continuity_memory_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-10",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "style_homogenization_failure",
+      "normalized_name": "style_homogenization_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-11",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "voice_erosion_failure",
+      "normalized_name": "voice_erosion_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-12",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "genre_flattening_failure",
+      "normalized_name": "genre_flattening_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-13",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "prompt_sensitivity_failure",
+      "normalized_name": "prompt_sensitivity_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-14",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "structure_drift_failure",
+      "normalized_name": "structure_drift_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-15",
+      "source_file": "core_failure_modes_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "weak_claim_architecture_failure",
+      "normalized_name": "weak_claim_architecture_failure",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-1",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+      "normalized_name": "detector_overfit_to_superficial_artifacts_misclassifies_human_text_as_ai_or_vice_versa",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-2",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+      "normalized_name": "llm_as_judge_exhibits_prompt_sensitivity_self_preference_and_rubric_drift_masking_true_quality",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-3",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+      "normalized_name": "narrative_coherence_benchmarks_are_gamed_via_checklist_inclusion_not_genuine_plot_logic",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-4",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+      "normalized_name": "state_tracking_continuity_checker_cascades_extraction_errors_and_reports_false_contradictions",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-5",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+      "normalized_name": "dialogue_metrics_overweight_semantic_similarity_penalizing_creative_or_diverse_responses",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-6",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+      "normalized_name": "style_drift_detector_flags_intentional_stylistic_shifts_e_g_pov_changes_as_regressions",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "voice_library",
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-7",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Template echo detector misclassifies genre-typical structures as template copies.",
+      "normalized_name": "template_echo_detector_misclassifies_genre_typical_structures_as_template_copies",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-8",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+      "normalized_name": "stability_metrics_report_stable_but_wrong_patterns_where_outputs_are_consistent_yet_misaligned_with_references_or_human_judgment",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-9",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+      "normalized_name": "memory_benchmarks_encourage_benchmark_specific_pattern_learning_instead_of_general_long_range_reasoning",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-10",
+      "source_file": "evaluation_methods_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+      "normalized_name": "editing_pipelines_slowly_erode_voice_through_cumulative_small_changes_that_evade_single_step_checks",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-1",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Failure-ledger noise collapse caused by over-broad taxonomy or noisy evaluators.",
+      "normalized_name": "failure_ledger_noise_collapse_caused_by_over_broad_taxonomy_or_noisy_evaluators",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-2",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+      "normalized_name": "failure_to_fixture_bloat_caused_by_uncontrolled_promotion_and_duplicate_fixtures",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-3",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Benchmark overfitting where the system optimizes to historical fixtures but drifts elsewhere.",
+      "normalized_name": "benchmark_overfitting_where_the_system_optimizes_to_historical_fixtures_but_drifts_elsewhere",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-4",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Evaluator drift that invalidates baseline comparisons across releases.",
+      "normalized_name": "evaluator_drift_that_invalidates_baseline_comparisons_across_releases",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-5",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Governance capture where proposal and approval paths are not sufficiently separated.",
+      "normalized_name": "governance_capture_where_proposal_and_approval_paths_are_not_sufficiently_separated",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-6",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Rubber-stamp governance fatigue that lets regressions through.",
+      "normalized_name": "rubber_stamp_governance_fatigue_that_lets_regressions_through",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-7",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+      "normalized_name": "ai_on_ai_degradation_where_evaluator_or_reflection_bias_shapes_production_rules_indirectly",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-8",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Systemic-failure false positives caused by unstable clustering features or thresholds.",
+      "normalized_name": "systemic_failure_false_positives_caused_by_unstable_clustering_features_or_thresholds",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-9",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Style fingerprint overconstraint that preserves sameness instead of voice.",
+      "normalized_name": "style_fingerprint_overconstraint_that_preserves_sameness_instead_of_voice",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-10",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+      "normalized_name": "style_fingerprint_creep_caused_by_retraining_on_already_homogenized_outputs",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-11",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Multi-pass oscillation where refinement loops endlessly or degrades original intent.",
+      "normalized_name": "multi_pass_oscillation_where_refinement_loops_endlessly_or_degrades_original_intent",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-12",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Production style-flattening caused by overpowered enforcement stages.",
+      "normalized_name": "production_style_flattening_caused_by_overpowered_enforcement_stages",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-13",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Continuity lock-in where incorrect state is preserved and enforced downstream.",
+      "normalized_name": "continuity_lock_in_where_incorrect_state_is_preserved_and_enforced_downstream",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-14",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "State explosion that makes long-form continuity unmanageable or too costly.",
+      "normalized_name": "state_explosion_that_makes_long_form_continuity_unmanageable_or_too_costly",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-15",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+      "normalized_name": "hybrid_evaluator_silent_drift_where_soft_components_shift_behavior_without_governance",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-16",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+      "normalized_name": "stable_but_wrong_promotion_where_deterministic_outputs_still_fail_core_quality_or_correctness_goals",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    },
+    {
+      "id": "FM-SD-17",
+      "source_file": "system_design_patterns_01.md",
+      "source_section": "FAILURE_MODE_EXTRACT",
+      "item_type": "failure_mode",
+      "raw_text": "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+      "normalized_name": "reflection_style_tone_contamination_where_sandbox_reflections_bias_prose_toward_explanatory_blandness",
+      "candidate_library": "failure_mode_library",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "related_items": [],
+      "priority": "high",
+      "confidence": 0.95,
+      "notes": "Normalized from source extract block; original wording preserved in raw_text."
+    }
+  ],
+  "overlaps": [],
+  "conflicts": [
+    {
+      "record_id": "FM-1",
+      "raw_text": "prose_naturalness_collapse",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-2",
+      "raw_text": "dialogue_realism_collapse",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "dialogue_behavior_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-3",
+      "raw_text": "cadence_flattening_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "cadence_library",
+        "evaluation_library",
+        "sentence_structure_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-4",
+      "raw_text": "narrative_drift_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-5",
+      "raw_text": "long_form_coherence_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-6",
+      "raw_text": "over_abstraction_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-7",
+      "raw_text": "semantic_redundancy_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-8",
+      "raw_text": "emotional_flattening_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-9",
+      "raw_text": "continuity_memory_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-10",
+      "raw_text": "style_homogenization_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-11",
+      "raw_text": "voice_erosion_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "voice_library",
+        "human_texture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-12",
+      "raw_text": "genre_flattening_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "genre_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-13",
+      "raw_text": "prompt_sensitivity_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-14",
+      "raw_text": "structure_drift_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-15",
+      "raw_text": "weak_claim_architecture_failure",
+      "source_file": "core_failure_modes_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "abstraction_control_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-1",
+      "raw_text": "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-2",
+      "raw_text": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-3",
+      "raw_text": "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-4",
+      "raw_text": "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-5",
+      "raw_text": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "dialogue_behavior_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-6",
+      "raw_text": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "voice_library",
+        "benchmark_fixture_library",
+        "evaluation_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-7",
+      "raw_text": "Template echo detector misclassifies genre-typical structures as template copies.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-8",
+      "raw_text": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-9",
+      "raw_text": "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-10",
+      "raw_text": "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+      "source_file": "evaluation_methods_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "voice_library",
+        "evaluation_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-1",
+      "raw_text": "Failure-ledger noise collapse caused by over-broad taxonomy or noisy evaluators.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-2",
+      "raw_text": "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-3",
+      "raw_text": "Benchmark overfitting where the system optimizes to historical fixtures but drifts elsewhere.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "evaluation_library",
+        "benchmark_fixture_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-4",
+      "raw_text": "Evaluator drift that invalidates baseline comparisons across releases.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-5",
+      "raw_text": "Governance capture where proposal and approval paths are not sufficiently separated.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-6",
+      "raw_text": "Rubber-stamp governance fatigue that lets regressions through.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-7",
+      "raw_text": "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-8",
+      "raw_text": "Systemic-failure false positives caused by unstable clustering features or thresholds.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-9",
+      "raw_text": "Style fingerprint overconstraint that preserves sameness instead of voice.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-10",
+      "raw_text": "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-11",
+      "raw_text": "Multi-pass oscillation where refinement loops endlessly or degrades original intent.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-12",
+      "raw_text": "Production style-flattening caused by overpowered enforcement stages.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "continuity_state_library",
+        "voice_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-13",
+      "raw_text": "Continuity lock-in where incorrect state is preserved and enforced downstream.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-14",
+      "raw_text": "State explosion that makes long-form continuity unmanageable or too costly.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-15",
+      "raw_text": "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-16",
+      "raw_text": "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "continuity_state_library",
+        "system_design_library",
+        "benchmark_fixture_library"
+      ],
+      "issue": "multiple plausible library targets"
+    },
+    {
+      "record_id": "FM-SD-17",
+      "raw_text": "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+      "source_file": "system_design_patterns_01.md",
+      "candidate_libraries": [
+        "failure_mode_library",
+        "system_design_library",
+        "benchmark_fixture_library",
+        "continuity_state_library"
+      ],
+      "issue": "multiple plausible library targets"
+    }
+  ],
+  "missing_library_targets": [],
+  "escalate_to_research_evolution_architect": [
+    {
+      "record_id": "FM-2",
+      "raw_text": "dialogue_realism_collapse",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-3",
+      "raw_text": "cadence_flattening_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-6",
+      "raw_text": "over_abstraction_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-7",
+      "raw_text": "semantic_redundancy_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-9",
+      "raw_text": "continuity_memory_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-10",
+      "raw_text": "style_homogenization_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-11",
+      "raw_text": "voice_erosion_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-12",
+      "raw_text": "genre_flattening_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-13",
+      "raw_text": "prompt_sensitivity_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-14",
+      "raw_text": "structure_drift_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-15",
+      "raw_text": "weak_claim_architecture_failure",
+      "source_file": "core_failure_modes_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-1",
+      "raw_text": "Detector overfit to superficial artifacts misclassifies human text as AI or vice versa.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-2",
+      "raw_text": "LLM-as-judge exhibits prompt sensitivity, self-preference, and rubric drift, masking true quality.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-3",
+      "raw_text": "Narrative coherence benchmarks are gamed via checklist inclusion, not genuine plot logic.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-4",
+      "raw_text": "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-5",
+      "raw_text": "Dialogue metrics overweight semantic similarity, penalizing creative or diverse responses.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-6",
+      "raw_text": "Style drift detector flags intentional stylistic shifts (e.g., POV changes) as regressions.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-7",
+      "raw_text": "Template echo detector misclassifies genre-typical structures as template copies.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-8",
+      "raw_text": "Stability metrics report \"stable but wrong\" patterns where outputs are consistent yet misaligned with references or human judgment.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-9",
+      "raw_text": "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-10",
+      "raw_text": "Editing pipelines slowly erode voice through cumulative small changes that evade single-step checks.",
+      "source_file": "evaluation_methods_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-1",
+      "raw_text": "Failure-ledger noise collapse caused by over-broad taxonomy or noisy evaluators.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-2",
+      "raw_text": "Failure-to-fixture bloat caused by uncontrolled promotion and duplicate fixtures.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-3",
+      "raw_text": "Benchmark overfitting where the system optimizes to historical fixtures but drifts elsewhere.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-4",
+      "raw_text": "Evaluator drift that invalidates baseline comparisons across releases.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-5",
+      "raw_text": "Governance capture where proposal and approval paths are not sufficiently separated.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-6",
+      "raw_text": "Rubber-stamp governance fatigue that lets regressions through.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-7",
+      "raw_text": "AI-on-AI degradation where evaluator or reflection bias shapes production rules indirectly.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-8",
+      "raw_text": "Systemic-failure false positives caused by unstable clustering features or thresholds.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-9",
+      "raw_text": "Style fingerprint overconstraint that preserves sameness instead of voice.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-10",
+      "raw_text": "Style fingerprint creep caused by retraining on already-homogenized outputs.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-11",
+      "raw_text": "Multi-pass oscillation where refinement loops endlessly or degrades original intent.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-12",
+      "raw_text": "Production style-flattening caused by overpowered enforcement stages.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-13",
+      "raw_text": "Continuity lock-in where incorrect state is preserved and enforced downstream.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-14",
+      "raw_text": "State explosion that makes long-form continuity unmanageable or too costly.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-15",
+      "raw_text": "Hybrid-evaluator silent drift where soft components shift behavior without governance.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-16",
+      "raw_text": "Stable-but-wrong promotion where deterministic outputs still fail core quality or correctness goals.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    },
+    {
+      "record_id": "FM-SD-17",
+      "raw_text": "Reflection-style tone contamination where sandbox reflections bias prose toward explanatory blandness.",
+      "source_file": "system_design_patterns_01.md",
+      "reason": "ambiguous mapping or low confidence normalization",
+      "target": "@research-evolution-architect"
+    }
+  ]
+}

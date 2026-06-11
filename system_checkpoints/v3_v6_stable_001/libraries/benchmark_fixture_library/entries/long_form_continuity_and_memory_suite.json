@@ -1,0 +1,58 @@
+{
+  "id": "long_form_continuity_and_memory_suite",
+  "name": "Long Form Continuity And Memory Suite",
+  "description": "Propose a benchmark concept for long form continuity and memory suite.",
+  "source_proposals": [
+    "BP-004"
+  ],
+  "related_rules": [
+    "Benchmarks MUST include long-form narrative and multi-turn dialogue fixtures with seeded continuity and memory challenges.",
+    "Human-like quality MUST be operationalized via multi-dimensional rubrics including coherence, continuity, dialogue realism, style consistency, and human-likeness discrimination.",
+    "RULE_CONTINUITY_CONTRADICTION_CAP"
+  ],
+  "related_validators": [
+    "ContinuityNLIValidator"
+  ],
+  "related_failure_modes": [
+    "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+    "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+    "continuity_memory_failure"
+  ],
+  "dependencies": [
+    "evaluation_library",
+    "failure_mode_library"
+  ],
+  "priority": "high",
+  "confidence": 0.97,
+  "status": "approved",
+  "aliases": [
+    "For each failure mode, note whether solving it likely requires explicit state tracking, runtime enforcement, symbolic constraints, or purely statistical generation changes.",
+    "character_voice_state",
+    "continuity_integrity_metric",
+    "continuity_memory_failure",
+    "document_structure_state",
+    "genre_beat_state",
+    "narrative_goal_state",
+    "speaker_state_embedding"
+  ],
+  "fixture_axes": {
+    "failure_modes": [
+      "Memory benchmarks encourage benchmark-specific pattern learning instead of general long-range reasoning.",
+      "State-tracking continuity checker cascades extraction errors and reports false contradictions.",
+      "continuity_memory_failure"
+    ],
+    "evaluation_types": [
+      "continuity_narrative",
+      "dialogue",
+      "genre_structure",
+      "voice_style"
+    ],
+    "narrative_dimensions": [
+      "continuity_memory",
+      "dialogue_realism",
+      "genre_conformity",
+      "human_likeness",
+      "voice_preservation"
+    ]
+  }
+}
